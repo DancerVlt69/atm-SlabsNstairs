@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "slabsnstairs:citrine_block"
+        }
+    },
+    "result": {
+        "item": "slabsnstairs:citrine",
+        "count": 9
+    }
+}

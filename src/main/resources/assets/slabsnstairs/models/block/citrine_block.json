@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "slabsnstairs:block/citrine_block"
+  }
+}

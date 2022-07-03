@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " * "
+    ],
+    "key": {
+        "*": [
+            {
+                "item": "minecraft:stone_button"
+            },{
+                "item": "slabsnstairs:cobblestone_button"
+            }
+        ]
+    },
+    "result": {
+        "item": "slabsnstairs:growth_stop",
+        "count": 2
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_plains_house"
+    }
+  ],
+  "addition": "slabsnstairs:citrine_coin",
+  "type": "slabsnstairs:citrine_coin_in_plains_chests"
+}

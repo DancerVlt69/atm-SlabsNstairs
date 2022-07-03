@@ -1,0 +1,227 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' } // maven { url = "https://files.minecraftforge.net/maven" }
+        maven { url = 'https://maven.parchmentmc.org' }
+        // maven { url = "https://mvn.stopmodreposts.org" }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath 'org.parchmentmc:librarian:1.+'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+
+// apply plugin: '.envs/def.env'
+
+// version = '1.0'
+
+def versionPropsFile = file(".envs/dev.env")
+def bNum2
+def buildNumber = System.getenv("BNUMBER")
+version = "${minecraftVersion}-${modVersion}-build.${buildNumber}"
+group = "net.${modOwner}.${modId}"
+archivesBaseName = "${modId}"
+
+// sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+repositories {
+    maven {
+        name = "Progwm16 maven"
+        url = "https://dvs1.progwml6.com//files/maven/"
+    }
+    maven {
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+}
+
+//configurations { embedNoCompile }
+//repositories {
+ //   maven {
+  //      name = "StopModReposts"
+   //     url = "https://mvn.stopmodreposts.org/"
+ //   }
+//}
+
+task systemInfo {
+    def styler = 'black red green yellow blue magenta cyan white'.split().toList().withIndex(30)
+    .collectEntries { key, val -> [(key) : { "\033[${val}m${it}\033[0m" }] }
+
+    def bNumber = System.getenv("BNUMBER")
+    def rNumber = System.getenv("RNUMBER")
+    def taskType = System.getenv("TASK")
+    Properties versionProps = new Properties()
+    versionProps.load(new FileInputStream(versionPropsFile))
+    bNum2 = versionProps['BNUMBER2'].toInteger()
+
+    println "System-Information:"
+    println "${styler['green']("buildNumber: ${bNumber}")} and"
+    println "${styler['green']("runCounter: ${rNumber}")} for the"
+    println "${styler['green']("Gradle-Task: ${taskType}")} (for one or both variables are not found/set)."
+    println "\n${styler['green']("Test-Variable BNumber-2 is: ${bNum2}\n")}"
+}
+
+minecraft {
+    // mappings channel: 'official', version: "${minecraftVersion}" //'snapshot'
+    mappings channel: 'parchment', version: "2022.06.26-${minecraftVersion}"
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                slabsnstairs {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                slabsnstairs {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            // The markers can be changed as needed.
+            // "SCAN": For mods scan.
+            // "REGISTRIES": For firing of registry events.
+            // "REGISTRYDUMP": For getting the contents of all registries.
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            // Recommended logging level for the console
+            // You can set various levels here.
+            // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
+            property 'forge.logging.console.level', 'debug'
+
+            // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
+            args '--mod', 'slabsnstairs', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                slabsnstairs {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraftVersion}-${forgeVersion}" //1.18.1-39.1.2'
+
+    // JEI at compiling
+    // compileOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}:api")
+    // JEI at runTime
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}")
+    // implementation fg.deobf("curse.maven:jei-238222:3838014")
+
+    // Xaero's World & Mini Map
+    runtimeOnly fg.deobf("curse.maven:xwm-317780:3848426")
+    runtimeOnly fg.deobf("curse.maven:xmm-263420:3851498")
+
+    // JMSR - Just More Simple Recipes
+    runtimeOnly fg.deobf("curse.maven:msr-447223:3832682")
+
+    // Configured
+    runtimeOnly fg.deobf("curse.maven:cnfig-457570:3721946")
+
+    // Jade (H/WAYLA)
+    runtimeOnly fg.deobf("curse.maven:jade-324717:3845190")
+
+    // Stop Mod Reports
+    // embedNoCompile "org.stopmodreposts:stopmodreposts:${minecraftVersion}-${stopmodreposts_version}"
+
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : project.modName,
+                "Specification-Vendor"    : project.modOwner,
+                "Specification-Version"   : project.modVersion,
+                "Implementation-Title"    : project.modName,
+                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Vendor"   : project.modOwner,
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+task incrementBuildNumber {
+    def bnumber = System.getenv("BNUMBER")
+    def rnumber = System.getenv("RNUMBER")
+    def gTask = System.getenv("TASK")
+    if (gTask == "createJAR") {
+        def versionPropFile = file(".envs/dev.env")
+        if (versionPropFile.canRead()) {
+            Properties versionProps = new Properties()
+            versionProps.load(versionPropFile.newDataInputStream())
+            // versionProps.load(new FileInputStream(versionPropFile))
+
+            Integer nextBuildNum = ((versionProps.getProperty("BNUMBER") as BigDecimal) + 1)
+            // versionBuild = versionProps['buildNumber'].toInteger() + 1
+
+            versionProps.setProperty("BNUMBER", nextBuildNum.toString())
+            // versionProps['buildNumber'] = versionBuild.toString()
+
+            versionProps.store(versionPropFile.newWriter(), null)
+            versionProps.load(versionPropFile.newDataInputStream())
+            // System.setProperty("BNUMBER", nextBuildNum)
+            println("The temporarily BuildNumber is ${nextBuildNum}.")
+        } else {
+            throw new FileNotFoundException("Can not read the property file!")
+        }
+    } else if (gTask == "runMC") {
+        println("\nStarting Minecraft-Client...\n")
+
+        /*if (rnumber == "null") {
+            println ("Run-Counter: ${'RNUMBER'}")
+            rnumber = 0
+            Integer nextRunNum = (rnumber as BigDecimal) + 1
+            // System.setProperty("RNUMBER", nextRunNum)
+            println("Run-Counter is ${nextRunNum}")
+        } else {
+            Integer nextRunNum = (rnumber as BigDecimal) + 1
+            // System.setProperty("RNUMBER", nextRunNum)
+            println("Run-Counter is ${nextRunNum}")
+        } */
+    }
+}
+
+//task
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+// task releaseJars(type: Copy) {
+//    from incrementBuildNumber
+//    from jar
+// }

@@ -1,0 +1,15 @@
+Slabs 'n Stairs changelog:
+
+------------------------
+V 0.0.1.110 @ 2022/07/03
+- update Button: remove Collision, like the Stone-Button
+- added Buttons: Andesite, Diorite, Granite
+
+------------------------
+V 0.0.1.109 @ 2022/07/01
+- porting to Minecraft JE 1.18.2
+- updated to Forge 40.1.54
+
+----------------------
+V 0.0.1.0 @ 2022/06/26
+- initial version

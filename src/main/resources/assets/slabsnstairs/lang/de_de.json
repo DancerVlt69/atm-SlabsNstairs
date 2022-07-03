@@ -1,0 +1,40 @@
+{
+  "block.slabsnstairs.ice_slab":          "Eisstufe",
+  "block.slabsnstairs.ice_stairs":        "Eistreppe",
+  "block.slabsnstairs.blue_ice_slab":     "Blaueisstufe",
+  "block.slabsnstairs.blue_ice_stairs":   "Blaueistreppe",
+  "block.slabsnstairs.packed_ice_slab":   "Packeisstufe",
+  "block.slabsnstairs.packed_ice_stairs": "Packeistreppe",
+
+  "block.slabsnstairs.citrine_block":         "Citrin Block",
+  "block.slabsnstairs.citrine_ore":           "Citrinerz",
+  "block.slabsnstairs.deepslate_citrine_ore": "Tiefenschiefer Citrinerz",
+  "block.slabsnstairs.citrine_slab":          "Citrinstufe",
+  "block.slabsnstairs.citrine_stairs":        "Citrintreppe",
+
+  "block.slabsnstairs.vertical_ice_slab_northern":  "senkrechte Eisstufe",
+
+  "block.slabsnstairs.andesite_button":           "Andesitknopf",
+  "block.slabsnstairs.polished_andesite_button":  "Polierter AndesitKnopf",
+  "block.slabsnstairs.diorite_button":            "Dioritknopf",
+  "block.slabsnstairs.polished_diorite_button":   "Polierter Dioritknopf",
+  "block.slabsnstairs.granite_button":            "Granitknopf",
+  "block.slabsnstairs.polished_granite_button":   "Polierter Granitknopf",
+  "block.slabsnstairs.cobblestone_button":        "Bruchsteinknopf",
+  "block.slabsnstairs.growth_stop":               "Wachstumsstopper",
+
+  "item.slabsnstairs.citrine":      "Citrin Kristall",
+  "item.slabsnstairs.raw_citrine":  "Unbehandelter Citrin",
+  "item.slabsnstairs.citrine_coin": "Citrin-Münze",
+  "item.slabsnstairs.dowsing_rod":  "Wünschelrute",
+
+  "item.slabsnstairs.dowsing_rod.found":        "Hab was: ",
+  "item.slabsnstairs.dowsing_rod.located":      "  bei ",
+  "item.slabsnstairs.dowsing_rod.no_valuables": "Nichts Wertvolles gefunden.",
+
+  "itemGroup.modtab_tab": "Citrin",
+
+  "tooltip.slabsnstairs.block.citrine_block.shift":   "Du erhältst 9 Citrin Kristalle von diesem Block.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift":   "Die Wünschelrute zeigt dir bei Rechtsklick//n die Position diverser Erze an.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":         "Für mehr Information §eShift§r gedrückt halten."
+}

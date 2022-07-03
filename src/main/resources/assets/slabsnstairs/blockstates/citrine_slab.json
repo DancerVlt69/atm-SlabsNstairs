@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slabsnstairs:block/citrine_slab"
+    },
+    "type=double": {
+      "model": "slabsnstairs:block/citrine_block"
+    },
+    "type=top": {
+      "model": "slabsnstairs:block/citrine_slab_top"
+    }
+  }
+}

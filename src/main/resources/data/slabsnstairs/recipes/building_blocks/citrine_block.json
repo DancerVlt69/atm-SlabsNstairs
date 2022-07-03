@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "slabs2blocks",
+    "pattern": [
+        "***",
+        "***",
+        "***"
+    ],
+    "key": {
+        "*": {
+            "item": "slabsnstairs:citrine"
+        }
+    },
+    "result": {
+        "item": "slabsnstairs:citrine_block"
+    }
+}

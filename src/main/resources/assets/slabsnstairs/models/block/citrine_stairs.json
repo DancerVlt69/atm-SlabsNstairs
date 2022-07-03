@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "slabsnstairs:block/citrine_block",
+    "top": "slabsnstairs:block/citrine_block",
+    "side": "slabsnstairs:block/citrine_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "minecraft:block/cobblestone",
+    "particle": "minecraft:block/cobblestone"
+  }
+}

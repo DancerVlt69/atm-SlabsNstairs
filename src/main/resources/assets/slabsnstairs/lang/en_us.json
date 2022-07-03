@@ -1,0 +1,40 @@
+{
+  "block.slabsnstairs.ice_slab":          "Ice Slabs",
+  "block.slabsnstairs.ice_stairs":        "Ice Stairs",
+  "block.slabsnstairs.blue_ice_slab":     "Blue Ice Slabs",
+  "block.slabsnstairs.blue_ice_stairs":   "Blue Ice Stairs",
+  "block.slabsnstairs.packed_ice_slab":   "Packed Ice Slab",
+  "block.slabsnstairs.packed_ice_stairs": "Packed Ice Stairs",
+
+  "block.slabsnstairs.citrine_block":         "Citrine Block",
+  "block.slabsnstairs.citrine_ore":           "Citrine Ore",
+  "block.slabsnstairs.deepslate_citrine_ore": "Deepslate Citrine Ore",
+  "block.slabsnstairs.citrine_slab":          "Citrine Slab",
+  "block.slabsnstairs.citrine_stairs":        "Citrine Stairs",
+
+  "block.slabsnstairs.vertical_ice_slab":     "Vertical Ice Slab",
+
+  "block.slabsnstairs.andesite_button":           "Andesite Button",
+  "block.slabsnstairs.polished_andesite_button":  "Polished Andesite Button",
+  "block.slabsnstairs.diorite_button":            "Diorite Button",
+  "block.slabsnstairs.polished_diorite_button":   "Polished Diorite Button",
+  "block.slabsnstairs.granite_button":            "Granite Button",
+  "block.slabsnstairs.polished_granite_button":   "Polished Granite Button",
+  "block.slabsnstairs.cobblestone_button":        "Cobble Stone Button",
+  "block.slabsnstairs.growth_stop":               "Growth Stop",
+
+  "item.slabsnstairs.citrine":      "Citrine",
+  "item.slabsnstairs.raw_citrine":  "Raw Citrine",
+  "item.slabsnstairs.citrine_coin": "Citrine Coin",
+  "item.slabsnstairs.dowsing_rod":  "Dowsing Rod",
+
+  "item.slabsnstairs.dowsing_rod.found":        "Found ",
+  "item.slabsnstairs.dowsing_rod.located":      "  at ",
+  "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
+
+  "itemGroup.modtab_tab": "Citrine",
+
+  "tooltip.slabsnstairs.block.citrine_block":         "You will get 9 Citrine Crystals from this Block.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift":   "With an right click the Dowsing Rod can//n show you the position of some ore.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":         "Hold §eShift§r for more Information."
+}
