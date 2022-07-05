@@ -23,7 +23,7 @@ apply plugin: 'maven-publish'
 def versionPropsFile = file(".envs/dev.env")
 def bNum2
 def buildNumber = System.getenv("BNUMBER")
-version = "${minecraftVersion}-${modVersion}-build.${buildNumber}"
+version = "${minecraftVersion}-${modVersion}.${buildNumber}"
 group = "net.${modOwner}.${modId}"
 archivesBaseName = "${modId}"
 
@@ -137,9 +137,8 @@ minecraft {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraftVersion}-${forgeVersion}" //1.18.1-39.1.2'
 
-    // JEI at compiling
+    // JEI - Just Enough Items
     // compileOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}:api")
-    // JEI at runTime
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}")
     // implementation fg.deobf("curse.maven:jei-238222:3838014")
 
