@@ -34,7 +34,7 @@
 
   "itemGroup.modtab_tab": "Citrine",
 
-  "tooltip.slabsnstairs.block.citrine_block":         "You will get 9 Citrine Crystals from this Block.",
+  "tooltip.slabsnstairs.block.citrine_block.shift":   "You will get 9 Citrine Crystals from this Block.",
   "tooltip.slabsnstairs.dowsing_rod.tooltip.shift":   "With an right click the Dowsing Rod can//n show you the position of some ore.",
   "tooltip.slabsnstairs.dowsing_rod.tooltip":         "Hold §eShift§r for more Information."
 }

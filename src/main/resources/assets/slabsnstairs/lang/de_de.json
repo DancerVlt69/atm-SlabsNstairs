@@ -12,10 +12,10 @@
   "block.slabsnstairs.citrine_slab":          "Citrinstufe",
   "block.slabsnstairs.citrine_stairs":        "Citrintreppe",
 
-  "block.slabsnstairs.vertical_ice_slab_northern":  "senkrechte Eisstufe",
+  "block.slabsnstairs.vertical_ice_slab":     "senkrechte Eisstufe",
 
   "block.slabsnstairs.andesite_button":           "Andesitknopf",
-  "block.slabsnstairs.polished_andesite_button":  "Polierter AndesitKnopf",
+  "block.slabsnstairs.polished_andesite_button":  "Polierter Andesitknopf",
   "block.slabsnstairs.diorite_button":            "Dioritknopf",
   "block.slabsnstairs.polished_diorite_button":   "Polierter Dioritknopf",
   "block.slabsnstairs.granite_button":            "Granitknopf",
