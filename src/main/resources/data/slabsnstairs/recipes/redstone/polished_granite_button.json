@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:polished_granite"
+    }
+  ],
+  "result": {
+    "item": "slabsnstairs:polished_granite_button"
+  }
+}
