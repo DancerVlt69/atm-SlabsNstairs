@@ -5,7 +5,10 @@
     "slabsnstairs:citrine_slab",
     "slabsnstairs:cobblestone_button",
     "slabsnstairs:andesite_button",
+    "slabsnstairs:polished_andesite_button",
     "slabsnstairs:diorite_button",
-    "slabsnstairs:granite_button"
+    "slabsnstairs:polished_diorite_button",
+    "slabsnstairs:granite_button",
+    "slabsnstairs:polished_granite_button"
   ]
 }
