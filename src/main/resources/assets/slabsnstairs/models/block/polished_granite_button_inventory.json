@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/button_inventory",
 	"textures": {
-		"0": "slabsnstairs:block/polished_granite_bottom",
-		"1": "slabsnstairs:block/polished_granite_side",
+		"0": "block/polished_granite_bottom",
+		"1": "block/polished_granite_side",
 		"particle": "minecraft:block/polished_granite"
 	},
 	"elements": [
