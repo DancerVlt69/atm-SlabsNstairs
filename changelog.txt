@@ -1,6 +1,10 @@
 Slabs 'n Stairs changelog:
 
 ------------------------
+V 0.0.1.112 @ 2022/07/05
+- fixing an issue of the polished buttons in hand texture
+
+------------------------
 V 0.0.1.111 @ 2022/07/05
 - readd polished button variants of Andesite, Diorite, and Granite
 
