@@ -1,3 +1,7 @@
+/*
+    some useless comments
+ */
+
 package net.dancervlt69.slabsnstairs;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
@@ -53,8 +57,9 @@ public class SlabsNstairs {
 
     private void clientSetup(final FMLCommonSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWTH_STOP.get(), RenderType.cutout());
-/*        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ICE_SLAB.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ICE_STAIRS.get(), RenderType.translucent()); */
+/*      ItemBlockRenderTypes.setRenderLayer(ModBlocks.ICE_SLAB.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ICE_STAIRS.get(), RenderType.translucent());
+ */
     }
     private void setup(final FMLCommonSetupEvent event) {
         // Preinit code
@@ -67,3 +72,4 @@ public class SlabsNstairs {
         messageID++;
     }
 }
+
