@@ -1,6 +1,10 @@
 Slabs 'n Stairs changelog:
 
 ------------------------
+V 0.0.1.111 @ 2022/07/05
+- readd polished button variants of Andesite, Diorite, and Granite
+
+------------------------
 V 0.0.1.110 @ 2022/07/03
 - update Button: remove Collision, like the Stone-Button
 - added Buttons: Andesite, Diorite, Granite and there polished variants
