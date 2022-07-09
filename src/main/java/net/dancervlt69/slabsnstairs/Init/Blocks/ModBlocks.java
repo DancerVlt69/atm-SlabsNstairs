@@ -32,10 +32,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> ANDESITE_BUTTON = registerBlock("andesite_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> POLISHED_ANDESITE_BUTTON = registerBlock("polished_andesite_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
+                    .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> DIORITE_BUTTON = registerBlock("diorite_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> POLISHED_DIORITE_BUTTON = registerBlock("polished_diorite_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
+                    .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> GRANITE_BUTTON = registerBlock("granite_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
+                    .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> POLISHED_GRANITE_BUTTON = registerBlock("polished_granite_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
@@ -50,6 +59,16 @@ public class ModBlocks {
             () -> new StairBlock(() -> ModBlocks.CITRINE_STAIRS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL)
                             .strength(5F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+
+    public static final RegistryObject<Block> QUATER_DIRT = registerBlock("quarter_dirt",
+            () -> new GrassBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS)
+                    .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> QUATER_DIRT_COBBLE = registerBlock("quarter_dirt_cobble",
+            () -> new GrassBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS)
+                    .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> DIRT_COBBLE = registerBlock("dirt_cobble",
+            () -> new GrassBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS)
+                    .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
 
     // registering the Blocks
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,

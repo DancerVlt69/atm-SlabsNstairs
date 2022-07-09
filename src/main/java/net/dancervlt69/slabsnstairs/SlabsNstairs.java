@@ -1,12 +1,9 @@
-/*
-    some useless comments
- */
 
 package net.dancervlt69.slabsnstairs;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
-import net.dancervlt69.slabsnstairs.Init.Sounds.ModSounds;
+import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.network.FriendlyByteBuf;
@@ -14,7 +11,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.NetworkEvent;
@@ -44,12 +43,18 @@ public class SlabsNstairs {
         // Registering Blocks, Items, Sounds, etc.
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-        ModSounds.register(eventBus);
+        // ModFluids.register(eventBus);
+        // ModSounds.register(eventBus);
 
         // Register the setup method for modLoading
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
 
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModClientSettings.SPEC,
+                "slabsnstairs-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModClientSettings.SPEC,
+                "slabsnstairs-common.toml");
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         // Minecraft.getInstance().player.chat(msg);
