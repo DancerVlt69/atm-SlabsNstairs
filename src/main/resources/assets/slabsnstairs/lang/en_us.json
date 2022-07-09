@@ -14,6 +14,10 @@
 
   "block.slabsnstairs.vertical_ice_slab":     "Vertical Ice Slab",
 
+  "block.slabsnstairs.quarter_dirt":          "Quarter Dirt",
+  "block.slabsnstairs.quarter_dirt_cobble":   "Quarter Dirt with Cobble",
+  "block.slabsnstairs.dirt_cobble":           "Dirt with Cobble",
+
   "block.slabsnstairs.andesite_button":           "Andesite Button",
   "block.slabsnstairs.polished_andesite_button":  "Polished Andesite Button",
   "block.slabsnstairs.diorite_button":            "Diorite Button",
