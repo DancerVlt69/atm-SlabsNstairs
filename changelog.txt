@@ -1,7 +1,17 @@
 Slabs 'n Stairs changelog:
 
 ------------------------
-V 0.0.1.112 @ 2022/07/05
+V 0.0.1.114 @ 2022/07/09
+- again texture correction polished buttons in hand
+- added 3 dirt variations
+- updated to the latest Forge-Version (40.1.59)
+
+------------------------
+V 0.0.1.113 @ 2022/07/07
+- added 1st preparation for ModSettings
+
+------------------------
+V 0.0.1.112 @ 2022/07/06
 - fixing an issue of the polished buttons in hand texture
 
 ------------------------

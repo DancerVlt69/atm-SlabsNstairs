@@ -143,8 +143,8 @@ dependencies {
     // implementation fg.deobf("curse.maven:jei-238222:3838014")
 
     // Xaero's World & Mini Map
-    runtimeOnly fg.deobf("curse.maven:xwm-317780:3848426")
-    runtimeOnly fg.deobf("curse.maven:xmm-263420:3851498")
+    runtimeOnly fg.deobf("curse.maven:xwm-317780:3861268") // World-Mao
+    runtimeOnly fg.deobf("curse.maven:xmm-263420:3851498") // Mini-Map
 
     // JMSR - Just More Simple Recipes
     runtimeOnly fg.deobf("curse.maven:msr-447223:3832682")
