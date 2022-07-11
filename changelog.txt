@@ -10,10 +10,13 @@ V 0.0.1.114 @ 2022/07/09
     * Diorite Button & Pressure Plate
     * Granite Button & Pressure Plate
     * Smooth Stone Button, Pressure Plate & Stairs
+    * changes on the Growth-Stop Block (experimental)
+    * Sticks Tag file
     * Localizations en_US & de_DE
     * gradle files & classes
     * loot tables & needed tools
     * changelog, MANIFEST & modsToml
+    * and some other small changes and updates
 
 ------------------------
 V 0.0.1.114 @ 2022/07/09
