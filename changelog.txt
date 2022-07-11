@@ -1,4 +1,18 @@
 Slabs 'n Stairs changelog:
+------------------------
+V 0.0.1.114 @ 2022/07/09
+- updated and / or (re-)added:
+    * Andesite Button & Pressure Plate
+    * Packed & Blue Ice Slabs & Stairs
+    * Cobblestone Button & Pressure Plate
+    * Citrine Stairs
+    * Diorite Button & Pressure Plate
+    * Granite Button & Pressure Plate
+    * Smooth Stone Button, Pressure Plate & Stairs
+    * Localizations en_US & de_DE
+    * gradle files & classes
+    * loot tables & needed tools
+    * changelog, MANIFEST & modsToml
 
 ------------------------
 V 0.0.1.114 @ 2022/07/09
