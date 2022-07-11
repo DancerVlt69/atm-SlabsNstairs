@@ -20,16 +20,29 @@
 
   "block.slabsnstairs.andesite_button":           "Andesitknopf",
   "block.slabsnstairs.polished_andesite_button":  "Polierter Andesitknopf",
+  "block.slabsnstairs.andesite_pressure_plate":   "Andesitdruckplatte",
+
   "block.slabsnstairs.diorite_button":            "Dioritknopf",
   "block.slabsnstairs.polished_diorite_button":   "Polierter Dioritknopf",
+  "block.slabsnstairs.diorite_pressure_plate":    "Dioritdruckplatte",
+
   "block.slabsnstairs.granite_button":            "Granitknopf",
   "block.slabsnstairs.polished_granite_button":   "Polierter Granitknopf",
+  "block.slabsnstairs.granite_pressure_plate":    "Granitdruckplatte",
+
   "block.slabsnstairs.cobblestone_button":        "Bruchsteinknopf",
+  "block.slabsnstairs.cobblestone_pressure_plate":"Bruchsteindruckplatte",
+
+  "block.slabsnstairs.smooth_stone_button":        "Glatter Steinknopf",
+  "block.slabsnstairs.smooth_stone_pressure_plate":"Glatte Steindruckplatte",
+  "block.slabsnstairs.smooth_stone_stairs":        "Glatte Steintreppe",
+
   "block.slabsnstairs.growth_stop":               "Wachstumsstopper",
 
-  "item.slabsnstairs.citrine":      "Citrin Kristall",
+  "item.slabsnstairs.citrine":      "Citrin-Kristall",
   "item.slabsnstairs.raw_citrine":  "Unbehandelter Citrin",
   "item.slabsnstairs.citrine_coin": "Citrin-Münze",
+
   "item.slabsnstairs.dowsing_rod":  "Wünschelrute",
 
   "item.slabsnstairs.dowsing_rod.found":        "Hab was: ",
