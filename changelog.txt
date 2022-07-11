@@ -2,6 +2,7 @@ Slabs 'n Stairs changelog:
 ------------------------
 V 0.0.1.114 @ 2022/07/09
 - updated and / or (re-)added:
+    * 3 new Dirt Block variants
     * Andesite Button & Pressure Plate
     * Packed & Blue Ice Slabs & Stairs
     * Cobblestone Button & Pressure Plate
