@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "-*-",
+        " U "
+    ],
+    "key": {
+        "-": {
+            "item": "minecraft:dirt"
+        },
+        "*": {
+            "item": "minecraft:gravel"
+        },
+        "U": {
+            "item": "minecraft:bucket"
+        }
+    },
+    "result": {
+        "item": "slabsnstairs:dirt_cobble",
+        "count": 2
+    }
+}

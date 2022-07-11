@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:building_blocks/dirt_cobble"
+    ]
+  },
+  "criteria": {
+    "has_ingredients": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dirt"
+            ]
+          },
+          {
+            "items": [
+              "minecraft:gravel"
+            ]
+          },
+          {
+            "items": [
+              "minecraft:bucket"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ingredients"
+    ]
+  ]
+}
