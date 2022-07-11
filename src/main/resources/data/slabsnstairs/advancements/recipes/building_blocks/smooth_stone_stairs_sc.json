@@ -1,0 +1,27 @@
+ {
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:building_blocks/smooth_stone_stairs"
+    ]
+  },
+  "criteria": {
+    "has_smooth_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:smooth_stone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_smooth_stone"
+    ]
+  ]
+}

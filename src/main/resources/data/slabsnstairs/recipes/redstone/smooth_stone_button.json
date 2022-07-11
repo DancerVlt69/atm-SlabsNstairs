@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "moreButtons",
+  "ingredients": [
+    {
+      "item": "minecraft:smooth_stone"
+    }
+  ],
+  "result": {
+    "item": "slabsnstairs:smooth_stone_button"
+  }
+}

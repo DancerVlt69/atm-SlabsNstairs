@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "minecraft:block/smooth_stone",
+    "particle": "minecraft:block/smooth_stone"
+  }
+}

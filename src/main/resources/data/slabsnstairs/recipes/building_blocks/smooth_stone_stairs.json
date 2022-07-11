@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "replace": "true",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "result": {
+    "item": "slabsnstairs:smooth_stone_stairs",
+    "count": 4
+  }
+}
