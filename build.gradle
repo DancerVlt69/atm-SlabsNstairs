@@ -8,6 +8,7 @@ buildscript {
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.parchmentmc:librarian:1.+'
+        // implementation project(':buildNumber')
     }
 }
 
@@ -16,13 +17,14 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-// apply plugin: '.envs/def.env'
+// include ':increaseVersion'
 
 // version = '1.0'
 
 def versionPropsFile = file(".envs/dev.env")
-def bNum2
 def buildNumber = System.getenv("BNUMBER")
+def bNum2
+
 version = "${minecraftVersion}-${modVersion}.${buildNumber}"
 group = "net.${modOwner}.${modId}"
 archivesBaseName = "${modId}"
@@ -79,7 +81,7 @@ task systemInfo {
 
 minecraft {
     // mappings channel: 'official', version: "${minecraftVersion}" //'snapshot'
-    mappings channel: 'parchment', version: "2022.06.26-${minecraftVersion}"
+    mappings channel: 'parchment', version: "${parchment}-${minecraftVersion}"
     runs {
         client {
             workingDirectory project.file('run')
@@ -153,7 +155,7 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:cnfig-457570:3721946")
 
     // Jade (H/WAYLA)
-    runtimeOnly fg.deobf("curse.maven:jade-324717:3845190")
+    runtimeOnly fg.deobf("curse.maven:jade-324717:3865918")
 
     // Stop Mod Reports
     // embedNoCompile "org.stopmodreposts:stopmodreposts:${minecraftVersion}-${stopmodreposts_version}"
