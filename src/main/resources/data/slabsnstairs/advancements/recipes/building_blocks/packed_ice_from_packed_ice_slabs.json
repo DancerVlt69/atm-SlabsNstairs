@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:building_blocks/packed_ice_from_packed_ice_slabs"
+    ]
+  },
+  "criteria": {
+    "has_packed_ice_slab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "slabsnstairs:packed_ice_slab"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_packed_ice_slab"
+    ]
+  ]
+}

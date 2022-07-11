@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "replace": "true",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "result": {
+    "item": "slabsnstairs:blue_ice_slab",
+    "count": 6
+  }
+}

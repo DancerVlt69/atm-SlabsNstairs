@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:building_blocks/blue_ice_from_blue_ice_slabs"
+    ]
+  },
+  "criteria": {
+    "has_blue_ice_slab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "slabsnstairs:blue_ice_slab"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_blue_ice_slab"
+    ]
+  ]
+}

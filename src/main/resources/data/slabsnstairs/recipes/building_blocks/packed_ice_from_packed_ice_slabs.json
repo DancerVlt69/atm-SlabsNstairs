@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "2icedblocks",
+    "pattern": [
+        "__",
+        "__"
+    ],
+    "key": {
+        "_": {
+            "item": "slabsnstairs:packed_ice_slab"
+        }
+    },
+    "result": {
+        "item": "minecraft:packed_ice",
+        "count": 2
+    }
+}
