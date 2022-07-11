@@ -1,14 +1,13 @@
 {
   "replace": false,
   "values": [
+    "slabsnstairs:packed_ice_slab",
+    "slabsnstairs:packed_ice_stairs",
+    "slabsnstairs:blue_ice_slab",
+    "slabsnstairs:blue_ice_stairs",
     "slabsnstairs:citrine_block",
     "slabsnstairs:citrine_slab",
-    "slabsnstairs:cobblestone_button",
-    "slabsnstairs:andesite_button",
-    "slabsnstairs:polished_andesite_button",
-    "slabsnstairs:diorite_button",
-    "slabsnstairs:polished_diorite_button",
-    "slabsnstairs:granite_button",
-    "slabsnstairs:polished_granite_button"
+    "slabsnstairs:citrine_stairs",
+    "slabsnstairs:smooth_stone_stairs"
   ]
 }
