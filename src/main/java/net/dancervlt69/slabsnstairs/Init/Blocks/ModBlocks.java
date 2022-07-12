@@ -23,8 +23,13 @@ public class ModBlocks {
 
     // Define your different Blocks
     public static final RegistryObject<Block> GROWTH_STOP = registerBlock("growth_stop",
-            () -> new ChainBlock(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.STONE)
+            () -> new ChainBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS)
                     .strength(0.5F).noCollission()), ModTabs.MODTAB_TAB);
+/*
+    public static final RegistryObject<Block> ILLUM_GROWTH_STOP = registerBlock("illum_growth_stop",
+            () -> new TorchBlock(()-> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS)
+                    .strength(0.5F).noCollission()), ModTabs.MODTAB_TAB);   */
 
         // Citrine
     public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block",
