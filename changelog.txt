@@ -1,5 +1,12 @@
 Slabs 'n Stairs changelog:
 ------------------------
+V 0.0.1.115 @ 2022/07/12
+- updated Growth Stop Block: new texture - a bit animated, recipe, and category
+- added new tags: Stained / Glass Pane/s
+- updated gradle / properties
+- updated classes
+
+------------------------
 V 0.0.1.115 @ 2022/07/09
 - updated and / or (re-)added:
     * 3 new Dirt Block variants
