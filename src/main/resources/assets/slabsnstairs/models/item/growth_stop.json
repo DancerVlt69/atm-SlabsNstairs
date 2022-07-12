@@ -1,6 +1,3 @@
 {
-	"parent": "minecraft:item/generated",
-	"textures": {
-		"layer0": "slabsnstairs:item/growth_stop"
-	}
+	"parent": "slabsnstairs:block/growth_stop_inventory"
 }

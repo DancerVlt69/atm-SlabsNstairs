@@ -6,14 +6,12 @@
     "key": {
         "*": [
             {
-                "item": "minecraft:stone_button"
-            },{
-                "item": "slabsnstairs:cobblestone_button"
+                "item": "minecraft:glass_pane"
             }
         ]
     },
     "result": {
         "item": "slabsnstairs:growth_stop",
-        "count": 2
+        "count": 6
     }
 }
