@@ -1,9 +1,8 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "slabsnstairs:block/quarter_cobbled",
+	"parent": "slabsnstairs:block/quarter_slabs_top",
 	"textures": {
 		"block": "minecraft:block/dirt",
-		"cobble": "minecraft:block/cobblestone",
 		"coarse": "minecraft:block/coarse_dirt"
 	}
 }

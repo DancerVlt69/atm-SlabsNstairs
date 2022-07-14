@@ -1,0 +1,8 @@
+{
+  "parent": "slabsnstairs:block/quarter_cobbled_slabs",
+  "textures": {
+    "block": "minecraft:block/dirt",
+    "cobble": "minecraft:block/cobblestone",
+    "coarse": "minecraft:block/coarse_dirt"
+  }
+}

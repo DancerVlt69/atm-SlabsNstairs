@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "replace": "true",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "slabsnstairs:dirt_cobble"
+    }
+  },
+  "result": {
+    "item": "slabsnstairs:dirt_cobble_stairs",
+    "count": 4
+  }
+}

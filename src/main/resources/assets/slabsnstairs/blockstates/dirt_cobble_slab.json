@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slabsnstairs:block/dirt_cobble_slab"
+    },
+    "type=double": {
+      "model": "slabsnstairs:block/dirt_cobble"
+    },
+    "type=top": {
+      "model": "slabsnstairs:block/dirt_cobble_slab_top"
+    }
+  }
+}

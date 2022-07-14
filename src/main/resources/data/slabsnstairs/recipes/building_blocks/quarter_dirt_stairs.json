@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "replace": "true",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "slabsnstairs:quarter_dirt"
+    }
+  },
+  "result": {
+    "item": "slabsnstairs:quarter_dirt_stairs",
+    "count": 4
+  }
+}

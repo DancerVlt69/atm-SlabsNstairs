@@ -1,0 +1,7 @@
+{
+  "parent": "slabsnstairs:block/stairs_cobbled_outer",
+  "textures": {
+    "block": "minecraft:block/dirt",
+    "cobble": "minecraft:block/cobblestone"
+  }
+}
