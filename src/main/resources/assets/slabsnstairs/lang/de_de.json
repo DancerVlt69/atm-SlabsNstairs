@@ -14,9 +14,15 @@
 
   "block.slabsnstairs.vertical_ice_slab":     "senkrechte Eisstufe",
 
-  "block.slabsnstairs.quarter_dirt":          "Gut Ge4teilt",
-  "block.slabsnstairs.quarter_dirt_cobble":   "Gut Ge4teilt mit Kiesel",
-  "block.slabsnstairs.dirt_cobble":           "Erde mit Kiesel",
+  "block.slabsnstairs.dirt_cobble":                 "Erde mit Kiesel",
+  "block.slabsnstairs.dirt_cobble_stairs":          "Erdtreppe mit Kiesel",
+  "block.slabsnstairs.dirt_cobble_slab":            "Erdstufe mit Kiesel",
+  "block.slabsnstairs.quarter_dirt":                "Gut Ge4teilt",
+  "block.slabsnstairs.quarter_dirt_stairs":         "Gut Ge4teilt-Treppe",
+  "block.slabsnstairs.quarter_dirt_slab":           "Gut Ge4teilt-Stufe",
+  "block.slabsnstairs.quarter_dirt_cobble":         "Gut Ge4teilt mit Kiesel",
+  "block.slabsnstairs.quarter_dirt_cobble_stairs":  "Gut Ge4teilt-Treppe mit Kiesel",
+  "block.slabsnstairs.quarter_dirt_cobble_slab":    "Gut Ge4teilt-Stufe mit Kiesel",
 
   "block.slabsnstairs.andesite_button":           "Andesitknopf",
   "block.slabsnstairs.polished_andesite_button":  "Polierter Andesitknopf",
@@ -49,7 +55,7 @@
   "item.slabsnstairs.dowsing_rod.located":      "  bei ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "Nichts Wertvolles gefunden.",
 
-  "itemGroup.modtab_tab": "Citrin",
+  "itemGroup.modtab_tab": "Slabs 'n Stairs",
 
   "tooltip.slabsnstairs.block.citrine_block.shift":   "Du erhältst 9 Citrin Kristalle von diesem Block.",
   "tooltip.slabsnstairs.dowsing_rod.tooltip.shift":   "Die Wünschelrute zeigt dir bei Rechtsklick//n die Position diverser Erze an.",

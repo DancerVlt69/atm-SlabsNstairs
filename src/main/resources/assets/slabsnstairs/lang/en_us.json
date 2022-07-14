@@ -14,9 +14,15 @@
 
   "block.slabsnstairs.vertical_ice_slab":     "Vertical Ice Slab",
 
-  "block.slabsnstairs.quarter_dirt":          "Quarter Dirt",
-  "block.slabsnstairs.quarter_dirt_cobble":   "Quarter Dirt with Cobble",
-  "block.slabsnstairs.dirt_cobble":           "Dirt with Cobble",
+  "block.slabsnstairs.dirt_cobble":                 "Dirt with Cobble",
+  "block.slabsnstairs.dirt_cobble_stairs":          "Dirt Stairs with Cobble",
+  "block.slabsnstairs.dirt_cobble_slab":            "Dirt Slab with Cobble",
+  "block.slabsnstairs.quarter_dirt":                "Quarter Dirt",
+  "block.slabsnstairs.quarter_dirt_stairs":         "Quarter Dirt Stairs",
+  "block.slabsnstairs.quarter_dirt_slab":           "Quarter Dirt Slab",
+  "block.slabsnstairs.quarter_dirt_cobble":         "Quarter Dirt with Cobble",
+  "block.slabsnstairs.quarter_dirt_cobble_stairs":  "Quarter Dirt Stairs with Cobble",
+  "block.slabsnstairs.quarter_dirt_cobble_slab":    "Quarter Dirt Slab with Cobble",
 
   "block.slabsnstairs.andesite_button":           "Andesite Button",
   "block.slabsnstairs.polished_andesite_button":  "Polished Andesite Button",
@@ -48,7 +54,7 @@
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
 
-  "itemGroup.modtab_tab": "Citrine",
+  "itemGroup.modtab_tab": "Slabs 'n Stairs",
 
   "tooltip.slabsnstairs.block.citrine_block.shift":   "You will get 9 Citrine Crystals from this Block.",
   "tooltip.slabsnstairs.dowsing_rod.tooltip.shift":   "With an right click the Dowsing Rod can//n show you the position of some ore.",
