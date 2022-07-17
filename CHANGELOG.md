@@ -30,12 +30,6 @@ V 0.0.1.115 @ 2022/07/12
 ------------------------
 * updated Growth Stop Block: new texture - a bit animated, recipe, and category
 * added new tags: Stained / Glass Pane/s
-* updated gradle / properties
-* updated classes
-
-------------------------
-V 0.0.1.115 @ 2022/07/09
-------------------------
 * updated and / or (re-)added:
     - 3 new Dirt Block variants
     - Andesite Button & Pressure Plate
@@ -52,6 +46,8 @@ V 0.0.1.115 @ 2022/07/09
     - loot tables & needed tools
     - changelog, MANIFEST & modsToml
     - and some other small changes and updates
+* updated gradle / properties
+* updated classes
 
 ------------------------
 V 0.0.1.114 @ 2022/07/09
