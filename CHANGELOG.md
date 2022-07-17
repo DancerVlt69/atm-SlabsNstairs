@@ -1,21 +1,23 @@
 Slabs 'n Stairs changelog:
 ------------------------
-V 0.0.1.117 @ 2022/07/17
+V 0.0.1.117 @ 2022/07/18
 ------------------------
 * fixed some issues of the Slabs & Stairs of the 3 new Dirt-Types
 * added: Slabs, Stairs, Pressure Plate and/or Buttons, Recipes & Advancements for
     - vanilla Dirt
     - Mossy Cobblestone
+    - Cut- / Smooth- Red / -Sandstone
     - Cracked polished Blackstone Bricks
 * added: Citrine Botton
 * added: new Color - ***Light Brown***
 * updated:
     - Buttons of Cobblestone, polished / -Andesite, -Diorite & -Granite,
     - Packed / Blue Ice Slab,
-    - Smooth Stone,
+    - Cut- / SmoothSmooth Stone,
     - all 3 new Dirt Blocks and there Recipes/Advancements,
 * updated: Localizations (EN / DE)
 * changelog renamed, now it is a *Markdown* - file
+* update Forge to Version *40.1.67
 
 ------------------------
 V 0.0.1.116 @ 2022/07/12
