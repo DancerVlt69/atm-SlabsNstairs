@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "moreButtons",
+  "ingredients": [
+    {
+      "item": "slabsnstairs:citrine_block"
+    }
+  ],
+  "result": {
+    "item": "slabsnstairs:citrine_button",
+    "count": 6
+  }
+}
