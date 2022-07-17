@@ -17,7 +17,7 @@ V 0.0.1.117 @ 2022/07/18
     - all 3 new Dirt Blocks and there Recipes/Advancements,
 * updated: Localizations (EN / DE)
 * changelog renamed, now it is a *Markdown* - file
-* update Forge to Version *40.1.67
+* update Forge to Version *40.1.67*
 
 ------------------------
 V 0.0.1.116 @ 2022/07/12
