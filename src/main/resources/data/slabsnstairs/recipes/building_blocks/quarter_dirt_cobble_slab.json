@@ -2,8 +2,6 @@
   "type": "minecraft:crafting_shaped",
   "replace": "true",
   "pattern": [
-    "#  ",
-    "## ",
     "###"
   ],
   "key": {
@@ -12,7 +10,7 @@
     }
   },
   "result": {
-    "item": "slabsnstairs:quarter_dirt_cobble_stairs",
+    "item": "slabsnstairs:quarter_dirt_cobble_slab",
     "count": 6
   }
 }

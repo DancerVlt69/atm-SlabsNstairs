@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "dirt2blocks",
+    "pattern": [
+        "__",
+        "__"
+    ],
+    "key": {
+        "_": {
+            "item": "slabsnstairs:quarter_dirt_cobble_slab"
+        }
+    },
+    "result": {
+        "item": "slabsnstairs:quarter_dirt_cobble",
+        "count": 2
+    }
+}

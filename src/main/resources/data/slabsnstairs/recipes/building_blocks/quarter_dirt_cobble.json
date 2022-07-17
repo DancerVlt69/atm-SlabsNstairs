@@ -1,12 +1,15 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "-*-",
+        "D*C",
         " U "
     ],
     "key": {
-        "-": {
+        "D": {
             "item": "minecraft:dirt"
+        },
+        "C": {
+            "item": "minecraft:coarse_dirt"
         },
         "*": {
             "item": "slabsnstairs:cobblestone_button"
@@ -16,7 +19,7 @@
         }
     },
     "result": {
-        "item": "slabsnstairs:dirt_cobble",
+        "item": "slabsnstairs:quarter_dirt_cobble",
         "count": 2
     }
 }
