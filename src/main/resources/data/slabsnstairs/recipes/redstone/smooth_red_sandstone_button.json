@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "moreButtons",
+  "ingredients": [
+    {
+      "item": "minecraft:smooth_red_sandstone"
+    }
+  ],
+  "result": {
+    "item": "slabsnstairs:smooth_red_sandstone_button",
+    "count": 6
+  }
+}

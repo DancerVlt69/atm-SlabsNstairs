@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "minecraft:block/cut_red_sandstone",
+    "particle": "minecraft:block/cut_red_sandstone"
+  }
+}

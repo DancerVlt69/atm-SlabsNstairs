@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "moreButtons",
+  "ingredients": [
+    {
+      "item": "minecraft:cut_sandstone"
+    }
+  ],
+  "result": {
+    "item": "slabsnstairs:cut_sandstone_button",
+    "count": 6
+  }
+}

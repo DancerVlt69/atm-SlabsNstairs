@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:cut_sandstone"
+    }
+  },
+  "result": {
+    "item": "slabsnstairs:cut_sandstone_pressure_plate"
+  }
+}
