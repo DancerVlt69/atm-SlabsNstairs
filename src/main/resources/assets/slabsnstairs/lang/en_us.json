@@ -6,13 +6,19 @@
   "block.slabsnstairs.packed_ice_slab":   "Packed Ice Slab",
   "block.slabsnstairs.packed_ice_stairs": "Packed Ice Stairs",
 
-  "block.slabsnstairs.citrine_block":         "Citrine Block",
   "block.slabsnstairs.citrine_ore":           "Citrine Ore",
   "block.slabsnstairs.deepslate_citrine_ore": "Deepslate Citrine Ore",
-  "block.slabsnstairs.citrine_slab":          "Citrine Slab",
+  "block.slabsnstairs.citrine_block":         "Citrine Block",
   "block.slabsnstairs.citrine_stairs":        "Citrine Stairs",
+  "block.slabsnstairs.citrine_slab":          "Citrine Slab",
+  "block.slabsnstairs.citrine_button":        "Citrine Button",
 
   "block.slabsnstairs.vertical_ice_slab":     "Vertical Ice Slab",
+
+  "block.slabsnstairs.dirt_block_stairs":          "Dirt Stairs",
+  "block.slabsnstairs.dirt_block_slab":            "Dirt Slab",
+  "block.slabsnstairs.grass_block_stairs":         "Grass Stairs",
+  "block.slabsnstairs.grass_block_slab":           "Grass Slab",
 
   "block.slabsnstairs.dirt_cobble":                 "Dirt with Cobble",
   "block.slabsnstairs.dirt_cobble_stairs":          "Dirt Stairs with Cobble",
@@ -23,6 +29,15 @@
   "block.slabsnstairs.quarter_dirt_cobble":         "Quarter Dirt with Cobble",
   "block.slabsnstairs.quarter_dirt_cobble_stairs":  "Quarter Dirt Stairs with Cobble",
   "block.slabsnstairs.quarter_dirt_cobble_slab":    "Quarter Dirt Slab with Cobble",
+
+  "block.slabsnstairs.smooth_stone_stairs":         "Smooth Stone Stairs",
+  "block.slabsnstairs.smooth_stone_pressure_plate": "Smooth Stone Pressure Plate",
+  "block.slabsnstairs.smooth_stone_button":         "Smooth Stone Button",
+
+  "block.slabsnstairs.cobblestone_button":                "Cobblestone Button",
+  "block.slabsnstairs.cobblestone_pressure_plate":        "Cobblestone Pressure Plate",
+  "block.slabsnstairs.mossy_cobblestone_button":          "Mossy Cobblestone Button",
+  "block.slabsnstairs.mossy_cobblestone_pressure_plate":  "Mossy Cobblestone Pressure Plate",
 
   "block.slabsnstairs.andesite_button":           "Andesite Button",
   "block.slabsnstairs.polished_andesite_button":  "Polished Andesite Button",
@@ -36,19 +51,19 @@
   "block.slabsnstairs.polished_granite_button":   "Polished Granite Button",
   "block.slabsnstairs.granite_pressure_plate":    "Granite Pressure Plate",
 
-  "block.slabsnstairs.cobblestone_button":        "Cobble Stone Button",
-  "block.slabsnstairs.cobblestone_pressure_plate":"Cobblestone Pressure Plate",
+  "block.slabsnstairs.cracked_polished_blackstone_bricks_stairs":         "Cracked Polished Blackstone Brick Stairs",
+  "block.slabsnstairs.cracked_polished_blackstone_bricks_slab":           "Cracked Polished Blackstone Brick Slab",
+  "block.slabsnstairs.cracked_polished_blackstone_bricks_pressure_plate": "Cracked Polished Blackstone Brick Pressure Plate",
+  "block.slabsnstairs.cracked_polished_blackstone_bricks_button":         "Cracked Polished Blackstone Brick Button",
 
-  "block.slabsnstairs.smooth_stone_button":        "Smooth Stone Button",
-  "block.slabsnstairs.smooth_stone_pressure_plate":"Smooth Stone Pressure Plate",
-  "block.slabsnstairs.smooth_stone_stairs":        "Smooth Stone Stairs",
+  "block.slabsnstairs.growth_stop":         "Growth Stop",
 
-  "block.slabsnstairs.growth_stop":               "Growth Stop",
+  "item.slabsnstairs.light_brown_dye":      "Light Brown Dye",
+  "item.slabsnstairs.citrine":              "Citrine Crystal",
+  "item.slabsnstairs.raw_citrine":          "Raw Citrine",
+  "item.slabsnstairs.citrine_coin":         "Citrine Coin",
 
-  "item.slabsnstairs.citrine":      "Citrine",
-  "item.slabsnstairs.raw_citrine":  "Raw Citrine",
-  "item.slabsnstairs.citrine_coin": "Citrine Coin",
-  "item.slabsnstairs.dowsing_rod":  "Dowsing Rod",
+  "item.slabsnstairs.dowsing_rod":          "Dowsing Rod",
 
   "item.slabsnstairs.dowsing_rod.found":        "Found ",
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
@@ -56,7 +71,10 @@
 
   "itemGroup.modtab_tab": "Slabs 'n Stairs",
 
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":         "Hold §eShift§r for more Information.",
   "tooltip.slabsnstairs.block.citrine_block.shift":   "You will get 9 Citrine Crystals from this Block.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift":   "With an right click the Dowsing Rod can//n show you the position of some ore.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":         "Hold §eShift§r for more Information."
+  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift":   "With an right click the Dowsing Rod can\nshow you the position of some ore.",
+  "tooltip.slabsnstairs.growth_stop":                 "Nearly invisible block\ne.g. to stop the growing of vines."
+
 }
+
