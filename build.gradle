@@ -154,8 +154,11 @@ dependencies {
     // Configured
     runtimeOnly fg.deobf("curse.maven:cnfig-${configuredVersion}")
 
-    // Jade (H/WAYLA)
-    runtimeOnly fg.deobf("curse.maven:jade-${jadeVersion}")
+    // Jade (HWYLA)
+    runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
+
+    // GrassSlabsStairsCarpet-Mod
+    runtimeOnly fg.deobf("curse.maven:gss-${gssVersion}")
 
     // Stop Mod Reports
     // embedNoCompile "org.stopmodreposts:stopmodreposts:${minecraftVersion}-${stopmodrepostsVersion}"
