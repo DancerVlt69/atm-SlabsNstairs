@@ -15,7 +15,7 @@ V 0.0.1.117 @ 2022/07/17
     - Smooth Stone,
     - all 3 new Dirt Blocks and there Recipes/Advancements,
 * updated Localizations (EN/DE)
-* changelog renamed, no it is a *Markdown* - file
+* changelog renamed, now it is a *Markdown* - file
 
 ------------------------
 V 0.0.1.116 @ 2022/07/12
