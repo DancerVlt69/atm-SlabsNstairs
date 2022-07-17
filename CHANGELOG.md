@@ -3,7 +3,7 @@ Slabs 'n Stairs changelog:
 V 0.0.1.117 @ 2022/07/18
 ------------------------
 * fixed some issues of the Slabs & Stairs of the 3 new Dirt-Types
-* added: Slabs, Stairs, Pressure Plate and/or Buttons, Recipes & Advancements for
+* added: Slabs, Stairs, Pressure Plate and/or Buttons, Recipes & Advancements, and/or Loot Tables of
     - vanilla Dirt
     - Mossy Cobblestone
     - Cut- / Smooth- Red / -Sandstone
