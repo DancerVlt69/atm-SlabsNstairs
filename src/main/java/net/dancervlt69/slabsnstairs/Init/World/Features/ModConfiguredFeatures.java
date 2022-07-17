@@ -14,4 +14,5 @@ public class ModConfiguredFeatures {
     public static final Holder<ConfiguredFeature, ?>> DIRT_COBBLE = FeatureUtils.register("dirt_cobble",
     Feature.GRASS, new BlockConfiguration(OVERWORLD_DIRT_COBBLE, 3));
     */
+
 }

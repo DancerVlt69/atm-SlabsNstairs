@@ -50,7 +50,6 @@ public class SlabsNstairs {
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
 
-
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModClientSettings.SPEC,
                 "slabsnstairs-client.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModClientSettings.SPEC,
