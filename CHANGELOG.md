@@ -1,7 +1,21 @@
 Slabs 'n Stairs changelog:
-------------------------
-V 0.0.1.117 @ 2022/07/18
-------------------------
+-------------------------
+V 0.0.1.119 @ 2022/07/26
+-------------------------
+* start porting to MC-Version 1.19 / Forge 41.0.111
+
+-------------------------
+V 0.0.1.118 @ 2022/07/24
+-------------------------
+* added:
+    - Deepslate Button, -Pressure Plate, -Stairs & -Slab
+    - Cracked Deepslate Brick Button, -Pressure Plate, -Stairs & -Slab
+    - Cracked Deepslate Tile Button, -Pressure Plate, -Stairs & -Slab
+* updated: to Forge 40.1.68
+
+-------------------------
+V 0.0.1.117 @ 2022/07/18 (not published)
+-------------------------
 * fixed some issues of the Slabs & Stairs of the 3 new Dirt-Types
 * added: Slabs, Stairs, Pressure Plate and/or Buttons, Recipes & Advancements, and/or Loot Tables of
     - vanilla Dirt
@@ -17,11 +31,11 @@ V 0.0.1.117 @ 2022/07/18
     - all 3 new Dirt Blocks and there Recipes/Advancements,
 * updated: Localizations (EN / DE)
 * changelog renamed, now it is a *Markdown* - file
-* update Forge to Version *40.1.67
+* update Forge to Version *40.1.67*
 
-------------------------
+-------------------------
 V 0.0.1.116 @ 2022/07/12
-------------------------
+-------------------------
 * added/updated: Stairs for the 3 new Dirt Blocks
 * added/updated: Tool-Type, Loot-Table entries, and the recipes for
   the Blocks, Stairs, and Slabs of the 3 new Dirt types

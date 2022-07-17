@@ -8,6 +8,12 @@
     "slabsnstairs:citrine_block",
     "slabsnstairs:citrine_slab",
     "slabsnstairs:citrine_stairs",
-    "slabsnstairs:smooth_stone_stairs"
+    "slabsnstairs:smooth_stone_stairs",
+    "slabsnstairs:deepslate_stairs",
+    "slabsnstairs:deepslate_slab",
+    "slabsnstairs:cracked_deepslate_brick_stairs",
+    "slabsnstairs:cracked_deepslate_brick_slab",
+    "slabsnstairs:cracked_deepslate_tile_stairs",
+    "slabsnstairs:cracked_deepslate_tile_slab"
   ]
 }

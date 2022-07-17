@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "minecraft:block/deepslate",
+    "particle": "minecraft:block/deepslate"
+  }
+}
