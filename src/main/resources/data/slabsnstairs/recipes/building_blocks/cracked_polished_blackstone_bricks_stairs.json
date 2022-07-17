@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "replace": "true",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:cracked_polished_blackstone_bricks"
+    }
+  },
+  "result": {
+    "item": "slabsnstairs:cracked_polished_blackstone_bricks_stairs",
+    "count": 4
+  }
+}
