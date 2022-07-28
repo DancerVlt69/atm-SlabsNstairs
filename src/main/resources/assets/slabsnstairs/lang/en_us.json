@@ -69,6 +69,21 @@
   "block.slabsnstairs.cracked_polished_blackstone_bricks_pressure_plate": "Cracked Polished Blackstone Brick Pressure Plate",
   "block.slabsnstairs.cracked_polished_blackstone_bricks_button":         "Cracked Polished Blackstone Brick Button",
 
+  "block.slabsnstairs.deepslate_button":          "Deepslate Button",
+  "block.slabsnstairs.deepslate_pressure_plate":  "Deepslate Pressure Plate",
+  "block.slabsnstairs.deepslate_stairs":          "Deepslate Stairs",
+  "block.slabsnstairs.deepslate_slab":            "Deepslate Slab",
+
+  "block.slabsnstairs.cracked_deepslate_brick_button":          "Cracked Deepslate Brick Button",
+  "block.slabsnstairs.cracked_deepslate_brick_pressure_plate":  "Cracked Deepslate Brick Pressure Plate",
+  "block.slabsnstairs.cracked_deepslate_brick_stairs":          "Cracked Deepslate Brick Stairs",
+  "block.slabsnstairs.cracked_deepslate_brick_slab":            "Cracked Deepslate Brick Slab",
+
+  "block.slabsnstairs.cracked_deepslate_tile_button":          "Cracked Deepslate Tile Button",
+  "block.slabsnstairs.cracked_deepslate_tile_pressure_plate":  "Cracked Deepslate Tile Pressure Plate",
+  "block.slabsnstairs.cracked_deepslate_tile_stairs":          "Cracked Deepslate Tile Stairs",
+  "block.slabsnstairs.cracked_deepslate_tile_slab":            "Cracked Deepslate Tile Slab",
+
   "block.slabsnstairs.growth_stop":         "Growth Stop",
 
   "item.slabsnstairs.light_brown_dye":      "Light Brown Dye",

@@ -69,6 +69,21 @@
   "block.slabsnstairs.cracked_polished_blackstone_bricks_pressure_plate": "Rissige polierte Schwarzsteinziegeldruckplatte",
   "block.slabsnstairs.cracked_polished_blackstone_bricks_button":         "Rissiger polierter Schwarzsteinziegelknopf",
 
+  "block.slabsnstairs.deepslate_button":          "Tiefenschieferknopf",
+  "block.slabsnstairs.deepslate_pressure_plate":  "Tiefenschieferdruckplatte",
+  "block.slabsnstairs.deepslate_stairs":          "Tiefenschiefertreppe",
+  "block.slabsnstairs.deepslate_slab":            "Tiefenschieferstufe",
+
+  "block.slabsnstairs.cracked_deepslate_brick_button":          "Rissige Tiefenschieferziegelknopf",
+  "block.slabsnstairs.cracked_deepslate_brick_pressure_plate":  "Rissige Tiefenschieferziegeldruckplatte",
+  "block.slabsnstairs.cracked_deepslate_brick_stairs":          "Rissige Tiefenschieferziegeltreppe",
+  "block.slabsnstairs.cracked_deepslate_brick_slab":            "Rissige Tiefenschieferziegelstufe",
+
+  "block.slabsnstairs.cracked_deepslate_tile_button":          "Rissige Tiefenschieferfliesenknopf",
+  "block.slabsnstairs.cracked_deepslate_tile_pressure_plate":  "Rissige Tiefenschieferfliesendruckplatte",
+  "block.slabsnstairs.cracked_deepslate_tile_stairs":          "Rissige Tiefenschieferfliesentreppe",
+  "block.slabsnstairs.cracked_deepslate_tile_slab":            "Rissige Tiefenschieferfliesenstufe",
+
   "block.slabsnstairs.growth_stop":     "Wachstumsstopper",
 
   "item.slabsnstairs.light_brown_dye":  "Hellbrauner Farbstoff",
