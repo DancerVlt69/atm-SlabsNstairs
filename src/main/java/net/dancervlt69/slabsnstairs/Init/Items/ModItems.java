@@ -13,6 +13,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, SlabsNstairs.MODID);
 
+    public static final String TTCITRINECOIN = "tooltip.slabsnstairs.growth_stop.shift";
+
     //Define your different Items here
 
     public static final RegistryObject<Item> LIGHT_BROWN_DYE = ITEMS.register("light_brown_dye",
@@ -26,6 +28,7 @@ public class ModItems {
 
     //Register the defined Item/s
     public static void register(IEventBus eventBus){
+        SlabsNstairs.LOGGER.debug("Registering Mod-Items for " + SlabsNstairs.MODID);
         ITEMS.register(eventBus);
     }
 }

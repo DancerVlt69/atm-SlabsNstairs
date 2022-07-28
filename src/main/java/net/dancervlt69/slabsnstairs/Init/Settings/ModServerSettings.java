@@ -3,7 +3,8 @@ package net.dancervlt69.slabsnstairs.Init.Settings;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.IEventBus;
 
-public class ModCommonSettings {
+public class ModServerSettings {
+
     public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec SPEC;
 
@@ -16,13 +17,12 @@ public class ModCommonSettings {
         // SAMPLE_CONFIG_VALUE = BUILDER.comment("How many Samples you need?").define("Needed Samples", 5);
 
         ILLUMINATED_GROWTH_STOP_LIGHT_RANGE = BUILDER.comment("Light Level of the illuminated Growth-Stops?")
-                        .defineInRange("Light Level", 5, 1, 15);
+                .defineInRange("Light Level", 5, 1, 15);
 
         BUILDER.pop();
         SPEC = BUILDER.build();
-
     }
     public static void register(IEventBus eventBus) {
-        ModCommonSettings.register(eventBus);
+        ModServerSettings.register(eventBus);
     }
 }

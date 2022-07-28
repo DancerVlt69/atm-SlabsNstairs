@@ -1,6 +1,7 @@
 package net.dancervlt69.slabsnstairs.Init.Settings;
 
 import net.minecraftforge.common.ForgeConfigSpec;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 public class ModClientSettings {
 
@@ -13,7 +14,7 @@ public class ModClientSettings {
         BUILDER.pop();
         SPEC = BUILDER.build();
     }
-    /* public static void register(IEventBus eventBus) {
-        ModSettings.register(eventBus);
-    } */
+   public static void register(IEventBus eventBus) {
+        ModClientSettings.register(eventBus);
+    }
 }
