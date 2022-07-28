@@ -8,7 +8,7 @@ V 0.0.2.120 @ 2022/07/28
         * **_issue #1_** - sound effect/s of all new **Deepslate** Blocks
         * **_issue #2_** - no transparency of the GrowthStop (MC 1.19x version only)
         * **_issue #4_** - wrong version number (MC 1.18x only)
-* small correction of the item textur from the **Growth Stop** item (MC 1.19x only) 
+* small correction of the item texture from the **Growth Stop** item (MC 1.19x only) 
 
 -------------------------
 V 0.0.2.118 @ 2022/07/24
