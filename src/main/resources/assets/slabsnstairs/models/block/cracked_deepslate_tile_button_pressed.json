@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "minecraft:block/cracked_deepslate_tiles",
+    "particle": "minecraft:block/cracked_deepslate_tiles"
+  }
+}
