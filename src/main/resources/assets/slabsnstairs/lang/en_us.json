@@ -64,10 +64,10 @@
   "block.slabsnstairs.polished_granite_button":   "Polished Granite Button",
   "block.slabsnstairs.granite_pressure_plate":    "Granite Pressure Plate",
 
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_stairs":         "Cracked Polished Blackstone Brick Stairs",
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_slab":           "Cracked Polished Blackstone Brick Slab",
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_pressure_plate": "Cracked Polished Blackstone Brick Pressure Plate",
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_button":         "Cracked Polished Blackstone Brick Button",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_stairs":         "Cracked Polished Blackstone Brick Stairs",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_slab":           "Cracked Polished Blackstone Brick Slab",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_pressure_plate": "Cracked Polished Blackstone Brick Pressure Plate",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_button":         "Cracked Polished Blackstone Brick Button",
 
   "block.slabsnstairs.deepslate_button":          "Deepslate Button",
   "block.slabsnstairs.deepslate_pressure_plate":  "Deepslate Pressure Plate",
@@ -84,14 +84,14 @@
   "block.slabsnstairs.cracked_deepslate_tile_stairs":          "Cracked Deepslate Tile Stairs",
   "block.slabsnstairs.cracked_deepslate_tile_slab":            "Cracked Deepslate Tile Slab",
 
-  "block.slabsnstairs.growth_stop":         "Growth Stop",
+  "block.slabsnstairs.growth_stop":     "Growth Stop",
 
-  "item.slabsnstairs.light_brown_dye":      "Light Brown Dye",
-  "item.slabsnstairs.citrine":              "Citrine Crystal",
-  "item.slabsnstairs.raw_citrine":          "Raw Citrine",
-  "item.slabsnstairs.citrine_coin":         "Citrine Coin",
+  "item.slabsnstairs.light_brown_dye":  "Light Brown Dye",
+  "item.slabsnstairs.citrine":          "Citrine Crystal",
+  "item.slabsnstairs.raw_citrine":      "Raw Citrine",
+  "item.slabsnstairs.citrine_coin":     "Citrine Coin",
 
-  "item.slabsnstairs.dowsing_rod":          "Dowsing Rod",
+  "item.slabsnstairs.dowsing_rod":      "Dowsing Rod",
 
   "item.slabsnstairs.dowsing_rod.found":        "Found ",
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
@@ -99,10 +99,9 @@
 
   "itemGroup.modtab_tab": "Slabs 'n Stairs",
 
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":         "Hold §eShift§r for more Information.",
-  "tooltip.slabsnstairs.block.citrine_block.shift":   "You will get 9 Citrine Crystals from this Block.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift":   "With an right click the Dowsing Rod can\nshow you the position of some ore.",
-  "tooltip.slabsnstairs.growth_stop":                 "Nearly invisible block\ne.g. to stop the growing of vines."
+  "tooltip.slabsnstairs.hold_shift.tooltip":        "Hold §eShift§r for more Information.",
 
+  "tooltip.slabsnstairs.block.citrine_block.shift": "You will get 9 Citrine Crystals from this Block.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift": "With an right click the Dowsing Rod can\nshow you the position of some ore.",
+  "tooltip.slabsnstairs.growth_stop.tooltip.shift": "Nearly invisible block\ne.g. to stop the growing of vines."
 }
-
