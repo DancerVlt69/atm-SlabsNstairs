@@ -22,16 +22,15 @@ plugins {
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-
 def buildPropFile = file('.env/dev.env')
 Properties buildProps = new Properties()
 buildProps.load(buildPropFile.newDataInputStream())
 def buildNum = buildProps.getProperty("BUILDNUMBER") as String
 println ("Build is ${buildNum}.")
 
-version = "${minecraftVersion}-${modVersion}.${buildNum}"
+version = "${mcVersion}-${modVersion}.${buildNum}"
 group = "net.${modOwner}.${modId}"
-archivesBaseName = "${modId}"
+archivesBaseName = "${modFileName}"
 
 // sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -66,7 +65,7 @@ repositories {
 //}
 
 minecraft {
-    mappings channel: 'official', version: "${minecraftVersion}" //'snapshot'
+    mappings channel: 'official', version: "${mcMappingVersion}" //'snapshot'
     // mappings channel: 'parchment', version: "1.18.2-${parchmentVersion}-${minecraftVersion}"
     runs {
         client {
@@ -123,16 +122,30 @@ minecraft {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${minecraftVersion}-${forgeVersion}" //1.18.1-39.1.2'
+    minecraft "net.minecraftforge:forge:${mcMappingVersion}-${forgeVersion}" //1.19-41.1.0'
 
     // JEI at compiling
     // compileOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}:api")
     // JEI at runTime
-    runtimeOnly fg.deobf("mezz.jei:jei-${minecraftVersion}-forge:${jeiVersion}")
+    // runtimeOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}-forge:${jeiVersion}")
     // implementation fg.deobf("curse.maven:jei-238222:3838014")
+    runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
 
-	// JMSR
-	runtimeOnly fg.deobf("curse.maven:jmsr-${jmsrVersionCF}")
+    // Catalogue
+    runtimeOnly fg.deobf("curse.maven:catal-${catalVersionCF}")
+
+    // Configured
+    runtimeOnly fg.deobf("curse.maven:conf-${confVersionCF}")
+
+    // Jade (Hwyla/Waila Fork)
+    runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
+
+	  // JMSR
+	  runtimeOnly fg.deobf("curse.maven:jmsr-${jmsrVersionCF}")
+
+    // Xaero's World- and Mini Maps
+    runtimeOnly fg.deobf("curse.maven:xWmap-${xWmapVersionCF}")
+    runtimeOnly fg.deobf("curse.maven:xMmap-${xMmapVersionCF}")
 
     // Stop Mod Reports
     // embedNoCompile "org.stopmodreposts:stopmodreposts:${minecraftVersion}-${stopmodreposts_version}"
@@ -160,7 +173,7 @@ task incrementBuildNumber {
         if (buildPropFile.canRead()) {
             // Properties buildProps = new Properties()
             buildProps.load(buildPropFile.newDataInputStream())
-            Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger + 1)
+            Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger + 2)
             buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
             buildProps.store(buildPropFile.newWriter(), null)
             buildProps.load(buildPropFile.newDataInputStream())
