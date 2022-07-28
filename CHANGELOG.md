@@ -1,11 +1,13 @@
-Slabs 'n Stairs changelog:
--------------------------
+# Slabs 'n Stairs version changelog:
+
 V 0.0.2.119 @ 2022/07/28
 -------------------------
 * porting to **MC-Version 1.19/1.19.1** | **Forge 41.1.0/42.0.0**
 * fixed:
     - **_issue #1_** - wrong sound effects of all new **Deepslate Blocks**
     - **_issue #4_** - wrong version number (only MC1.18x)
+
+complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
 
 -------------------------
 V 0.0.2.118 @ 2022/07/24
