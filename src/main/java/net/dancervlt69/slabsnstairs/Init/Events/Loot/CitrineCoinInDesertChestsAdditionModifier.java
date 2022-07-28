@@ -1,20 +1,24 @@
 package net.dancervlt69.slabsnstairs.Init.Events.Loot;
 
 import com.google.gson.JsonObject;
+import com.mojang.serialization.Codec;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
+import net.minecraftforge.common.data.GlobalLootModifierProvider;
+import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class CitrineCoinInDesertChestsAdditionModifier extends LootModifier {
+/*
     private final Item addition;
     protected CitrineCoinInDesertChestsAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
         super(conditionsIn);
@@ -28,7 +32,7 @@ public class CitrineCoinInDesertChestsAdditionModifier extends LootModifier {
         }
         return generatedLoot;
     }
-    public static class Serializer extends GlobalLootModifierSerializer<CitrineCoinInDesertChestsAdditionModifier> {
+    public static class Serializer extends GlobalLootModifierProvider<CitrineCoinInDesertChestsAdditionModifier> {
         @Override
         public CitrineCoinInDesertChestsAdditionModifier read(ResourceLocation name, JsonObject object,
                                                               LootItemCondition[] conditionIn) {
@@ -43,4 +47,4 @@ public class CitrineCoinInDesertChestsAdditionModifier extends LootModifier {
             return json;
         }
     }
-}
+}   */

@@ -7,13 +7,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
+import net.minecraftforge.common.data.GlobalLootModifierProvider;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
 import java.util.List;
 
+/*
 public class CitrineCoinInSnowyChestsAdditionModifier extends LootModifier {
     private final Item addition;
     protected CitrineCoinInSnowyChestsAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
@@ -43,4 +44,4 @@ public class CitrineCoinInSnowyChestsAdditionModifier extends LootModifier {
             return json;
         }
     }
-}
+}   */

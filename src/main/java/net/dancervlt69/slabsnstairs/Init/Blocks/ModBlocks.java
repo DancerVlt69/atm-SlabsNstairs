@@ -3,10 +3,7 @@ package net.dancervlt69.slabsnstairs.Init.Blocks;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Tabs.ModTabs;
 import net.dancervlt69.slabsnstairs.SlabsNstairs;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -14,9 +11,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -26,7 +21,7 @@ public class ModBlocks {
     // Define your different Blocks
     public static final RegistryObject<Block> GROWTH_STOP = registerBlock("growth_stop",
             () -> new ChainBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS)
-                    .strength(0.5F).noCollission()), ModTabs.MODTAB_TAB, "tooltip.slabsnstairs.growth_stop");
+                    .strength(0.5F).noCollission()), ModTabs.MODTAB_TAB, "tooltip.slabsnstairs.growth_stop.tooltip.shift");
 /*
     public static final RegistryObject<Block> ILLUM_GROWTH_STOP = registerBlock("illum_growth_stop",
             () -> new TorchBlock(()-> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
@@ -147,25 +142,26 @@ public class ModBlocks {
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
-    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICKS_BUTTON =
-            registerBlock("cracked_polished_blackstone_bricks_button",
+    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_BUTTON =
+            registerBlock("cracked_polished_blackstone_brick_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+
     public static final RegistryObject<Block> DEEPSLATE_BUTTON = registerBlock("deepslate_button",
                     () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
-                            .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+                            .strength(0.5F).sound(SoundType.DEEPSLATE)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_BRICK_BUTTON = registerBlock("cracked_deepslate_brick_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
-                    .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+                    .strength(0.5F).sound(SoundType.DEEPSLATE_BRICKS)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_TILE_BUTTON = registerBlock("cracked_deepslate_tile_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
-                    .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+                    .strength(0.5F).sound(SoundType.DEEPSLATE_TILES)), CreativeModeTab.TAB_REDSTONE);
 
     // Pressure Plates
 
     public static final RegistryObject<Block> SMOOTH_STONE_PRESSURE_PLATE = registerBlock("smooth_stone_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
-                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F).sound(SoundType.STONE)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> COBBLESTONE_PRESSURE_PLATE = registerBlock("cobblestone_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
@@ -203,59 +199,66 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
-    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICKS_PRESSURE_PLATE =
-            registerBlock("cracked_polished_blackstone_bricks_pressure_plate",
+    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_PRESSURE_PLATE =
+            registerBlock("cracked_polished_blackstone_brick_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+
     public static final RegistryObject<Block> DEEPSLATE_PRESSURE_PLATE =
             registerBlock("deepslate_pressure_plate",
                     () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
-                            BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+                            BlockBehaviour.Properties.of(Material.STONE).strength(0.5F).
+                                    sound(SoundType.DEEPSLATE_BRICKS)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_BRICK_PRESSURE_PLATE =
             registerBlock("cracked_deepslate_brick_pressure_plate",
                     () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
-                            BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+                            BlockBehaviour.Properties.of(Material.STONE).strength(0.5F).
+                                    sound(SoundType.DEEPSLATE_BRICKS)),CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_TILE_PRESSURE_PLATE =
             registerBlock("cracked_deepslate_tile_pressure_plate",
                     () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
-                            BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+                            BlockBehaviour.Properties.of(Material.STONE).strength(0.5F).
+                                    sound(SoundType.DEEPSLATE_TILES)),CreativeModeTab.TAB_REDSTONE);
 
     // Stairs
     public static final RegistryObject<Block> SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
             () -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
                             .strength(2F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
-    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICKS_STAIRS =
-            registerBlock("cracked_polished_blackstone_bricks_stairs",
+
+    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS =
+            registerBlock("cracked_polished_blackstone_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
                             .strength(1.5F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
     public static final RegistryObject<Block> DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
             () -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE)
                             .strength(3F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_BRICK_STAIRS = registerBlock("cracked_deepslate_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_BRICKS)
                             .strength(3F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_TILE_STAIRS = registerBlock("cracked_deepslate_tile_stairs",
             () -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_TILES)
                             .strength(3F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // Slabs
-    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICKS_SLAB = registerBlock
-            ("cracked_polished_blackstone_bricks_slab",
+    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB = registerBlock
+            ("cracked_polished_blackstone_brick_slab",
                     () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
                             .strength(1.53F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
     public static final RegistryObject<Block> DEEPSLATE_SLAB = registerBlock("deepslate_slab",
-                    () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE)
                             .strength(3F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_BRICK_SLAB = registerBlock("cracked_deepslate_brick_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_BRICKS)
                     .strength(3F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_TILR_SLAB = registerBlock("cracked_deepslate_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_TILES)
                     .strength(3F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // Iced - Blocks - Slabs
@@ -285,12 +288,12 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
                                                                             CreativeModeTab tab, String tooltipKey) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
-            @Override
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) /* {
+            /*@Override
             public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-                pTooltip.add(new TranslatableComponent(tooltipKey));
-            }
-        });
+                pTooltip.add(new TranslatableContents(pTooltip); // TranslatableContents(tooltipKey));}
+            } */
+        );
     }
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
                                                                      CreativeModeTab tab) {
