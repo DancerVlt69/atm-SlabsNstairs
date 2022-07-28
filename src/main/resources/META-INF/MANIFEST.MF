@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Specification-Title: SnS - Slabs 'n Stairs
 Specification-Vendor: DancerVLT69
-Specification-Version: 0.0.1.116
+Specification-Version: 0.0.2.119 rc1
 Implementation-Title: SnS - Slabs 'n Stairs
-Implementation-Version: 0.0.1.116
+Implementation-Version: 0.0.2.119 rc1
 Implementation-Vendor: DancerVLT69
 Implementation-Timestamp: 2022-06-26T03:42:00+0100
 Automatic-Module-Name: slabsnstairs

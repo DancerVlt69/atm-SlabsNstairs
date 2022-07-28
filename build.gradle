@@ -8,8 +8,6 @@ buildscript {
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.parchmentmc:librarian:1.+'
-        classpath 'org.zkovari.changelog:changelog-automation-gradle-plugin:0.4.0'
-        // implementation project(':buildNumber')
     }
 }
 
@@ -17,16 +15,16 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
-apply plugin: 'org.zkovari.changelog'
 
+def buildPropFile = file('.env/dev.env')
+Properties buildProps = new Properties()
+buildProps.load(buildPropFile.newDataInputStream())
+def buildNum = buildProps.getProperty("BUILDNUMBER") as String
+println ("Build is ${buildNum}.")
 
-def versionPropsFile = file(".envs/dev.env")
-def buildNumber = System.getenv("BNUMBER")
-def bNum2
-
-version = "${minecraftVersion}-${modVersion}.${buildNumber}"
+version = "${mcVersions}-${modVersion}.${buildNum}"
 group = "net.${modOwner}.${modId}"
-archivesBaseName = "${modId}"
+archivesBaseName = "${modFileName}"
 
 // sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -60,27 +58,9 @@ repositories {
  //   }
 //}
 
-task systemInfo {
-    def styler = 'black red green yellow blue magenta cyan white'.split().toList().withIndex(30)
-    .collectEntries { key, val -> [(key) : { "\033[${val}m${it}\033[0m" }] }
-
-    def bNumber = System.getenv("BNUMBER")
-    def rNumber = System.getenv("RNUMBER")
-    def taskType = System.getenv("TASK")
-    Properties versionProps = new Properties()
-    versionProps.load(new FileInputStream(versionPropsFile))
-    bNum2 = versionProps['BNUMBER2'].toInteger()
-
-    println "System-Information:"
-    println "${styler['green']("buildNumber: ${bNumber}")} and"
-    println "${styler['green']("runCounter: ${rNumber}")} for the"
-    println "${styler['green']("Gradle-Task: ${taskType}")} (for one or both variables are not found/set)."
-    println "\n${styler['green']("Test-Variable BNumber-2 is: ${bNum2}\n")}"
-}
-
 minecraft {
-    // mappings channel: 'official', version: "${minecraftVersion}" //'snapshot'
-    mappings channel: 'parchment', version: "${parchment}-${minecraftVersion}"
+    // mappings channel: 'official', version: "${mcMappingVersion}" //'snapshot'
+    mappings channel: 'parchment', version: "${parchmentDate}-${mcMappingVersion}"
     runs {
         client {
             workingDirectory project.file('run')
@@ -136,29 +116,32 @@ minecraft {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${minecraftVersion}-${forgeVersion}" //1.18.1-39.1.2'
+    minecraft "net.minecraftforge:forge:${mcMappingVersion}-${forgeVersion}" //1.18.1-39.1.2'
 
     // JEI - Just Enough Items
-    // compileOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}:api")
-    // runtimeOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}")
+    // compileOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}:api")
+    // runtimeOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}")
     // runtimeOnly fg.deobf("curse.maven:jei-238222:3874762")
     runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
 
-    // Xaero's World & Mini Map
-    runtimeOnly fg.deobf("curse.maven:xwm-${xaeroWorldMap}") // World-Mao
-    runtimeOnly fg.deobf("curse.maven:xmm-${xaeroMiniMap}") // Mini-Map
-
-    // JMSR - Just More Simple Recipes
-    runtimeOnly fg.deobf("curse.maven:msr-${jsmrVersion}")
+    // Catalogue
+    runtimeOnly fg.deobf("curse.maven:catal-${catalVersionCF}")
 
     // Configured
-    runtimeOnly fg.deobf("curse.maven:cnfig-${configuredVersion}")
+    runtimeOnly fg.deobf("curse.maven:cnfig-${confVersionCF}")
 
     // Jade (HWYLA)
     runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
 
+    // JMSR - Just More Simple Recipes
+    runtimeOnly fg.deobf("curse.maven:msr-${jmsrVersionCF}")
+
     // GrassSlabsStairsCarpet-Mod
-    runtimeOnly fg.deobf("curse.maven:gss-${gssVersion}")
+    runtimeOnly fg.deobf("curse.maven:gss-${gssVersionCF}")
+
+    // Xaero's World & Mini Map
+    runtimeOnly fg.deobf("curse.maven:xwm-${xWmapVersionCF}") // World-Mao
+    runtimeOnly fg.deobf("curse.maven:xmm-${xMmapVersionCF}") // Mini-Map
 
     // Stop Mod Reports
     // embedNoCompile "org.stopmodreposts:stopmodreposts:${minecraftVersion}-${stopmodrepostsVersion}"
@@ -180,43 +163,20 @@ jar {
 }
 
 task incrementBuildNumber {
-    def bnumber = System.getenv("BNUMBER")
-    def rnumber = System.getenv("RNUMBER")
+    // def buildPropFile = file('.env/dev.env')
     def gTask = System.getenv("TASK")
     if (gTask == "createJAR") {
-        def versionPropFile = file(".envs/dev.env")
-        if (versionPropFile.canRead()) {
-            Properties versionProps = new Properties()
-            versionProps.load(versionPropFile.newDataInputStream())
-            // versionProps.load(new FileInputStream(versionPropFile))
-
-            Integer nextBuildNum = ((versionProps.getProperty("BNUMBER") as BigDecimal) + 1)
-            // versionBuild = versionProps['buildNumber'].toInteger() + 1
-
-            versionProps.setProperty("BNUMBER", nextBuildNum.toString())
-            // versionProps['buildNumber'] = versionBuild.toString()
-
-            versionProps.store(versionPropFile.newWriter(), null)
-            versionProps.load(versionPropFile.newDataInputStream())
-            // System.setProperty("BNUMBER", nextBuildNum)
-            println("The temporarily BuildNumber is ${nextBuildNum}.")
+        if (buildPropFile.canRead()) {
+            // Properties buildProps = new Properties()
+            buildProps.load(buildPropFile.newDataInputStream())
+            Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger + 1)
+            buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
+            buildProps.store(buildPropFile.newWriter(), null)
+            buildProps.load(buildPropFile.newDataInputStream())
+            println("newBuildNumber is set to ${newBuildNumber}.\n")
         } else {
             throw new FileNotFoundException("Can not read the property file!")
         }
-    } else if (gTask == "runMC") {
-        println("\nStarting Minecraft-Client...\n")
-
-        /*if (rnumber == "null") {
-            println ("Run-Counter: ${'RNUMBER'}")
-            rnumber = 0
-            Integer nextRunNum = (rnumber as BigDecimal) + 1
-            // System.setProperty("RNUMBER", nextRunNum)
-            println("Run-Counter is ${nextRunNum}")
-        } else {
-            Integer nextRunNum = (rnumber as BigDecimal) + 1
-            // System.setProperty("RNUMBER", nextRunNum)
-            println("Run-Counter is ${nextRunNum}")
-        } */
     }
 }
 
