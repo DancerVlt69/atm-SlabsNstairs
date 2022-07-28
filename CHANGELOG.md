@@ -1,11 +1,17 @@
 Slabs 'n Stairs changelog:
 -------------------------
-V 0.0.1.119 @ 2022/07/26
+V 0.0.2.120 @ 2022/07/28
 -------------------------
-* start porting to MC-Version 1.19 / Forge 41.0.111
+* start porting to **MC-Version 1.19/1.19.1** | **Forge 41.1.0/42.0.0**
+* deactivating some code for a first solving of some issues (MC 1.19x version only)
+    - fixed:
+        * **_issue #1_** - sound effect/s of all new **Deepslate** Blocks
+        * **_issue #2_** - no transparency of the GrowthStop (MC 1.19x version only)
+        * **_issue #4_** - wrong version number (MC 1.18x only)
+* small correction of the item textur from the **Growth Stop** item (MC 1.19x only) 
 
 -------------------------
-V 0.0.1.118 @ 2022/07/24
+V 0.0.2.118 @ 2022/07/24
 -------------------------
 * added:
     - Deepslate Button, -Pressure Plate, -Stairs & -Slab
