@@ -48,6 +48,41 @@ public class ModBlocks {
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL)
                     .strength(7F).noCollission()), CreativeModeTab.TAB_REDSTONE);
 
+    // Cinnamon
+    public static final RegistryObject<Block> CINNAMON_PLANKS = registerBlock("cinnamon_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)), ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> CINNAMON_STAIRS = registerBlock("cinnamon_stairs",
+            () -> new StairBlock(() -> ModBlocks.CINNAMON_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)), ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> CINNAMON_SLAB = registerBlock("cinnamon_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)), ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> CINNAMON_PRESSURE_PLATE = registerBlock("cinnamon_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> CINNAMON_BUTTON = registerBlock("cinnamon_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission()), ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> CINNAMON_FENCE = registerBlock("cinnamon_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).strength(2F)), ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> CINNAMON_FENCE_GATE = registerBlock ("cinnamon_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)),ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> CINNAMON_TRAPDOOR = registerBlock ("cinnamon_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)),ModTabs.MODTAB_TAB);
+    public static final RegistryObject<Block> CINNAMON_DOOR = registerBlock ("cinnamon_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)),ModTabs.MODTAB_TAB);
+
+/*    public static final RegistryObject<Block> CINNAMON_SIGN = registerBlock("cinnamon_sign",
+            () -> new SignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodType.OAK), ModTabs.MODTAB_TAB);
+
+     public static final RegistryObject<Block> CINNAMON_WALL_SIGN = registerBlock ("cinnamon_wall_sign",
+            () -> new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), WoodType.OAK), ModTabs.MODTAB_TAB);
+
+    public static final RegistryObject<Block> CINNAMON_LEAVES = registerBlock ("cinnamon_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)),ModTabs.MODTAB_TAB); */
+
+    public static final RegistryObject<Block> CINNAMON_PALISADE = registerBlock ("cinnamon_palisade",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2F,5F)
+                    .sound(SoundType.WOOD)), ModTabs.MODTAB_TAB);
+
     // extra Dirt & Sand
     public static final RegistryObject<Block> DIRT_BLOCK_STAIRS = registerBlock("dirt_block_stairs",
             () -> new StairBlock(() -> ModBlocks.DIRT_COBBLE.get().defaultBlockState(),
