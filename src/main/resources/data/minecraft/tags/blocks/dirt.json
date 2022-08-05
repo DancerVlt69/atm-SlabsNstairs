@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:dirt",
+    "slabsnstairs:quarter_dirt",
+    "slabsnstairs:dirt_cobble"
+  ]
+}
