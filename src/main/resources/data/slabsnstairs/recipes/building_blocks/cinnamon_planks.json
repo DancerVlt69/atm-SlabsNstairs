@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "croptopia:cinnamon_logs"
+    }
+  ],
+  "result": {
+    "item": "slabsnstairs:cinnamon_planks",
+    "count": 4
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "croptopia"
+    },
+    {
+      "type": "forge:item_exists",
+      "tag": "croptopia:cinnamon_logs"
+    }
+  ]
+}
