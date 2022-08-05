@@ -9,6 +9,7 @@ version="1.18x-${file.javaVersion}"
 displayName="SnS - Slabs 'n Stairs"
 credits="Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more"
 displayURL="https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net"
+logoFile="logo.png"
 authors="DancerVlt69"
 description='''
 SnS - Slabs 'n Stairs - will add some simple blocks to your Minecraft Java Edition'''

@@ -1,13 +1,28 @@
 # Slabs 'n Stairs version changelog:
 
+-------------------------
+V 0.0.3.121 @ 2022/08/05
+-------------------------
+* added: 
+    - **Croptopia**-Support
+      * Cinnamon Planks from Stripped- / Log /- Wood
+      * Slabs & Stairs, Pressure Plate,
+      * Button, Fence and Fence Gate, Palisade (Wall) and 
+      * their Recipes to craft them if [**_Croptopia_**](https://www.curseforge.com/minecraft/mc-mods/croptopia)-Wood is available
+    - Dirt Cobbled & Quarter Dirt to the *Dirt-Tag*
+* fixed:
+    - **_[issue #7](https://github.com/DancerVlt69/SlabsNstairs/issues/7)_** - Cobbled Stairs Model - could not load referenced file
+    - **_[issue #8](https://github.com/DancerVlt69/SlabsNstairs/issues/8)_** - Unable to resolve texture reference
+
+complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
+
+-------------------------
 V 0.0.2.119 @ 2022/07/28
 -------------------------
 * porting to **MC-Version 1.19/1.19.1** | **Forge 41.1.0/42.0.0**
 * fixed:
-    - **_issue #1_** - wrong sound effects of all new **Deepslate Blocks**
-    - **_issue #4_** - wrong version number (only MC1.18x)
-
-complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
+    - **_[issue #1](https://github.com/DancerVlt69/SlabsNstairs/issues/1)_** - wrong sound effects of all new **Deepslate Blocks**
+    - **_[issue #4](https://github.com/DancerVlt69/SlabsNstairs/issues/4)_** - wrong version number (only MC1.18x)
 
 -------------------------
 V 0.0.2.118 @ 2022/07/24

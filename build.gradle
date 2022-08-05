@@ -139,6 +139,9 @@ dependencies {
     // GrassSlabsStairsCarpet-Mod
     runtimeOnly fg.deobf("curse.maven:gss-${gssVersionCF}")
 
+    // Croptopia
+    // runtimeOnly fg.deobf("curse.maven:cropt-${croptVersionCF}")
+
     // Xaero's World & Mini Map
     runtimeOnly fg.deobf("curse.maven:xwm-${xWmapVersionCF}") // World-Mao
     runtimeOnly fg.deobf("curse.maven:xmm-${xMmapVersionCF}") // Mini-Map
@@ -169,7 +172,7 @@ task incrementBuildNumber {
         if (buildPropFile.canRead()) {
             // Properties buildProps = new Properties()
             buildProps.load(buildPropFile.newDataInputStream())
-            Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger + 1)
+            Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger + 2)
             buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
             buildProps.store(buildPropFile.newWriter(), null)
             buildProps.load(buildPropFile.newDataInputStream())
