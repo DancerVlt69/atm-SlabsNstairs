@@ -1,14 +1,17 @@
 # Slabs 'n Stairs version changelog:
 
 -------------------------
-V 0.0.4.123 @ 2022/08/07
+V 0.0.4.122 @ 2022/08/07
 -------------------------
-* added: some missing Tag-Files
+* added: 
+    - some missing Tag-Files
+    - now it is possible to plant Flowers, Crops, and Saplings on the 3 own Dirt-Types
 
 * fixed:
-    - **_issue #9_** -  recipes for Croptopia-Wood will not work
-    - **_issue #10_** -  Cinnamon-Planks not listed in Planks-Tag
-
+    - **_[issue #9](https://github.com/DancerVlt69/SlabsNstairs/issues/9)_** -  recipes for Croptopia-Wood will not work
+    - **_[issue #10](https://github.com/DancerVlt69/SlabsNstairs/issues/10)_** -  Cinnamon-Planks not listed in Planks-Tag
+      
+complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
 
 -------------------------
 V 0.0.3.121 @ 2022/08/05
@@ -23,8 +26,6 @@ V 0.0.3.121 @ 2022/08/05
 * fixed:
     - **_[issue #7](https://github.com/DancerVlt69/SlabsNstairs/issues/7)_** - Cobbled Stairs Model - could not load referenced file
     - **_[issue #8](https://github.com/DancerVlt69/SlabsNstairs/issues/8)_** - Unable to resolve texture reference
-
-complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
 
 -------------------------
 V 0.0.2.119 @ 2022/07/28
