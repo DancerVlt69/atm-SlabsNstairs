@@ -19,10 +19,6 @@
     {
       "type": "forge:mod_loaded",
       "modid": "croptopia"
-    },
-    {
-      "type": "forge:item_exists",
-      "tag": "croptopia:cinnamon_logs"
     }
   ]
 }
