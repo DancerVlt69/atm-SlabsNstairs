@@ -1,0 +1,12 @@
+{
+  "type":"botanypots:soil",
+  
+  "input": {
+    "item":"slabsnstairs:dirt_cobble"
+    },
+    
+    "display": {
+        "block":"slabsnstairs:dirt_cobble"
+      },
+      "categories":["dirt"],
+      "growthModifier":1}
