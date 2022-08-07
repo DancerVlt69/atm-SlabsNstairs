@@ -140,7 +140,7 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:gss-${gssVersionCF}")
 
     // Croptopia
-    // runtimeOnly fg.deobf("curse.maven:cropt-${croptVersionCF}")
+    runtimeOnly fg.deobf("curse.maven:cropt-${croptVersionCF}")
 
     // Xaero's World & Mini Map
     runtimeOnly fg.deobf("curse.maven:xwm-${xWmapVersionCF}") // World-Mao

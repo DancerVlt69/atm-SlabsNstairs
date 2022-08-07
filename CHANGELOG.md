@@ -1,6 +1,16 @@
 # Slabs 'n Stairs version changelog:
 
 -------------------------
+V 0.0.4.123 @ 2022/08/07
+-------------------------
+* added: some missing Tag-Files
+
+* fixed:
+    - **_issue #9_** -  recipes for Croptopia-Wood will not work
+    - **_issue #10_** -  Cinnamon-Planks not listed in Planks-Tag
+
+
+-------------------------
 V 0.0.3.121 @ 2022/08/05
 -------------------------
 * added: 
