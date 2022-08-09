@@ -84,6 +84,19 @@
   "block.slabsnstairs.cracked_deepslate_tile_stairs":         "Rissige Tiefenschieferfliesentreppe",
   "block.slabsnstairs.cracked_deepslate_tile_slab":           "Rissige Tiefenschieferfliesenstufe",
 
+  "block.slabsnstairs.cinnamon_planks":         "Zimtholzbretter",
+  "block.slabsnstairs.cinnamon_stairs":         "Zimtholztreppe",
+  "block.slabsnstairs.cinnamon_slab":           "Zimtholzstufe",
+  "block.slabsnstairs.cinnamon_pressure_plate": "Zimtholzdruckplatte",
+  "block.slabsnstairs.cinnamon_button":         "Zimtholzknopf",
+  "block.slabsnstairs.cinnamon_fence":          "Zimtholzzaun",
+  "block.slabsnstairs.cinnamon_fence_gate":     "Zimtholzzauntor",
+  "block.slabsnstairs.cinnamon_door":           "Zimtholztür",
+  "block.slabsnstairs.cinnamon_trapdoor":       "Zimtholzfalltür",
+  "block.slabsnstairs.cinnamon_sign":           "Zimtholzschild",
+  "block.slabsnstairs.cinnamon_palisade":       "Zimtholz-Palisade",
+  "block.slabsnstairs.cinnamon_leaves":         "Zimtbaumblätter",
+
   "block.slabsnstairs.growth_stop":     "Wachstumsstopper",
 
   "item.slabsnstairs.light_brown_dye":  "Hellbrauner Farbstoff",

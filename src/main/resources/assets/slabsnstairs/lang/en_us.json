@@ -84,6 +84,19 @@
   "block.slabsnstairs.cracked_deepslate_tile_stairs":          "Cracked Deepslate Tile Stairs",
   "block.slabsnstairs.cracked_deepslate_tile_slab":            "Cracked Deepslate Tile Slab",
 
+  "block.slabsnstairs.cinnamon_planks":         "Cinnamon Planks",
+  "block.slabsnstairs.cinnamon_stairs":         "Cinnamon Stairs",
+  "block.slabsnstairs.cinnamon_slab":           "Cinnamon Slab",
+  "block.slabsnstairs.cinnamon_pressure_plate": "Cinnamon Pressure Plate",
+  "block.slabsnstairs.cinnamon_button":         "Cinnamon Button",
+  "block.slabsnstairs.cinnamon_fence":          "Cinnamon Fence",
+  "block.slabsnstairs.cinnamon_fence_gate":     "Cinnamon Fence Gate",
+  "block.slabsnstairs.cinnamon_door":           "Cinnamon Door",
+  "block.slabsnstairs.cinnamon_trapdoor":       "Cinnamon Trapdoor",
+  "block.slabsnstairs.cinnamon_sign":           "Cinnamon Sign",
+  "block.slabsnstairs.cinnamon_palisade":       "Cinnamon Palisade",
+  "block.slabsnstairs.cinnamon_leaves":         "Cinnamon Leaves",
+
   "block.slabsnstairs.growth_stop":     "Growth Stop",
 
   "item.slabsnstairs.light_brown_dye":  "Light Brown Dye",
