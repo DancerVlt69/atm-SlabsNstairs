@@ -1,9 +1,9 @@
 buildscript {
     repositories {
-        maven { url = 'https://maven.minecraftforge.net' } // maven { url = "https://files.minecraftforge.net/maven" }
-        maven { url = 'https://maven.parchmentmc.org' }
+        // maven { url = 'https://maven.minecraftforge.net' } // maven { url = "https://files.minecraftforge.net/maven" }
+        // maven { url = 'https://maven.parchmentmc.org' }
         // maven { url = "https://mvn.stopmodreposts.org" }
-        mavenCentral()
+        // mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
@@ -26,7 +26,7 @@ def buildPropFile = file('.env/dev.env')
 Properties buildProps = new Properties()
 buildProps.load(buildPropFile.newDataInputStream())
 def buildNum = buildProps.getProperty("BUILDNUMBER") as String
-println ("Build is ${buildNum}.")
+println ("Mod-Build-Number is ${buildNum}.")
 
 version = "${mcVersion}-${modVersion}.${buildNum}"
 group = "net.${modOwner}.${modId}"
@@ -66,7 +66,7 @@ repositories {
 
 minecraft {
     mappings channel: 'official', version: "${mcMappingVersion}" //'snapshot'
-    // mappings channel: 'parchment', version: "1.18.2-${parchmentVersion}-${minecraftVersion}"
+    // mappings channel: 'parchment', version: "${parchmentVersion}-${parchmentDate}-${parchmentMCVersion}"
     runs {
         client {
             workingDirectory project.file('run')

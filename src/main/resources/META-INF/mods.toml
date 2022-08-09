@@ -5,13 +5,14 @@ issueTrackerURL="https://github.com/DancerVlt69/SlabsNstairs/issues"
 
 [[mods]]
 modId="slabsnstairs"
-version="1.19x-${file.jarVersion}"
+version="${file.jarVersion}"
 displayName="SnS - Slabs 'n Stairs"
 credits="Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more"
 displayURL="https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net"
+logoFile="logo.png"
 authors="DancerVlt69"
 description='''
-SnS - Slabs 'n Stairs - will add some simple blocks to your Minecraft Java Edition'''
+SnS - Slabs 'n Stairs - will add a lot of missing Slabs, Stairs, and more to your Minecraft Java Edition'''
 
 [[dependencies.slabsnstairs]]
     modId="minecraft"
