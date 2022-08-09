@@ -100,36 +100,36 @@ public class ModBlocks {
                     .strength(1F)), ModTabs.MODTAB_TAB); */
     public static final RegistryObject<Block> DIRT_COBBLE = registerBlock("dirt_cobble",
             () -> new GrassBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRASS)
-                    .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+                    .strength(1.5F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
     public static final RegistryObject<Block> DIRT_COBBLE_STAIRS = registerBlock("dirt_cobble_stairs",
             () -> new StairBlock(() -> ModBlocks.DIRT_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRASS)
-                            .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+                            .strength(1.5F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
     public static final RegistryObject<Block> DIRT_COBBLE_SLAB = registerBlock("dirt_cobble_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRASS)
-                    .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+                    .strength(1.5F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
 
     public static final RegistryObject<Block> QUARTER_DIRT = registerBlock("quarter_dirt",
             () -> new GrassBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRASS)
-                    .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+                    .strength(1.5F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
     public static final RegistryObject<Block> QUARTER_DIRT_STAIRS = registerBlock("quarter_dirt_stairs",
             () -> new StairBlock(() -> ModBlocks.QUARTER_DIRT.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRASS)
-                            .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+                            .strength(1.5F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
     public static final RegistryObject<Block> QUARTER_DIRT_SLAB = registerBlock("quarter_dirt_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRASS)
-                    .strength(2F)), ModTabs.MODTAB_TAB);
+                    .strength(1.5F)), ModTabs.MODTAB_TAB);
 
     public static final RegistryObject<Block> QUARTER_DIRT_COBBLE = registerBlock("quarter_dirt_cobble",
             () -> new GrassBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRASS)
-                    .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+                    .strength(1.5F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
     public static final RegistryObject<Block> QUARTER_DIRT_COBBLE_STAIRS = registerBlock("quarter_dirt_cobble_stairs",
             () -> new StairBlock(() -> ModBlocks.QUARTER_DIRT_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRASS)
-                            .strength(2F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
+                            .strength(1.5F).requiresCorrectToolForDrops()), ModTabs.MODTAB_TAB);
     public static final RegistryObject<Block> QUARTER_DIRT_COBBLE_SLAB = registerBlock("quarter_dirt_cobble_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRASS)
-                    .strength(2F)), ModTabs.MODTAB_TAB);
+                    .strength(1.5F)), ModTabs.MODTAB_TAB);
 
     // Buttons
     public static final RegistryObject<Block> SMOOTH_STONE_BUTTON = registerBlock("smooth_stone_button",
