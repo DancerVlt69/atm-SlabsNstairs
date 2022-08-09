@@ -22,7 +22,4 @@ public class ModServerSettings {
         BUILDER.pop();
         SPEC = BUILDER.build();
     }
-    public static void register(IEventBus eventBus) {
-        ModServerSettings.register(eventBus);
-    }
 }

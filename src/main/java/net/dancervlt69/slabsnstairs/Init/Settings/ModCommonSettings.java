@@ -22,7 +22,4 @@ public class ModCommonSettings {
         SPEC = BUILDER.build();
 
     }
-    public static void register(IEventBus eventBus) {
-        ModCommonSettings.register(eventBus);
-    }
 }
