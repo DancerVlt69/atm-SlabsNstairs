@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "moreButtons",
+  "ingredients": [
+    {
+      "item": "slabsnstairs:cinnamon_planks"
+    }
+  ],
+  "result": {
+    "item": "slabsnstairs:cinnamon_button",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "croptopia"
+    }
+  ]
+}
