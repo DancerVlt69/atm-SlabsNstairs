@@ -12,14 +12,16 @@ import java.util.List;
 
 public class ModGrowthStopToolTip extends Item {
 
-     public ModGrowthStopToolTip(Properties pProperties) {super (pProperties);}
+     public ModGrowthStopToolTip(Properties pProperties) {
+         super (pProperties);
+     }
      @Override
      public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
 
          if (Screen.hasShiftDown()) {
-             components.add(Component.translatable("tooltip.slabsnstairs.hold_shift.tooltip"));
-         } else {
              components.add(Component.translatable("tooltip.slabsnstairs.growth_stop.tooltip.shift"));
+         } else {
+             components.add(Component.translatable("tooltip.slabsnstairs.hold_shift.tooltip"));
          }
          super.appendHoverText(stack, level, components, flag);
      }
