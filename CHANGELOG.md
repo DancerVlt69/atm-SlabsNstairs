@@ -1,6 +1,14 @@
 # Slabs 'n Stairs version changelog:
 
 -------------------------
+V 0.0.5.123 @ 2022/08/09
+-------------------------
+* fixed: 
+    - **_[issue #11](https://github.com/DancerVlt69/SlabsNstairs/issues/11)_** - a bug that prevented an existing world from loading
+
+complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
+
+-------------------------
 V 0.0.4.122 @ 2022/08/07
 -------------------------
 * added: 
@@ -11,8 +19,6 @@ V 0.0.4.122 @ 2022/08/07
     - **_[issue #9](https://github.com/DancerVlt69/SlabsNstairs/issues/9)_** -  recipes for Croptopia-Wood will not work
     - **_[issue #10](https://github.com/DancerVlt69/SlabsNstairs/issues/10)_** -  Cinnamon-Planks not listed in Planks-Tag
       
-complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
-
 -------------------------
 V 0.0.3.121 @ 2022/08/05
 -------------------------
