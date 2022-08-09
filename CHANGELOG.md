@@ -1,6 +1,19 @@
 Slabs 'n Stairs changelog:
+--------------------------
+V 0.0.4.124 @ 2022/008/09
+--------------------------
+* updated to Minecraft 1.19.2 and Forge 43.0.1
+* fixed some **_[issues]_**(https://github.com/DancerVlt69/SlabsNstairs/issues?q=is%3Aissue+is%3Aclosed) in both version
+* added:
+    - Croptopia Support
+        * Planks, Stairs, Slabs, Pressure Plate, Button, Fence, Fence Gate, Palisade (Wall), Door, and Trapdoor  
+    - some missing Tag-Files
+    - now it is possible to plant Flowers, Crops, and Saplings on the 3 own Dirt-Types
+
+the complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md)
+
 -------------------------
-V 0.0.2.120 @ 2022/07/28
+V 0.0.3.120 @ 2022/07/28
 -------------------------
 * start porting to **MC-Version 1.19/1.19.1** | **Forge 41.1.0/42.0.0**
 * deactivating some code for a first solving of some issues (MC 1.19x version only)
