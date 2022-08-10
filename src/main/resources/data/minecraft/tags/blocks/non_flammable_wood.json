@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "slabsnstairs:cinnamon_planks",
+    "slabsnstairs:cinnamon_slab",
+    "slabsnstairs:cinnamon_pressure_plate",
+    "slabsnstairs:cinnamon_fence",
+    "slabsnstairs:cinnamon_trapdoor",
+    "slabsnstairs:cinnamon_fence_gate",
+    "slabsnstairs:cinnamon_stairs",
+    "slabsnstairs:cinnamon_button",
+    "slabsnstairs:cinnamon_door",
+    "slabsnstairs:cinnamon_sign",
+    "slabsnstairs:cinnamon_wall_sign"
+  ]
+}

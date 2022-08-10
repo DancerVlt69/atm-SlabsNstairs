@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "slabsnstairs:cinnamon_stairs"
+    "#slabsnstairs:wooden_stairs",
+    "#slabsnstairs:stone_stairs",
+    "#slabsnstairs:gem_slabs",
+    "#slabsnstairs:ice_slabs"
   ]
 }

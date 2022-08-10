@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "slabsnstairs:cobblestone_pressure_plates",
+    "slabsnstairs:andesite_pressure_plates",
+    "slabsnstairs:diorite_pressure_plates",
+    "slabsnstairs:granite_pressure_plates"
+  ]
+}

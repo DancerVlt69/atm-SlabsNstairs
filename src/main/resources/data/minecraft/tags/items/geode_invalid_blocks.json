@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "slabsnstairs:packed_ice_stairs",
+    "slabsnstairs:packed_ice_slab",
+    "slabsnstairs:blue_ice_stairs",
+    "slabsnstairs:blue_ice_slab"
+  ]
+}
