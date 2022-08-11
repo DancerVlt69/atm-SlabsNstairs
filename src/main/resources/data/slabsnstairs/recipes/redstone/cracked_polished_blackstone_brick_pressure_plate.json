@@ -1,8 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "replace": "true",
   "pattern": [
-    "###"
+    "##"
   ],
   "key": {
     "#": {
@@ -10,7 +9,6 @@
     }
   },
   "result": {
-    "item": "slabsnstairs:cracked_polished_blackstone_bricks_slab",
-    "count": 6
+    "item": "slabsnstairs:cracked_polished_blackstone_brick_pressure_plate"
   }
 }

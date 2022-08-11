@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "slabsnstairs:building_blocks/cracked_polished_blackstone_bricks_stairs"
+      "slabsnstairs:building_blocks/cracked_polished_blackstone_brick_pressure_plate"
     ]
   },
   "criteria": {

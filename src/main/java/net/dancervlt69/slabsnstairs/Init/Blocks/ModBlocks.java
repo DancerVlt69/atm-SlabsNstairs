@@ -182,8 +182,8 @@ public class ModBlocks {
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
-    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICKS_BUTTON =
-            registerBlock("cracked_polished_blackstone_bricks_button",
+    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_BUTTON =
+            registerBlock("cracked_polished_blackstone_brick_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
@@ -239,8 +239,8 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
-    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICKS_PRESSURE_PLATE =
-            registerBlock("cracked_polished_blackstone_bricks_pressure_plate",
+    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_PRESSURE_PLATE =
+            registerBlock("cracked_polished_blackstone_brick_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
@@ -266,8 +266,8 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
                             .strength(2F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICKS_STAIRS =
-            registerBlock("cracked_polished_blackstone_bricks_stairs",
+    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS =
+            registerBlock("cracked_polished_blackstone_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
                             .strength(1.5F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -286,8 +286,8 @@ public class ModBlocks {
                             .strength(3F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // Slabs
-    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICKS_SLAB = registerBlock
-            ("cracked_polished_blackstone_bricks_slab",
+    public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB = registerBlock
+            ("cracked_polished_blackstone_brick_slab",
                     () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
                             .strength(1.53F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
@@ -297,7 +297,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_BRICK_SLAB = registerBlock("cracked_deepslate_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_BRICKS)
                     .strength(3F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
-    public static final RegistryObject<Block> CRACKED_DEEPSLATE_TILR_SLAB = registerBlock("cracked_deepslate_tile_slab",
+    public static final RegistryObject<Block> CRACKED_DEEPSLATE_TILE_SLAB = registerBlock("cracked_deepslate_tile_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_TILES)
                     .strength(3F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
