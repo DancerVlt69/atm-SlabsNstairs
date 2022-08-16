@@ -1,7 +1,7 @@
 Slabs 'n Stairs changelog:
 
 -------------------------
-v0.0.04.126 @ 2022/08/16
+v0.0.04.126 @ 2022/08/18 <-- planned
 -------------------------
 * added:
     - much more Tags for e better JEI - compatibility
