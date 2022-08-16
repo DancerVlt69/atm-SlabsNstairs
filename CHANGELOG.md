@@ -4,12 +4,13 @@ Slabs 'n Stairs changelog:
 v0.0.04.126 @ 2022/08/18 <-- planned
 -------------------------
 * added:
-    - much more Tags for e better JEI - compatibility
+    - much more Tags for a better JEI - compatibility
     - 
     - Stairs, Slabs, Pressure Plate, Button, and their Recipe/s & Advancements for:
       + Block
 * updated:
-    - bump to Forge 43.0.11
+    - bump to Forge 43.0.11 - no new Mod-Version needed
+    - Parchment to version 2022.08.14
 
 the complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md)
 
