@@ -13,6 +13,7 @@ buildscript {
 
 // apply plugin: 'net.minecraftforge.gradle'
 // apply plugin: 'org.parchmentmc.librarian.forgegradle'
+
 plugins {
     // Other plugins like maven-publish, idea, eclipse, etc. go here
     id 'net.minecraftforge.gradle' version '5.1.+'
@@ -32,7 +33,6 @@ version = "${mcVersion}-${modVersion}.${buildNum}"
 group = "net.${modOwner}.${modId}"
 archivesBaseName = "${modFileName}"
 
-// sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
@@ -65,8 +65,14 @@ repositories {
 //}
 
 minecraft {
-    mappings channel: 'official', version: "${mcMappingVersion}" //'snapshot'
-    // mappings channel: 'parchment', version: "${parchmentVersion}-${parchmentDate}-${parchmentMCVersion}"
+    // mappings channel: 'official', version: "${mcMappingVersion}" //'snapshot'
+
+    if (parchmentVersion == parchmentMCVersion) {
+        mappings channel: 'parchment', version: "${parchmentDate}-${parchmentMCVersion}"
+    } else {
+        mappings channel: 'parchment', version: "${parchmentVersion}-${parchmentDate}-${parchmentMCVersion}"
+    }
+
     runs {
         client {
             workingDirectory project.file('run')

@@ -1,6 +1,22 @@
 Slabs 'n Stairs changelog:
+
+-------------------------
+v0.0.04.126 @ 2022/08/16
+-------------------------
+* added:
+    - much more Tags for e better JEI - compatibility
+    - 
+    - Stairs, Slabs, Pressure Plate, Button, and their Recipe/s & Advancements for:
+      + Block
+* updated:
+    - bump to Forge 43.0.11
+
+the complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md)
+
+This Version of the Mod was successfully tested with **_[Forge 43.0.11](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
+
 --------------------------
-V 0.0.4.124 @ 2022/008/09
+v0.0.4.124 @ 2022/08/09
 --------------------------
 * updated to Minecraft 1.19.2 and Forge 43.0.1
 * fixed some **_[issues]_**(https://github.com/DancerVlt69/SlabsNstairs/issues?q=is%3Aissue+is%3Aclosed) in both version
@@ -10,10 +26,8 @@ V 0.0.4.124 @ 2022/008/09
     - some missing Tag-Files
     - now it is possible to plant Flowers, Crops, and Saplings on the 3 own Dirt-Types
 
-the complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md)
-
 -------------------------
-V 0.0.3.120 @ 2022/07/28
+v0.0.3.120 @ 2022/07/28
 -------------------------
 * start porting to **MC-Version 1.19/1.19.1** | **Forge 41.1.0/42.0.0**
 * deactivating some code for a first solving of some issues (MC 1.19x version only)
@@ -24,7 +38,7 @@ V 0.0.3.120 @ 2022/07/28
 * small correction of the item texture from the **Growth Stop** item (MC 1.19x only) 
 
 -------------------------
-V 0.0.2.118 @ 2022/07/24
+v0.0.2.118 @ 2022/07/24
 -------------------------
 * added:
     - Deepslate Button, -Pressure Plate, -Stairs & -Slab
@@ -33,7 +47,7 @@ V 0.0.2.118 @ 2022/07/24
 * updated: to Forge 40.1.68
 
 -------------------------
-V 0.0.1.117 @ 2022/07/18 (not published)
+v0.0.1.117 @ 2022/07/18 (not published)
 -------------------------
 * fixed some issues of the Slabs & Stairs of the 3 new Dirt-Types
 * added: Slabs, Stairs, Pressure Plate and/or Buttons, Recipes & Advancements, and/or Loot Tables of
