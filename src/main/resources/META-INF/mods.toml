@@ -1,29 +1,30 @@
 modLoader="javafml"
-loaderVersion="[38,)"
+loaderVersion="[36,)"
 license="GNU 3.0"
 issueTrackerURL="https://github.com/DancerVlt69/SlabsNstairs/issues"
 
 [[mods]]
 modId="slabsnstairs"
-version="1.18x-0.0.4"
+version="1.16.5-0.0.1.b125"
 displayName="SnS - Slabs 'n Stairs"
 credits="Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more"
 displayURL="https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net"
 logoFile="logo.png"
 authors="DancerVlt69"
-description='''SnS - Slabs 'n Stairs - will add some simple blocks to your Minecraft Java Edition'''
+description='''SnS - Slabs 'n Stairs - will add some Slabs, Stairs, Pressure Plates, Buttons and more
+ to your Minecraft Java Edition'''
 
 [[dependencies.slabsnstairs]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18,)"
+    versionRange="[1.16.1,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.slabsnstairs]]
     modId="forge"
     mandatory=true
-    versionRange="[38.,)"
+    versionRange="[36.,)"
     ordering="NONE"
     side="BOTH"
 
