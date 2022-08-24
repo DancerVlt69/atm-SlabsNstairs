@@ -110,7 +110,8 @@
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
 
-  "itemGroup.modtab_tab": "Slabs 'n Stairs",
+  "itemGroup.snsmodtab": "Slabs 'n Stairs",
+  "itemGroup.snsmodtab2": "Slabs 'n Stairs 2",
 
   "tooltip.slabsnstairs.dowsing_rod.tooltip":         "Hold §eShift§r for more Information.",
   "tooltip.slabsnstairs.block.citrine_block.shift":   "You will get 9 Citrine Crystals from this Block.",
