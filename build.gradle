@@ -20,14 +20,14 @@ def buildPropFile = file('.env/dev.env')
 Properties buildProps = new Properties()
 buildProps.load(buildPropFile.newDataInputStream())
 def buildNum = buildProps.getProperty("BUILDNUMBER") as String
-println ("Build is ${buildNum}.")
+println ("> The BuildNumber of ${modId} is ${buildNum}.")
 
 version = "${mcVersions}-${modVersion}.${buildNum}"
 group = "net.${modOwner}.${modId}"
 archivesBaseName = "${modFileName}"
 
-// sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
+// java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
     maven {
@@ -128,16 +128,13 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:catal-${catalVersionCF}")
 
     // Configured
-    runtimeOnly fg.deobf("curse.maven:cnfig-${confVersionCF}")
+    runtimeOnly fg.deobf("curse.maven:config-${confVersionCF}")
 
     // Jade (HWYLA)
     runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
 
     // JMSR - Just More Simple Recipes
-    runtimeOnly fg.deobf("curse.maven:msr-${jmsrVersionCF}")
-
-    // GrassSlabsStairsCarpet-Mod
-    runtimeOnly fg.deobf("curse.maven:gss-${gssVersionCF}")
+    runtimeOnly fg.deobf("curse.maven:jmsr-${jmsrVersionCF}")
 
     // Croptopia
     // runtimeOnly fg.deobf("curse.maven:cropt-${croptVersionCF}")
