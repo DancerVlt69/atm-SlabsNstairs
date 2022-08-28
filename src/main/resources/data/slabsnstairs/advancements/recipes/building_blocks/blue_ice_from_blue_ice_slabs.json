@@ -17,11 +17,18 @@
           }
         ]
       }
+    },
+   "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "slabsnstairs:blue_ice_slab"
+      }
     }
   },
   "requirements": [
     [
-      "has_blue_ice_slab"
+      "has_blue_ice_slab",
+      "has_the_recipe"
     ]
   ]
 }
