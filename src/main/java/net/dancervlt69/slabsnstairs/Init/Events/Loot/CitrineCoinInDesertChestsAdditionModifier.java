@@ -1,12 +1,12 @@
 package net.dancervlt69.slabsnstairs.Init.Events.Loot;
 
 import com.google.gson.JsonObject;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.GsonHelper;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.loot.LootContext;
+import net.minecraft.loot.conditions.ILootCondition;
+import net.minecraft.util.JSONUtils;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,9 +15,10 @@ import javax.annotation.Nonnull;
 import java.util.List;
 
 public class CitrineCoinInDesertChestsAdditionModifier extends LootModifier {
+
     private final Item addition;
-    protected CitrineCoinInDesertChestsAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
-        super(conditionsIn);
+    protected CitrineCoinInDesertChestsAdditionModifier(ILootCondition[] lootConditions, Item addition) {
+        super(lootConditions);
         this.addition = addition;
     }
     @Nonnull
@@ -31,10 +32,10 @@ public class CitrineCoinInDesertChestsAdditionModifier extends LootModifier {
     public static class Serializer extends GlobalLootModifierSerializer<CitrineCoinInDesertChestsAdditionModifier> {
         @Override
         public CitrineCoinInDesertChestsAdditionModifier read(ResourceLocation name, JsonObject object,
-                                                              LootItemCondition[] conditionIn) {
+                                                              ILootCondition[] lootCondition) {
             Item addition = ForgeRegistries.ITEMS.getValue(
-                    new ResourceLocation(GsonHelper.getAsString(object, "addition")));
-            return new CitrineCoinInDesertChestsAdditionModifier(conditionIn, addition);
+                    new ResourceLocation(JSONUtils.getAsString(object, "addition")));
+            return new CitrineCoinInDesertChestsAdditionModifier(lootCondition, addition);
         }
         @Override
         public JsonObject write(CitrineCoinInDesertChestsAdditionModifier instance) {
@@ -44,3 +45,4 @@ public class CitrineCoinInDesertChestsAdditionModifier extends LootModifier {
         }
     }
 }
+

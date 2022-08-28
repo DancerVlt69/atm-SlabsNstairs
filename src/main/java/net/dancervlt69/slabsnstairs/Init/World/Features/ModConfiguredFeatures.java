@@ -1,8 +1,5 @@
 package net.dancervlt69.slabsnstairs.Init.World.Features;
 
-import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-
 import java.awt.*;
 
 public class ModConfiguredFeatures {
