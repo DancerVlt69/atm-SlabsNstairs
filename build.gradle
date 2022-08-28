@@ -169,7 +169,7 @@ task incrementBuildNumber {
         if (buildPropFile.canRead()) {
             // Properties buildProps = new Properties()
             buildProps.load(buildPropFile.newDataInputStream())
-            Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger + 2)
+            Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger + 3)
             buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
             buildProps.store(buildPropFile.newWriter(), null)
             buildProps.load(buildPropFile.newDataInputStream())

@@ -1,11 +1,12 @@
 modLoader="javafml"
-loaderVersion="[36,)"
+loaderVersion="[32.,)"
 license="GNU 3.0"
 issueTrackerURL="https://github.com/DancerVlt69/SlabsNstairs/issues"
 
 [[mods]]
 modId="slabsnstairs"
-version="1.16.5-0.0.1.b125"
+version="${file.jarVersion}"
+old="1.16.x-0.0.1.b125"
 displayName="SnS - Slabs 'n Stairs"
 credits="Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more"
 displayURL="https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net"
@@ -24,7 +25,7 @@ description='''SnS - Slabs 'n Stairs - will add some Slabs, Stairs, Pressure Pla
 [[dependencies.slabsnstairs]]
     modId="forge"
     mandatory=true
-    versionRange="[36.,)"
+    versionRange="[32.,)"
     ordering="NONE"
     side="BOTH"
 
