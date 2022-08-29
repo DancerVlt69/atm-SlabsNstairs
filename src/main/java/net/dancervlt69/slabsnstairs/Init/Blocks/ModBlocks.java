@@ -2,9 +2,11 @@ package net.dancervlt69.slabsnstairs.Init.Blocks;
 
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Tabs.ModTabs;
+import net.dancervlt69.slabsnstairs.Init.ToolTips.ModToolTips;
 import net.dancervlt69.slabsnstairs.SlabsNstairs;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -29,7 +31,8 @@ public class ModBlocks {
     // Define your different Blocks
     public static final RegistryObject<Block> GROWTH_STOP = registerBlock("growth_stop",
             () -> new ChainBlock(AbstractBlock.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS)
-                    .strength(0.5F).noCollission().noOcclusion()), ModTabs.SNSMODTAB);
+                    .strength(0.5F).noCollission().noOcclusion()), ModTabs.SNSMODTAB,
+            "tooltip.slabsnstairs.growth_stop.tooltip");
 /*
     public static final RegistryObject<Block> ILLUM_GROWTH_STOP = registerBlock("illum_growth_stop",
             () -> new TorchBlock(()-> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
@@ -326,7 +329,7 @@ public class ModBlocks {
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
                                                                      ItemGroup tab, String tooltipKey) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab);
+        registerBlockItem(name, toReturn, tab, tooltipKey);
         return toReturn;
     }
 
@@ -334,9 +337,14 @@ public class ModBlocks {
             String name, RegistryObject<T> block, ItemGroup tab, String tooltipKey) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
             @Override
-            public void appendHoverText(ItemStack pStack, @Nullable World world, List<ITextComponent> pTooltopComponents,
-                                        ITooltipFlag iTooltipFlag) {
-                pTooltopComponents.add(new TranslationTextComponent(tooltipKey));
+            public void appendHoverText(ItemStack pStack, @Nullable World world,
+                                        List<ITextComponent> pTooltipComponents, ITooltipFlag iTooltipFlag) {
+                if (Screen.hasShiftDown()) {
+                    pTooltipComponents.add(new TranslationTextComponent(tooltipKey));
+                } else {
+                    pTooltipComponents.add(new TranslationTextComponent("tooltip.slabsnstairs.hold_shift.tooltip"));
+                }
+
             }
         });
     }
