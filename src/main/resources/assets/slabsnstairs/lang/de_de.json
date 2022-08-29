@@ -115,8 +115,11 @@
   "itemGroup.snsmodtab":  "Slabs 'n Stairs",
   "itemGroup.sns_armors": "SnS Waffen, Rüstung & mehr",
 
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":       "Für mehr Information §eShift§r gedrückt halten.",
-  "tooltip.slabsnstairs.block.citrine_block.shift": "Du erhältst 9 Zitrin Kristalle von diesem Block.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift": "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Position diverser Erze an.",
-  "tooltip.slabsnstairs.growth_stop":               "Nahezu unsichtbarer Block um z.B.\ndas Wachstum von Ranken zu stoppen."
+  "tooltip.slabsnstairs.hold_shift.tooltip":    "Für mehr Infos §eShift§r gedrückt halten.",
+  "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Für mehr Infos §eStrg§r gedrückt halten.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nahezu unsichtbarer Block um z.B.\ndas Wachstum von Ranken zu stoppen.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Position diverser Erze an.",
+  "tooltip.slabsnstairs.citrine_block.tooltip": "Du erhältst 9 Zitrin Kristalle von diesem Block."
+
+
 }
