@@ -136,6 +136,9 @@ dependencies {
     // JMSR - Just More Simple Recipes
     runtimeOnly fg.deobf("curse.maven:jmsr-${jmsrVersionCF}")
 
+    // Cooking 4 Blockheads
+    runtimeOnly fg.deobf("curse.maven:c4b-${c4blockhVersionCF}")
+
     // Croptopia
     // runtimeOnly fg.deobf("curse.maven:cropt-${croptVersionCF}")
 
