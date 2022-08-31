@@ -6,11 +6,19 @@ import net.minecraft.world.item.ItemStack;
 
 public class ModTabs {
 
-    public static final CreativeModeTab MODTAB_TAB = new CreativeModeTab("modtab_tab") {
+    public static final CreativeModeTab SNSMODTAB = new CreativeModeTab("snsmodtab") {
         @Override
         public ItemStack makeIcon() {
 
             return new ItemStack(ModItems.CITRINE.get());
+        }
+    };
+
+    public static final CreativeModeTab SNSMODTAB2 = new CreativeModeTab("snsmodtab2") {
+        @Override
+        public ItemStack makeIcon() {
+
+            return new ItemStack(ModItems.CITRINE_COIN.get());
         }
     };
 }

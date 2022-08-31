@@ -3,7 +3,6 @@ package net.dancervlt69.slabsnstairs;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
-import net.dancervlt69.slabsnstairs.Init.Loot.ModLootModifiers;
 import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -49,7 +48,9 @@ public class SlabsNstairs {
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, ModClientSettings.SPEC,
                 "slabsnstairs-server.toml");
 
-        ModLootModifiers.LOOT_MODIFIERS.register(eventBus);
+        // ModLootModifiers.LOOT_MODIFIERS.register(eventBus);
+        // ModLootAdditionModifier.LOOT_CONDITIONS_CODEC.register(eventBus);
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
