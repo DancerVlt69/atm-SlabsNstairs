@@ -110,11 +110,12 @@
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
 
-  "itemGroup.modtab_tab": "Slabs 'n Stairs",
+  "itemGroup.snsmodtab":  "Slabs 'n Stairs",
+  "itemGroup.snsmodtab2": "SnS Armor, Tools, Weapons",
 
-  "tooltip.slabsnstairs.hold_shift.tooltip":        "Hold §eShift§r for more Information.",
-
-  "tooltip.slabsnstairs.block.citrine_block.shift": "You will get 9 Citrine Crystals from this Block.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift": "With an right click the Dowsing Rod can\nshow you the position of some ore.",
-  "tooltip.slabsnstairs.growth_stop.tooltip.shift": "Nearly invisible block\ne.g. to stop the growing of vines."
+  "tooltip.slabsnstairs.hold_shift.tooltip":    "Hold §eShift§r for more Information.",
+  "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Hold §eStrg§r for more Information.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nearly invisible block\n e.g. to stop the growing of vines.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "With an right click the Dowsing Rod can\n show you the position of some ore.",
+  "tooltip.slabsnstairs.citrine_block.tooltip": "You will get 9 Citrine Crystals from this Block."
 }

@@ -6,12 +6,12 @@
   "block.slabsnstairs.packed_ice_slab":   "Packeisstufe",
   "block.slabsnstairs.packed_ice_stairs": "Packeistreppe",
 
-  "block.slabsnstairs.citrine_ore":           "Citrinerz",
-  "block.slabsnstairs.deepslate_citrine_ore": "Tiefenschiefer Citrinerz",
-  "block.slabsnstairs.citrine_block":         "Citrin Block",
-  "block.slabsnstairs.citrine_stairs":        "Citrintreppe",
-  "block.slabsnstairs.citrine_slab":          "Citrinstufe",
-  "block.slabsnstairs.citrine_button":        "Citrinknopf",
+  "block.slabsnstairs.citrine_ore":           "Zitrinerz",
+  "block.slabsnstairs.deepslate_citrine_ore": "Tiefenschiefer Zitrinerz",
+  "block.slabsnstairs.citrine_block":         "Zitrin Block",
+  "block.slabsnstairs.citrine_stairs":        "Zitrintreppe",
+  "block.slabsnstairs.citrine_slab":          "Zitrinstufe",
+  "block.slabsnstairs.citrine_button":        "Zitrinknopf",
 
   "block.slabsnstairs.vertical_ice_slab":   "senkrechte Eisstufe",
 
@@ -100,9 +100,9 @@
   "block.slabsnstairs.growth_stop":     "Wachstumsstopper",
 
   "item.slabsnstairs.light_brown_dye":  "Hellbrauner Farbstoff",
-  "item.slabsnstairs.citrine":          "Citrin-Kristall",
-  "item.slabsnstairs.raw_citrine":      "Unbehandelter Citrin",
-  "item.slabsnstairs.citrine_coin":     "Citrin-Münze",
+  "item.slabsnstairs.citrine":          "Zitrin-Kristall",
+  "item.slabsnstairs.raw_citrine":      "Unbehandelter Zitrin",
+  "item.slabsnstairs.citrine_coin":     "Zitrin-Münze",
 
   "item.slabsnstairs.dowsing_rod":      "Wünschelrute",
 
@@ -110,11 +110,13 @@
   "item.slabsnstairs.dowsing_rod.located":      "  bei ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "Nichts Wertvolles gefunden.",
 
-  "itemGroup.modtab_tab": "Slabs 'n Stairs",
+  "itemGroup.snsmodtab":  "Slabs 'n Stairs",
+  "itemGroup.snsmodtab2": "SnS Rüstung, Werkzeuge, Waffen",
 
-  "tooltip.slabsnstairs.hold_shift.tooltip":        "Für mehr Information §eShift§r gedrückt halten.",
+  "tooltip.slabsnstairs.hold_shift.tooltip":    "Für mehr Infos §eShift§r gedrückt halten.",
+  "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Für mehr Infos §eStrg§r gedrückt halten.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nahezu unsichtbarer Block um z.B.\n das Wachstum von Ranken zu stoppen.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "Die Wünschelrute zeigt dir bei Rechtsklick\n die Position diverser Erze an.",
+  "tooltip.slabsnstairs.citrine_block.tooltip": "Du erhältst 9 Zitrin Kristalle von diesem Block."
 
-  "tooltip.slabsnstairs.block.citrine_block.shift": "Du erhältst 9 Citrin Kristalle von diesem Block.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift": "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Koordinaten diverser Erze an.",
-  "tooltip.slabsnstairs.growth_stop.tooltip.shift": "Nahezu unsichtbarer Block um z.B.\ndas Wachstum von Ranken zu stoppen."
 }
