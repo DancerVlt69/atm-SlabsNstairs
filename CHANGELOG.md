@@ -1,24 +1,24 @@
 Slabs 'n Stairs changelog:
 
 -------------------------
-v0.0.04.126 @ 2022/08/18 <-- planned
+v0.0.05.126 @ 2022/08/31
 -------------------------
-* added:
-    - much more Tags for a better JEI - compatibility
-    - 
-    - Stairs, Slabs, Pressure Plate, Button, and their Recipe/s & Advancements for:
-      + Block
+* fixed:
+    - **_[issues #3 and #13](https://github.com/DancerVlt69/SlabsNstairs/issues)_** - Tooltips will not show or is permanently visible
+    - **_[issue #15](https://github.com/DancerVlt69/SlabsNstairs/issues/15)_** - Can't craft Cinnamon Fences
 * updated:
-    - bump to Forge 43.0.11 - no new Mod-Version needed
-    - Parchment to version 2022.08.14
+    - bump to Forge 43.1.3 
+    - Parchment to version 2022.08.28 
+* added:
+    - second creative tab fpr upcoming stuff
 
 the complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md)
 
-This Version of the Mod was successfully tested with **_[Forge 43.0.11](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
+This Version of the Mod was successfully tested with **_[Forge 43.1.3](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
 
---------------------------
+------------------------
 v0.0.4.124 @ 2022/08/09
---------------------------
+------------------------
 * updated to Minecraft 1.19.2 and Forge 43.0.1
 * fixed some **_[issues]_**(https://github.com/DancerVlt69/SlabsNstairs/issues?q=is%3Aissue+is%3Aclosed) in both version
 * added:
