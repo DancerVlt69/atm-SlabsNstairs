@@ -2,7 +2,6 @@ package net.dancervlt69.slabsnstairs.Init.Blocks;
 
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Tabs.ModTabs;
-import net.dancervlt69.slabsnstairs.Init.ToolTips.ModToolTips;
 import net.dancervlt69.slabsnstairs.SlabsNstairs;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
