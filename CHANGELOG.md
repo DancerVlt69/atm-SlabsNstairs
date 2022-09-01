@@ -3,25 +3,27 @@
  v0.0.2.128 @ 2022/09/01
 -------------------------
 
-* Fixed:
-  * [Issue #13](https://github.com/DancerVlt69/SlabsNstairs/issues/13): no Tooltips in Version 001.125-1.16.5
+* fixed:
+  * [Issue #13:](https://github.com/DancerVlt69/SlabsNstairs/issues/13): Tooltips will not or permanently displayed
   * [Issue #14:](https://github.com/DancerVlt69/SlabsNstairs/issues/14) Cinnamon Fences will not connect to other Wooden Fences
   * [Issue #15:](https://github.com/DancerVlt69/SlabsNstairs/issues/15) Can't craft Cinnamon Fences
+  * Recipe of the Cinnamon Trapdoor
+
+* added some Tags
 
 * other:
   * Reorganized Tooltip-Entries in the Localization Files 
 
 This Version of the Mod was successfully testet with [**Forge** ***36.0.39***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html)
 
-The complete changelog you will find on GitHub:
-[https://github.com/DancerVlt69/SlabsNstairs/blob/1.16.5/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.16.5/CHANGELOG.md)
+The complete changelog you can find: [on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.16.5/CHANGELOG.md)
 
 -------------------------
  v0.0.1.125 @ 2022/08/28
 -------------------------
 * Initial/Porting Version for Minecraft JE 1.16.5
 
-* Fixed:
+* fixed:
   * de_DE-Localization Typo
   * Texture issue of the Citrine-Button if the Button is pressed
 
