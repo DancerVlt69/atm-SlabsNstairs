@@ -64,10 +64,10 @@
   "block.slabsnstairs.polished_granite_button":   "Polished Granite Button",
   "block.slabsnstairs.granite_pressure_plate":    "Granite Pressure Plate",
 
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_stairs":         "Cracked Polished Blackstone Brick Stairs",
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_slab":           "Cracked Polished Blackstone Brick Slab",
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_pressure_plate": "Cracked Polished Blackstone Brick Pressure Plate",
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_button":         "Cracked Polished Blackstone Brick Button",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_stairs":         "Cracked Polished Blackstone Brick Stairs",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_slab":           "Cracked Polished Blackstone Brick Slab",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_pressure_plate": "Cracked Polished Blackstone Brick Pressure Plate",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_button":         "Cracked Polished Blackstone Brick Button",
 
   "block.slabsnstairs.deepslate_button":          "Deepslate Button",
   "block.slabsnstairs.deepslate_pressure_plate":  "Deepslate Pressure Plate",
@@ -110,12 +110,14 @@
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
 
-  "itemGroup.modtab_tab": "Slabs 'n Stairs",
+  "itemGroup.snsmodtab":  "Slabs 'n Stairs",
+  "itemGroup.snsmodtab2": "SnS Tools, Armor, Weapons",
 
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":         "Hold §eShift§r for more Information.",
-  "tooltip.slabsnstairs.block.citrine_block.shift":   "You will get 9 Citrine Crystals from this Block.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift":   "With an right click the Dowsing Rod can\nshow you the position of some ore.",
-  "tooltip.slabsnstairs.growth_stop":                 "Nearly invisible block\ne.g. to stop the growing of vines."
+  "tooltip.slabsnstairs.hold_shift.tooltip":    "Hold §eShift§r for more Information.",
+  "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Hold §eStrg§r for more Information.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nearly invisible block\u000Ae.g. to stop the growing of vines.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "With an right click the Dowsing Rod can\u000Ashow you the position of some ore.",
+  "tooltip.slabsnstairs.citrine_block.tooltip": "You will get 9 Citrine Crystals from this Block."
 
 }
 

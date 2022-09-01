@@ -64,10 +64,10 @@
   "block.slabsnstairs.polished_granite_button":   "Polierter Granitknopf",
   "block.slabsnstairs.granite_pressure_plate":    "Granitdruckplatte",
 
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_stairs":         "Rissige polierte Schwarzsteinziegeltreppe",
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_slab":           "Rissige polierte Schwarzsteinziegelstufe",
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_pressure_plate": "Rissige polierte Schwarzsteinziegeldruckplatte",
-  "block.slabsnstairs.cracked_polished_blackstone_bricks_button":         "Rissiger polierter Schwarzsteinziegelknopf",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_stairs":         "Rissige polierte Schwarzsteinziegeltreppe",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_slab":           "Rissige polierte Schwarzsteinziegelstufe",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_pressure_plate": "Rissige polierte Schwarzsteinziegeldruckplatte",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_button":         "Rissiger polierter Schwarzsteinziegelknopf",
 
   "block.slabsnstairs.deepslate_button":          "Tiefenschieferknopf",
   "block.slabsnstairs.deepslate_pressure_plate":  "Tiefenschieferdruckplatte",
@@ -110,10 +110,12 @@
   "item.slabsnstairs.dowsing_rod.located":      "  bei ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "Nichts Wertvolles gefunden.",
 
-  "itemGroup.modtab_tab": "Slabs 'n Stairs",
+  "itemGroup.snsmodtab":  "Slabs 'n Stairs",
+  "itemGroup.snsmodtab2": "SnS Werkzeuge, Rüstung, Waffen",
 
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":       "Für mehr Information §eShift§r gedrückt halten.",
-  "tooltip.slabsnstairs.block.citrine_block.shift": "Du erhältst 9 Citrin Kristalle von diesem Block.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip.shift": "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Position diverser Erze an.",
-  "tooltip.slabsnstairs.growth_stop":               "Nahezu unsichtbarer Block um z.B.\ndas Wachstum von Ranken zu stoppen."
+  "tooltip.slabsnstairs.hold_shift.tooltip":    "Für mehr Infos §eShift§r gedrückt halten.",
+  "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Für mehr Infos §eStrg§r gedrückt halten.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nahezu unsichtbarer Block um z.B.\u000Adas Wachstum von Ranken zu stoppen.",
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "Die Wünschelrute zeigt dir bei Rechtsklick\u000Adie Position diverser Erze an.",
+  "tooltip.slabsnstairs.citrine_block.tooltip": "Du erhältst 9 Zitrin Kristalle von diesem Block."
 }
