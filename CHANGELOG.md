@@ -1,12 +1,29 @@
 # Slabs 'n Stairs version changelog:
 
 -------------------------
-V 0.0.5.123 @ 2022/08/09
+ v0.0.6.127 @ 2022/08/31
+-------------------------
+
+* updated:
+    - to **Forge** ***40.1.74*** 
+* fixed:
+    - Parsing Error: Unknown item 'slabsnstairs:cinnamon_sign'
+    - Parsing Error: Unknown item 'slabsnstairs:acacia_planks'
+    - Cinnamon Pressure Plate Recipe
+    - **_[issue #13](https://github.com/DancerVlt69/SlabsNstairs/issues/13):_** - Item-Tooltip will not work
+    - **_[issue #15](https://github.com/DancerVlt69/SlabsNstairs/issues/15):_** - Can't craft Cinnamon Fences
+
+complete changelog: [**_https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md_**](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
+
+This Version of the Mod was successfully tested with **Forge** ***40.1.74*** **|** ***~~39.1.2~~*** **|** ***~~38.0.17~~***
+
+If you want use **_Optifine for 1.18.2_** it is absolutely recommended that you use **Forge** **_40.1.57_**!!
+
+-------------------------
+ v0.0.5.123 @ 2022/08/09
 -------------------------
 * fixed: 
     - **_[issue #11](https://github.com/DancerVlt69/SlabsNstairs/issues/11)_** - a bug that prevented an existing world from loading
-
-complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
 
 -------------------------
 V 0.0.4.122 @ 2022/08/07
@@ -79,9 +96,9 @@ V 0.0.1.116 @ 2022/07/12
 * updated: Localization (EN / DE)
 * updated: Forge *40.1.60*
 
-------------------------
+-------------------------
 V 0.0.1.115 @ 2022/07/11
-------------------------
+-------------------------
 * updated Growth Stop Block: new texture - a bit animated, recipe, and category
 * added new tags: Stained / Glass Pane/s
 * updated and / or (re-)added:
