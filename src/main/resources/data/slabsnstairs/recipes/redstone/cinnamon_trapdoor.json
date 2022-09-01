@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "group": "wooden_trapdoor",
   "pattern": [
-    "###",
-    "###"
+    "---",
+    "---"
   ],
   "key": {
-    "#": {
-      "item": "slabsnstairs:cinnamon_planks"
+    "-": {
+      "item": "slabsnstairs:cinnamon_slab"
     }
   },
   "result": {
