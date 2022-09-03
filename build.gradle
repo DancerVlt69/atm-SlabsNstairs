@@ -146,6 +146,9 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:xwm-${xWmapVersionCF}") // World-Mao
     runtimeOnly fg.deobf("curse.maven:xmm-${xMmapVersionCF}") // Mini-Map
 
+    // WorldEdit
+    runtimeOnly fg.deobf("curse.maven:wEdit-${worldEditCF}")
+
     // Stop Mod Reports
     // embedNoCompile "org.stopmodreposts:stopmodreposts:${minecraftVersion}-${stopmodrepostsVersion}"
 
