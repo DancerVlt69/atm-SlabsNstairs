@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "top": "slabsnstairs:block/cinnamon_door_left_var01_top",
+    "bottom": "slabsnstairs:block/cinnamon_door_left_var02_bottom"
+  }
+}

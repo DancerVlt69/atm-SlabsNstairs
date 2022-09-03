@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/acacia_door"
+    "layer0": "slabsnstairs:block/cinnamon_door_left_var02"
   }
 }

@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "group": "wooden_door",
   "pattern": [
-    "##",
-    "##",
-    "##"
+    "# #",
+    "# #",
+    "# #"
   ],
   "key": {
     "#": {
@@ -12,13 +12,13 @@
     }
   },
   "result": {
-    "item": "slabsnstairs:cinnamon_door",
+    "item": "slabsnstairs:cinnamon_door_02",
     "count": 3
   },
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "croptopia"
+      "modid": "slabsnstairs"
     }
   ]
 }

@@ -72,7 +72,10 @@ public class ModBlocks {
             () -> new FenceGateBlock(AbstractBlock.Properties.copy(Blocks.OAK_FENCE_GATE)),ModTabs.SNSMODTAB);
     public static final RegistryObject<Block> CINNAMON_TRAPDOOR = registerBlock ("cinnamon_trapdoor",
             () -> new TrapDoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_TRAPDOOR)),ModTabs.SNSMODTAB);
-    public static final RegistryObject<Block> CINNAMON_DOOR = registerBlock ("cinnamon_door",
+    public static final RegistryObject<Block> CINNAMON_DOOR_01 = registerBlock ("cinnamon_door_01",
+            () -> new DoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_DOOR)),ModTabs.SNSMODTAB);
+
+    public static final RegistryObject<Block> CINNAMON_DOOR_02 = registerBlock ("cinnamon_door_02",
             () -> new DoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_DOOR)),ModTabs.SNSMODTAB);
 
 /*    public static final RegistryObject<Block> CINNAMON_SIGN = registerBlock("cinnamon_sign",
