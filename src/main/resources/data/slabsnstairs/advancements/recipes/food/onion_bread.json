@@ -1,0 +1,58 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slabsnstairs:food/onion_bread"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_ingredients": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:wheat"
+            ]
+          },
+          {
+            "items": [
+              "forge:crops/onion"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_ingredients",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:food/onion_bread"
+    ]
+  },
+  "conditions": [
+    {
+      "type": "forge:or",
+      "values":[
+        {
+          "type": "forge:mod_loaded",
+          "modid": "croptopia"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "pamhc2crops"
+        }
+      ]
+    }
+  ]
+}
