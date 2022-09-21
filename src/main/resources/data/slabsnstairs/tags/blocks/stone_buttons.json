@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "slabsnstairs:cobblestone_button",
+    "slabsnstairs:andesite_button",
+    "slabsnstairs:diorite_button",
+    "slabsnstairs:granite_button"
+  ]
+}
