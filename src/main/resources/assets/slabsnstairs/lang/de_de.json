@@ -6,12 +6,15 @@
   "block.slabsnstairs.packed_ice_slab":   "Packeisstufe",
   "block.slabsnstairs.packed_ice_stairs": "Packeistreppe",
 
-  "block.slabsnstairs.citrine_ore":           "Zitrinerz",
-  "block.slabsnstairs.deepslate_citrine_ore": "Tiefenschiefer Zitrinerz",
-  "block.slabsnstairs.citrine_block":         "Zitrin Block",
-  "block.slabsnstairs.citrine_stairs":        "Zitrintreppe",
-  "block.slabsnstairs.citrine_slab":          "Zitrinstufe",
-  "block.slabsnstairs.citrine_button":        "Zitrinknopf",
+  "block.slabsnstairs.dry_ice_block":     "Trockeneis",
+
+  "block.slabsnstairs.citrine_ore":             "Zitrinerz",
+  "block.slabsnstairs.deepslate_citrine_ore":   "Tiefenschiefer Zitrinerz",
+  "block.slabsnstairs.citrine_block":           "Zitrin Block",
+  "block.slabsnstairs.citrine_stairs":          "Zitrintreppe",
+  "block.slabsnstairs.citrine_slab":            "Zitrinstufe",
+  "block.slabsnstairs.citrine_button":          "Zitrinknopf",
+  "block.slabsnstairs.citrine_pressure_plate":  "Zitrindruckplatte",
 
   "block.slabsnstairs.vertical_ice_slab":   "senkrechte Eisstufe",
 
@@ -64,10 +67,10 @@
   "block.slabsnstairs.polished_granite_button":   "Polierter Granitknopf",
   "block.slabsnstairs.granite_pressure_plate":    "Granitdruckplatte",
 
-  "block.slabsnstairs.cracked_polished_blackstone_brick_stairs":          "Rissige polierte Schwarzsteinziegeltreppe",
-  "block.slabsnstairs.cracked_polished_blackstone_brick_slab":            "Rissige polierte Schwarzsteinziegelstufe",
-  "block.slabsnstairs.cracked_polished_blackstone_brick_pressure_plate":  "Rissige polierte Schwarzsteinziegeldruckplatte",
-  "block.slabsnstairs.cracked_polished_blackstone_brick_button":          "Rissiger polierter Schwarzsteinziegelknopf",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_stairs":         "Rissige polierte Schwarzsteinziegeltreppe",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_slab":           "Rissige polierte Schwarzsteinziegelstufe",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_pressure_plate": "Rissige polierte Schwarzsteinziegeldruckplatte",
+  "block.slabsnstairs.cracked_polished_blackstone_brick_button":         "Rissiger polierter Schwarzsteinziegelknopf",
 
   "block.slabsnstairs.deepslate_button":          "Tiefenschieferknopf",
   "block.slabsnstairs.deepslate_pressure_plate":  "Tiefenschieferdruckplatte",
@@ -79,10 +82,10 @@
   "block.slabsnstairs.cracked_deepslate_brick_stairs":          "Rissige Tiefenschieferziegeltreppe",
   "block.slabsnstairs.cracked_deepslate_brick_slab":            "Rissige Tiefenschieferziegelstufe",
 
-  "block.slabsnstairs.cracked_deepslate_tile_button":         "Rissige Tiefenschieferfliesenknopf",
-  "block.slabsnstairs.cracked_deepslate_tile_pressure_plate": "Rissige Tiefenschieferfliesendruckplatte",
-  "block.slabsnstairs.cracked_deepslate_tile_stairs":         "Rissige Tiefenschieferfliesentreppe",
-  "block.slabsnstairs.cracked_deepslate_tile_slab":           "Rissige Tiefenschieferfliesenstufe",
+  "block.slabsnstairs.cracked_deepslate_tile_button":          "Rissige Tiefenschieferfliesenknopf",
+  "block.slabsnstairs.cracked_deepslate_tile_pressure_plate":  "Rissige Tiefenschieferfliesendruckplatte",
+  "block.slabsnstairs.cracked_deepslate_tile_stairs":          "Rissige Tiefenschieferfliesentreppe",
+  "block.slabsnstairs.cracked_deepslate_tile_slab":            "Rissige Tiefenschieferfliesenstufe",
 
   "block.slabsnstairs.cinnamon_planks":         "Zimtholzbretter",
   "block.slabsnstairs.cinnamon_stairs":         "Zimtholztreppe",
@@ -92,31 +95,52 @@
   "block.slabsnstairs.cinnamon_fence":          "Zimtholzzaun",
   "block.slabsnstairs.cinnamon_fence_gate":     "Zimtholzzauntor",
   "block.slabsnstairs.cinnamon_door":           "Zimtholztür",
+  "block.slabsnstairs.cinnamon_door_01":        "Zimtholztür Var. 01",
+  "block.slabsnstairs.cinnamon_door_02":        "Zimtholztür Var. 02",
   "block.slabsnstairs.cinnamon_trapdoor":       "Zimtholzfalltür",
   "block.slabsnstairs.cinnamon_sign":           "Zimtholzschild",
   "block.slabsnstairs.cinnamon_palisade":       "Zimtholz-Palisade",
   "block.slabsnstairs.cinnamon_leaves":         "Zimtbaumblätter",
 
   "block.slabsnstairs.growth_stop":     "Wachstumsstopper",
+  "block.slabsnstairs.tripod":          "Stativ",
+  "block.slabsnstairs.telescope":       "Teleskop",
 
   "item.slabsnstairs.light_brown_dye":  "Hellbrauner Farbstoff",
   "item.slabsnstairs.citrine":          "Zitrin-Kristall",
   "item.slabsnstairs.raw_citrine":      "Unbehandelter Zitrin",
   "item.slabsnstairs.citrine_coin":     "Zitrin-Münze",
 
-  "item.slabsnstairs.dowsing_rod":      "Wünschelrute",
+  "item.slabsnstairs.dowsing_rod":       "Wünschelrute",
+
+  "item.slabsnstairs.apple_bread":       "Apfelbrot",
+  "item.slabsnstairs.carrot_bread":      "Karottenbrot",
+  "item.slabsnstairs.onion_bread":       "Zwiebelbrot",
+  "item.slabsnstairs.potato_bread":      "Kartoffelbrot",
 
   "item.slabsnstairs.dowsing_rod.found":        "Hab was: ",
   "item.slabsnstairs.dowsing_rod.located":      "  bei ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "Nichts Wertvolles gefunden.",
 
+  "item.slabsnstairs.citrine_sword":  "Zitrin-Schwert (Test!)",
+
   "itemGroup.snsmodtab":  "Slabs 'n Stairs",
-  "itemGroup.snsmodtab2": "SnS Rüstung, Werkzeuge, Waffen",
+  "itemGroup.snsmodtab2": "SnS Waffen, Rüstung & mehr",
+  "itemGroup.snsmodtab3": "SnS Sonstiges",
 
   "tooltip.slabsnstairs.hold_shift.tooltip":    "Für mehr Infos §eShift§r gedrückt halten.",
   "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Für mehr Infos §eStrg§r gedrückt halten.",
-  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nahezu unsichtbarer Block um z.B.\n das Wachstum von Ranken zu stoppen.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "Die Wünschelrute zeigt dir bei Rechtsklick\n die Position diverser Erze an.",
-  "tooltip.slabsnstairs.citrine_block.tooltip": "Du erhältst 9 Zitrin Kristalle von diesem Block."
+
+  "tooltip.slabsnstairs.citrine_block.tooltip": "Du erhältst 9 Zitrin Kristalle von diesem Block.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nahezu unsichtbarer Block um z.B.\ndas Wachstum von Ranken zu stoppen.",
+  "tooltip.slabsnstairs.dry_ice_block.tooltip": "Ein sehr, sehr tiefgefrorener Eisblock!",
+
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Position diverser Erze an.",
+  "tooltip.slabsnstairs.citrine_coin.tooltip":  "With this Coins can bye any cool Stuff; \n maybe... in the Future.",
+
+  "tooltip.slabsnstairs.tripod.tooltip":        "Wichtiger Bestandteil für ein Teleskop!",
+  "tooltip.slabsnstairs.telescope.tooltip":     "Für ein bisschen mehr Weitsicht und zudem sehr dekorativ.",
+
+  "enchantment.slabsnstairs.lightning_striker": "Lightning Striker"
 
 }

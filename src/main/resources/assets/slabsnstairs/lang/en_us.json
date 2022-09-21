@@ -6,12 +6,15 @@
   "block.slabsnstairs.packed_ice_slab":   "Packed Ice Slab",
   "block.slabsnstairs.packed_ice_stairs": "Packed Ice Stairs",
 
-  "block.slabsnstairs.citrine_ore":           "Citrine Ore",
-  "block.slabsnstairs.deepslate_citrine_ore": "Deepslate Citrine Ore",
-  "block.slabsnstairs.citrine_block":         "Citrine Block",
-  "block.slabsnstairs.citrine_stairs":        "Citrine Stairs",
-  "block.slabsnstairs.citrine_slab":          "Citrine Slab",
-  "block.slabsnstairs.citrine_button":        "Citrine Button",
+  "block.slabsnstairs.dry_ice_block":      "Dry Ice Block",
+
+  "block.slabsnstairs.citrine_ore":             "Citrine Ore",
+  "block.slabsnstairs.deepslate_citrine_ore":   "Deepslate Citrine Ore",
+  "block.slabsnstairs.citrine_block":           "Citrine Block",
+  "block.slabsnstairs.citrine_stairs":          "Citrine Stairs",
+  "block.slabsnstairs.citrine_slab":            "Citrine Slab",
+  "block.slabsnstairs.citrine_button":          "Citrine Button",
+  "block.slabsnstairs.citrine_pressure_plate":  "Citrine Pressure Plate",
 
   "block.slabsnstairs.vertical_ice_slab":     "Vertical Ice Slab",
 
@@ -92,12 +95,16 @@
   "block.slabsnstairs.cinnamon_fence":          "Cinnamon Fence",
   "block.slabsnstairs.cinnamon_fence_gate":     "Cinnamon Fence Gate",
   "block.slabsnstairs.cinnamon_door":           "Cinnamon Door",
+  "block.slabsnstairs.cinnamon_door_01":        "Cinnamon Door Var. 1",
+  "block.slabsnstairs.cinnamon_door_02":        "Cinnamon Door Var. 2",
   "block.slabsnstairs.cinnamon_trapdoor":       "Cinnamon Trapdoor",
   "block.slabsnstairs.cinnamon_sign":           "Cinnamon Sign",
   "block.slabsnstairs.cinnamon_palisade":       "Cinnamon Palisade",
   "block.slabsnstairs.cinnamon_leaves":         "Cinnamon Leaves",
 
   "block.slabsnstairs.growth_stop":     "Growth Stop",
+  "block.slabsnstairs.tripod":          "Tripod",
+  "block.slabsnstairs.telescope":       "Telescope",
 
   "item.slabsnstairs.light_brown_dye":  "Light Brown Dye",
   "item.slabsnstairs.citrine":          "Citrine Crystal",
@@ -106,16 +113,34 @@
 
   "item.slabsnstairs.dowsing_rod":      "Dowsing Rod",
 
+  "item.slabsnstairs.apple_bread":       "Apple Bread",
+  "item.slabsnstairs.carrot_bread":      "Carrot Bread",
+  "item.slabsnstairs.onion_bread":       "Onion Bread",
+  "item.slabsnstairs.potato_bread":      "Potato Bread",
+
   "item.slabsnstairs.dowsing_rod.found":        "Found ",
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
 
+  "item.slabsnstairs.citrine_sword":  "Citrine-Sword (Test!)",
+
   "itemGroup.snsmodtab":  "Slabs 'n Stairs",
-  "itemGroup.snsmodtab2": "SnS Armor, Tools, Weapons",
+  "itemGroup.snsmodtab2": "SnS Weapons, Armor & Co.",
+  "itemGroup.snsmodtab3": "SnS Miscs",
 
   "tooltip.slabsnstairs.hold_shift.tooltip":    "Hold §eShift§r for more Information.",
   "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Hold §eStrg§r for more Information.",
-  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nearly invisible block\n e.g. to stop the growing of vines.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "With an right click the Dowsing Rod can\n show you the position of some ore.",
-  "tooltip.slabsnstairs.citrine_block.tooltip": "You will get 9 Citrine Crystals from this Block."
+
+  "tooltip.slabsnstairs.citrine_block.tooltip": "You will get 9 Citrine Crystals from this Block.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nearly invisible block\ne.g. to stop the growing of Vines.",
+  "tooltip.slabsnstairs.dry_ice_block.tooltip": "A very very deep frozen Ice Block",
+
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "With an right click the Dowsing Rod can\nshow you the Position of some Ore.",
+  "tooltip.slabsnstairs.citrine_coin.tooltip":  "With this Coins you can bye various \n cool Stuff... maybe... in the Future.",
+
+  "tooltip.slabsnstairs.tripod.tooltip":        "Important part to craft an Telescope!",
+  "tooltip.slabsnstairs.telescope.tooltip":     "For a bit more vision and also very decorative.",
+
+  "enchantment.slabsnstairs.lightning_striker": "Lightning Striker"
+
 }
