@@ -1,6 +1,23 @@
 Slabs 'n Stairs changelog:
 
 -------------------------
+v0.0.06.129 @ 2022/09/31
+-------------------------
+**!!! Marked some of the Items & Blocks as** **_@Depricated (forRemoval)_** **!!!**
+-
+* **Blocks**
+  * the old **Cinnamon** (aka Acacia-) **Door** | Two new Variations are in the Mod right now
+  * the **Growth-Stop** | will be moved to a (planned) new Sub-Mod
+  * the **Tripod** | will be moved to a (planned) new Sub-Mod
+  * the (right now unfinished) **Telescope** | will be moved to a (planned) new Sub-Mod
+* **Items**
+  * some Food | will be moved to a (planned) new Sub-Mod
+  * the Dye **Light-Brown** | will be moved to a (planned) new Sub-Mod
+  * the **Citrine-Sword** | will be moved to a (planned) new Sub-Mod
+
+But don't panic. The planned new Mod/s will be published a long before the deprecated stuff will be removed!
+
+-------------------------
 v0.0.05.126 @ 2022/08/31
 -------------------------
 * fixed:
