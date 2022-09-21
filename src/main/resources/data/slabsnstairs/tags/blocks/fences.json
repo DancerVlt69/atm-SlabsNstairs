@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#slabsnstairs:wooden_fences"
+    "#slabsnstairs:wooden_fences",
+    "#slabsnstairs:stone_fences",
+    "#slabsnstairs:gem_fences"
   ]
 }

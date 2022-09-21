@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
-	"group": "2icedblocks",
+    "group": "2icedblocks",
     "pattern": [
         "__",
         "__"

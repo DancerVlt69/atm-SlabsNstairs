@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "slabsnstairs:quarter_dirt",
     "slabsnstairs:dirt_cobble",
+    "slabsnstairs:quarter_dirt",
     "slabsnstairs:quarter_dirt_cobble"
   ]
 }

@@ -1,13 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "slabsnstairs:building_blocks/blue_ice_from_blue_ice_slabs"
-    ]
-  },
   "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slabsnstairs:building_blocks/blue_ice_from_blue_ice_slabs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
     "has_blue_ice_slab": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -16,12 +16,19 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_blue_ice_slab"
+      "has_blue_ice_slab",
+      "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:building_blocks/blue_ice_from_blue_ice_slabs"
+    ]
+  }
 }

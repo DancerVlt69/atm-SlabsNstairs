@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "replace": "true",
+  "group": "wooden_slab",
   "pattern": [
     "###"
   ],
