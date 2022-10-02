@@ -1,4 +1,4 @@
-package net.dancervlt69.slabsnstairs.Init.World.features;
+package net.dancervlt69.slabsnstairs.Init.World.Features;
 
 import com.google.common.base.Suppliers;
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;

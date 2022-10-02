@@ -1,4 +1,4 @@
-package net.dancervlt69.slabsnstairs.Init.World.features.trees;
+package net.dancervlt69.slabsnstairs.Init.World.Features.Trees;
 
 public class ModTreeGrower {
 
