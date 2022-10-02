@@ -17,6 +17,8 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 import java.util.List;
 
+/** methode to create an own 'Bonemealable' DirtBlock that can grow Grass, Flowers and Trees */
+
 public class ModDirtBlock extends GrassBlock implements BonemealableBlock {
     public ModDirtBlock(Properties pProperties) { super(pProperties); }
 

@@ -18,6 +18,9 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import java.util.List;
 import java.util.function.Supplier;
 
+/** class to create an own 'Bonemealable' DirtStairBlock that can grow Grass, Flowers and Trees
+ *  right now missed a methode to check the correct position and orientation of the Stair */
+
 public class ModDirtStairBlock extends StairBlock implements BonemealableBlock {
 
     public ModDirtStairBlock(Supplier<BlockState> state, Properties properties) {

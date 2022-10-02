@@ -7,28 +7,32 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.BonemealableBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+
+/** class to create an own 'Bonemealable' DirtSlabBlock that can grow Grass, Flowers and Trees
+ *  right now missed a methode to check if the Slab set on Top on Bottom */
 
 public class ModDirtSlabBlock extends SlabBlock implements BonemealableBlock {
     public ModDirtSlabBlock(Properties pProperties) { super(pProperties); }
 
     @Override
-    public boolean isValidBonemealTarget(BlockGetter pLevel, BlockPos pPos, @NotNull BlockState pState, boolean pIsClient) {
+    public boolean isValidBonemealTarget(BlockGetter pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
         return pLevel.getBlockState(pPos.above()).isAir(); }
 
     @Override
-    public boolean isBonemealSuccess(@NotNull Level pLevel, @NotNull RandomSource pRandom, @NotNull BlockPos pPos, @NotNull BlockState pState) {
+    public boolean isBonemealSuccess(Level pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {
         return true; }
 
     @Override
-    public void performBonemeal(@NotNull ServerLevel pLevel, @NotNull RandomSource pRandom, BlockPos pPos, @NotNull BlockState pState) {
+    public void performBonemeal( ServerLevel pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {
 
         BlockPos blockPos = pPos.above();
         BlockState blockState = Blocks.DIRT.defaultBlockState();

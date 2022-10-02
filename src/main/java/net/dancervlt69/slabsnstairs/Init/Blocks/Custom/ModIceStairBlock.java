@@ -1,8 +1,6 @@
 package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
@@ -12,24 +10,25 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.Nullable;
 
-public class ModIceSlabBlock extends SlabBlock {
+import java.util.function.Supplier;
 
-    public ModIceSlabBlock(Properties pProperties) {
-        super(pProperties);
+public class ModIceStairBlock extends StairBlock {
+
+    public ModIceStairBlock(Supplier<BlockState> pState, Properties pProperties) {
+        super(pState, pProperties);
     }
 
     @Override
     public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
         // super.randomTick(pState, pLevel, pPos, pRandom);
-        if (pLevel.getBrightness(LightLayer.BLOCK, pPos) > 0) {
+        if (pLevel.getBrightness(LightLayer.BLOCK, pPos) > 12) {
             pLevel.destroyBlock(pPos, false);
             this.melt(pState, pLevel, pPos);
         }
@@ -37,17 +36,12 @@ public class ModIceSlabBlock extends SlabBlock {
 
     protected void melt(BlockState pState, Level pLevel, BlockPos pPos) {
         // super.melt(pState, pLevel, pPos);
-        // String dimension =
         if (pLevel.dimensionType().ultraWarm()) {
-            if (pLevel.dimensionType().bedWorks()) {
-                this.melt(pState, pLevel, pPos);
-                pLevel.removeBlock(pPos, false);
-            }
+            this.melt(pState, pLevel,pPos);
+            pLevel.removeBlock(pPos, false);
         } else {
-            if (pLevel.dimensionType().bedWorks()) {
-                pLevel.setBlockAndUpdate(pPos, Blocks.WATER.defaultBlockState());
-                pLevel.neighborChanged(pPos, Blocks.WATER, pPos);
-            }
+            pLevel.setBlockAndUpdate(pPos, Blocks.WATER.defaultBlockState());
+            pLevel.neighborChanged(pPos, Blocks.WATER, pPos);
         }
     }
 

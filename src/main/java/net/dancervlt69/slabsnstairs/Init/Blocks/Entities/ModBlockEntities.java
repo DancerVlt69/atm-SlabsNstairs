@@ -8,5 +8,4 @@ package net.dancervlt69.slabsnstairs.Init.Blocks.Entities;
 
 public class ModBlockEntities {
 
-
 }
