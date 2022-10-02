@@ -6,7 +6,9 @@
   "block.slabsnstairs.packed_ice_slab":   "Packeisstufe",
   "block.slabsnstairs.packed_ice_stairs": "Packeistreppe",
 
-  "block.slabsnstairs.dry_ice_block":     "Trockeneis",
+  "block.slabsnstairs.dry_ice_block":     "Trockeneisblock",
+  "block.slabsnstairs.dry_ice_slab":      "Trockeneisstufe",
+  "block.slabsnstairs.dry_ice_stairs":    "Trockeneistreppe",
 
   "block.slabsnstairs.citrine_ore":             "Zitrinerz",
   "block.slabsnstairs.deepslate_citrine_ore":   "Tiefenschiefer Zitrinerz",
@@ -22,6 +24,8 @@
   "block.slabsnstairs.dirt_block_slab":     "Stufe aus Erde",
   "block.slabsnstairs.grass_block_stairs":  "Grastreppe",
   "block.slabsnstairs.grass_block_slab":    "Grasstufe",
+  "block.slabsnstairs.path_block_stairs":   "Trampelpfadtreppe",
+  "block.slabsnstairs.path_block_slab":     "Trampelpfadstufe",
 
   "block.slabsnstairs.dirt_cobble":                 "Erde mit Kiesel",
   "block.slabsnstairs.dirt_cobble_stairs":          "Erdtreppe mit Kiesel",
@@ -100,7 +104,7 @@
   "block.slabsnstairs.cinnamon_trapdoor":       "Zimtholzfalltür",
   "block.slabsnstairs.cinnamon_sign":           "Zimtholzschild",
   "block.slabsnstairs.cinnamon_palisade":       "Zimtholz-Palisade",
-  "block.slabsnstairs.cinnamon_leaves":         "Zimtbaumblätter",
+  "block.slabsnstairs.cinnamon_leaves":         "Zimtbaumlaub",
 
   "block.slabsnstairs.growth_stop":     "Wachstumsstopper",
   "block.slabsnstairs.tripod":          "Stativ",
@@ -113,18 +117,13 @@
 
   "item.slabsnstairs.dowsing_rod":       "Wünschelrute",
 
-  "item.slabsnstairs.apple_bread":       "Apfelbrot",
-  "item.slabsnstairs.carrot_bread":      "Karottenbrot",
-  "item.slabsnstairs.onion_bread":       "Zwiebelbrot",
-  "item.slabsnstairs.potato_bread":      "Kartoffelbrot",
-
   "item.slabsnstairs.dowsing_rod.found":        "Hab was: ",
   "item.slabsnstairs.dowsing_rod.located":      "  bei ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "Nichts Wertvolles gefunden.",
 
   "item.slabsnstairs.citrine_sword":  "Zitrin-Schwert (Test!)",
 
-  "itemGroup.snsmodtab":  "Slabs 'n Stairs",
+  "itemGroup.snsmodtab1":  "Slabs 'n Stairs",
   "itemGroup.snsmodtab2": "SnS Waffen, Rüstung & mehr",
   "itemGroup.snsmodtab3": "SnS Sonstiges",
 
@@ -138,9 +137,9 @@
   "tooltip.slabsnstairs.dowsing_rod.tooltip":   "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Position diverser Erze an.",
   "tooltip.slabsnstairs.citrine_coin.tooltip":  "With this Coins can bye any cool Stuff; \n maybe... in the Future.",
 
-  "tooltip.slabsnstairs.tripod.tooltip":        "Wichtiger Bestandteil für ein Teleskop!",
-  "tooltip.slabsnstairs.telescope.tooltip":     "Für ein bisschen mehr Weitsicht und zudem sehr dekorativ.",
+  "enchantment.slabsnstairs.lightning_striker": "Lightning Striker",
 
-  "enchantment.slabsnstairs.lightning_striker": "Lightning Striker"
+  "advancements.adventure.bake_all_breads.title":       "Meister-Bäcker",
+  "advancements.adventure.bake_all_breads.description": "Willst du nicht lieber eine Bäckerei eröffnen?"
 
 }

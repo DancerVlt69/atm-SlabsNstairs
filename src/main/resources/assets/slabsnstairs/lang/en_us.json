@@ -1,12 +1,14 @@
 {
-  "block.slabsnstairs.ice_slab":          "Ice Slabs",
+  "block.slabsnstairs.ice_slab":          "Ice Slab",
   "block.slabsnstairs.ice_stairs":        "Ice Stairs",
-  "block.slabsnstairs.blue_ice_slab":     "Blue Ice Slabs",
+  "block.slabsnstairs.blue_ice_slab":     "Blue Ice Slab",
   "block.slabsnstairs.blue_ice_stairs":   "Blue Ice Stairs",
   "block.slabsnstairs.packed_ice_slab":   "Packed Ice Slab",
   "block.slabsnstairs.packed_ice_stairs": "Packed Ice Stairs",
 
-  "block.slabsnstairs.dry_ice_block":      "Dry Ice Block",
+  "block.slabsnstairs.dry_ice_block":     "Dry Ice Block",
+  "block.slabsnstairs.dry_ice_slab":      "Dry Ice Slab",
+  "block.slabsnstairs.dry_ice_stairs":    "Dry Ice Stairs",
 
   "block.slabsnstairs.citrine_ore":             "Citrine Ore",
   "block.slabsnstairs.deepslate_citrine_ore":   "Deepslate Citrine Ore",
@@ -18,10 +20,12 @@
 
   "block.slabsnstairs.vertical_ice_slab":     "Vertical Ice Slab",
 
-  "block.slabsnstairs.dirt_block_stairs":          "Dirt Stairs",
-  "block.slabsnstairs.dirt_block_slab":            "Dirt Slab",
-  "block.slabsnstairs.grass_block_stairs":         "Grass Stairs",
-  "block.slabsnstairs.grass_block_slab":           "Grass Slab",
+  "block.slabsnstairs.dirt_block_stairs":   "Dirt Stairs",
+  "block.slabsnstairs.dirt_block_slab":     "Dirt Slab",
+  "block.slabsnstairs.grass_block_stairs":  "Grass Stairs",
+  "block.slabsnstairs.grass_block_slab":    "Grass Slab",
+  "block.slabsnstairs.path_block_stairs":   "Path Way Stairs",
+  "block.slabsnstairs.path_block_slab":     "Path Way Slab",
 
   "block.slabsnstairs.dirt_cobble":                 "Dirt with Cobble",
   "block.slabsnstairs.dirt_cobble_stairs":          "Dirt Stairs with Cobble",
@@ -113,18 +117,13 @@
 
   "item.slabsnstairs.dowsing_rod":      "Dowsing Rod",
 
-  "item.slabsnstairs.apple_bread":       "Apple Bread",
-  "item.slabsnstairs.carrot_bread":      "Carrot Bread",
-  "item.slabsnstairs.onion_bread":       "Onion Bread",
-  "item.slabsnstairs.potato_bread":      "Potato Bread",
-
   "item.slabsnstairs.dowsing_rod.found":        "Found ",
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
 
   "item.slabsnstairs.citrine_sword":  "Citrine-Sword (Test!)",
 
-  "itemGroup.snsmodtab":  "Slabs 'n Stairs",
+  "itemGroup.snsmodtab1":  "Slabs 'n Stairs",
   "itemGroup.snsmodtab2": "SnS Weapons, Armor & Co.",
   "itemGroup.snsmodtab3": "SnS Miscs",
 
@@ -138,9 +137,9 @@
   "tooltip.slabsnstairs.dowsing_rod.tooltip":   "With an right click the Dowsing Rod can\nshow you the Position of some Ore.",
   "tooltip.slabsnstairs.citrine_coin.tooltip":  "With this Coins you can bye various \n cool Stuff... maybe... in the Future.",
 
-  "tooltip.slabsnstairs.tripod.tooltip":        "Important part to craft an Telescope!",
-  "tooltip.slabsnstairs.telescope.tooltip":     "For a bit more vision and also very decorative.",
+  "enchantment.slabsnstairs.lightning_striker": "Lightning Striker",
 
-  "enchantment.slabsnstairs.lightning_striker": "Lightning Striker"
+  "advancements.adventure.bake_all_breads.title":       "Master-Baker",
+  "advancements.adventure.bake_all_breads.description": "You should start your own Bakery-Business"
 
 }
