@@ -17,6 +17,17 @@ v0.0.06.129 @ 2022/09/31
 
 But don't panic. The planned new Mod/s will be published a long before the deprecated stuff will be removed!
 
+* **fixed:**
+  * small Issues on the Growth-Stop and the pressed Citrine Button 
+* **updated:**
+  - bump to Forge 43.1.27
+  - Parchment to version 2022.09.18
+* **added:**
+  * two new Variants of the Cinnamon Door 
+  * Citrine Sword
+  * Tripod and Telescope (unfinished)
+  * Bread from Wheat and Apple, Carrot, Potato, Pumpkin Seeds, and, if available, Onion 
+
 -------------------------
 v0.0.05.126 @ 2022/08/31
 -------------------------
