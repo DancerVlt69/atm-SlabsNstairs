@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:block/cube_all",
-	"textures": {
-		"all": "slabsnstairs:block/growth_stop",
-		"particle": "slabsnstairs:block/growth_stop"
-	}
-}
