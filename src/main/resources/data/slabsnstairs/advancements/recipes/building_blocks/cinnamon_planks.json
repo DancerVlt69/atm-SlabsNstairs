@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "croptopia:cinnamon_logs"
-            ]
+            "tag": "croptopia:cinnamon_logs"
           }
         ]
       },

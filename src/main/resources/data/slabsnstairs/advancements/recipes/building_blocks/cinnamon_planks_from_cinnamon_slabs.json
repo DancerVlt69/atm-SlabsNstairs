@@ -5,8 +5,8 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "croptopia:cinnamon_logs"
+            "items": [
+              "slabsnstairs:cinnamon_slab"
             ]
           }
         ]
@@ -30,32 +30,5 @@
     "recipes": [
       "slabsnstairs:building_blocks/cinnamon_planks_from_cinnamon_slabs"
     ]
-  },
-  "conditions": [
-    {
-      "type": "forge:mod_loaded",
-      "modid": "croptopia"
-    },
-    {
-      "type": "forge:or",
-      "values": [
-        {
-          "type": "forge:item_exists",
-          "item": "croptopia:cinnamon_log"
-        },
-        {
-          "type": "forge:item_exists",
-          "item": "croptopia:stripped_cinnamon_log"
-        },
-        {
-          "type": "forge:item_exists",
-          "item": "croptopia:cinnamon_wood"
-        },
-        {
-          "type": "forge:item_exists",
-          "item": "croptopia:stripped_cinnamon_wood"
-        }
-      ]
-    }
-  ]
+  }
 }
