@@ -2,20 +2,22 @@
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_cinnamon_planks": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "slabsnstairs:cinnamon_planks"
+            "items": [
+              "slabsnstairs:cinnamon_planks"
+            ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
     },
     "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "slabsnstairs:cinnamon_door"
-      }
+        "recipe": "slabsnstairs:redstone/cinnamon_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
@@ -26,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "slabsnstairs:cinnamon_door"
+      "slabsnstairs:redstone/cinnamon_door"
     ]
   }
 }

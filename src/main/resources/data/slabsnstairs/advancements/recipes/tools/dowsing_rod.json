@@ -1,27 +1,32 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "slabsnstairs:dowsing_rod"
-    ]
-  },
   "criteria": {
     "has_sticks": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tags": [
-              "slabsnstairs:sticks"
-            ]
+            "tags": "slabsnstairs:sticks"
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slabsnstairs:tools/dowsing_rod"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sticks"
+      "has_sticks",
+      "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:tools/dowsing_rod"
+    ]
+  }
 }
