@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:blue_ice",
     "slabsnstairs:dry_ice_block"
-
   ]
 }
