@@ -1,7 +1,7 @@
 Slabs 'n Stairs changelog:
 
 -------------------------
-v0.0.06.129 @ 2022/09/31
+ v0.1.0.129 @ 2022/10/06
 -------------------------
 **!!! Marked some of the Items & Blocks as** **_@Depricated (forRemoval)_** **!!!**
 -
@@ -11,22 +11,23 @@ v0.0.06.129 @ 2022/09/31
   * the **Tripod** | will be moved to a (planned) new Sub-Mod
   * the (right now unfinished) **Telescope** | will be moved to a (planned) new Sub-Mod
 * **Items**
-  * some Food | will be moved to a (planned) new Sub-Mod
+  * Food Items | will be moved to a (planned) new Sub-Mod
   * the Dye **Light-Brown** | will be moved to a (planned) new Sub-Mod
   * the **Citrine-Sword** | will be moved to a (planned) new Sub-Mod
 
-But don't panic. The planned new Mod/s will be published a long before the deprecated stuff will be removed!
+But don't panic. The planned new Mod/s will be published a long time before the deprecated stuff will be removed!
 
 * **fixed:**
   * small Issues on the Growth-Stop and the pressed Citrine Button 
 * **updated:**
-  - bump to Forge 43.1.27
+  - a lot of Tags, Recipes, Loot-Tables
+  - bump to Forge 43.1.33
   - Parchment to version 2022.09.18
 * **added:**
+  * Citrine & End Stone Pressure Plate
+  * Ice Slab & Stairs
   * two new Variants of the Cinnamon Door 
-  * Citrine Sword
-  * Tripod and Telescope (unfinished)
-  * Bread from Wheat and Apple, Carrot, Potato, Pumpkin Seeds, and, if available, Onion 
+  * Citrine Sword (for testing)
 
 -------------------------
 v0.0.05.126 @ 2022/08/31
