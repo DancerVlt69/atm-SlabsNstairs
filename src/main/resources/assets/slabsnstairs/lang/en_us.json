@@ -59,9 +59,10 @@
   "block.slabsnstairs.smooth_red_sandstone_button":         "Smooth Red Sandstone Button",
   "block.slabsnstairs.smooth_red_sandstone_pressure_plate": "Smooth Red Sandstone Pressure Plate",
 
-  "block.slabsnstairs.andesite_button":           "Andesite Button",
-  "block.slabsnstairs.polished_andesite_button":  "Polished Andesite Button",
-  "block.slabsnstairs.andesite_pressure_plate":   "Andesite Pressure Plate",
+  "block.slabsnstairs.andesite_button":                 "Andesite Button",
+  "block.slabsnstairs.polished_andesite_button":        "Polished Andesite Button",
+  "block.slabsnstairs.andesite_pressure_plate":         "Andesite Pressure Plate",
+  "block.slabsnstairs.end_stone_brick_pressure_plate":  "End Stone Brick Pressure Plate",
 
   "block.slabsnstairs.diorite_button":            "Diorite Button",
   "block.slabsnstairs.polished_diorite_button":   "Polished Diorite Button",
@@ -130,9 +131,11 @@
   "tooltip.slabsnstairs.hold_shift.tooltip":    "Hold §eShift§r for more Information.",
   "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Hold §eStrg§r for more Information.",
 
-  "tooltip.slabsnstairs.citrine_block.tooltip": "You will get 9 Citrine Crystals from this Block.",
-  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nearly invisible block\ne.g. to stop the growing of Vines.",
-  "tooltip.slabsnstairs.dry_ice_block.tooltip": "A very very deep frozen Ice Block",
+  "tooltip.slabsnstairs.citrine_block.tooltip":   "You will get 9 Citrine Crystals from this Block.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":     "Nearly invisible block\ne.g. to stop the growing of Vines.",
+  "tooltip.slabsnstairs.dry_ice_block.tooltip":   "A very very deep frozen Ice Block",
+  "tooltip.slabsnstairs.dry_ice_stairs.tooltip":  "A very very deep frozen Ice Stair",
+  "tooltip.slabsnstairs.dry_ice_slab.tooltip":    "A very very deep frozen Ice Slab",
 
   "tooltip.slabsnstairs.dowsing_rod.tooltip":   "With an right click the Dowsing Rod can\nshow you the Position of some Ore.",
   "tooltip.slabsnstairs.citrine_coin.tooltip":  "With this Coins you can bye various \n cool Stuff... maybe... in the Future.",
