@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slabsnstairs:block/dry_ice_slab"
+    },
+    "type=double": {
+      "model": "slabsnstairs:block/dry_ice_block"
+    },
+    "type=top": {
+      "model": "slabsnstairs:block/dry_ice_slab_top"
+    }
+  }
+}
