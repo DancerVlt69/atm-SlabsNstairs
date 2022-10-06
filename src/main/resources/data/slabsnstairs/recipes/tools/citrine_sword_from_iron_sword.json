@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_sword"
+    },
+    "X": {
+      "item": "slabsnstairs:citrine"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X"
+  ],
+  "result": {
+    "item": "slabsnstairs:citrine_sword"
+  }
+}
