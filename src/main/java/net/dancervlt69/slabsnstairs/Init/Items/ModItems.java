@@ -16,7 +16,6 @@ public class ModItems {
 
     // Define your different Items here
 
-
         // Dye
     @Deprecated
     public static final RegistryObject<Item> LIGHT_BROWN_DYE = ITEMS.register("light_brown_dye",

@@ -1,6 +1,7 @@
 package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -16,10 +17,9 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.PushReaction;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-
-@SuppressWarnings("deprecation")
 public class ModDryIceBlock extends Block {
 
     public ModDryIceBlock(Properties properties) {
@@ -27,15 +27,15 @@ public class ModDryIceBlock extends Block {
     }
 
     @Override
-    public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
-        if (pLevel.getBrightness(LightLayer.BLOCK, pPos) > 11) {
+    public void randomTick(@NotNull BlockState pState, ServerLevel pLevel, @NotNull BlockPos pPos, @NotNull RandomSource pRandom) {
+        if (pLevel.getBrightness(LightLayer.BLOCK, pPos) > 12) {
             pLevel.destroyBlock(pPos, false);
             this.melt(pState, pLevel, pPos);
         }
     }
 
     @Override
-    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+    public void animateTick(@NotNull BlockState pState, @NotNull Level pLevel, @NotNull BlockPos pPos, RandomSource pRandom) {
         float particleChance = 0.95f;
 
         if (particleChance > pRandom.nextFloat()) {
@@ -48,27 +48,21 @@ public class ModDryIceBlock extends Block {
     public void melt(BlockState pState, Level pLevel, BlockPos pPos) {
         // super.melt(pState, pLevel, pPos);
         if (pLevel.dimensionType().ultraWarm()) {
-            this.melt(pState, pLevel,pPos);
-            pLevel.removeBlock(pPos, false);
+            if (pLevel.dimensionType().bedWorks()) {
+                this.melt(pState, pLevel, pPos);
+                pLevel.removeBlock(pPos, false);
+            }
         } else {
-            pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
-            pLevel.neighborChanged(pPos, Blocks.AIR, pPos);
+            if (pLevel.dimensionType().bedWorks()) {
+                pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
+                pLevel.neighborChanged(pPos, Blocks.AIR, pPos);
+            }
         }
     }
 
-    /* public void melt(BlockState pState, ServerLevel pLevel, BlockPos pPos) {
-        if (pLevel.dimensionType().hasSkyLight()) {
-            this.melt(pState, pLevel,pPos);
-            pLevel.removeBlock(pPos, false);
-        } else {
-            pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
-            pLevel.neighborChanged(pPos, Blocks.AIR, pPos);
-        }
-    } */
-
     @Override
-    public void playerDestroy(Level pLevel, Player pPlayer, BlockPos pPos, BlockState pState,
-                              @Nullable BlockEntity pBlockEntity, ItemStack pStack) {
+    public void playerDestroy(@NotNull Level pLevel, @NotNull Player pPlayer, @NotNull BlockPos pPos, @NotNull BlockState pState,
+                              @Nullable BlockEntity pBlockEntity, @NotNull ItemStack pStack) {
         super.playerDestroy(pLevel, pPlayer, pPos, pState, pBlockEntity, pStack);
 
         if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,pStack) == 0) {
@@ -87,7 +81,12 @@ public class ModDryIceBlock extends Block {
     }
 
     @Override
-    public PushReaction getPistonPushReaction(BlockState pState) {
+    public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pSide) {
+        return pAdjacentBlockState.is(this) || super.skipRendering(pState, pAdjacentBlockState, pSide);
+    }
+
+    @Override
+    public @NotNull PushReaction getPistonPushReaction(@NotNull BlockState pState) {
         return PushReaction.DESTROY;
     }
 }

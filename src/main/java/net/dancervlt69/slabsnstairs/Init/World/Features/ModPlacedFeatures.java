@@ -17,8 +17,8 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> CITRINE_ORE_PLACED = PLACED_FEATURES.register("citrine_ore_placed",
             () -> new PlacedFeature(net.dancervlt69.slabsnstairs.Init.World.Features.ModConfiguredFeatures.CITRINE_ORE.getHolder().get(), commonOrePlacement(8,
-                    HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80),
-                            VerticalAnchor.aboveBottom(-80)))));
+                    HeightRangePlacement.triangle(VerticalAnchor.absolute(-80),
+                            VerticalAnchor.absolute(60)))));
 
     /* public static final RegistryObject<PlacedFeature> RED_BEECH_CHECKED = PLACED_FEATURES.register("red_beech_checked",
             () -> new PlacedFeature(ModConfiguredFeatures.RED_BEECH.getHolder().get(),

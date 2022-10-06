@@ -1,6 +1,7 @@
 package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -18,8 +19,6 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.Nullable;
 
-
-@SuppressWarnings("deprecation")
 public class ModDryIceSlabBlock extends SlabBlock {
 
     public ModDryIceSlabBlock(Properties properties) {
@@ -28,7 +27,7 @@ public class ModDryIceSlabBlock extends SlabBlock {
 
     @Override
     public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
-        if (pLevel.getBrightness(LightLayer.SKY, pPos) > 13) {
+        if (pLevel.getBrightness(LightLayer.BLOCK, pPos) > 12) {
             pLevel.destroyBlock(pPos, false);
             this.melt(pState, pLevel, pPos);
         }
@@ -48,23 +47,17 @@ public class ModDryIceSlabBlock extends SlabBlock {
     public void melt(BlockState pState, Level pLevel, BlockPos pPos) {
         // super.melt(pState, pLevel, pPos);
         if (pLevel.dimensionType().ultraWarm()) {
-            this.melt(pState, pLevel,pPos);
-            pLevel.removeBlock(pPos, false);
+            if (pLevel.dimensionType().bedWorks()) {
+                this.melt(pState, pLevel, pPos);
+                pLevel.removeBlock(pPos, false);
+            }
         } else {
-            pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
-            pLevel.neighborChanged(pPos, Blocks.AIR, pPos);
+            if (pLevel.dimensionType().bedWorks()) {
+                pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
+                pLevel.neighborChanged(pPos, Blocks.AIR, pPos);
+            }
         }
     }
-
-    /* public void melt(BlockState pState, ServerLevel pLevel, BlockPos pPos) {
-        if (pLevel.dimensionType().hasSkyLight()) {
-            this.melt(pState, pLevel,pPos);
-            pLevel.removeBlock(pPos, false);
-        } else {
-            pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
-            pLevel.neighborChanged(pPos, Blocks.AIR, pPos);
-        }
-    } */
 
     @Override
     public void playerDestroy(Level pLevel, Player pPlayer, BlockPos pPos, BlockState pState,
@@ -72,18 +65,21 @@ public class ModDryIceSlabBlock extends SlabBlock {
         super.playerDestroy(pLevel, pPlayer, pPos, pState, pBlockEntity, pStack);
 
         if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,pStack) == 0) {
-
-            if (pLevel.dimensionType().ultraWarm()) {pLevel.removeBlock(pPos, false);
+            if (pLevel.dimensionType().ultraWarm()) {
+                pLevel.removeBlock(pPos, false);
                 return;
             }
-
             Material material = pLevel.getBlockState(pPos.below()).getMaterial();
-
             if (material.blocksMotion() || material.isLiquid()) {
                 pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
 
             }
         }
+    }
+
+    @Override
+    public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pSide) {
+        return pAdjacentBlockState.is(this) || super.skipRendering(pState, pAdjacentBlockState, pSide);
     }
 
     @Override

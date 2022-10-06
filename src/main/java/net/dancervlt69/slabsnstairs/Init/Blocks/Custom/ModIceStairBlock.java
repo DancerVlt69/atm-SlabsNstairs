@@ -1,6 +1,7 @@
 package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
@@ -37,11 +38,15 @@ public class ModIceStairBlock extends StairBlock {
     protected void melt(BlockState pState, Level pLevel, BlockPos pPos) {
         // super.melt(pState, pLevel, pPos);
         if (pLevel.dimensionType().ultraWarm()) {
-            this.melt(pState, pLevel,pPos);
-            pLevel.removeBlock(pPos, false);
+            if (pLevel.dimensionType().bedWorks()) {
+                this.melt(pState, pLevel, pPos);
+                pLevel.removeBlock(pPos, false);
+            }
         } else {
-            pLevel.setBlockAndUpdate(pPos, Blocks.WATER.defaultBlockState());
-            pLevel.neighborChanged(pPos, Blocks.WATER, pPos);
+            if (pLevel.dimensionType().bedWorks()) {
+                pLevel.setBlockAndUpdate(pPos, Blocks.WATER.defaultBlockState());
+                pLevel.neighborChanged(pPos, Blocks.WATER, pPos);
+            }
         }
     }
 
@@ -60,6 +65,11 @@ public class ModIceStairBlock extends StairBlock {
                 pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
             }
         }
+    }
+
+    @Override
+    public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pSide) {
+        return pAdjacentBlockState.is(this) ? true : super.skipRendering(pState, pAdjacentBlockState, pSide);
     }
 
     @Override

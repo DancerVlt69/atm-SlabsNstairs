@@ -1,6 +1,7 @@
 package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -21,8 +22,6 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
-
-@SuppressWarnings("deprecation")
 public class ModDryIceStairBlock extends StairBlock {
 
     public ModDryIceStairBlock(Supplier<BlockState> pState, Properties properties) {
@@ -31,7 +30,7 @@ public class ModDryIceStairBlock extends StairBlock {
 
     @Override
     public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
-        if (pLevel.getBrightness(LightLayer.SKY, pPos) > 13) {
+        if (pLevel.getBrightness(LightLayer.BLOCK, pPos) > 12) {
             pLevel.destroyBlock(pPos, false);
             this.melt(pState, pLevel, pPos);
         }
@@ -59,16 +58,6 @@ public class ModDryIceStairBlock extends StairBlock {
         }
     }
 
-    /* public void melt(BlockState pState, ServerLevel pLevel, BlockPos pPos) {
-        if (pLevel.dimensionType().hasSkyLight()) {
-            this.melt(pState, pLevel,pPos);
-            pLevel.removeBlock(pPos, false);
-        } else {
-            pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
-            pLevel.neighborChanged(pPos, Blocks.AIR, pPos);
-        }
-    } */
-
     @Override
     public void playerDestroy(Level pLevel, Player pPlayer, BlockPos pPos, BlockState pState,
                               @Nullable BlockEntity pBlockEntity, ItemStack pStack) {
@@ -87,6 +76,11 @@ public class ModDryIceStairBlock extends StairBlock {
 
             }
         }
+    }
+
+    @Override
+    public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pSide) {
+        return pAdjacentBlockState.is(this) || super.skipRendering(pState, pAdjacentBlockState, pSide);
     }
 
     @Override

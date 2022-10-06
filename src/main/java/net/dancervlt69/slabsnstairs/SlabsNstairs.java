@@ -4,6 +4,7 @@ package net.dancervlt69.slabsnstairs;
 import com.mojang.serialization.Codec;
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
+import net.dancervlt69.slabsnstairs.Init.Recipes.ModRecipes;
 import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
 import net.dancervlt69.slabsnstairs.Init.World.Features.ModPlacedFeatures;
 import net.dancervlt69.slabsnstairs.Init.World.Features.ModConfiguredFeatures;
@@ -47,6 +48,7 @@ public class SlabsNstairs {
 
         ModConfiguredFeatures.register(eventBus);
         ModPlacedFeatures.register(eventBus);
+        ModRecipes.register(eventBus);
 
         // Register the setup method for modLoading
         eventBus.addListener(this::onSetup);

@@ -19,6 +19,7 @@ import java.util.function.Supplier;
 import static net.minecraft.world.item.enchantment.Enchantments.SILK_TOUCH;
 
 public class ModFrostedIceStairBlock extends StairBlock {
+
     public ModFrostedIceStairBlock(Supplier<BlockState> pState, Properties pProperties) {
         super(pState, pProperties);
     }
