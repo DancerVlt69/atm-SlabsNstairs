@@ -2,17 +2,22 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "slabsnstairs:growth_stop"
+      "slabsnstairs:building_blocks/dry_ice_block"
     ]
   },
   "criteria": {
-    "has_glass_panes": {
+    "has_the_ingredients": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": [
-              "minecraft:glass_pane"
+            "items": [
+              "minecraft:blue_ice"
+            ]
+          },
+          {
+            "items": [
+              "minecraft:iron_bars"
             ]
           }
         ]
@@ -21,7 +26,7 @@
   },
   "requirements": [
     [
-      "has_glass_panes"
+      "has_the_ingredients"
     ]
   ]
 }

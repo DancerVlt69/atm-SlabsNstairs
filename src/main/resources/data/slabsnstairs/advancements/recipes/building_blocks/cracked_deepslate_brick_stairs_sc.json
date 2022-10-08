@@ -1,13 +1,7 @@
- {
+{
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "slabsnstairs:building_blocks/cracked_deepslate_brick_stairs"
-    ]
-  },
   "criteria": {
     "has_cracked_deepslate_bricks": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -16,12 +10,25 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slabsnstairs:building_blocks/cracked_deepslate_brick_stairs_sc"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cracked_deepslate_bricks"
+      "has_cracked_deepslate_bricks",
+      "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:building_blocks/cracked_deepslate_brick_stairs_sc"
+    ]
+  }
 }

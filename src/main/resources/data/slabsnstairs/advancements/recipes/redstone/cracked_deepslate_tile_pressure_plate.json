@@ -1,13 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "slabsnstairs:redstone/cracked_deepslate_tile_pressure_plate"
-    ]
-  },
   "criteria": {
     "has_cracked_deepslate_tiles": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -16,12 +10,25 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slabsnstairs:redstone/cracked_deepslate_tile_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cracked_deepslate_tiles"
+      "has_cracked_deepslate_tiles",
+      "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:redstone/cracked_deepslate_tile_pressure_plate"
+    ]
+  }
 }

@@ -1,13 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "slabsnstairs:building_blocks/citrine_block_from_citrine_slabs"
-    ]
-  },
   "criteria": {
     "has_citrine_slab": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -16,12 +10,25 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slabsnstairs:building_blocks/citrine_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_citrine_slab"
+      "has_citrine_slab",
+      "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:building_blocks/citrine_block_from_citrine_slabs"
+    ]
+  }
 }
