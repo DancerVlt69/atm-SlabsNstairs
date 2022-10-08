@@ -1,4 +1,37 @@
 # Slabs 'n Stairs version changelog:
+-------------------------
+ v0.1.0.130 @ 2022/10/08
+-------------------------
+**!!! Some of the Items & Blocks are marked as** **_@Depricated (forRemoval)_** **!!!**
+-
+* **Blocks**
+  * the old **Cinnamon** (aka Acacia-) **Door** | Two new Variations are in the Mod right now
+  * the **Growth-Stop** | will be moved to a (planned) new Sub-Mod
+
+* **Items**
+  * Food Items | will be moved to a (planned) new Sub-Mod (if present)
+  * the Dye **Light-Brown** | will be moved to a (planned) new Sub-Mod
+  * the **Citrine-Sword** | will be moved to a (planned) new Sub-Mod
+
+But don't panic. The planned new Mod/s will be published a long time before the deprecated stuff will be removed!
+
+* **fixed:**
+  * --
+* **updated:**
+  - a lot of Tags, Recipes, Loot-Tables, Blocks, and Items
+  - bump to Forge 40.1.80
+  - Parchment to version 2022.09.04
+* **added:**
+  * Citrine & End Stone Pressure Plate
+  * Citrine Ore & Deepslate Ore
+  * Ice Slab & Stairs
+  * two new Variants of the Cinnamon Door
+  * Citrine Sword (for testing)
+
+The complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.18.x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18.x/CHANGELOG.md)
+
+This Version of the Mod was successfully tested with **_[Forge 40.1.80](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html)_**
+
 
 -------------------------
  v0.0.6.127 @ 2022/08/31
@@ -13,7 +46,7 @@
     - **_[issue #13](https://github.com/DancerVlt69/SlabsNstairs/issues/13):_** - Item-Tooltip will not work
     - **_[issue #15](https://github.com/DancerVlt69/SlabsNstairs/issues/15):_** - Can't craft Cinnamon Fences
 
-complete changelog: [**_https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md_**](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
+The complete changelog: [**_https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md_**](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18x/CHANGELOG.md)
 
 This Version of the Mod was successfully tested with **Forge** ***40.1.74*** **|** ***~~39.1.2~~*** **|** ***~~38.0.17~~***
 
