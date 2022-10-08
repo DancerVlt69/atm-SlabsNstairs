@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "slabsnstairs:sticks"
+    },
+    "X": {
+      "item": "slabsnstairs:citrine_block"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "slabsnstairs:citrine_sword"
+  }
+}

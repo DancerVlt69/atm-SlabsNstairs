@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cobblestone": {
+    "has_cracked_polished_blackstone_brick_slabs": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:cobblestone"
+              "slabsnstairs:cracked_polished_blackstone_brick_slab"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "slabsnstairs:redstone/cobblestone_button"
+        "recipe": "slabsnstairs:building_blocks/cracked_polished_blackstone_bricks_from_cracked_polished_blackstone_brick_slabs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cobblestone",
+      "has_cracked_polished_blackstone_brick_slabs",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "slabsnstairs:redstone/cobblestone_button"
+      "slabsnstairs:building_blocks/cracked_polished_blackstone_bricks_from_cracked_polished_blackstone_brick_slabs"
     ]
   }
 }
