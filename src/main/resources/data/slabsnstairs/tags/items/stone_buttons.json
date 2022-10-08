@@ -2,8 +2,23 @@
   "replace": false,
   "values": [
     "slabsnstairs:cobblestone_button",
+    "slabsnstairs:mossy_cobblestone_button",
     "slabsnstairs:andesite_button",
+    "slabsnstairs:polished_andesite_button",
     "slabsnstairs:diorite_button",
-    "slabsnstairs:granite_button"
+    "slabsnstairs:polished_diorite_button",
+    "slabsnstairs:granite_button",
+    "slabsnstairs:polished_granite_button",
+    "slabsnstairs:smooth_stone_button",
+    "slabsnstairs:sandstone_button",
+    "slabsnstairs:cut_sandstone_button",
+    "slabsnstairs:smooth_sandstone_button",
+    "slabsnstairs:red_sandstone_button",
+    "slabsnstairs:cut_red_sandstone_button",
+    "slabsnstairs:smooth_red_sandstone_button",
+    "slabsnstairs:cracked_polished_blackstone_brick_button",
+    "slabsnstairs:deepslate_button",
+    "slabsnstairs:cracked_deepslate_brick_button",
+    "slabsnstairs:cracked_deepslate_tile_button"
   ]
 }
