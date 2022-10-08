@@ -1,17 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
   "pattern": [
-    "###",
-    "###"
+    "W#W",
+    "W#W"
   ],
   "key": {
-    "#": {
+    "W": {
       "item": "slabsnstairs:cinnamon_planks"
+    },
+    "#": {
+      "tag": "slabsnstairs:sticks"
     }
   },
   "result": {
-    "item": "slabsnstairs:cinnamon_palisade",
-    "count": 6
+    "item": "slabsnstairs:cinnamon_fence",
+    "count": 3
   },
   "conditions": [
     {
