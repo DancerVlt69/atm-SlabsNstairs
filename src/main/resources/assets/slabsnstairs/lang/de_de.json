@@ -6,12 +6,17 @@
   "block.slabsnstairs.packed_ice_slab":   "Packeisstufe",
   "block.slabsnstairs.packed_ice_stairs": "Packeistreppe",
 
-  "block.slabsnstairs.citrine_ore":           "Citrinerz",
-  "block.slabsnstairs.deepslate_citrine_ore": "Tiefenschiefer Citrinerz",
-  "block.slabsnstairs.citrine_block":         "Citrin Block",
-  "block.slabsnstairs.citrine_stairs":        "Citrintreppe",
-  "block.slabsnstairs.citrine_slab":          "Citrinstufe",
-  "block.slabsnstairs.citrine_button":        "Citrinknopf",
+  "block.slabsnstairs.dry_ice_block":     "Trockeneisblock",
+  "block.slabsnstairs.dry_ice_slab":      "Trockeneisstufe",
+  "block.slabsnstairs.dry_ice_stairs":    "Trockeneistreppe",
+
+  "block.slabsnstairs.citrine_ore":             "Zitrinerz",
+  "block.slabsnstairs.deepslate_citrine_ore":   "Tiefenschiefer Zitrinerz",
+  "block.slabsnstairs.citrine_block":           "Zitrin Block",
+  "block.slabsnstairs.citrine_stairs":          "Zitrintreppe",
+  "block.slabsnstairs.citrine_slab":            "Zitrinstufe",
+  "block.slabsnstairs.citrine_button":          "Zitrinknopf",
+  "block.slabsnstairs.citrine_pressure_plate":  "Zitrindruckplatte",
 
   "block.slabsnstairs.vertical_ice_slab":   "senkrechte Eisstufe",
 
@@ -19,6 +24,8 @@
   "block.slabsnstairs.dirt_block_slab":     "Stufe aus Erde",
   "block.slabsnstairs.grass_block_stairs":  "Grastreppe",
   "block.slabsnstairs.grass_block_slab":    "Grasstufe",
+  "block.slabsnstairs.path_block_stairs":   "Trampelpfadtreppe",
+  "block.slabsnstairs.path_block_slab":     "Trampelpfadstufe",
 
   "block.slabsnstairs.dirt_cobble":                 "Erde mit Kiesel",
   "block.slabsnstairs.dirt_cobble_stairs":          "Erdtreppe mit Kiesel",
@@ -52,9 +59,10 @@
   "block.slabsnstairs.smooth_red_sandstone_button":         "Glatter roter Sandsteinknopf",
   "block.slabsnstairs.smooth_red_sandstone_pressure_plate": "Glatte rote Sandsteindruckplatte",
 
-  "block.slabsnstairs.andesite_button":           "Andesitknopf",
-  "block.slabsnstairs.polished_andesite_button":  "Polierter Andesitknopf",
-  "block.slabsnstairs.andesite_pressure_plate":   "Andesitdruckplatte",
+  "block.slabsnstairs.andesite_button":                 "Andesitknopf",
+  "block.slabsnstairs.polished_andesite_button":        "Polierter Andesitknopf",
+  "block.slabsnstairs.andesite_pressure_plate":         "Andesitdruckplatte",
+  "block.slabsnstairs.end_stone_brick_pressure_plate":  "Endsteinziegeldruckplatte",
 
   "block.slabsnstairs.diorite_button":            "Dioritknopf",
   "block.slabsnstairs.polished_diorite_button":   "Polierter Dioritknopf",
@@ -92,17 +100,21 @@
   "block.slabsnstairs.cinnamon_fence":          "Zimtholzzaun",
   "block.slabsnstairs.cinnamon_fence_gate":     "Zimtholzzauntor",
   "block.slabsnstairs.cinnamon_door":           "Zimtholztür",
+  "block.slabsnstairs.cinnamon_door_01":        "Zimtholztür Var. 01",
+  "block.slabsnstairs.cinnamon_door_02":        "Zimtholztür Var. 02",
   "block.slabsnstairs.cinnamon_trapdoor":       "Zimtholzfalltür",
   "block.slabsnstairs.cinnamon_sign":           "Zimtholzschild",
   "block.slabsnstairs.cinnamon_palisade":       "Zimtholz-Palisade",
-  "block.slabsnstairs.cinnamon_leaves":         "Zimtbaumblätter",
+  "block.slabsnstairs.cinnamon_leaves":         "Zimtbaumlaub",
 
   "block.slabsnstairs.growth_stop":     "Wachstumsstopper",
+  "block.slabsnstairs.tripod":          "Stativ",
+  "block.slabsnstairs.telescope":       "Teleskop",
 
   "item.slabsnstairs.light_brown_dye":  "Hellbrauner Farbstoff",
-  "item.slabsnstairs.citrine":          "Citrin-Kristall",
-  "item.slabsnstairs.raw_citrine":      "Unbehandelter Citrin",
-  "item.slabsnstairs.citrine_coin":     "Citrin-Münze",
+  "item.slabsnstairs.citrine":          "Zitrin-Kristall",
+  "item.slabsnstairs.raw_citrine":      "Unbehandelter Zitrin",
+  "item.slabsnstairs.citrine_coin":     "Zitrin-Münze",
 
   "item.slabsnstairs.dowsing_rod":       "Wünschelrute",
 
@@ -110,12 +122,27 @@
   "item.slabsnstairs.dowsing_rod.located":      "  bei ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "Nichts Wertvolles gefunden.",
 
-  "itemGroup.snsmodtab":  "Slabs 'n Stairs",
-  "itemGroup.snsmodtab2": "SnS Werkzeuge, Rüstung, Waffen",
+  "item.slabsnstairs.citrine_sword":  "Zitrin-Schwert (Test!)",
+
+  "itemGroup.snsmodtab1": "Slabs 'n Stairs",
+  "itemGroup.snsmodtab2": "SnS Waffen, Rüstung & mehr",
+  "itemGroup.snsmodtab3": "SnS Sonstiges",
 
   "tooltip.slabsnstairs.hold_shift.tooltip":    "Für mehr Infos §eShift§r gedrückt halten.",
   "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Für mehr Infos §eStrg§r gedrückt halten.",
-  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nahezu unsichtbarer Block um z.B.\u000Adas Wachstum von Ranken zu stoppen.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "Die Wünschelrute zeigt dir bei Rechtsklick\u000Adie Position diverser Erze an.",
-  "tooltip.slabsnstairs.citrine_block.tooltip": "Du erhältst 9 Zitrin Kristalle von diesem Block."
+
+  "tooltip.slabsnstairs.citrine_block.tooltip":   "Du erhältst 9 Zitrin Kristalle von diesem Block.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":     "Nahezu unsichtbarer Block um z.B.\ndas Wachstum von Ranken zu stoppen.",
+  "tooltip.slabsnstairs.dry_ice_block.tooltip":   "Ein sehr, sehr tiefgefrorener Eisblock!",
+  "tooltip.slabsnstairs.dry_ice_stairs.tooltip":  "Eine sehr, sehr tiefgefrorene Eistreppe!",
+  "tooltip.slabsnstairs.dry_ice_slab.tooltip":    "Eine sehr, sehr tiefgefrorene Eisstufe!",
+
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Position diverser Erze an.",
+  "tooltip.slabsnstairs.citrine_coin.tooltip":  "Mit dieser Münze kannst du diverse coole Dinge kaufen; \n maybe... in the Future.",
+
+  "enchantment.slabsnstairs.lightning_striker": "Lightning Striker",
+
+  "advancements.adventure.bake_all_breads.title":       "Meister-Bäcker",
+  "advancements.adventure.bake_all_breads.description": "Willst du nicht lieber eine Bäckerei eröffnen?"
+
 }

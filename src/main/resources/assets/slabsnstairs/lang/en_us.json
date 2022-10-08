@@ -1,24 +1,31 @@
 {
-  "block.slabsnstairs.ice_slab":          "Ice Slabs",
+  "block.slabsnstairs.ice_slab":          "Ice Slab",
   "block.slabsnstairs.ice_stairs":        "Ice Stairs",
-  "block.slabsnstairs.blue_ice_slab":     "Blue Ice Slabs",
+  "block.slabsnstairs.blue_ice_slab":     "Blue Ice Slab",
   "block.slabsnstairs.blue_ice_stairs":   "Blue Ice Stairs",
   "block.slabsnstairs.packed_ice_slab":   "Packed Ice Slab",
   "block.slabsnstairs.packed_ice_stairs": "Packed Ice Stairs",
 
-  "block.slabsnstairs.citrine_ore":           "Citrine Ore",
-  "block.slabsnstairs.deepslate_citrine_ore": "Deepslate Citrine Ore",
-  "block.slabsnstairs.citrine_block":         "Citrine Block",
-  "block.slabsnstairs.citrine_stairs":        "Citrine Stairs",
-  "block.slabsnstairs.citrine_slab":          "Citrine Slab",
-  "block.slabsnstairs.citrine_button":        "Citrine Button",
+  "block.slabsnstairs.dry_ice_block":     "Dry Ice Block",
+  "block.slabsnstairs.dry_ice_slab":      "Dry Ice Slab",
+  "block.slabsnstairs.dry_ice_stairs":    "Dry Ice Stairs",
+
+  "block.slabsnstairs.citrine_ore":             "Citrine Ore",
+  "block.slabsnstairs.deepslate_citrine_ore":   "Deepslate Citrine Ore",
+  "block.slabsnstairs.citrine_block":           "Citrine Block",
+  "block.slabsnstairs.citrine_stairs":          "Citrine Stairs",
+  "block.slabsnstairs.citrine_slab":            "Citrine Slab",
+  "block.slabsnstairs.citrine_button":          "Citrine Button",
+  "block.slabsnstairs.citrine_pressure_plate":  "Citrine Pressure Plate",
 
   "block.slabsnstairs.vertical_ice_slab":     "Vertical Ice Slab",
 
-  "block.slabsnstairs.dirt_block_stairs":          "Dirt Stairs",
-  "block.slabsnstairs.dirt_block_slab":            "Dirt Slab",
-  "block.slabsnstairs.grass_block_stairs":         "Grass Stairs",
-  "block.slabsnstairs.grass_block_slab":           "Grass Slab",
+  "block.slabsnstairs.dirt_block_stairs":   "Dirt Stairs",
+  "block.slabsnstairs.dirt_block_slab":     "Dirt Slab",
+  "block.slabsnstairs.grass_block_stairs":  "Grass Stairs",
+  "block.slabsnstairs.grass_block_slab":    "Grass Slab",
+  "block.slabsnstairs.path_block_stairs":   "Path Way Stairs",
+  "block.slabsnstairs.path_block_slab":     "Path Way Slab",
 
   "block.slabsnstairs.dirt_cobble":                 "Dirt with Cobble",
   "block.slabsnstairs.dirt_cobble_stairs":          "Dirt Stairs with Cobble",
@@ -52,9 +59,10 @@
   "block.slabsnstairs.smooth_red_sandstone_button":         "Smooth Red Sandstone Button",
   "block.slabsnstairs.smooth_red_sandstone_pressure_plate": "Smooth Red Sandstone Pressure Plate",
 
-  "block.slabsnstairs.andesite_button":           "Andesite Button",
-  "block.slabsnstairs.polished_andesite_button":  "Polished Andesite Button",
-  "block.slabsnstairs.andesite_pressure_plate":   "Andesite Pressure Plate",
+  "block.slabsnstairs.andesite_button":                 "Andesite Button",
+  "block.slabsnstairs.polished_andesite_button":        "Polished Andesite Button",
+  "block.slabsnstairs.andesite_pressure_plate":         "Andesite Pressure Plate",
+  "block.slabsnstairs.end_stone_brick_pressure_plate":  "End Stone Brick Pressure Plate",
 
   "block.slabsnstairs.diorite_button":            "Diorite Button",
   "block.slabsnstairs.polished_diorite_button":   "Polished Diorite Button",
@@ -92,32 +100,49 @@
   "block.slabsnstairs.cinnamon_fence":          "Cinnamon Fence",
   "block.slabsnstairs.cinnamon_fence_gate":     "Cinnamon Fence Gate",
   "block.slabsnstairs.cinnamon_door":           "Cinnamon Door",
+  "block.slabsnstairs.cinnamon_door_01":        "Cinnamon Door Var. 1",
+  "block.slabsnstairs.cinnamon_door_02":        "Cinnamon Door Var. 2",
   "block.slabsnstairs.cinnamon_trapdoor":       "Cinnamon Trapdoor",
   "block.slabsnstairs.cinnamon_sign":           "Cinnamon Sign",
   "block.slabsnstairs.cinnamon_palisade":       "Cinnamon Palisade",
   "block.slabsnstairs.cinnamon_leaves":         "Cinnamon Leaves",
 
-  "block.slabsnstairs.growth_stop":         "Growth Stop",
+  "block.slabsnstairs.growth_stop":     "Growth Stop",
+  "block.slabsnstairs.tripod":          "Tripod",
+  "block.slabsnstairs.telescope":       "Telescope",
 
-  "item.slabsnstairs.light_brown_dye":      "Light Brown Dye",
-  "item.slabsnstairs.citrine":              "Citrine Crystal",
-  "item.slabsnstairs.raw_citrine":          "Raw Citrine",
-  "item.slabsnstairs.citrine_coin":         "Citrine Coin",
+  "item.slabsnstairs.light_brown_dye":  "Light Brown Dye",
+  "item.slabsnstairs.citrine":          "Citrine Crystal",
+  "item.slabsnstairs.raw_citrine":      "Raw Citrine",
+  "item.slabsnstairs.citrine_coin":     "Citrine Coin",
 
-  "item.slabsnstairs.dowsing_rod":          "Dowsing Rod",
+  "item.slabsnstairs.dowsing_rod":      "Dowsing Rod",
 
   "item.slabsnstairs.dowsing_rod.found":        "Found ",
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
 
-  "itemGroup.snsmodtab":  "Slabs 'n Stairs",
-  "itemGroup.snsmodtab2": "SnS Tools, Armor, Weapons",
+  "item.slabsnstairs.citrine_sword":  "Citrine-Sword (Test!)",
+
+  "itemGroup.snsmodtab1": "Slabs 'n Stairs",
+  "itemGroup.snsmodtab2": "SnS Weapons, Armor & Co.",
+  "itemGroup.snsmodtab3": "SnS Miscs",
 
   "tooltip.slabsnstairs.hold_shift.tooltip":    "Hold §eShift§r for more Information.",
   "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Hold §eStrg§r for more Information.",
-  "tooltip.slabsnstairs.growth_stop.tooltip":   "Nearly invisible block\u000Ae.g. to stop the growing of vines.",
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "With an right click the Dowsing Rod can\u000Ashow you the position of some ore.",
-  "tooltip.slabsnstairs.citrine_block.tooltip": "You will get 9 Citrine Crystals from this Block."
+
+  "tooltip.slabsnstairs.citrine_block.tooltip":   "You will get 9 Citrine Crystals from this Block.",
+  "tooltip.slabsnstairs.growth_stop.tooltip":     "Nearly invisible block\ne.g. to stop the growing of Vines.",
+  "tooltip.slabsnstairs.dry_ice_block.tooltip":   "A very very deep frozen Ice Block",
+  "tooltip.slabsnstairs.dry_ice_stairs.tooltip":  "A very very deep frozen Ice Stair",
+  "tooltip.slabsnstairs.dry_ice_slab.tooltip":    "A very very deep frozen Ice Slab",
+
+  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "With an right click the Dowsing Rod can\nshow you the Position of some Ore.",
+  "tooltip.slabsnstairs.citrine_coin.tooltip":  "With this Coins you can bye various \n cool Stuff... maybe... in the Future.",
+
+  "enchantment.slabsnstairs.lightning_striker": "Lightning Striker",
+
+  "advancements.adventure.bake_all_breads.title":       "Master-Baker",
+  "advancements.adventure.bake_all_breads.description": "You should start your own Bakery-Business"
 
 }
-
