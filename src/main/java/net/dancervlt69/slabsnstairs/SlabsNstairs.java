@@ -2,18 +2,23 @@
 package net.dancervlt69.slabsnstairs;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
+import net.dancervlt69.slabsnstairs.Init.Enchantments.ModEnchantments;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
+import net.dancervlt69.slabsnstairs.Init.World.Features.ModConfiguredFeatures;
+import net.dancervlt69.slabsnstairs.Init.World.Features.ModPlacedFeatures;
+import net.dancervlt69.slabsnstairs.Init.World.ModRenderTyp;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.NetworkEvent;
@@ -43,10 +48,13 @@ public class SlabsNstairs {
         // Registering Blocks, Items, Sounds, etc.
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-        // ModFluids.register(eventBus);
-        // ModSounds.register(eventBus);
 
-        // Register the setup method for modLoading
+        ModConfiguredFeatures.register(eventBus);
+        ModEnchantments.register(eventBus);
+        ModPlacedFeatures.register(eventBus);
+        // ModRecipes.register(eventBus);
+
+        // Register the setup methods for modLoading
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
 
@@ -59,19 +67,17 @@ public class SlabsNstairs {
         // Minecraft.getInstance().player.chat(msg);
     }
 
-    private void clientSetup(final FMLCommonSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWTH_STOP.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CINNAMON_DOOR.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CINNAMON_TRAPDOOR.get(), RenderType.cutout());
-/*      ItemBlockRenderTypes.setRenderLayer(ModBlocks.ICE_SLAB.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ICE_STAIRS.get(), RenderType.translucent());
- */
+    @OnlyIn(Dist.CLIENT)
+    public void clientSetup(final FMLClientSetupEvent event) {
+        ModRenderTyp.clientSetup();
     }
+
     private void setup(final FMLCommonSetupEvent event) {
         // Preinit code
         LOGGER.info("PreInit has started...");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
+
     public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
                                              BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
         PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
