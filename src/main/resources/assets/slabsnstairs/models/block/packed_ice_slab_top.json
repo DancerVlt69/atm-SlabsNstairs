@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/slab_top",
+  "render_type": "translucent",
   "textures": {
     "bottom": "minecraft:block/packed_ice",
     "top": "minecraft:block/packed_ice",
