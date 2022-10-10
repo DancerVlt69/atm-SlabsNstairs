@@ -54,6 +54,7 @@ public class SlabsNstairs {
     }
 
    private void clientSetup(final FMLCommonSetupEvent event) {
+        RenderTypeLookup.setRenderLayer(ModBlocks.DRY_ICE_BLOCK.get(), RenderType.translucent());
         RenderTypeLookup.setRenderLayer(ModBlocks.GROWTH_STOP.get(), RenderType.translucent());
         RenderTypeLookup.setRenderLayer(ModBlocks.CINNAMON_DOOR_01.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.CINNAMON_DOOR_02.get(), RenderType.cutout());
