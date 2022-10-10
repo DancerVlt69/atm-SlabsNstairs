@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "slabsnstairs:cinnamon_door",
     "slabsnstairs:cinnamon_door_01",
     "slabsnstairs:cinnamon_door_02"
   ]
