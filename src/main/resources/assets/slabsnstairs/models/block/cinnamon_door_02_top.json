@@ -1,5 +1,6 @@
 {
-  "parent": "minecraft:block/door_top",
+  "parent": "slabsnstairs:block/door_top",
+  "render_type": "cutout",
   "textures": {
     "top": "slabsnstairs:block/cinnamon_door_left_var01_top",
     "bottom": "slabsnstairs:block/cinnamon_door_left_var02_bottom"

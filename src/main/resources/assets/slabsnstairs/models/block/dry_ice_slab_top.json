@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "render_type": "translucent",
+  "textures": {
+    "bottom": "slabsnstairs:block/dry_ice_block",
+    "top": "slabsnstairs:block/dry_ice_block",
+    "side": "slabsnstairs:block/dry_ice_block"
+  }
+}

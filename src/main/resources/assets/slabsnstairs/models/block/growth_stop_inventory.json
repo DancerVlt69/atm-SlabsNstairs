@@ -1,5 +1,6 @@
 {
 	"parent": "minecraft:block/button_inventory",
+	"render_type": "translucent",
 	"textures": {
 		"1": "slabsnstairs:item/growth_stop_inventory",
 		"particle": "slabsnstairs:item/growth_stop_inventory"
