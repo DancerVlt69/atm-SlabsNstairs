@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "slabsnstairs:dry_ice_block"
+  },
+  "result": "slabsnstairs:dry_ice_stairs",
+  "count": 2
+}
