@@ -16,9 +16,14 @@
     "count": 3
   },
   "conditions": [
+
     {
       "type": "forge:mod_loaded",
       "modid": "slabsnstairs"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "slabsnstairs:cinnamon_planks"
     }
   ]
 }

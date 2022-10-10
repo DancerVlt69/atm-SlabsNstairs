@@ -1,26 +1,23 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "slabsnstairs:cinnamon_slab"
-    ]
-  },
   "criteria": {
     "has_cinnamon_planks": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "slabsnstairs:cinnamon_planks"
+            "items": [
+              "slabsnstairs:cinnamon_planks"
+            ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
     },
     "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "slabsnstairs:cinnamon_slab"
-      }
+        "recipe": "slabsnstairs:building_blocks/cinnamon_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
@@ -28,5 +25,10 @@
       "has_cinnamon_planks",
       "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:building_blocks/cinnamon_slab"
+    ]
+  }
 }

@@ -3,10 +3,10 @@
   "group": "wooden_fence",
   "key": {
     "#": {
-      "item": "minecraft:stick"
+      "tag": "slabsnstairs:sticks"
     },
     "W": {
-      "item": "slabsnstairs:acacia_planks"
+      "item": "slabsnstairs:cinnamon_planks"
     }
   },
   "pattern": [
@@ -15,6 +15,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "slabsnstairs:acacia_fence"
+    "item": "slabsnstairs:cinnamon_fence"
   }
 }

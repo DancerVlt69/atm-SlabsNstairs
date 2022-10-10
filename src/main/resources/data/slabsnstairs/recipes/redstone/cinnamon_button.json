@@ -13,7 +13,11 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "croptopia"
+      "modid": "slabsnstairs"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "slabsnstairs:cinnamon_planks"
     }
   ]
 }

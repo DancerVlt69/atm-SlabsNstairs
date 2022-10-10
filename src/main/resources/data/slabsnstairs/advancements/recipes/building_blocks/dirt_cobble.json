@@ -1,13 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "slabsnstairs:building_blocks/dirt_cobble"
-    ]
-  },
   "criteria": {
     "has_ingredients": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -17,7 +11,7 @@
           },
           {
             "items": [
-              "minecraft:gravel"
+              "slabsnstairs:cobblestone_button"
             ]
           },
           {
@@ -26,12 +20,25 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slabsnstairs:building_blocks/dirt_cobble"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_ingredients"
+      "has_ingredients",
+      "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slabsnstairs:building_blocks/dirt_cobble"
+    ]
+  }
 }

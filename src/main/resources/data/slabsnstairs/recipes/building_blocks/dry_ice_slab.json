@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "replace": "true",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "slabsnstairs:dry_ice_block"
+    }
+  },
+  "result": {
+    "item": "slabsnstairs:dry_ice_slab",
+    "count": 6
+  }
+}
