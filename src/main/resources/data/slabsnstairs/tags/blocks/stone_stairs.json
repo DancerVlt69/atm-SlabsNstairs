@@ -1,5 +1,10 @@
 {
   "replace": false,
   "values": [
+    "slabsnstairs:smooth_stone_stairs",
+    "slabsnstairs:cracked_polished_blackstone_brick_stairs",
+    "slabsnstairs:deepslate_stairs",
+    "slabsnstairs:cracked_deepslate_brick_stairs",
+    "slabsnstairs:cracked_deepslate_tile_stairs"
   ]
 }
