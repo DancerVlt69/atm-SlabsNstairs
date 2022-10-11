@@ -1,4 +1,4 @@
-package net.dancervlt69.slabsnstairs.Init.Blocks.custom;
+package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
 import net.minecraft.block.*;
 import net.minecraft.util.math.BlockPos;
@@ -10,22 +10,17 @@ import net.minecraft.world.server.ServerWorld;
 
 import java.util.List;
 import java.util.Random;
-import java.util.function.Supplier;
 
 @SuppressWarnings("deprecation")
-public class ModDirtStairsBlock extends StairsBlock implements IGrowable{
-
-    public ModDirtStairsBlock(Supplier<BlockState> state, Properties properties) {
-        super(state, properties);
-    }
+public class ModDirtSlabBlock extends SlabBlock implements IGrowable{
+    public ModDirtSlabBlock(AbstractBlock.Properties pProperties) { super(pProperties); }
 
     @Override
-    public boolean isValidBonemealTarget(IBlockReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
-
+    public boolean isValidBonemealTarget(IBlockReader pLevel, BlockPos pPos,  BlockState pState, boolean pIsClient) {
         return pLevel.getBlockState(pPos.above()).isAir(); }
 
     @Override
-    public boolean isBonemealSuccess(World pLevel, Random pRand, BlockPos pPos, BlockState pState) {
+    public boolean isBonemealSuccess( World pLevel,  Random pRand, BlockPos pPos, BlockState pState) {
         return true; }
 
     @Override

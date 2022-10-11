@@ -1,4 +1,4 @@
-package net.dancervlt69.slabsnstairs.Init.Blocks.custom;
+package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
@@ -25,27 +25,25 @@ public class ModDryIceBlock extends Block {
 
     @Override
     public void randomTick(BlockState pState, ServerWorld pLevel, BlockPos pPos, Random pRandom) {
-        if (pLevel.getBrightness(LightType.BLOCK, pPos) > 11) {pLevel.destroyBlock(pPos, false);
+        if (pLevel.getBrightness(LightType.BLOCK, pPos) > 12 - pState.getLightBlock(pLevel, pPos)) {
             this.melt(pState, pLevel, pPos);
         }
     }
 
     @Override
-    public void animateTick(BlockState pState, World worldIn, BlockPos pPos, Random pRandom) {
-        float particleChance = 0.95f;
+    public void animateTick(BlockState pState, World pLevel, BlockPos pPos, Random pRandom) {
+        super.animateTick(pState, pLevel, pPos, pRandom);
+        float particleChance = 0.75f;
 
         if (particleChance > pRandom.nextFloat()) {
-
-            worldIn.addParticle(ParticleTypes.CLOUD,pPos.getX() + pRandom.nextDouble(), pPos.getY() + 0.75,
+            pLevel.addParticle(ParticleTypes.CLOUD, pPos.getX() + pRandom.nextDouble(), pPos.getY() + 0.75,
                     pPos.getZ() + pRandom.nextDouble(), 0d + 0.025, 0d, 0d + 0.025);
         }
-        super.animateTick(pState, worldIn, pPos, pRandom);
     }
 
-    //@Override
+    // @Override
     protected void melt(BlockState pState, World pLevel, BlockPos pPos) {
         if (pLevel.dimensionType().ultraWarm()) {
-            this.melt(pState, pLevel, pPos);
             pLevel.removeBlock(pPos, false);
         } else {
             pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
@@ -54,20 +52,18 @@ public class ModDryIceBlock extends Block {
     }
 
     @Override
-    public void playerDestroy(World pLevel, PlayerEntity pPlayer, BlockPos pPos, BlockState pState, TileEntity pTe, ItemStack pStack) {
-        super.playerDestroy(pLevel, pPlayer, pPos, pState, pTe, pStack);
+    public void playerDestroy(World pLevel, PlayerEntity pPlayer, BlockPos pPos,
+                              BlockState pState, TileEntity pBlockEntity, ItemStack pStack) {
+        super.playerDestroy(pLevel, pPlayer, pPos, pState, pBlockEntity, pStack);
 
-        if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, pStack) == 0) {
-
-            if (pLevel.dimensionType().ultraWarm()) {pLevel.removeBlock(pPos, false);
+        if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,pStack) == 0) {
+            if (pLevel.dimensionType().ultraWarm()) {
+                pLevel.removeBlock(pPos, false);
                 return;
             }
-
             Material material = pLevel.getBlockState(pPos.below()).getMaterial();
-
             if (material.blocksMotion() || material.isLiquid()) {
                 pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
-
             }
         }
     }

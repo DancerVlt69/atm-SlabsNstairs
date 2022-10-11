@@ -2,11 +2,11 @@
 package net.dancervlt69.slabsnstairs;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
+import net.dancervlt69.slabsnstairs.Init.Enchantments.ModEnchantments;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
+import net.dancervlt69.slabsnstairs.Init.World.ModClientSetup;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -40,6 +40,11 @@ public class SlabsNstairs {
         // ModFluids.register(eventBus);
         // ModSounds.register(eventBus);
 
+        // ModConfiguredFeatures.register(eventBus);
+        // ModPlacedFeatures.register(eventBus);
+        ModEnchantments.register(eventBus);
+
+
         // Register the mod-setting methodes for modLoading
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
@@ -53,15 +58,10 @@ public class SlabsNstairs {
         // Minecraft.getInstance().player.chat(msg);
     }
 
-   private void clientSetup(final FMLCommonSetupEvent event) {
-        RenderTypeLookup.setRenderLayer(ModBlocks.DRY_ICE_BLOCK.get(), RenderType.translucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.GROWTH_STOP.get(), RenderType.translucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CINNAMON_DOOR_01.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CINNAMON_DOOR_02.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CINNAMON_TRAPDOOR.get(), RenderType.cutout());
-    /*    ItemBlockRenderTypes.setRenderLayer(ModBlocks.ICE_SLAB.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ICE_STAIRS.get(), RenderType.translucent()); */
+    private void clientSetup(final FMLCommonSetupEvent event) {
+        ModClientSetup.modRendereTypes();
     }
+
     private void setup(final FMLCommonSetupEvent event) {
         // Preinit code
         LOGGER.info("PreInit has started...");

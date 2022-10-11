@@ -1,6 +1,5 @@
-package net.dancervlt69.slabsnstairs.Init.Blocks.custom;
+package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
-import com.sun.istack.internal.NotNull;
 import net.minecraft.block.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
@@ -11,11 +10,14 @@ import net.minecraft.world.server.ServerWorld;
 
 import java.util.List;
 import java.util.Random;
+import java.util.function.Supplier;
 
 @SuppressWarnings("deprecation")
-public class ModDirtSlabBlock extends SlabBlock implements IGrowable{
+public class ModDirtStairsBlock extends StairsBlock implements IGrowable{
 
-    public ModDirtSlabBlock(AbstractBlock.Properties pProperties) { super(pProperties); }
+    public ModDirtStairsBlock(Supplier<BlockState> state, Properties properties) {
+        super(state, properties);
+    }
 
     @Override
     public boolean isValidBonemealTarget(IBlockReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
