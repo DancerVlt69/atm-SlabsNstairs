@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cinnamon_planks": {
+    "has_cinnamon_slab": {
       "conditions": {
         "items": [
           {
             "items": [
-              "slabsnstairs:cinnamon_planks"
+              "slabsnstairs:cinnamon_slab"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cinnamon_planks",
+      "has_cinnamon_slab",
       "has_the_recipe"
     ]
   ],
