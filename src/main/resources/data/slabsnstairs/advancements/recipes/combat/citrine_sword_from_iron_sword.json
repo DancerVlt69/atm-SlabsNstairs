@@ -1,15 +1,17 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingredients": {
+    "has_sticks": {
       "conditions": {
         "items": [
           {
-            "tags": "slabsnstairs:sticks"
+            "items": [
+              "minecraft:iron_sword"
+            ]
           },
           {
             "items": [
-              "slabsnstairs:citrine_block"
+              "slabsnstairs:citrine"
             ]
           }
         ]
@@ -18,20 +20,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "slabsnstairs:tools/citrine_sword"
+        "recipe": "slabsnstairs:combat/citrine_sword_from_iron_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_ingredients",
+      "has_sticks",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "slabsnstairs:tools/citrine_sword"
+      "slabsnstairs:combat/citrine_sword_from_iron_sword"
     ]
   }
 }
