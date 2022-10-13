@@ -9,6 +9,11 @@ Slabs 'n Stairs changelog:
 * ***updated:***
   * German Localization 
   * Forge bump to Version 43.1.38
+
+The complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)
+
+This Version of the Mod was successfully tested with **_[Forge 43.1.38](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
+
 -------------------------
  v0.1.1.131 @ 2022/10/08
 -------------------------
@@ -19,8 +24,6 @@ Slabs 'n Stairs changelog:
   * Forge bump to 43.1.34 
   * Citrine Sword Recipes: now grouped and 3 more Citrine is needed for the "Citrine Sword from Iron Sword and Citrine" Recipe
   * Display URL in the Mod-Overview-Screen
-
-The complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)
 
 This Version of the Mod was successfully tested with **_[Forge 43.1.34](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
 
