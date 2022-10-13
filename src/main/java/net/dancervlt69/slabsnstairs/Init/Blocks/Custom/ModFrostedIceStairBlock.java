@@ -29,18 +29,13 @@ public class ModFrostedIceStairBlock extends StairBlock {
                               @Nullable BlockEntity pBlockEntity, ItemStack pStack) {
         super.playerDestroy(pLevel, pPlayer, pPos, pState, pBlockEntity, pStack);
 
-        if (EnchantmentHelper.getTagEnchantmentLevel(SILK_TOUCH,pStack) == 0)
-        {
-
+        if (EnchantmentHelper.getTagEnchantmentLevel(SILK_TOUCH,pStack) == 0) {
             if (pLevel.dimensionType().ultraWarm()) {pLevel.removeBlock(pPos, false);
                 return;
             }
-
             Material material = pLevel.getBlockState(pPos.below()).getMaterial();
-
             if (material.blocksMotion() || material.isLiquid()) {
                 pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
-
             }
         }
     }

@@ -153,7 +153,7 @@ public class ModBlocks {
 
         /** Quarter Dirt */
     public static final RegistryObject<Block> QUARTER_DIRT = registerBlock("quarter_dirt",
-            () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundType.GRAVEL)
+            () -> new ModDirtBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL)
                     .strength(1.0f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> QUARTER_DIRT_STAIRS = registerBlock("quarter_dirt_stairs",
             () -> new ModDirtStairBlock(() -> ModBlocks.QUARTER_DIRT.get().defaultBlockState(),
@@ -165,7 +165,7 @@ public class ModBlocks {
 
         /** Quarter Dirt Cobbled */
     public static final RegistryObject<Block> QUARTER_DIRT_COBBLE = registerBlock("quarter_dirt_cobble",
-            () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.GRAVEL)
+            () -> new ModDirtBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.GRAVEL)
                     .strength(1.2f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> QUARTER_DIRT_COBBLE_STAIRS = registerBlock("quarter_dirt_cobble_stairs",
             () -> new ModDirtStairBlock(() -> ModBlocks.QUARTER_DIRT_COBBLE.get().defaultBlockState(),
@@ -351,10 +351,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> ICE_STAIRS = registerBlock("ice_stairs",
             () -> new ModIceStairBlock(Blocks.ICE::defaultBlockState,
                     BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).friction(1.0F)
-                            .strength(0.8F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                            .strength(0.5F).noOcclusion().requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> ICE_SLAB = registerBlock("ice_slab",
             () -> new ModIceSlabBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).friction(1.0f)
-                    .strength(0.8F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(0.5F).noOcclusion().requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // Iced - Blocks - PackedIde
     public static final RegistryObject<Block> PACKED_ICE_STAIRS = registerBlock("packed_ice_stairs",
@@ -381,11 +381,11 @@ public class ModBlocks {
             ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_block.tooltip");
     public static final RegistryObject<Block> DRY_ICE_STAIRS = registerBlock("dry_ice_stairs",
             () -> new ModDryIceStairBlock(() -> ModBlocks.DRY_ICE_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS).strength(1.8F)
+                    BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).strength(1.8F)
                             .friction(1.0F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 9)),
             ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_stairs.tooltip");
     public static final RegistryObject<Block> DRY_ICE_SLAB = registerBlock("dry_ice_slab",
-            () -> new ModDryIceSlabBlock(BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS)
+            () -> new ModDryIceSlabBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS)
                     .friction(1.0f).strength(1.8F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 9)),
             ModTabs.SNSMODTAB1, "tooltip.slabsnstairs.dry_ice_slab.tooltip");
 

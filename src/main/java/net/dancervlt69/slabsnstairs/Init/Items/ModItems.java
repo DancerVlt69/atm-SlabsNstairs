@@ -1,7 +1,9 @@
 package net.dancervlt69.slabsnstairs.Init.Items;
 
+import net.dancervlt69.slabsnstairs.Init.Items.Custom.AdvancedItem;
 import net.dancervlt69.slabsnstairs.Init.Tabs.ModTabs;
 import net.dancervlt69.slabsnstairs.SlabsNstairs;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,8 +26,8 @@ public class ModItems {
     public static final RegistryObject<Item> CITRINE = ITEMS.register("citrine",
             () -> new Item(new Item.Properties().tab(ModTabs.SNSMODTAB3)));
 
-    public static final RegistryObject<Item> CITRINE_COIN = ITEMS.register("citrine_coin",
-            () -> new Item(new Item.Properties().tab(ModTabs.SNSMODTAB3)));
+    public static final RegistryObject<AdvancedItem> CITRINE_COIN = ITEMS.register("citrine_coin",
+            () -> new AdvancedItem(new Item.Properties().tab(ModTabs.SNSMODTAB3)));
 
     @Deprecated
     public static final RegistryObject<Item> CITRINE_SWORD = ITEMS.register("citrine_sword",
