@@ -19,6 +19,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("deprecation")
 public class ModIceStairBlock extends StairBlock {
 
     public ModIceStairBlock(Supplier<BlockState> pState, Properties pProperties) {

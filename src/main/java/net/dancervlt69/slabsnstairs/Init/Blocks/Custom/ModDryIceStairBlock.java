@@ -20,6 +20,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("deprecation")
 public class ModDryIceStairBlock extends StairBlock {
 
     public ModDryIceStairBlock(Supplier<BlockState> pState, Properties properties) {
@@ -67,12 +68,12 @@ public class ModDryIceStairBlock extends StairBlock {
 
     @Override
     public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+        super.animateTick(pState, pLevel, pPos, pRandom);
         float particleChance = 0.5f;
 
         if (particleChance > pRandom.nextFloat()) {
             pLevel.addParticle(ParticleTypes.CLOUD, pPos.getX() + pRandom.nextDouble(), pPos.getY() + 0.75,
                     pPos.getZ() + pRandom.nextDouble(), 0d + 0.025, 0d - 0.0125, 0d + 0.025);
         }
-        super.animateTick(pState, pLevel, pPos, pRandom);
     }
 }

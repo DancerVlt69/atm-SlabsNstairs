@@ -1,7 +1,6 @@
 package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -17,9 +16,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.PushReaction;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
+@SuppressWarnings("deprecation")
 public class ModDryIceBlock extends Block {
 
     public ModDryIceBlock(Properties properties) {
@@ -27,8 +25,8 @@ public class ModDryIceBlock extends Block {
     }
 
     @Override
-    public void playerDestroy(@NotNull Level pLevel, @NotNull Player pPlayer, @NotNull BlockPos pPos, @NotNull BlockState pState,
-                              @Nullable BlockEntity pBlockEntity, @NotNull ItemStack pStack) {
+    public void playerDestroy( Level pLevel,  Player pPlayer,  BlockPos pPos,  BlockState pState,
+                               BlockEntity pBlockEntity,  ItemStack pStack) {
         super.playerDestroy(pLevel, pPlayer, pPos, pState, pBlockEntity, pStack);
 
         if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,pStack) == 0) {
@@ -45,7 +43,7 @@ public class ModDryIceBlock extends Block {
     }
 
     @Override
-    public void randomTick(@NotNull BlockState pState, ServerLevel pLevel, @NotNull BlockPos pPos, @NotNull RandomSource pRandom) {
+    public void randomTick( BlockState pState, ServerLevel pLevel,  BlockPos pPos,  RandomSource pRandom) {
         if (pLevel.getBrightness(LightLayer.BLOCK, pPos) > 12 - pState.getLightBlock(pLevel, pPos)) {
             pLevel.destroyBlock(pPos, false);
             this.melt(pState, pLevel, pPos);
@@ -62,18 +60,18 @@ public class ModDryIceBlock extends Block {
     }
 
     @Override
-    public @NotNull PushReaction getPistonPushReaction(@NotNull BlockState pState) {
+    public  PushReaction getPistonPushReaction( BlockState pState) {
         return PushReaction.DESTROY;
     }
 
     @Override
-    public void animateTick(@NotNull BlockState pState, @NotNull Level pLevel, @NotNull BlockPos pPos, RandomSource pRandom) {
+    public void animateTick( BlockState pState,  Level pLevel,  BlockPos pPos, RandomSource pRandom) {
+        super.animateTick(pState, pLevel, pPos, pRandom);
         float particleChance = 0.75f;
 
         if (particleChance > pRandom.nextFloat()) {
             pLevel.addParticle(ParticleTypes.CLOUD, pPos.getX() + pRandom.nextDouble(), pPos.getY() + 0.75,
                     pPos.getZ() + pRandom.nextDouble(), 0d + 0.025, 0d - 0.0125, 0d + 0.025);
         }
-        super.animateTick(pState, pLevel, pPos, pRandom);
     }
 }

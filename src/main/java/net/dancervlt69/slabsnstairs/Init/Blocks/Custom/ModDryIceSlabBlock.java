@@ -19,6 +19,7 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.Nullable;
 
+@SuppressWarnings("deprecation")
 public class ModDryIceSlabBlock extends SlabBlock {
 
     public ModDryIceSlabBlock(Properties properties) {
@@ -66,12 +67,12 @@ public class ModDryIceSlabBlock extends SlabBlock {
 
     @Override
     public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+        super.animateTick(pState, pLevel, pPos, pRandom);
         float particleChance = 0.5f;
 
         if (particleChance > pRandom.nextFloat()) {
-            pLevel.addParticle(ParticleTypes.CLOUD, pPos.getX() + pRandom.nextDouble(), pPos.getY() + 1,
+            pLevel.addParticle(ParticleTypes.CLOUD, pPos.getX() + pRandom.nextDouble(), pPos.getY() + 1.0,
                     pPos.getZ() + pRandom.nextDouble(), 0d + 0.025, 0d - 0.0125, 0d + 0.025);
         }
-        super.animateTick(pState, pLevel, pPos, pRandom);
     }
 }
