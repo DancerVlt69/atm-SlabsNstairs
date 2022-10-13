@@ -7,8 +7,9 @@ issueTrackerURL="https://github.com/DancerVlt69/SlabsNstairs/issues"
 modId="slabsnstairs"
 version="${file.jarVersion}"
 displayName="SnS - Slabs 'n Stairs"
-credits="Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more"
-displayURL="https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net"
+credits='''Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more
+https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net'''
+displayURL="https://www.curseforge.com/minecraft/mc-mods/slabs-n-stairs"
 logoFile="logo.png"
 authors="DancerVlt69"
 description='''

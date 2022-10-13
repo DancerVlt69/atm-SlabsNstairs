@@ -130,6 +130,8 @@ minecraft {
 dependencies {
     minecraft "net.minecraftforge:forge:${mcMappingVersion}-${forgeVersion}" //1.19-41.1.0'
 
+    // minecraft "net.minecraftforge:forge:1.19.1-43.1.34"
+
     // JEI at compiling
     // compileOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}:api")
     // JEI at runTime
