@@ -1,17 +1,40 @@
 Slabs 'n Stairs changelog:
+-------------------------
+ v0.1.2.134 @ 2022/10/13
+-------------------------
+* ***fixed:***
+  * _**[issue #18](https://github.com/DancerVlt69/SlabsNstairs/issues/18)**_ - Recipe Conflict between the Cinnamon Trapdoor and the Palisade
+  * _**[issue #19](https://github.com/DancerVlt69/SlabsNstairs/issues/19)**_ - Ice Slabs & Stairs not melt to Water in the End an/ore lets Minecraft crash in the Nether
+  * _**[issue #20](https://github.com/DancerVlt69/SlabsNstairs/issues/20)**_ - (some times) Ice-Double-Slabs has no Texture Rendering if their Neighbor is an Ice-Slab  
+* ***updated:***
+  * German Localization 
+  * Forge bump to Version 43.1.38
+-------------------------
+ v0.1.1.131 @ 2022/10/08
+-------------------------
+* **fixed:**
+  * _**[Issue #16](https://github.com/DancerVlt69/SlabsNstairs/issues/16)**_ - Conflict with the "Citrine from Citrine Block" Recipe
+  * _**[Issue #17](https://github.com/DancerVlt69/SlabsNstairs/issues/17)**_ - added missing Recipes for Cinnamon-Door Variation 1 & 2  
+* **updated/changed:**
+  * Forge bump to 43.1.34 
+  * Citrine Sword Recipes: now grouped and 3 more Citrine is needed for the "Citrine Sword from Iron Sword and Citrine" Recipe
+  * Display URL in the Mod-Overview-Screen
+
+The complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)
+
+This Version of the Mod was successfully tested with **_[Forge 43.1.34](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
 
 -------------------------
  v0.1.0.129 @ 2022/10/06
 -------------------------
-**!!! Marked some of the Items & Blocks as** **_@Depricated (forRemoval)_** **!!!**
+**!!! Some of the Items & Blocks are marked as** **_@Deprecated (forRemoval)_** **!!!**
 -
 * **Blocks**
   * the old **Cinnamon** (aka Acacia-) **Door** | Two new Variations are in the Mod right now
   * the **Growth-Stop** | will be moved to a (planned) new Sub-Mod
-  * the **Tripod** | will be moved to a (planned) new Sub-Mod
-  * the (right now unfinished) **Telescope** | will be moved to a (planned) new Sub-Mod
+ 
 * **Items**
-  * Food Items | will be moved to a (planned) new Sub-Mod
+  * Food Items | will be moved to a (planned) new Sub-Mod (if present)
   * the Dye **Light-Brown** | will be moved to a (planned) new Sub-Mod
   * the **Citrine-Sword** | will be moved to a (planned) new Sub-Mod
 
@@ -25,9 +48,12 @@ But don't panic. The planned new Mod/s will be published a long time before the 
   - Parchment to version 2022.09.18
 * **added:**
   * Citrine & End Stone Pressure Plate
+  * Citrine Ore & Deepslate Ore
   * Ice Slab & Stairs
   * two new Variants of the Cinnamon Door 
   * Citrine Sword (for testing)
+
+This Version of the Mod was successfully tested with **_[Forge 43.1.33](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
 
 -------------------------
 v0.0.05.126 @ 2022/08/31
@@ -40,8 +66,6 @@ v0.0.05.126 @ 2022/08/31
     - Parchment to version 2022.08.28 
 * added:
     - second creative tab fpr upcoming stuff
-
-the complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19/CHANGELOG.md)
 
 This Version of the Mod was successfully tested with **_[Forge 43.1.3](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
 
@@ -149,7 +173,7 @@ V 0.0.1.112 @ 2022/07/06
 ------------------------
 V 0.0.1.111 @ 2022/07/05
 ------------------------
-* readd polished button variants of Andesite, Diorite, and Granite
+* re-added polished button variants of Andesite, Diorite, and Granite
 
 ------------------------
 V 0.0.1.110 @ 2022/07/03
