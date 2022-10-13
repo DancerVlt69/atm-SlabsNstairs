@@ -1,14 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "moreButtons",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
       "item": "slabsnstairs:cinnamon_planks"
     }
-  ],
+  },
   "result": {
-    "item": "slabsnstairs:cinnamon_button",
-    "count": 6
+    "item": "slabsnstairs:cinnamon_door_01",
+    "count": 3
   },
   "conditions": [
     {

@@ -17,28 +17,11 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "croptopia"
+      "modid": "slabsnstairs"
     },
     {
-      "type": "forge:or",
-      "values": [
-        {
-          "type": "forge:item_exists",
-          "item": "croptopia:cinnamon_log"
-        },
-        {
-          "type": "forge:item_exists",
-          "item": "croptopia:stripped_cinnamon_log"
-        },
-        {
-          "type": "forge:item_exists",
-          "item": "croptopia:cinnamon_wood"
-        },
-        {
-          "type": "forge:item_exists",
-          "item": "croptopia:stripped_cinnamon_wood"
-        }
-      ]
+      "type": "forge:item_exists",
+      "item": "slabsnstairs:cinnamon_slab"
     }
   ]
 }
