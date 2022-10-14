@@ -7,7 +7,7 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 
 public class ModClientSetup {
 
-    public static void modRendereTypes() {
+    public static void modRenderTypes() {
         RenderTypeLookup.setRenderLayer(ModBlocks.GROWTH_STOP.get(), RenderType.translucent());
         RenderTypeLookup.setRenderLayer(ModBlocks.CINNAMON_DOOR.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.CINNAMON_DOOR_01.get(), RenderType.cutout());

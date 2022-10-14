@@ -45,7 +45,7 @@ public class SlabsNstairs {
         ModEnchantments.register(eventBus);
 
 
-        // Register the mod-setting methodes for modLoading
+        // Register the mod-setting methods for modLoading
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
 
@@ -53,13 +53,16 @@ public class SlabsNstairs {
                 "slabsnstairs-client.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModClientSettings.SPEC,
                 "slabsnstairs-common.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModClientSettings.SPEC,
+                "slabsnstairs-server.toml");
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         // Minecraft.getInstance().player.chat(msg);
     }
 
     private void clientSetup(final FMLCommonSetupEvent event) {
-        ModClientSetup.modRendereTypes();
+        ModClientSetup.modRenderTypes();
     }
 
     private void setup(final FMLCommonSetupEvent event) {

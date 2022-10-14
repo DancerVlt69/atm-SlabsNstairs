@@ -26,38 +26,6 @@ public class ModDryIceSlabBlock extends SlabBlock {
     }
 
     @Override
-    public void randomTick(BlockState pState, ServerWorld pLevel, BlockPos pPos, Random pRandom) {
-        super.randomTick(pState, pLevel, pPos, pRandom);
-        if (pLevel.getBrightness(LightType.BLOCK, pPos) > 12) {
-            pLevel.destroyBlock(pPos, false);
-            this.melt(pState, pLevel, pPos);
-        }
-    }
-
-    @Override
-    public void animateTick(BlockState pState, World pLevel, BlockPos pPos, Random pRandom) {
-        super.animateTick(pState, pLevel, pPos, pRandom);
-        float particleChance = 0.75f;
-
-        if (particleChance > pRandom.nextFloat()) {
-            pLevel.addParticle(ParticleTypes.CLOUD, pPos.getX() + pRandom.nextDouble(), pPos.getY() + 0.75,
-                    pPos.getZ() + pRandom.nextDouble(), 0d + 0.025, 0d, 0d + 0.025);
-        }
-    }
-
-    public void melt(BlockState pState, World pLevel, BlockPos pPos) {
-        // super.melt(pState, pLevel, pPos);
-        if (pLevel.dimensionType().ultraWarm()) {
-           pLevel.removeBlock(pPos, false);
-        } else {
-            if (pLevel.dimensionType().bedWorks()) {
-                pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
-                pLevel.neighborChanged(pPos, Blocks.AIR, pPos);
-            }
-        }
-    }
-
-    @Override
     public void playerDestroy(World pLevel, PlayerEntity pPlayer, BlockPos pPos,
                               BlockState pState, TileEntity pBlockEntity, ItemStack pStack) {
         super.playerDestroy(pLevel, pPlayer, pPos, pState, pBlockEntity, pStack);
@@ -74,18 +42,37 @@ public class ModDryIceSlabBlock extends SlabBlock {
         }
     }
 
-    /*@Override
-    public boolean hidesNeighborFace(BlockGetter level, BlockPos pBlockPos, BlockState state,
-                                     BlockState neighborState, Direction pDirection) {
-        return false;
+    @Override
+    public void randomTick(BlockState pState, ServerWorld pLevel, BlockPos pPos, Random pRandom) {
+        super.randomTick(pState, pLevel, pPos, pRandom);
+        if (pLevel.getBrightness(LightType.BLOCK, pPos) > 12 - pState.getLightBlock(pLevel, pPos)) {
+            pLevel.destroyBlock(pPos, false);
+            this.melt(pState, pLevel, pPos);
+        }
     }
-    /* @Override
-    public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pSide) {
-        return pAdjacentBlockState.is(this) || super.skipRendering(pState, pAdjacentBlockState, pSide);
-    } */
+
+    public void melt(BlockState pState, World pLevel, BlockPos pPos) {
+        if (pLevel.dimensionType().ultraWarm()) {
+            pLevel.removeBlock(pPos, false);
+        } else {
+            pLevel.setBlockAndUpdate(pPos, Blocks.AIR.defaultBlockState());
+            pLevel.neighborChanged(pPos, Blocks.AIR, pPos);
+        }
+    }
 
     @Override
     public PushReaction getPistonPushReaction(BlockState pState) {
         return PushReaction.DESTROY;
+    }
+
+    @Override
+    public void animateTick(BlockState pState, World pLevel, BlockPos pPos, Random pRandom) {
+        super.animateTick(pState, pLevel, pPos, pRandom);
+        float particleChance = 0.5f;
+
+        if (particleChance > pRandom.nextFloat()) {
+            pLevel.addParticle(ParticleTypes.CLOUD, pPos.getX() + pRandom.nextDouble(), pPos.getY() + 1,
+                    pPos.getZ() + pRandom.nextDouble(), 0d + 0.025, 0 - 0.0125d, 0d + 0.025);
+        }
     }
 }

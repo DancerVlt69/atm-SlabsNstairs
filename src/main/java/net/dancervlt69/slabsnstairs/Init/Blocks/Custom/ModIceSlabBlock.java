@@ -25,31 +25,8 @@ public class ModIceSlabBlock extends SlabBlock {
     }
 
     @Override
-    public void randomTick(BlockState pState, ServerWorld pLevel, BlockPos pPos, Random pRandom) {
-        super.randomTick(pState, pLevel, pPos, pRandom);
-        if (pLevel.getBrightness(LightType.BLOCK, pPos) > 11) {
-            pLevel.destroyBlock(pPos, false);
-            this.melt(pState, pLevel, pPos);
-        }
-    }
-
-    protected void melt(BlockState pState, ServerWorld pLevel, BlockPos pPos) {
-        // super.melt(pState, pLevel, pPos);
-        if (pLevel.dimensionType().ultraWarm()) {
-            if (pLevel.dimensionType().bedWorks()) {
-                pLevel.removeBlock(pPos, false);
-            }
-        } else {
-            if (pLevel.dimensionType().bedWorks()) {
-                pLevel.setBlockAndUpdate(pPos, Blocks.WATER.defaultBlockState());
-                pLevel.neighborChanged(pPos, Blocks.WATER, pPos);
-            }
-        }
-    }
-
-    @Override
     public void playerDestroy(World pLevel, PlayerEntity pPlayer, BlockPos pPos,
-                             BlockState pState,TileEntity pBlockEntity, ItemStack pStack) {
+                              BlockState pState,TileEntity pBlockEntity, ItemStack pStack) {
         super.playerDestroy(pLevel, pPlayer, pPos, pState, pBlockEntity, pStack);
 
         if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,pStack) == 0) {
@@ -64,15 +41,24 @@ public class ModIceSlabBlock extends SlabBlock {
         }
     }
 
-    /*@Override
-    public boolean hidesNeighborFace(BlockGetter level, BlockPos pos, BlockState state, BlockState neighborState, Direction dir)
-    {
-        return false;
+    @Override
+    public void randomTick(BlockState pState, ServerWorld pLevel, BlockPos pPos, Random pRandom) {
+        super.randomTick(pState, pLevel, pPos, pRandom);
+        if (pLevel.getBrightness(LightType.BLOCK, pPos) > 11 - pState.getLightBlock(pLevel, pPos)) {
+            pLevel.destroyBlock(pPos, false);
+            this.melt(pState, pLevel, pPos);
+        }
     }
-    /*@Override
-    public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pSide) {
-        return pAdjacentBlockState.is(this) || super.skipRendering(pState, pAdjacentBlockState, pSide);
-    }*/
+
+    protected void melt(BlockState pState, World pLevel, BlockPos pPos) {
+        // super.melt(pState, pLevel, pPos);
+        if (pLevel.dimensionType().ultraWarm()) {
+            pLevel.removeBlock(pPos, false);
+        } else {
+            pLevel.setBlockAndUpdate(pPos, Blocks.WATER.defaultBlockState());
+            pLevel.neighborChanged(pPos, Blocks.WATER, pPos);
+        }
+    }
 
     @Override
     public PushReaction getPistonPushReaction(BlockState pState) {
