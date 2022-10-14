@@ -91,9 +91,9 @@ public class ModBlocks {
   public static final RegistryObject<Block> CINNAMON_TRAPDOOR = registerBlock ("cinnamon_trapdoor",
           () -> new TrapDoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_TRAPDOOR)),ModTabs.SNSMODTAB1);
 
-    @Deprecated
+    /* @Deprecated
     public static final RegistryObject<Block> CINNAMON_DOOR = registerBlock ("cinnamon_door",
-            () -> new DoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_DOOR)),ModTabs.SNSMODTAB1);
+            () -> new DoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_DOOR)),ModTabs.SNSMODTAB1); */
     public static final RegistryObject<Block> CINNAMON_DOOR_01 = registerBlock ("cinnamon_door_01",
             () -> new DoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_DOOR)),ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> CINNAMON_DOOR_02 = registerBlock ("cinnamon_door_02",
