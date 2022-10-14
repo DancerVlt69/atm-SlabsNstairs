@@ -5,6 +5,11 @@
     "slabsnstairs:citrine_stairs",
     "slabsnstairs:citrine_slab",
     "slabsnstairs:citrine_ore",
-    "slabsnstairs:deepslate_citrine_ore"
+    "slabsnstairs:deepslate_citrine_ore",
+    "slabsnstairs:ice_stairs",
+    "slabsnstairs:ice_slab",
+    "slabsnstairs:dry_ice_block",
+    "slabsnstairs:dry_ice_stairs",
+    "slabsnstairs:dry_ice_slab"
   ]
 }
