@@ -59,11 +59,10 @@ public class ModBlocks {
                     .strength(5.5f)), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> CITRINE_BUTTON = registerBlock("citrine_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL)
-                    .strength(5.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
-
+                    .strength(5.5f).noCollission()), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> CITRINE_PRESSURE_PLATE = registerBlock("citrine_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
-                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), ModTabs.SNSMODTAB1);
 
     // Cinnamon
     public static final RegistryObject<Block> CINNAMON_PLANKS = registerBlock("cinnamon_planks",
@@ -120,18 +119,18 @@ public class ModBlocks {
 /*    public static final RegistryObject<Block> PATH_BLOCK_STAIRS = registerBlock("path_block_stairs",
             () -> new ModGrassStairBlock(() -> ModBlocks.DIRT_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS)
-                            .strength(1F)), ModTabs.MODTAB_TAB); */
+                            .strength(1F)),ModTabs.SNSMODTAB1); */
 /*    public static final RegistryObject<Block> PATH_BLOCK_SLAB = registerBlock("path_block_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.WET_GRASS)
-                    .strength(1F)), ModTabs.SNSMODTAB); */
+                    .strength(1F)), ModTabs.SNSMODTAB1); */
     /** Grass */
 /*    public static final RegistryObject<Block> GRASS_BLOCK_STAIRS = registerBlock("grass_block_stairs",
             () -> new ModGrassStairBlock(() -> ModBlocks.DIRT_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS)
-                            .strength(1F)), ModTabs.MODTAB_TAB); */
+                            .strength(1F)), ModTabs.SNSMODTAB1); */
 /*    public static final RegistryObject<Block> GRASS_BLOCK_SLAB = registerBlock("grass_block_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.WET_GRASS)
-                    .strength(1F)), ModTabs.SNSMODTAB); */
+                    .strength(1F)), ModTabs.SNSMODTAB1); */
 
     /** Dirt Cobbled */
     public static final RegistryObject<Block> DIRT_COBBLE = registerBlock("dirt_cobble",
@@ -234,8 +233,7 @@ public class ModBlocks {
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F).sound(SoundType.DEEPSLATE_TILES)), CreativeModeTab.TAB_REDSTONE);
 
-    // Pressure Plates
-
+    /** Pressure Plates */
     public static final RegistryObject<Block> SMOOTH_STONE_PRESSURE_PLATE = registerBlock("smooth_stone_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F).sound(SoundType.STONE)), CreativeModeTab.TAB_REDSTONE);
@@ -246,7 +244,7 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
-    // Sandstone
+        /**  Sandstone */
     public static final RegistryObject<Block> SANDSTONE_PRESSURE_PLATE = registerBlock("sandstone_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
@@ -299,7 +297,7 @@ public class ModBlocks {
                             BlockBehaviour.Properties.of(Material.STONE).strength(0.5F).
                                     sound(SoundType.DEEPSLATE_TILES)),CreativeModeTab.TAB_REDSTONE);
 
-    // Stairs
+    /** Stairs */
     public static final RegistryObject<Block> SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
             () -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
@@ -324,7 +322,7 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_TILES)
                             .strength(3.6f, 6).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    // Slabs
+    /** Slabs */
     public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB = registerBlock
             ("cracked_polished_blackstone_brick_slab",
                     () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
@@ -341,7 +339,7 @@ public class ModBlocks {
                     .strength(2.0f, 6).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 
-    // Iced - Blocks - Ice
+    /** Iced Blocks - Ice */
     public static final RegistryObject<Block> ICE_STAIRS = registerBlock("ice_stairs",
             () -> new ModIceStairBlock(Blocks.ICE::defaultBlockState,
                     BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).friction(1.0F)
@@ -350,7 +348,7 @@ public class ModBlocks {
             () -> new ModIceSlabBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).friction(1.0f)
                     .strength(0.8F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    // Iced - Blocks - PackedIde
+    /** Iced Blocks - Packed Ide */
     public static final RegistryObject<Block> PACKED_ICE_STAIRS = registerBlock("packed_ice_stairs",
             () -> new ModFrostedIceStairBlock(Blocks.PACKED_ICE::defaultBlockState,
                     BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS).friction(1.0F)
@@ -359,31 +357,32 @@ public class ModBlocks {
             () -> new ModFrostedIceSlabBlock(BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS).friction(1.0f)
                     .strength(0.8F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    // Iced - Blocks - BlueIce
+    /** Iced Blocks - Blue Ice */
     public static final RegistryObject<Block> BLUE_ICE_STAIRS = registerBlock("blue_ice_stairs",
             () -> new ModFrostedIceStairBlock(Blocks.BLUE_ICE::defaultBlockState,
                     BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS).friction(1.0F)
-                            .strength(0.8F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                            .strength(2.8F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> BLUE_ICE_SLAB = registerBlock("blue_ice_slab",
             () -> new ModFrostedIceSlabBlock(BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS).friction(1.0f)
-                    .strength(0.8F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(2.8F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    // Iced - Blocks - DryIce
+    /** Iced - Blocks - DryIce */
     public static final RegistryObject<Block> DRY_ICE_BLOCK = registerBlock("dry_ice_block",
             () -> new ModDryIceBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).strength(1.8f)
-                    .friction(1.0F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 9)),
+                    .friction(1.0F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 6)),
             ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_block.tooltip");
     public static final RegistryObject<Block> DRY_ICE_STAIRS = registerBlock("dry_ice_stairs",
             () -> new ModDryIceStairBlock(() -> ModBlocks.DRY_ICE_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS).strength(1.8F)
-                            .friction(1.0F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 9)),
+                    BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).strength(1.8F)
+                            .friction(1.0F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 6)),
             ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_stairs.tooltip");
     public static final RegistryObject<Block> DRY_ICE_SLAB = registerBlock("dry_ice_slab",
-            () -> new ModDryIceSlabBlock(BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS)
-                    .friction(1.0f).strength(1.8F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 9)),
+            () -> new ModDryIceSlabBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS)
+                    .friction(1.0f).strength(1.8F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 6)),
             ModTabs.SNSMODTAB1, "tooltip.slabsnstairs.dry_ice_slab.tooltip");
 
-    // registering the Blocks
+    /** Registering the Blocks */
+        /** with Tool Tips */
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab, String tooltipKey) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab, tooltipKey);
@@ -402,6 +401,8 @@ public class ModBlocks {
             }
         });
     }
+
+        /** without Tool Tips */
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
                                                                      CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
