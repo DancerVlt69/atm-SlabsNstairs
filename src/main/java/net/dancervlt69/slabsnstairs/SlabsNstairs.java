@@ -7,7 +7,7 @@ import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
 import net.dancervlt69.slabsnstairs.Init.World.Features.ModConfiguredFeatures;
 import net.dancervlt69.slabsnstairs.Init.World.Features.ModPlacedFeatures;
-import net.dancervlt69.slabsnstairs.Init.World.ModRenderTyp;
+import net.dancervlt69.slabsnstairs.Init.World.setClientSetup;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -55,8 +55,8 @@ public class SlabsNstairs {
         // ModRecipes.register(eventBus);
 
         // Register the setup methods for modLoading
-        eventBus.addListener(this::setup);
-        eventBus.addListener(this::clientSetup);
+        eventBus.addListener(this::onSetup);
+        eventBus.addListener(this::onClientSetup);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModClientSettings.SPEC,
                 "slabsnstairs-client.toml");
@@ -68,11 +68,11 @@ public class SlabsNstairs {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void clientSetup(final FMLClientSetupEvent event) {
-        ModRenderTyp.clientSetup();
+    public void onClientSetup(final FMLClientSetupEvent event) {
+        setClientSetup.setRenderLayer();
     }
 
-    private void setup(final FMLCommonSetupEvent event) {
+    private void onSetup(final FMLCommonSetupEvent event) {
         // Preinit code
         LOGGER.info("PreInit has started...");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());

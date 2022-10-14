@@ -3,6 +3,7 @@ package net.dancervlt69.slabsnstairs.Init.Items;
 import net.dancervlt69.slabsnstairs.Init.Sounds.Custom.AdvancedItem;
 import net.dancervlt69.slabsnstairs.Init.Tabs.ModTabs;
 import net.dancervlt69.slabsnstairs.SlabsNstairs;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
