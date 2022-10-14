@@ -5,10 +5,12 @@ issueTrackerURL="https://github.com/DancerVlt69/SlabsNstairs/issues"
 
 [[mods]]
 modId="slabsnstairs"
-version="1.18x-0.1.0.130"
+version="1.18.x-${file.jarVersion}"
+oldVersion="1.18x-0.1.1.133"
 displayName="SnS - Slabs 'n Stairs"
-credits="Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more"
-displayURL="https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net"
+credits='''Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more
+https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net'''
+displayURL="https://www.curseforge.com/minecraft/mc-mods/slabs-n-stairs"
 logoFile="logo.png"
 authors="DancerVlt69"
 description='''SnS - Slabs 'n Stairs - will add some simple blocks to your Minecraft Java Edition'''
