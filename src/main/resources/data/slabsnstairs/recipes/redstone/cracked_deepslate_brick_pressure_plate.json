@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "more_pressure_plates",
   "pattern": [
     "##"
   ],
