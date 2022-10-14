@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "slabsnstairs:citrine_ore"
+  },
+  "result": "slabsnstairs:citrine",
+  "experience": 0.7,
+  "cookingtime": 100
+}

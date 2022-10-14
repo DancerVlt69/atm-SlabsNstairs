@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "citrinesword",
   "key": {
     "#": {
       "item": "minecraft:iron_sword"
@@ -9,6 +10,7 @@
     }
   },
   "pattern": [
+    "XXX",
     "XXX",
     "X#X"
   ],
