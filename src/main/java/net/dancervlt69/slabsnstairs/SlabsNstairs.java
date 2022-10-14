@@ -34,6 +34,7 @@ public class SlabsNstairs {
     public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID),
             () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
     private static final int messageID = 0;
+
     public SlabsNstairs() {
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();

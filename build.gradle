@@ -1,18 +1,12 @@
 buildscript {
     repositories {
-        // maven { url = 'https://maven.minecraftforge.net' } // maven { url = "https://files.minecraftforge.net/maven" }
-        // maven { url = 'https://maven.parchmentmc.org' }
-        // maven { url = "https://mvn.stopmodreposts.org" }
-        // mavenCentral()
+
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.parchmentmc:librarian:1.+'
     }
 }
-
-// apply plugin: 'net.minecraftforge.gradle'
-// apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 plugins {
     // Other plugins like maven-publish, idea, eclipse, etc. go here
@@ -21,7 +15,7 @@ plugins {
 }
 
 // apply plugin: 'eclipse'
-apply plugin: 'maven-publish'
+// apply plugin: 'maven-publish'
 
 def buildPropFile = file('.env/dev.env')
 Properties buildProps = new Properties()
