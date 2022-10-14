@@ -359,7 +359,7 @@ public class ModBlocks {
                     .strength(3F)), ItemGroup.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_TILE_SLAB = registerBlock("cracked_deepslate_tile_slab",
             () -> new SlabBlock(AbstractBlock.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_TILES)
-                    .strength(3F)), ItemGroup.TAB_BUILDING_BLOCKS);    */
+                    .strength(3F)), ItemGroup.TAB_BUILDING_BLOCKS); */
 
     /** Iced Blocks - Ice */
     public static final RegistryObject<Block> ICE_STAIRS = registerBlock("ice_stairs",
