@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "moreButtons",
+  "group": "wooden_button",
   "ingredients": [
     {
       "item": "slabsnstairs:cinnamon_planks"
