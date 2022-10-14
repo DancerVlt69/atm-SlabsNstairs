@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cinnamon_slab": {
+    "has_cinnamon_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "slabsnstairs:cinnamon_slab"
+              "slabsnstairs:cinnamon_planks"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "slabsnstairs:building_blocks/cinnamon_palisade"
+        "recipe": "slabsnstairs:redstone/cinnamon_door_01"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cinnamon_slab",
+      "has_cinnamon_planks",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "slabsnstairs:building_blocks/cinnamon_palisade"
+      "slabsnstairs:redstone/cinnamon_door_01"
     ]
   }
 }
