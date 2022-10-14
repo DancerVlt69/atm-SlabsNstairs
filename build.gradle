@@ -116,7 +116,9 @@ minecraft {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${mcMappingVersion}-${forgeVersion}" //1.18.1-39.1.2'
+    minecraft "net.minecraftforge:forge:${mcMappingVersion}-${forgeVersion}" //
+
+    // minecraft "net.minecraftforge:forge:1.16.5-36.2.39"
 
     // JEI - Just Enough Items
     // compileOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}:api")

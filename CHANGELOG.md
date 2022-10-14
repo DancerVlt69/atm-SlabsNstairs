@@ -1,10 +1,21 @@
 # Slabs 'n Stairs version changelog:
 -------------------------
+ v0.1.0.132 @ 2022/10/14
+-------------------------
+* ***fixed:***
+  * ***[issue #19](https://github.com/DancerVlt69/SlabsNstairs/issues/19)*** - Ice Slabs and Stairs not melt or lets MC crash
+* ***added/updated:***
+  * Cinnamon Door Models 
+  * a lot of Recipes, Advancements, Loot Tables, and Tags
+* ***removed:***
+  * the old temporarily Model of the Cinnamon Door, now two new different Variants of the Door are available
+
+-------------------------
  v0.0.2.128 @ 2022/09/01
 -------------------------
 
 * fixed:
-  * [Issue #13:](https://github.com/DancerVlt69/SlabsNstairs/issues/13): Tooltips will not or permanently displayed
+  * [Issue #13:](https://github.com/DancerVlt69/SlabsNstairs/issues/13) Tooltips will not or permanently displayed
   * [Issue #14:](https://github.com/DancerVlt69/SlabsNstairs/issues/14) Cinnamon Fences will not connect to other Wooden Fences
   * [Issue #15:](https://github.com/DancerVlt69/SlabsNstairs/issues/15) Can't craft Cinnamon Fences
   * Recipe of the Cinnamon Trapdoor
