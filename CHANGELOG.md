@@ -19,6 +19,9 @@
 
 This Version of the Mod was successfully tested with [**Forge** ***40.1.84***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html)
 
+With OptiFine_1.18.2_HD_U_H9_pre1 use Forge 40.1.73 for a better compatibility with other Mods like
+Applied Energistics 2, Apotheosis, Biomes O Plenty, etc.
+
 The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18.x/CHANGELOG.md)***
 
 -------------------------
