@@ -50,8 +50,8 @@ public class SlabsNstairs {
         ModBlocks.register(eventBus);
 
         ModConfiguredFeatures.register(eventBus);
-        ModEnchantments.register(eventBus);
         ModPlacedFeatures.register(eventBus);
+        ModEnchantments.register(eventBus);
         // ModRecipes.register(eventBus);
 
         // Register the setup methods for modLoading
