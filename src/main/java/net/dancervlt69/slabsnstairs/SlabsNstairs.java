@@ -7,6 +7,7 @@ import net.dancervlt69.slabsnstairs.Init.Enchantments.ModEnchantments;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Recipes.ModRecipes;
 import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
+import net.dancervlt69.slabsnstairs.Init.Settings.ModCommonSettings;
 import net.dancervlt69.slabsnstairs.Init.World.Features.ModPlacedFeatures;
 import net.dancervlt69.slabsnstairs.Init.World.Features.ModConfiguredFeatures;
 import net.minecraft.resources.ResourceLocation;
@@ -54,7 +55,7 @@ public class SlabsNstairs {
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModClientSettings.SPEC,
                 "slabsnstairs-client.toml");
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModClientSettings.SPEC,
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModCommonSettings.SPEC,
                 "slabsnstairs-common.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, ModClientSettings.SPEC,
                 "slabsnstairs-server.toml");
