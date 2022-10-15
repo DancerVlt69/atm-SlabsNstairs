@@ -34,8 +34,6 @@ The complete changelog history you can find: ***[on GitHub](https://github.com/D
 
 This Version of the Mod was successfully testet with [**Forge** ***36.0.39***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html)
 
-The complete changelog you can find: [on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.16.5/CHANGELOG.md)
-
 -------------------------
  v0.0.1.125 @ 2022/08/28
 -------------------------
