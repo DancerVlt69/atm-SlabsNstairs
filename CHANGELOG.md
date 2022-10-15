@@ -1,18 +1,24 @@
 Slabs 'n Stairs changelog:
 -------------------------
- v0.1.2.134 @ 2022/10/13
+ v0.1.2.134 @ 2022/10/15
 -------------------------
 * ***fixed:***
   * _**[issue #18](https://github.com/DancerVlt69/SlabsNstairs/issues/18)**_ - Recipe Conflict between the Cinnamon Trapdoor and the Palisade
   * _**[issue #19](https://github.com/DancerVlt69/SlabsNstairs/issues/19)**_ - Ice Slabs & Stairs not melt to Water in the End an/ore lets Minecraft crash in the Nether
-  * _**[issue #20](https://github.com/DancerVlt69/SlabsNstairs/issues/20)**_ - (some times) Ice-Double-Slabs has no Texture Rendering if their Neighbor is an Ice-Slab  
+  * _**[issue #20](https://github.com/DancerVlt69/SlabsNstairs/issues/20)**_ - (some times) Ice-Double-Slabs has no Texture Rendering if their Neighbor is an Ice-Slab
+  * some spelling issues in the Wooden Tags
 * ***updated:***
-  * German Localization 
-  * Forge bump to Version 43.1.38
+  * German Localization
+  * some more Button Recipes are grouped
+  * Pressure Plate Recipes now ware grouped
+  * Forge bump to Version 43.1.43
+* ***removed:***
+  * temporarily Cinnamon Door  
+  * useless Tool Tables
 
-The complete changelog: [https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)
+This Version of the Mod was successfully tested with [**Forge** ***43.1.43***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
 
-This Version of the Mod was successfully tested with **_[Forge 43.1.38](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
 
 -------------------------
  v0.1.1.131 @ 2022/10/08
