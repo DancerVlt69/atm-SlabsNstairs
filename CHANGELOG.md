@@ -1,14 +1,21 @@
 # Slabs 'n Stairs version changelog:
 -------------------------
- v0.1.0.132 @ 2022/10/14
+ v0.1.0.132 @ 2022/10/15
 -------------------------
 * ***fixed:***
   * ***[issue #19](https://github.com/DancerVlt69/SlabsNstairs/issues/19)*** - Ice Slabs and Stairs not melt or lets MC crash
+  * some spellings in the Wooden Tags
 * ***added/updated:***
-  * Cinnamon Door Models 
+  * Cinnamon Door Models
+  * some more Button Recipes are grouped
+  * Pressure Plate Recipes now are grouped
   * a lot of Recipes, Advancements, Loot Tables, and Tags
 * ***removed:***
   * the old temporarily Model of the Cinnamon Door, now two new different Variants of the Door are available
+
+This Version of the Mod was successfully testet with [**Forge** ***36.0.39***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html)
+
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.16.5/CHANGELOG.md)***
 
 -------------------------
  v0.0.2.128 @ 2022/09/01
