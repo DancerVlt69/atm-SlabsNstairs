@@ -8,7 +8,7 @@ public class setClientSetup {
 
     public static void setRenderLayer() {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWTH_STOP.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CINNAMON_DOOR.get(), RenderType.cutout());
+        // ItemBlockRenderTypes.setRenderLayer(ModBlocks.CINNAMON_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CINNAMON_DOOR_01.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CINNAMON_DOOR_02.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CINNAMON_TRAPDOOR.get(), RenderType.cutout());
