@@ -1,16 +1,6 @@
 {
   "replace": false,
   "values": [
-    "slabsnstairs:dirt_block_slab",
-    "slabsnstairs:dirt_block_stairs",
-    "slabsnstairs:dirt_cobble",
-    "slabsnstairs:dirt_cobble_stairs",
-    "slabsnstairs:dirt_cobble_slab",
-    "slabsnstairs:quarter_dirt",
-    "slabsnstairs:quarter_dirt_stairs",
-    "slabsnstairs:quarter_dirt_slab",
-    "slabsnstairs:quarter_dirt_cobble",
-    "slabsnstairs:quarter_dirt_cobble_stairs",
-    "slabsnstairs:quarter_dirt_cobble_slab"
+    "#slabsnstairs:needs_stone_tool"
     ]
 }
