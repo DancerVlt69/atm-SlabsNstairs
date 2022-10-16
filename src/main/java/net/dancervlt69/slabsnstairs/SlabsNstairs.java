@@ -62,6 +62,8 @@ public class SlabsNstairs {
                 "slabsnstairs-client.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModClientSettings.SPEC,
                 "slabsnstairs-common.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, ModClientSettings.SPEC,
+                "slabsnstairs-server.toml");
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         // Minecraft.getInstance().player.chat(msg);
