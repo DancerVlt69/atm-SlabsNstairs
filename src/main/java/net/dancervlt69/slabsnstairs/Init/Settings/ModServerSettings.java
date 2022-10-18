@@ -10,12 +10,12 @@ public class ModServerSettings {
     public static final ForgeConfigSpec.ConfigValue<Integer> ILLUMINATED_GROWTH_STOP_LIGHT_RANGE;
 
     static {
-        BUILDER.push("Server-Settings for Slabs 'n Stairs");
+        BUILDER.push("Server - Settings for Slabs 'n Stairs (inactive right now)");
 
         // SAMPLE_CONFIG_VALUE = BUILDER.comment("How many Samples you need?").define("Needed Samples", 5);
 
-        ILLUMINATED_GROWTH_STOP_LIGHT_RANGE = BUILDER.comment("Light Level of the illuminated Growth-Stop")
-                .defineInRange("Light Level", 5, 1, 15);
+        ILLUMINATED_GROWTH_STOP_LIGHT_RANGE = BUILDER.comment("Set the Light Level of the illuminated Growth-Stops")
+                .defineInRange("Growth Stop Light Level", 5, 1, 15);
 
         BUILDER.pop();
         SPEC = BUILDER.build();

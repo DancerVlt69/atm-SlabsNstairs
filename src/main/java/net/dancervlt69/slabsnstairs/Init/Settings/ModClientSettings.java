@@ -8,7 +8,7 @@ public class ModClientSettings {
     public static final ForgeConfigSpec SPEC;
 
     static {
-        BUILDER.push("Settings for Slabs 'n Stairs");
+        BUILDER.push("Client - Settings for Slabs 'n Stairs (inactive right now)");
 
         BUILDER.pop();
         SPEC = BUILDER.build();
