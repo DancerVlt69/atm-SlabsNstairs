@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#slabsnstairs:stone_pressure_plates"
+    "minecraft:stone_pressure_plate",
+    "minecraft:polished_blackstone_pressure_plate"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#slabsnstairs:fence_gates"
+    "minecraft:stone"
   ]
 }
