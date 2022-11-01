@@ -13,6 +13,7 @@ import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Random;
 import java.util.function.Supplier;
 
 public class GlowBerriesFromTallGrass extends LootModifier {
@@ -30,8 +31,8 @@ public class GlowBerriesFromTallGrass extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.75F) {
-            generatedLoot.add(new ItemStack(addition, 2));
+        if(context.getRandom().nextFloat() > 0.95F) {
+            generatedLoot.add(new ItemStack(addition, (new Random().nextInt(3))));
         }
         return generatedLoot;
     }

@@ -153,7 +153,7 @@ public class ModBlocks {
 
     // Cinnamon
     public static final RegistryObject<Block> CINNAMON_PLANKS = registerBlock("cinnamon_planks",
-            () -> new BlockFlammable(BlockBehaviour.Properties.of(Material.WOOD), 15,50), ModTabs.SNSMODTAB1);
+            () -> new BlockFlammable(BlockBehaviour.Properties.of(Material.WOOD), 5,20), ModTabs.SNSMODTAB1);
 
     public static final RegistryObject<Block> CINNAMON_STAIRS = registerBlock("cinnamon_stairs",
             () -> new StairBlock(() -> ModBlocks.CINNAMON_PLANKS.get().defaultBlockState(),
