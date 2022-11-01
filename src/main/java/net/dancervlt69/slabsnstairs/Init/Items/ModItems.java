@@ -22,9 +22,6 @@ public class ModItems {
 
     // Define your different Items here
 
-    public static final RegistryObject<Item> TEST_BLOCK = ITEMS.register("test_block",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
-
         // Dye
     @Deprecated
     public static final RegistryObject<Item> LIGHT_BROWN_DYE = ITEMS.register("light_brown_dye",

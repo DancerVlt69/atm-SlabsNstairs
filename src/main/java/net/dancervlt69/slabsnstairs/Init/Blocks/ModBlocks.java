@@ -34,10 +34,10 @@ public class ModBlocks {
                     .strength(0.5F).noCollission()), ModTabs.SNSMODTAB3,
             "tooltip.slabsnstairs.growth_stop.shift","tooltip.slabsnstairs.growth_stop.ctrl");
 
-    public static final RegistryObject<Block> TEST_BLOCK = registerBlock("TEST_BLOCK",
+/*    public static final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
                     .strength(4.0f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
-/*
+
     public static final RegistryObject<Block> ILLUM_GROWTH_STOP = registerBlock("illum_growth_stop",
             () -> new TorchBlock(()-> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS)
