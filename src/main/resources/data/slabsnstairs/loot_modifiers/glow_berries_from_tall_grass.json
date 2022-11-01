@@ -1,0 +1,10 @@
+{
+  "type": "slabsnstairs:glow_berries_from_tall_grass",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:tall_grass"
+    }
+  ],
+  "addition": "minecraft:glow_berries"
+}
