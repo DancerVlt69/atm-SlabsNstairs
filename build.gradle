@@ -197,7 +197,3 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
 
-// task releaseJars(type: Copy) {
-//    from incrementBuildNumber
-//    from jar
-// }

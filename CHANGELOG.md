@@ -1,5 +1,26 @@
 Slabs 'n Stairs changelog:
 -------------------------
+ v0.1.3.137 @ 2022/10/25
+-------------------------
+* ***fixed:***
+  * ***[issue #6](https://github.com/DancerVlt69/SlabsNstairs/issues/6)*** - no Loot in Chests (GlobalLootModifier)
+  * ***[issue #21](https://github.com/DancerVlt69/SlabsNstairs/issues/21)*** - no Transparency on an 2-Slabs-Ice-Block
+* ***added:*** 
+  * re-add Loot from Village-Chests
+  * a lot of Quartz Buttons & Pressure Plates
+  * some Prismarine Buttons, Pressure Plates & Walls
+  * some Deepslate Blocks added
+* ***updated:***
+  * Forge bump ti Version 43.0.47
+  * some Blackstone Blocks updated
+  * some Tags updated and optimized.
+  
+
+This Version of the Mod was successfully tested with [**Forge** ***43.1.47***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
+
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
+
+-------------------------
  v0.1.2.134 @ 2022/10/15
 -------------------------
 * ***fixed:***
@@ -17,8 +38,6 @@ Slabs 'n Stairs changelog:
   * useless Tool Tables
 
 This Version of the Mod was successfully tested with [**Forge** ***43.1.43***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
-
-The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
 
 -------------------------
  v0.1.1.131 @ 2022/10/08
