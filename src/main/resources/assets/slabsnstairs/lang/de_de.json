@@ -18,6 +18,32 @@
   "block.slabsnstairs.citrine_button":          "Zitrinknopf",
   "block.slabsnstairs.citrine_pressure_plate":  "Zitrindruckplatte",
 
+  "block.slabsnstairs.prismarine_button":               "Prismarinknopf",
+  "block.slabsnstairs.prismarine_pressure_plate":       "Prismarindruckplatte",
+  "block.slabsnstairs.prismarine_brick_button":         "Prismarinziegelknopf",
+  "block.slabsnstairs.prismarine_brick_pressure_plate": "Prismarinziegeldruckplatte",
+  "block.slabsnstairs.prismarine_brick_wall":           "Prismarinziegelmauer",
+  "block.slabsnstairs.dark_prismarine_button":          "Dunkler Prismarinknopf",
+  "block.slabsnstairs.dark_prismarine_pressure_plate":  "Dunkle Prismarindruckplatte",
+  "block.slabsnstairs.dark_prismarine_wall":            "Dunkele Prismarinmauer",
+
+  "block.slabsnstairs.quartz_button":                   "Quarzknopf",
+  "block.slabsnstairs.quartz_pressure_plate":           "Quarzdruckplatte",
+  "block.slabsnstairs.smooth_quartz_button":            "Glatter Quarzknopf",
+  "block.slabsnstairs.smooth_quartz_pressure_plate":    "Glatte Quarzdruckplatte",
+  "block.slabsnstairs.chiseled_quartz_stairs":          "Gemeißelte Quarztreppe",
+  "block.slabsnstairs.chiseled_quartz_slab":            "Gemeißelte Quarzstufe",
+  "block.slabsnstairs.chiseled_quartz_button":          "Gemeißelter Quarzknopf",
+  "block.slabsnstairs.chiseled_quartz_pressure_plate":  "Gemeißelte Quarzdruckplatte",
+  "block.slabsnstairs.quartz_brick_stairs":             "Quarzziegeltreppe",
+  "block.slabsnstairs.quartz_brick_slab":               "Quarzziegelstufe",
+  "block.slabsnstairs.quartz_brick_button":             "Quarzziegelknopf",
+  "block.slabsnstairs.quartz_brick_pressure_plate":     "Quarzziegeldruckplatte",
+  "block.slabsnstairs.quartz_pillar_stairs":            "Quarzsäulentreppe",
+  "block.slabsnstairs.quartz_pillar_slab":              "Quarzsäulenstufe",
+  "block.slabsnstairs.quartz_pillar_button":            "Quarzsäulenknopf",
+  "block.slabsnstairs.quartz_pillar_pressure_plate":    "Quarzsäulendruckplatte",
+
   "block.slabsnstairs.vertical_ice_slab":   "senkrechte Eisstufe",
 
   "block.slabsnstairs.dirt_block_stairs":   "Treppe aus Erde",
@@ -58,11 +84,11 @@
   "block.slabsnstairs.cut_red_sandstone_pressure_plate":    "Geschnittene rote Sandsteindruckplatte",
   "block.slabsnstairs.smooth_red_sandstone_button":         "Glatter roter Sandsteinknopf",
   "block.slabsnstairs.smooth_red_sandstone_pressure_plate": "Glatte rote Sandsteindruckplatte",
+  "block.slabsnstairs.end_stone_brick_pressure_plate":      "Endsteinziegeldruckplatte",
 
   "block.slabsnstairs.andesite_button":                 "Andesitknopf",
   "block.slabsnstairs.polished_andesite_button":        "Polierter Andesitknopf",
   "block.slabsnstairs.andesite_pressure_plate":         "Andesitdruckplatte",
-  "block.slabsnstairs.end_stone_brick_pressure_plate":  "Endsteinziegeldruckplatte",
 
   "block.slabsnstairs.diorite_button":            "Dioritknopf",
   "block.slabsnstairs.polished_diorite_button":   "Polierter Dioritknopf",
@@ -72,6 +98,8 @@
   "block.slabsnstairs.polished_granite_button":   "Polierter Granitknopf",
   "block.slabsnstairs.granite_pressure_plate":    "Granitdruckplatte",
 
+  "block.slabsnstairs.blackstone_pressure_plate": "Schwarzsteindruckplatte",
+  "block.slabsnstairs.blackstone_button":         "Schwarzsteinknopf",
   "block.slabsnstairs.cracked_polished_blackstone_brick_stairs":         "Rissige polierte Schwarzsteinziegeltreppe",
   "block.slabsnstairs.cracked_polished_blackstone_brick_slab":           "Rissige polierte Schwarzsteinziegelstufe",
   "block.slabsnstairs.cracked_polished_blackstone_brick_pressure_plate": "Rissige polierte Schwarzsteinziegeldruckplatte",
@@ -81,6 +109,12 @@
   "block.slabsnstairs.deepslate_pressure_plate":  "Tiefenschieferdruckplatte",
   "block.slabsnstairs.deepslate_stairs":          "Tiefenschiefertreppe",
   "block.slabsnstairs.deepslate_slab":            "Tiefenschieferstufe",
+
+  "block.slabsnstairs.deepslate_brick_button":          "Tiefenschieferziegelknopf",
+  "block.slabsnstairs.deepslate_brick_pressure_plate":  "Tiefenschieferziegeldruckplatte",
+
+  "block.slabsnstairs.deepslate_tile_button":          "Tiefenschieferfliesenknopf",
+  "block.slabsnstairs.deepslate_tile_pressure_plate":  "Tiefenschieferfliesendruckplatte",
 
   "block.slabsnstairs.cracked_deepslate_brick_button":          "Rissige Tiefenschieferziegelknopf",
   "block.slabsnstairs.cracked_deepslate_brick_pressure_plate":  "Rissige Tiefenschieferziegeldruckplatte",
@@ -128,17 +162,18 @@
   "itemGroup.snsmodtab2": "SnS Waffen, Rüstung & mehr",
   "itemGroup.snsmodtab3": "SnS Sonstiges",
 
-  "tooltip.slabsnstairs.hold_shift.tooltip":    "Für mehr Infos §eShift§r gedrückt halten.",
-  "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Für mehr Infos §eStrg§r gedrückt halten.",
+  "tooltip.slabsnstairs.hold_shift":    "Für mehr Infos §eShift§r gedrückt halten.",
+  "tooltip.slabsnstairs.hold_ctrl":     "Für mehr Details §bStrg§r gedrückt halten.",
 
-  "tooltip.slabsnstairs.citrine_block.tooltip":   "Du erhältst 9 Zitrin Kristalle von diesem Block.",
-  "tooltip.slabsnstairs.growth_stop.tooltip":     "Nahezu unsichtbarer Block um z.B.\ndas Wachstum von Ranken zu stoppen.",
-  "tooltip.slabsnstairs.dry_ice_block.tooltip":   "Ein sehr, sehr tiefgefrorener Eisblock!",
-  "tooltip.slabsnstairs.dry_ice_stairs.tooltip":  "Eine sehr, sehr tiefgefrorene Eistreppe!",
-  "tooltip.slabsnstairs.dry_ice_slab.tooltip":    "Eine sehr, sehr tiefgefrorene Eisstufe!",
+  "tooltip.slabsnstairs.citrine_block":     "Du erhältst 9 Zitrin Kristalle von diesem Block.",
+  "tooltip.slabsnstairs.growth_stop.shift": "Nahezu unsichtbarer Block um z.B.\ndas Wachstum von Ranken zu stoppen.",
+  "tooltip.slabsnstairs.growth_stop.ctrl":  "§bKeine weiteren Details verfügbar.§r",
+  "tooltip.slabsnstairs.dry_ice_block":     "Ein sehr, sehr tiefgefrorener Eisblock!",
+  "tooltip.slabsnstairs.dry_ice_stairs":    "Eine sehr, sehr tiefgefrorene Eistreppe!",
+  "tooltip.slabsnstairs.dry_ice_slab":      "Eine sehr, sehr tiefgefrorene Eisstufe!",
 
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Position diverser Erze an.",
-  "tooltip.slabsnstairs.citrine_coin.tooltip":  "With this Coins can bye any cool Stuff; \n maybe... in the Future.",
+  "tooltip.slabsnstairs.dowsing_rod":   "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Position diverser Erze an.",
+  "tooltip.slabsnstairs.citrine_coin":  "Mit dieser Münze kannst coole Dinge kaufen...; \n vielleicht..., in Zukunft.",
 
   "enchantment.slabsnstairs.lightning_striker": "Blitzschlag",
 

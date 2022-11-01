@@ -18,6 +18,32 @@
   "block.slabsnstairs.citrine_button":          "Citrine Button",
   "block.slabsnstairs.citrine_pressure_plate":  "Citrine Pressure Plate",
 
+  "block.slabsnstairs.prismarine_button":               "Prismarine Button",
+  "block.slabsnstairs.prismarine_pressure_plate":       "Prismarine Pressure Plate",
+  "block.slabsnstairs.prismarine_brick_button":         "Prismarine Brick Button",
+  "block.slabsnstairs.prismarine_brick_pressure_plate": "Prismarine Brick Pressure Plate",
+  "block.slabsnstairs.prismarine_brick_wall":           "Prismarine Brick Wall",
+  "block.slabsnstairs.dark_prismarine_button":          "Dark Prismarine Button",
+  "block.slabsnstairs.dark_prismarine_pressure_plate":  "Dark Prismarine Pressure Plate",
+  "block.slabsnstairs.dark_prismarine_wall":            "Dark Prismarine Wall",
+
+  "block.slabsnstairs.quartz_button":                   "Quartz Button",
+  "block.slabsnstairs.quartz_pressure_plate":           "Smooth Quartz Button",
+  "block.slabsnstairs.smooth_quartz_button":            "Smooth Quartz Pressure Plate",
+  "block.slabsnstairs.smooth_quartz_pressure_plate":    "Glatte Quarzdruckplatte",
+  "block.slabsnstairs.chiseled_quartz_stairs":          "Chiseled Quartz Stairs",
+  "block.slabsnstairs.chiseled_quartz_slab":            "Chiseled Quartz Slab",
+  "block.slabsnstairs.chiseled_quartz_button":          "Chiseled Quartz Button",
+  "block.slabsnstairs.chiseled_quartz_pressure_plate":  "Chiseled Quartz Pressure Plate",
+  "block.slabsnstairs.quartz_brick_stairs":             "Quartz Brick Stairs",
+  "block.slabsnstairs.quartz_brick_slab":               "Quartz Brick Slab",
+  "block.slabsnstairs.quartz_brick_button":             "Quartz Brick Button",
+  "block.slabsnstairs.quartz_brick_pressure_plate":     "Quartz Brick Pressure Plate",
+  "block.slabsnstairs.quartz_pillar_stairs":            "Quartz Pillar Stairs",
+  "block.slabsnstairs.quartz_pillar_slab":              "Quartz Pillar Slab",
+  "block.slabsnstairs.quartz_pillar_button":            "Quartz Pillar Button",
+  "block.slabsnstairs.quartz_pillar_pressure_plate":    "Quartz Pillar Pressure Plate",
+
   "block.slabsnstairs.vertical_ice_slab":     "Vertical Ice Slab",
 
   "block.slabsnstairs.dirt_block_stairs":   "Dirt Stairs",
@@ -58,11 +84,11 @@
   "block.slabsnstairs.cut_red_sandstone_pressure_plate":    "Cut Red Sandstone Pressure Plate",
   "block.slabsnstairs.smooth_red_sandstone_button":         "Smooth Red Sandstone Button",
   "block.slabsnstairs.smooth_red_sandstone_pressure_plate": "Smooth Red Sandstone Pressure Plate",
+  "block.slabsnstairs.end_stone_brick_pressure_plate":  "End Stone Brick Pressure Plate",
 
   "block.slabsnstairs.andesite_button":                 "Andesite Button",
   "block.slabsnstairs.polished_andesite_button":        "Polished Andesite Button",
   "block.slabsnstairs.andesite_pressure_plate":         "Andesite Pressure Plate",
-  "block.slabsnstairs.end_stone_brick_pressure_plate":  "End Stone Brick Pressure Plate",
 
   "block.slabsnstairs.diorite_button":            "Diorite Button",
   "block.slabsnstairs.polished_diorite_button":   "Polished Diorite Button",
@@ -72,6 +98,8 @@
   "block.slabsnstairs.polished_granite_button":   "Polished Granite Button",
   "block.slabsnstairs.granite_pressure_plate":    "Granite Pressure Plate",
 
+  "block.slabsnstairs.blackstone_pressure_plate": "Blackstone Pressure Plate",
+  "block.slabsnstairs.blackstone_button":         "Blackstone Button",
   "block.slabsnstairs.cracked_polished_blackstone_brick_stairs":         "Cracked Polished Blackstone Brick Stairs",
   "block.slabsnstairs.cracked_polished_blackstone_brick_slab":           "Cracked Polished Blackstone Brick Slab",
   "block.slabsnstairs.cracked_polished_blackstone_brick_pressure_plate": "Cracked Polished Blackstone Brick Pressure Plate",
@@ -82,13 +110,19 @@
   "block.slabsnstairs.deepslate_stairs":          "Deepslate Stairs",
   "block.slabsnstairs.deepslate_slab":            "Deepslate Slab",
 
+  "block.slabsnstairs.deepslate_brick_button":          "Deepslate Brick Button",
+  "block.slabsnstairs.deepslate_brick_pressure_plate":  "Deepslate Brick Pressure Plate",
+
+  "block.slabsnstairs.deepslate_tile_button":          "Deepslate Tile Button",
+  "block.slabsnstairs.deepslate_tile_pressure_plate":  "Deepslate Tile Button",
+
   "block.slabsnstairs.cracked_deepslate_brick_button":          "Cracked Deepslate Brick Button",
   "block.slabsnstairs.cracked_deepslate_brick_pressure_plate":  "Cracked Deepslate Brick Pressure Plate",
   "block.slabsnstairs.cracked_deepslate_brick_stairs":          "Cracked Deepslate Brick Stairs",
   "block.slabsnstairs.cracked_deepslate_brick_slab":            "Cracked Deepslate Brick Slab",
 
   "block.slabsnstairs.cracked_deepslate_tile_button":          "Cracked Deepslate Tile Button",
-  "block.slabsnstairs.cracked_deepslate_tile_pressure_plate":  "Cracked Deepslate Tile Pressure Plate",
+  "block.slabsnstairs.cracked_deepslate_tile_pressure_plate":  "Cracked Deepslate Tile Button",
   "block.slabsnstairs.cracked_deepslate_tile_stairs":          "Cracked Deepslate Tile Stairs",
   "block.slabsnstairs.cracked_deepslate_tile_slab":            "Cracked Deepslate Tile Slab",
 
@@ -128,17 +162,18 @@
   "itemGroup.snsmodtab2": "SnS Weapons, Armor & Co.",
   "itemGroup.snsmodtab3": "SnS Miscs",
 
-  "tooltip.slabsnstairs.hold_shift.tooltip":    "Hold §eShift§r for more Information.",
-  "tooltip.slabsnstairs.hold_ctrl.tooltip":     "Hold §eStrg§r for more Information.",
+  "tooltip.slabsnstairs.hold_shift":    "Hold §eShift§r for more Information.",
+  "tooltip.slabsnstairs.hold_ctrl":     "Hold §bCtrl§r for more Details.",
 
-  "tooltip.slabsnstairs.citrine_block.tooltip":   "You will get 9 Citrine Crystals from this Block.",
-  "tooltip.slabsnstairs.growth_stop.tooltip":     "Nearly invisible block\ne.g. to stop the growing of Vines.",
-  "tooltip.slabsnstairs.dry_ice_block.tooltip":   "A very very deep frozen Ice Block",
-  "tooltip.slabsnstairs.dry_ice_stairs.tooltip":  "A very very deep frozen Ice Stair",
-  "tooltip.slabsnstairs.dry_ice_slab.tooltip":    "A very very deep frozen Ice Slab",
+  "tooltip.slabsnstairs.citrine_block":   "You will get 9 Citrine Crystals from this Block.",
+  "tooltip.slabsnstairs.growth_stop.shift": "Nearly invisible block\ne.g. to stop the growing of Vines.",
+  "tooltip.slabsnstairs.growth_stop.ctrl":  "§bNo (more) Details available.§r",
+  "tooltip.slabsnstairs.dry_ice_block":     "A very very deep frozen Ice Block",
+  "tooltip.slabsnstairs.dry_ice_stairs":    "A very very deep frozen Ice Stair",
+  "tooltip.slabsnstairs.dry_ice_slab":      "A very very deep frozen Ice Slab",
 
-  "tooltip.slabsnstairs.dowsing_rod.tooltip":   "With an right click the Dowsing Rod can\nshow you the Position of some Ore.",
-  "tooltip.slabsnstairs.citrine_coin.tooltip":  "With this Coins you can bye various \n cool Stuff... maybe... in the Future.",
+  "tooltip.slabsnstairs.dowsing_rod":   "With an right click the Dowsing Rod can\nshow you the Position of some Ore.",
+  "tooltip.slabsnstairs.citrine_coin":  "With this Coins you can bye various \n cool Stuff... maybe... in the Future.",
 
   "enchantment.slabsnstairs.lightning_striker": "Lightning Striker",
 
