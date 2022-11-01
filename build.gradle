@@ -148,6 +148,13 @@ dependencies {
     // Grass Slabs, Carpets & Stairs
     runtimeOnly fg.deobf("curse.maven:gscs-${gscsVersionCF}")
 
+    // Cooking 4 Blockheads
+    // runtimeOnly fg.deobf("curse.maven:c4b-${c4blockhVersionCF}")
+    // runtimeOnly fg.deobf("curse.maven:balm-${balmVersionCF}")
+
+    // Croptopia
+    //runtimeOnly fg.deobf("curse.maven:cropt-${croptVersionCF}")
+
     // Xaero's World- and Mini Maps
     runtimeOnly fg.deobf("curse.maven:xWmap-${xWmapVersionCF}")
     runtimeOnly fg.deobf("curse.maven:xMmap-${xMmapVersionCF}")

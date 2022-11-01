@@ -1,6 +1,6 @@
 Slabs 'n Stairs changelog:
 -------------------------
- v0.1.3.137 @ 2022/10/25
+ v0.1.3.137 @ 2022/11/01
 -------------------------
 * ***fixed:***
   * ***[issue #6](https://github.com/DancerVlt69/SlabsNstairs/issues/6)*** - no Loot in Chests (GlobalLootModifier)
@@ -11,7 +11,7 @@ Slabs 'n Stairs changelog:
   * some Prismarine Buttons, Pressure Plates & Walls
   * some Deepslate Blocks added
 * ***updated:***
-  * Forge bump ti Version 43.0.47
+  * Forge bump to Version 43.0.47
   * some Blackstone Blocks updated
   * some Tags updated and optimized.
   
