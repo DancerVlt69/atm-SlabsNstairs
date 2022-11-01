@@ -6,6 +6,31 @@
 
 package net.dancervlt69.slabsnstairs.Init.Blocks.Entities;
 
-public class ModBlockEntities {
+ import net.dancervlt69.slabsnstairs.Init.Blocks.Entities.Custom.ModSignBlockEntity;
+ import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
+ import net.minecraft.world.level.block.entity.BlockEntityType;
+ import net.minecraftforge.eventbus.api.IEventBus;
+ import net.minecraftforge.registries.DeferredRegister;
+ import net.minecraftforge.registries.ForgeRegistries;
+ import net.minecraftforge.registries.RegistryObject;
+
+ import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
+
+ public class ModBlockEntities {
+
+     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
+             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MODID);
+
+	/* public static final RegistryObject<BlockEntityType<GemCuttingStationEntity>> GEM_CUTTING_STATION_ENTITY =
+			BLOCK_ENTITIES.register("gem_cutting_station_entity", () ->
+					BlockEntityType.Builder.of(GemCuttingStationEntity::new,
+							ModBlocks.GEM_CUTTING_STATION.get()).build(null)); */
+
+     public static final RegistryObject<BlockEntityType<ModSignBlockEntity>> SIGN_BLOCK_ENTITIES =
+             BLOCK_ENTITIES.register("sign_block_entity", () ->
+                     BlockEntityType.Builder.of(ModSignBlockEntity::new, ModBlocks.CINNAMON_WALL_SIGN.get(),
+                             ModBlocks.CINNAMON_SIGN.get()).build(null));
+
+     public static void register(IEventBus eventBus) { BLOCK_ENTITIES.register(eventBus);}
 
 }

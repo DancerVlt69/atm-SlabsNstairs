@@ -28,9 +28,9 @@ public class AdvancedItem extends Item {
         super.appendHoverText(pStack, pLevel, pTooltip, pTooltipFlag);
 
         if (Screen.hasShiftDown()) {
-            pTooltip.add(Component.translatable("tooltip.slabsnstairs.citrine_coin.tooltip"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.citrine_coin"));
         } else {
-            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_shift.tooltip"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_shift"));
         }
     }
 
@@ -51,7 +51,7 @@ public class AdvancedItem extends Item {
     }
 
     @Override
-    /** use an Item with Right Click on a Block */
+    /** use an Item with Right-Click on a Block */
     public @NotNull InteractionResult useOn(@NotNull UseOnContext pContext) {
         return super.useOn(pContext);
     }

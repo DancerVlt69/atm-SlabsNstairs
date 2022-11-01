@@ -1,5 +1,6 @@
 package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
 
+import net.dancervlt69.slabsnstairs.Init.Blocks.Utils.Flammable.BlockFlammable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -16,6 +17,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.PushReaction;
+
+import static net.minecraft.commands.arguments.blocks.BlockStateArgument.getBlock;
 
 @SuppressWarnings("deprecation")
 public class ModDryIceBlock extends Block {
@@ -65,7 +68,7 @@ public class ModDryIceBlock extends Block {
     }
 
     @Override
-    public void animateTick( BlockState pState,  Level pLevel,  BlockPos pPos, RandomSource pRandom) {
+    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
         super.animateTick(pState, pLevel, pPos, pRandom);
         float particleChance = 0.75f;
 
@@ -73,5 +76,13 @@ public class ModDryIceBlock extends Block {
             pLevel.addParticle(ParticleTypes.CLOUD, pPos.getX() + pRandom.nextDouble(), pPos.getY() + 0.75,
                     pPos.getZ() + pRandom.nextDouble(), 0d + 0.025, 0d - 0.0125, 0d + 0.025);
         }
+    }
+
+    public void freeze(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+        BlockPos[] blockPos = new BlockPos[] {
+                pPos.above(1), pPos.below(1), pPos.north(1),
+                pPos.east(1), pPos.south(1), pPos.west(1)};
+        BlockState blockState = Blocks.WATER.defaultBlockState();
+
     }
 }

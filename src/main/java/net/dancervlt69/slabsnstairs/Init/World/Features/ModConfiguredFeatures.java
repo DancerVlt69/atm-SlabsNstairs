@@ -2,7 +2,6 @@ package net.dancervlt69.slabsnstairs.Init.World.Features;
 
 import com.google.common.base.Suppliers;
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
-import net.dancervlt69.slabsnstairs.SlabsNstairs;
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -11,14 +10,17 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 import java.util.List;
 import java.util.function.Supplier;
 
+
+
 public class ModConfiguredFeatures {
 
     public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES =
-            DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, SlabsNstairs.MODID);
+            DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, MODID);
 
     public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_CITRINE_ORES = Suppliers.memoize(()
             -> List.of(

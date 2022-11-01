@@ -41,7 +41,7 @@ public class ModIceSlabBlock extends SlabBlock {
 
     @Override
     public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
-        if (pLevel.getBrightness(LightLayer.BLOCK, pPos) > 11 - pState.getLightBlock(pLevel, pPos)) {
+        if (pLevel.getBrightness(LightLayer.BLOCK, pPos) > 12 - pState.getLightBlock(pLevel, pPos)) {
             pLevel.destroyBlock(pPos, false);
             this.melt(pState, pLevel, pPos);
         }
