@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/button",
-  "textures": {
-    "texture": "minecraft:block/cracked_polished_blackstone_bricks",
-    "particle": "minecraft:block/cracked_polished_blackstone_bricks"
-  }
-}

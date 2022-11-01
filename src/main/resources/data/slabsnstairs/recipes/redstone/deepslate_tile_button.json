@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "moreButtons",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate_tiles"
+    }
+  ],
+  "result": {
+    "item": "slabsnstairs:deepslate_tile_button",
+    "count": 4
+  }
+}

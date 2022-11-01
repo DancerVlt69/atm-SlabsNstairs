@@ -1,0 +1,6 @@
+{
+  "parent": "slabsnstairs:block/pressure_plate_down",
+  "textures": {
+    "texture": "minecraft:block/quartz_block_top"
+  }
+}

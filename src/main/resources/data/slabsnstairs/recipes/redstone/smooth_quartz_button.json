@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "moreButtons",
+  "ingredients": [
+    {
+      "item": "minecraft:smooth_quartz"
+    }
+  ],
+  "result": {
+    "item": "slabsnstairs:smooth_quartz_button",
+    "count": 4
+  }
+}

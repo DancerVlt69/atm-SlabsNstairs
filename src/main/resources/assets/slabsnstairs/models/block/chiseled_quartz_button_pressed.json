@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "minecraft:block/chiseled_quartz_block_top",
+    "particle": "minecraft:block/chiseled_quartz_block"
+  }
+}

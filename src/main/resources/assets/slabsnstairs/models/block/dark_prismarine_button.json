@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "minecraft:block/dark_prismarine",
+    "particle": "minecraft:block/dark_prismarine"
+  }
+}

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "slabsnstairs:building_blocks/cracked_polished_blackstone_brick_button"
+        "recipe": "slabsnstairs:redstone/cracked_polished_blackstone_brick_button"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "slabsnstairs:building_blocks/cracked_polished_blackstone_brick_button"
+      "slabsnstairs:redstone/cracked_polished_blackstone_brick_button"
     ]
   }
 }
