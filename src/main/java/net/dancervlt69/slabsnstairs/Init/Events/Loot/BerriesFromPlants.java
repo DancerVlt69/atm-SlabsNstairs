@@ -16,15 +16,15 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 import java.util.function.Supplier;
 
-public class SweetBerriesFromLargeFern extends LootModifier {
-     public static final Supplier<Codec<SweetBerriesFromLargeFern>> CODEC = Suppliers.memoize(
+public class BerriesFromPlants extends LootModifier {
+     public static final Supplier<Codec<BerriesFromPlants>> CODEC = Suppliers.memoize(
             () -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
                     .fieldOf("addition").forGetter(m -> m.addition))
-                    .apply(inst, SweetBerriesFromLargeFern::new)));
+                    .apply(inst, BerriesFromPlants::new)));
 
     private final Item addition;
 
-    protected SweetBerriesFromLargeFern(LootItemCondition[] conditionsIn, Item addition) {
+    protected BerriesFromPlants(LootItemCondition[] conditionsIn, Item addition) {
         super(conditionsIn);
         this.addition = addition;
     }

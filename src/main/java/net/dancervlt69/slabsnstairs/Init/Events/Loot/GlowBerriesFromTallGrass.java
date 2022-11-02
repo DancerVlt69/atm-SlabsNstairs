@@ -31,7 +31,7 @@ public class GlowBerriesFromTallGrass extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.95F) {
+        if(context.getRandom().nextFloat() > 0.975F) {
             generatedLoot.add(new ItemStack(addition, (new Random().nextInt(3))));
         }
         return generatedLoot;

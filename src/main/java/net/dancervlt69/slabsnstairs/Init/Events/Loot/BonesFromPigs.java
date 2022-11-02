@@ -13,26 +13,26 @@ import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Random;
 import java.util.function.Supplier;
 
-public class CitrineCoinInDesertChestsAdditionModifier extends LootModifier {
-
-    public static final Supplier<Codec<CitrineCoinInDesertChestsAdditionModifier>> CODEC = Suppliers.memoize(
+public class BonesFromPigs extends LootModifier {
+     public static final Supplier<Codec<BonesFromPigs>> CODEC = Suppliers.memoize(
             () -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
                     .fieldOf("addition").forGetter(m -> m.addition))
-                    .apply(inst, CitrineCoinInDesertChestsAdditionModifier::new)));
+                    .apply(inst, BonesFromPigs::new)));
 
     private final Item addition;
 
-    protected CitrineCoinInDesertChestsAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
+    protected BonesFromPigs(LootItemCondition[] conditionsIn, Item addition) {
         super(conditionsIn);
         this.addition = addition;
     }
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.5F) {
-            generatedLoot.add(new ItemStack(addition, 2));
+        if(context.getRandom().nextFloat() > 0.75F) {
+            generatedLoot.add(new ItemStack(addition, (new Random().nextInt(2))+1));
         }
         return generatedLoot;
     }

@@ -1,0 +1,10 @@
+{
+  "type": "slabsnstairs:bones_from_pigs",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/pig"
+    }
+  ],
+  "addition": "minecraft:bone"
+}
