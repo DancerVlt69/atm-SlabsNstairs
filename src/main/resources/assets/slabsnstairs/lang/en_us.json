@@ -162,12 +162,14 @@
   "itemGroup.snsmodtab2": "SnS Weapons, Armor & Co.",
   "itemGroup.snsmodtab3": "SnS Miscs",
 
-  "tooltip.slabsnstairs.hold_shift":    "Hold §eShift§r for more Information.",
-  "tooltip.slabsnstairs.hold_ctrl":     "Hold §bCtrl§r for more Details.",
+  "tooltip.slabsnstairs.hold_shift":  "Hold §eShift§r for more Information.",
+  "tooltip.slabsnstairs.hold_ctrl":   "Hold §bCtrl§r for more Details.",
+  "tooltip.slabsnstairs.hold_alt":    "Hold §cAlt§r for a really cool Tip.",
 
-  "tooltip.slabsnstairs.citrine_block":   "You will get 9 Citrine Crystals from this Block.",
+  "tooltip.slabsnstairs.citrine_block":     "You will get 9 Citrine Crystals from this Block.",
   "tooltip.slabsnstairs.growth_stop.shift": "Nearly invisible block\ne.g. to stop the growing of Vines.",
   "tooltip.slabsnstairs.growth_stop.ctrl":  "§bNo (more) Details available.§r",
+  "tooltip.slabsnstairs.growth_stop.alt":   "§cYou can also make the Growth Stop \nglow (veeerrrry sooon)!§r",
   "tooltip.slabsnstairs.dry_ice_block":     "A very very deep frozen Ice Block",
   "tooltip.slabsnstairs.dry_ice_stairs":    "A very very deep frozen Ice Stair",
   "tooltip.slabsnstairs.dry_ice_slab":      "A very very deep frozen Ice Slab",
@@ -177,7 +179,7 @@
 
   "enchantment.slabsnstairs.lightning_striker": "Lightning Striker",
 
-  "advancements.adventure.bake_all_breads.title":       "Master-Baker",
+  "advancements.adventure.bake_all_breads.title":       "Master of Bakery",
   "advancements.adventure.bake_all_breads.description": "You should start your own Bakery-Business"
 
 }

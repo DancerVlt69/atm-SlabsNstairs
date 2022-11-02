@@ -2,7 +2,6 @@ package net.dancervlt69.slabsnstairs.Init.ToolTips;
 
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.level.Level;
 
 import java.util.List;
 
@@ -10,26 +9,49 @@ import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ShowToolTips {
 
-    public static void ShowToolTipShift (Level pLevel, List<Component> components, String pBtnShift, String pItem) {
+    public static void toolTipShift(List<Component> pTooltip, String tooltipKeyShift) {
 
-        if(Screen.hasShiftDown()) {
-            components.add(Component.translatable("tooltip.demomod." + pItem));
+        if (Screen.hasShiftDown()) {
+            pTooltip.add(Component.translatable(tooltipKeyShift));
         } else {
-            components.add(Component.translatable("tooltip.demomod.hold_shift"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_shift"));
         }
     }
 
-    public static void ShowToolTipCtrl (Level pLevel, List<Component> components, String pBtnCtrl, String pItem) {
+    public static void toolTipShiftCtrl(List<Component> pTooltip, String tooltipKeyShift, String tooltipKeyCtrl) {
 
-        if(Screen.hasControlDown()) {
-            components.add(Component.translatable("tooltip.demomod." + pItem));
+        if (Screen.hasShiftDown()) {
+            pTooltip.add(Component.translatable(tooltipKeyShift));
         } else {
-            components.add(Component.translatable("tooltip.demomod.hold_ctrl"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_shift"));
+        }
+        if (Screen.hasControlDown()) {
+            pTooltip.add(Component.translatable(tooltipKeyCtrl));
+        } else {
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_ctrl"));
         }
     }
 
-    public void ShowTT (List < Component > components, Level pLevel,
-                                 String pBtnShift, String pBtnCtrl, String pItem) {
+    public static void toolTipShiftCtrlAlt(List<Component> pTooltip, String tooltipKeyShift, String tooltipKeyCtrl, String tooltipKeyAlt) {
+
+        if (Screen.hasShiftDown()) {
+            pTooltip.add(Component.translatable(tooltipKeyShift));
+        } else {
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_shift"));
+        }
+        if (Screen.hasControlDown()) {
+            pTooltip.add(Component.translatable(tooltipKeyCtrl));
+        } else {
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_ctrl"));
+        }
+        if (Screen.hasAltDown()) {
+            pTooltip.add(Component.translatable(tooltipKeyAlt));
+        } else {
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_alt"));
+        }
+    }
+
+    public void ShowTT (List < Component > components, String pBtnShift, String pBtnCtrl, String pItem) {
 
         String shiftToolTipKey = "tooltip." + MODID + ".hold_" + pBtnShift;
         String ctrlToolTipKey = "tooltip." + MODID + ".hold_" + pBtnCtrl;

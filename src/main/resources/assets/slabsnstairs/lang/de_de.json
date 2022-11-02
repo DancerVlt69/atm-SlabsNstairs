@@ -162,12 +162,14 @@
   "itemGroup.snsmodtab2": "SnS Waffen, Rüstung & mehr",
   "itemGroup.snsmodtab3": "SnS Sonstiges",
 
-  "tooltip.slabsnstairs.hold_shift":    "Für mehr Infos §eShift§r gedrückt halten.",
-  "tooltip.slabsnstairs.hold_ctrl":     "Für mehr Details §bStrg§r gedrückt halten.",
+  "tooltip.slabsnstairs.hold_shift":  "Für mehr Infos §eShift§r gedrückt halten.",
+  "tooltip.slabsnstairs.hold_ctrl":   "Für mehr Details §bStrg§r gedrückt halten.",
+  "tooltip.slabsnstairs.hold_alt":    "Halte §cAlt§r für einen coolen Tipp gedrückt.",
 
   "tooltip.slabsnstairs.citrine_block":     "Du erhältst 9 Zitrin Kristalle von diesem Block.",
   "tooltip.slabsnstairs.growth_stop.shift": "Nahezu unsichtbarer Block um z.B.\ndas Wachstum von Ranken zu stoppen.",
   "tooltip.slabsnstairs.growth_stop.ctrl":  "§bKeine weiteren Details verfügbar.§r",
+  "tooltip.slabsnstairs.growth_stop.alt":   "§cDen Wachstumsstopper kann man (bald) \nauch zum Leuchten bringen!§r",
   "tooltip.slabsnstairs.dry_ice_block":     "Ein sehr, sehr tiefgefrorener Eisblock!",
   "tooltip.slabsnstairs.dry_ice_stairs":    "Eine sehr, sehr tiefgefrorene Eistreppe!",
   "tooltip.slabsnstairs.dry_ice_slab":      "Eine sehr, sehr tiefgefrorene Eisstufe!",
