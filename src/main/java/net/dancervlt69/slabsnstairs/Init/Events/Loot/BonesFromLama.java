@@ -16,15 +16,15 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 import java.util.function.Supplier;
 
-public class BonesFromSheep extends LootModifier {
-     public static final Supplier<Codec<BonesFromSheep>> CODEC = Suppliers.memoize(
+public class BonesFromLama extends LootModifier {
+     public static final Supplier<Codec<BonesFromLama>> CODEC = Suppliers.memoize(
             () -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
                     .fieldOf("item").forGetter(m -> m.item))
-                    .apply(inst, BonesFromSheep::new)));
+                    .apply(inst, BonesFromLama::new)));
 
     private final Item item;
 
-    protected BonesFromSheep(LootItemCondition[] conditionsIn, Item item) {
+    protected BonesFromLama(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }

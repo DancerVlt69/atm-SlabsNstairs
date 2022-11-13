@@ -1,0 +1,10 @@
+{
+  "type": "slabsnstairs:bones_from_sheep_gray",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/sheep/gray"
+    }
+  ],
+  "item": "minecraft:bone"
+}
