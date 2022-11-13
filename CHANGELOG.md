@@ -3,6 +3,7 @@ Slabs 'n Stairs changelog:
  v0.1.3.137 @ 2022/11/01
 -------------------------
 * ***fixed:***
+  * a small issue of the Cinnamon Fence Gate Advancement - it was in a wrong Category
   * ***[issue #6](https://github.com/DancerVlt69/SlabsNstairs/issues/6)*** - no Loot in Chests (GlobalLootModifier)
   * ***[issue #21](https://github.com/DancerVlt69/SlabsNstairs/issues/21)*** - no Transparency on an 2-Slabs-Ice-Block
 * ***added:*** 
@@ -11,12 +12,13 @@ Slabs 'n Stairs changelog:
   * some Prismarine Buttons, Pressure Plates & Walls
   * some Deepslate Blocks added
 * ***updated:***
-  * Forge bump to Version 43.0.47
+  * Forge bump to Version 43.0.52
   * some Blackstone Blocks updated
-  * some Tags updated and optimized.
-  
+  * some Tags updated and optimized
+  * decreased the Amount and increase the Rarity of Loot a bit
+  * simplified ToolTip-Code
 
-This Version of the Mod was successfully tested with [**Forge** ***43.1.47***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
+This Version of the Mod was successfully tested with [**Forge** ***43.1.52***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
 
 The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
 
