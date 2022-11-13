@@ -3,7 +3,7 @@ package net.dancervlt69.slabsnstairs;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.Entities.ModBlockEntities;
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
-import net.dancervlt69.slabsnstairs.Init.Blocks.ModWoodTypes;
+import net.dancervlt69.slabsnstairs.Init.Blocks.Utils.ModWoodTypes;
 import net.dancervlt69.slabsnstairs.Init.Enchantments.ModEnchantments;
 import net.dancervlt69.slabsnstairs.Init.Events.Loot.ModLootModifiers;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
@@ -18,11 +18,10 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -31,6 +30,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -64,9 +64,10 @@ public class SlabsNstairs {
 
         eventBus.addListener(this::onCommonSetup);
         eventBus.addListener(this::onClientSetup);
+        // eventBus.addListener(this::onServerStarting);
 
-        modSettings(ModConfig.Type.CLIENT, ModClientSettings.SPEC, "slabsnstairs-client.toml");
         modSettings(ModConfig.Type.COMMON, ModCommonSettings.SPEC, "slabsnstairs-common.toml");
+        modSettings(ModConfig.Type.CLIENT, ModClientSettings.SPEC, "slabsnstairs-client.toml");
         modSettings(ModConfig.Type.SERVER, ModClientSettings.SPEC, "slabsnstairs-server.toml");
 
         // Register ourselves for server and other game events we are interested in
@@ -95,12 +96,12 @@ public class SlabsNstairs {
         // getGenerator().addProvider(event.includeServer(), new DataProvider(event.getGenerator(), MODID));
 
         Sheets.addWoodType(ModWoodTypes.CINNAMON);
+        LOGGER.info("Common Setup finished.");
     }
 
     public void onClientSetup(FMLClientSetupEvent event) {
         // Client Setup Code
         LOGGER.info("Client Setup started...");
-        LOGGER.info("MC Name --> {}", Minecraft.getInstance().getUser().getName());
 
         WoodType.register(ModWoodTypes.CINNAMON);
         // WoodType.register(ModWoodTypes.RED_BEECH);
@@ -108,6 +109,14 @@ public class SlabsNstairs {
         BlockEntityRenderers.register(ModBlockEntities.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
 
         // ModItemProperties.addCustomItemProperties();
+        LOGGER.info("Client Setup finished.");
+    }
+
+    // You can use SubscribeEvent and let the Event Bus discover methods to call
+    public void onServerStarting(ServerStartingEvent event) {
+        // Do something when the server starts
+        LOGGER.info("Starting Server...");
+        LOGGER.info("Server Start finished.");
     }
 
 }

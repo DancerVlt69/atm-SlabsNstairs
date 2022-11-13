@@ -2,14 +2,15 @@
   "replace": false,
   "entries": [
     "slabsnstairs:citrine_coin_in_desert_chests",
-    "slabsnstairs:citrine_coin_in_plains_chests",
+    "slabsnstairs:citrine_coin_in_plain_chests",
     "slabsnstairs:citrine_coin_in_snowy_chests",
-    "slabsnstairs:glow_berries_from_tall_grass",
-    "slabsnstairs:sweet_berries_from_large_fern",
-    "slabsnstairs:bones_from_pigs",
-    "slabsnstairs:bones_from_sheep",
-    "slabsnstairs:bones_from_cows",
+    "slabsnstairs:berries_from_tall_grass",
+    "slabsnstairs:berries_from_large_fern",
     "slabsnstairs:bones_from_chicken",
-    "slabsnstairs:bones_from_horse"
+    "slabsnstairs:bones_from_cows",
+    "slabsnstairs:bones_from_horse",
+    "slabsnstairs:bones_from_pigs",
+    "slabsnstairs:bones_from_rabbit",
+    "slabsnstairs:bones_from_sheep"
   ]
 }

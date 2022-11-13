@@ -8,8 +8,7 @@ import java.util.List;
 import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ShowToolTips {
-
-    public static void toolTipShift(List<Component> pTooltip, String tooltipKeyShift) {
+    public static void toolTipShift(List<Component> pTooltip, String tooltipKeyShift){
 
         if (Screen.hasShiftDown()) {
             pTooltip.add(Component.translatable(tooltipKeyShift));

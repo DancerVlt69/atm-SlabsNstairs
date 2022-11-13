@@ -2,10 +2,9 @@ package net.dancervlt69.slabsnstairs.Init.Blocks;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.Custom.*;
 import net.dancervlt69.slabsnstairs.Init.Blocks.Utils.Flammable.BlockFlammable;
+import net.dancervlt69.slabsnstairs.Init.Blocks.Utils.ModWoodTypes;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Tabs.ModTabs;
-import net.dancervlt69.slabsnstairs.Init.ToolTips.ShowToolTips;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
@@ -20,6 +19,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.List;
 import java.util.function.Supplier;
 
+import static net.dancervlt69.slabsnstairs.Init.ToolTips.ShowToolTips.*;
 import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ModBlocks {
@@ -483,7 +483,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DRY_ICE_BLOCK = registerBlock("dry_ice_block",
             () -> new ModDryIceBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).strength(1.8f)
                     .friction(1.0F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 9)),
-            ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_block");
+            ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_block","");
 
     public static final RegistryObject<Block> DRY_ICE_STAIRS = registerBlock("dry_ice_stairs",
             () -> new ModDryIceStairBlock(() -> ModBlocks.DRY_ICE_BLOCK.get().defaultBlockState(),
@@ -501,7 +501,7 @@ public class ModBlocks {
         return BLOCKS.register(blockName, block);
     }
 
-    /** registering the Blocks with Item & without Tool-Tips */
+    /** registering the Blocks with Item but without Tool-Tips */
     private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
                                                                      CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(blockName, block);
@@ -529,7 +529,7 @@ public class ModBlocks {
             @Override
             public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
 
-                ShowToolTips.toolTipShift(pTooltip, tooltipKeyShift);
+               toolTipShift(pTooltip, tooltipKeyShift);
             }
         });
     }
@@ -549,12 +549,12 @@ public class ModBlocks {
             @Override
             public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag tooltipFlag) {
 
-                ShowToolTips.toolTipShiftCtrl(pTooltip, tooltipKeyShift, tooltipKeyCtrl);
+                toolTipShiftCtrl(pTooltip, tooltipKeyShift, tooltipKeyCtrl);
             }
         });
     }
 
-    /** registering the Blocks with Item & with Tool-Tips for Shift & Ctrl */
+    /** registering the Blocks with Item & with Tool-Tips for Shift & Ctrl & Alt */
     private static <T extends Block> RegistryObject<T> registerBlock(
             String blockName, Supplier<T> block, CreativeModeTab tab, String tooltipKeyShift, String tooltipKeyCtrl, String tooltipKeyAlt) {
         RegistryObject<T> toReturn = BLOCKS.register(blockName, block);
@@ -569,7 +569,7 @@ public class ModBlocks {
             @Override
             public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag tooltipFlag) {
 
-                ShowToolTips.toolTipShiftCtrlAlt(pTooltip, tooltipKeyShift, tooltipKeyCtrl, tooltipKeyAlt);
+                toolTipShiftCtrlAlt(pTooltip, tooltipKeyShift, tooltipKeyCtrl, tooltipKeyAlt);
             }
         });
     }

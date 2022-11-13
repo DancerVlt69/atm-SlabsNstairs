@@ -2,17 +2,16 @@ package net.dancervlt69.slabsnstairs.Init.Items;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
 import net.dancervlt69.slabsnstairs.Init.Items.Custom.AdvancedItem;
+import net.dancervlt69.slabsnstairs.Init.Items.Custom.Utils.ModItemTiers;
 import net.dancervlt69.slabsnstairs.Init.Tabs.ModTabs;
 import net.dancervlt69.slabsnstairs.SlabsNstairs;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SignItem;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import static net.dancervlt69.slabsnstairs.SlabsNstairs.LOGGER;
 import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ModItems {
@@ -25,7 +24,7 @@ public class ModItems {
         // Dye
     @Deprecated
     public static final RegistryObject<Item> LIGHT_BROWN_DYE = ITEMS.register("light_brown_dye",
-            () -> new Item(new Item.Properties().tab(ModTabs.SNSMODTAB3)));
+            () -> new DyeItem(DyeColor.BROWN,(new Item.Properties().tab(ModTabs.SNSMODTAB3))));
 
     public static final RegistryObject<Item> CITRINE = ITEMS.register("citrine",
             () -> new Item(new Item.Properties().tab(ModTabs.SNSMODTAB3)));

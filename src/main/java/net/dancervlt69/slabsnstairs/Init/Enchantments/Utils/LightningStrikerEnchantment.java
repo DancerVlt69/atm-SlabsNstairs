@@ -1,4 +1,4 @@
-package net.dancervlt69.slabsnstairs.Init.Enchantments;
+package net.dancervlt69.slabsnstairs.Init.Enchantments.Utils;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -6,27 +6,27 @@ import net.minecraft.world.entity.*;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
 
-public class LightningStrikerEnchant extends Enchantment {
+public class LightningStrikerEnchantment extends Enchantment {
 
-    public LightningStrikerEnchant(Rarity pRarity, EnchantmentCategory pCategory, EquipmentSlot... pApplicableSlots) {
-        super(pRarity, pCategory, pApplicableSlots);
+    public LightningStrikerEnchantment(Rarity pRarity, EquipmentSlot... pApplicableSlots) {
+        super(pRarity, EnchantmentCategory.BOW, pApplicableSlots);
     }
     @Override
-    public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
+    public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pMaxLevel) {
         if (!pAttacker.level.isClientSide()) {
             ServerLevel world = ((ServerLevel) pAttacker.level);
             BlockPos blockPos = pTarget.blockPosition();
-            if (pLevel == 1) {
+            if (pMaxLevel == 1) {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
                         MobSpawnType.TRIGGERED, true, true);
             }
-            if (pLevel == 2) {
+            if (pMaxLevel == 2) {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
                         MobSpawnType.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
                         MobSpawnType.TRIGGERED, true, true);
             }
-            if (pLevel == 3) {
+            if (pMaxLevel == 3) {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
                         MobSpawnType.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
@@ -35,11 +35,8 @@ public class LightningStrikerEnchant extends Enchantment {
                         MobSpawnType.TRIGGERED, true, true);
             }
         }
-        super.doPostAttack(pAttacker, pTarget,pLevel);
+        super.doPostAttack(pAttacker, pTarget, pMaxLevel);
     }
     @Override
-    public int getMaxLevel() {
-
-        return 3;
-    }
+    public int getMaxLevel() { return 3; }
 }

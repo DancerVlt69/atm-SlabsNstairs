@@ -6,5 +6,5 @@
       "loot_table_id": "minecraft:chests/village/village_desert_house"
     }
   ],
-  "addition": "slabsnstairs:citrine_coin"
+  "item": "slabsnstairs:citrine_coin"
 }

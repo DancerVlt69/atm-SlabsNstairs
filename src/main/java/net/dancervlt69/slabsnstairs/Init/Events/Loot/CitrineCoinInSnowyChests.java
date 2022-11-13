@@ -20,20 +20,20 @@ public class CitrineCoinInSnowyChests extends LootModifier {
 
     public static final Supplier<Codec<CitrineCoinInSnowyChests>> CODEC = Suppliers.memoize(
             () -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-                    .fieldOf("addition").forGetter(m -> m.addition))
+                    .fieldOf("item").forGetter(m -> m.item))
                     .apply(inst, CitrineCoinInSnowyChests::new)));
 
-    private final Item addition;
+    private final Item item;
 
-    protected CitrineCoinInSnowyChests(LootItemCondition[] conditionsIn, Item addition) {
+    protected CitrineCoinInSnowyChests(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
-        this.addition = addition;
+        this.item = item;
     }
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.75F) {
-            generatedLoot.add(new ItemStack(addition, new Random().nextInt(2) + 1));
+        if(context.getRandom().nextFloat() > 0.625F) {
+            generatedLoot.add(new ItemStack(item, new Random().nextInt(2) + 1));
         }
         return generatedLoot;
     }

@@ -16,23 +16,23 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 import java.util.function.Supplier;
 
-public class SweetBerriesFromLargeFern extends LootModifier {
-     public static final Supplier<Codec<SweetBerriesFromLargeFern>> CODEC = Suppliers.memoize(
+public class BerriesFromTallGrass extends LootModifier {
+     public static final Supplier<Codec<BerriesFromTallGrass>> CODEC = Suppliers.memoize(
             () -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-                    .fieldOf("addition").forGetter(m -> m.addition))
-                    .apply(inst, SweetBerriesFromLargeFern::new)));
+                    .fieldOf("item").forGetter(m -> m.item))
+                    .apply(inst, BerriesFromTallGrass::new)));
 
-    private final Item addition;
+    private final Item item;
 
-    protected SweetBerriesFromLargeFern(LootItemCondition[] conditionsIn, Item addition) {
+    protected BerriesFromTallGrass(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
-        this.addition = addition;
+        this.item = item;
     }
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.975F) {
-            generatedLoot.add(new ItemStack(addition, (new Random().nextInt(3))+1));
+        if(context.getRandom().nextFloat() > 0.965F) {
+            generatedLoot.add(new ItemStack(item, (new Random().nextInt(2)) + 1));
         }
         return generatedLoot;
     }

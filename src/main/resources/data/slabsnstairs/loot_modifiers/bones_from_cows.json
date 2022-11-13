@@ -6,5 +6,5 @@
       "loot_table_id": "minecraft:entities/cow"
     }
   ],
-  "addition": "minecraft:bone"
+  "item": "minecraft:bone"
 }

@@ -1,4 +1,4 @@
-package net.dancervlt69.slabsnstairs.Init.Blocks;
+package net.dancervlt69.slabsnstairs.Init.Blocks.Utils;
 
 import net.minecraft.world.level.block.state.properties.WoodType;
 

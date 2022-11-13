@@ -16,24 +16,23 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 import java.util.function.Supplier;
 
-public class CitrineCoinInDesertChests extends LootModifier {
-
-    public static final Supplier<Codec<CitrineCoinInDesertChests>> CODEC = Suppliers.memoize(
+public class BerriesFromLargeFern extends LootModifier {
+     public static final Supplier<Codec<BerriesFromLargeFern>> CODEC = Suppliers.memoize(
             () -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
                     .fieldOf("item").forGetter(m -> m.item))
-                    .apply(inst, CitrineCoinInDesertChests::new)));
+                    .apply(inst, BerriesFromLargeFern::new)));
 
     private final Item item;
 
-    protected CitrineCoinInDesertChests(LootItemCondition[] conditionsIn, Item item) {
+    protected BerriesFromLargeFern(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.625F) {
-            generatedLoot.add(new ItemStack(item, new Random().nextInt(2) + 1));
+        if(context.getRandom().nextFloat() > 0.965F) {
+            generatedLoot.add(new ItemStack(item, (new Random().nextInt(2))+1));
         }
         return generatedLoot;
     }

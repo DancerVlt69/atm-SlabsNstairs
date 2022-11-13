@@ -19,20 +19,20 @@ import java.util.function.Supplier;
 public class BerriesFromPlants extends LootModifier {
      public static final Supplier<Codec<BerriesFromPlants>> CODEC = Suppliers.memoize(
             () -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-                    .fieldOf("addition").forGetter(m -> m.addition))
+                    .fieldOf("item").forGetter(m -> m.item))
                     .apply(inst, BerriesFromPlants::new)));
 
-    private final Item addition;
+    private final Item item;
 
-    protected BerriesFromPlants(LootItemCondition[] conditionsIn, Item addition) {
+    protected BerriesFromPlants(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
-        this.addition = addition;
+        this.item = item;
     }
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if(context.getRandom().nextFloat() > 0.975F) {
-            generatedLoot.add(new ItemStack(addition, (new Random().nextInt(3))+1));
+            generatedLoot.add(new ItemStack(item, (new Random().nextInt(3))+1));
         }
         return generatedLoot;
     }

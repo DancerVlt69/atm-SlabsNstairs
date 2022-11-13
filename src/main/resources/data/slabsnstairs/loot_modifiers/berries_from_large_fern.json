@@ -1,10 +1,10 @@
 {
-  "type": "slabsnstairs:sweet_berries_from_large_fern",
+  "type": "slabsnstairs:berries_from_large_fern",
   "conditions": [
     {
       "condition": "block_state_property",
       "block": "minecraft:large_fern"
     }
   ],
-  "addition": "minecraft:sweet_berries"
+  "item": "minecraft:sweet_berries"
 }
