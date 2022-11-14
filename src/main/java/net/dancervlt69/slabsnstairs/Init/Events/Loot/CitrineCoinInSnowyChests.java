@@ -13,31 +13,32 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
 import java.util.List;
+import java.util.Random;
 
-public class CitrineCoinInDesertChestsAdditionModifier extends LootModifier {
+public class CitrineCoinInSnowyChests extends LootModifier {
     private final Item addition;
-    protected CitrineCoinInDesertChestsAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
+    protected CitrineCoinInSnowyChests(LootItemCondition[] conditionsIn, Item addition) {
         super(conditionsIn);
         this.addition = addition;
     }
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.5F) {
-            generatedLoot.add(new ItemStack(addition, 2));
+        if(context.getRandom().nextFloat() > 0.625F) {
+            generatedLoot.add(new ItemStack(addition, new Random().nextInt(2) + 1));
         }
         return generatedLoot;
     }
-    public static class Serializer extends GlobalLootModifierSerializer<CitrineCoinInDesertChestsAdditionModifier> {
+    public static class Serializer extends GlobalLootModifierSerializer<CitrineCoinInSnowyChests> {
         @Override
-        public CitrineCoinInDesertChestsAdditionModifier read(ResourceLocation name, JsonObject object,
-                                                              LootItemCondition[] conditionIn) {
+        public CitrineCoinInSnowyChests read(ResourceLocation name, JsonObject object,
+											 LootItemCondition[] conditionIn) {
             Item addition = ForgeRegistries.ITEMS.getValue(
                     new ResourceLocation(GsonHelper.getAsString(object, "addition")));
-            return new CitrineCoinInDesertChestsAdditionModifier(conditionIn, addition);
+            return new CitrineCoinInSnowyChests(conditionIn, addition);
         }
         @Override
-        public JsonObject write(CitrineCoinInDesertChestsAdditionModifier instance) {
+        public JsonObject write(CitrineCoinInSnowyChests instance) {
             JsonObject json = makeConditions(instance.conditions);
             json.addProperty("addition", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
             return json;

@@ -1,0 +1,10 @@
+{
+  "type": "slabsnstairs:bones_from_cows",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/cow"
+    }
+  ],
+  "item": "minecraft:bone"
+}

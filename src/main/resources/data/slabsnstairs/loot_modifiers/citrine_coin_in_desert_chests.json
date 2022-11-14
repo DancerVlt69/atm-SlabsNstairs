@@ -1,10 +1,10 @@
 {
+  "type": "slabsnstairs:citrine_coin_in_desert_chests",
   "conditions": [
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:chests/village/village_desert_house"
     }
   ],
-  "addition": "slabsnstairs:citrine_coin",
-  "type": "slabsnstairs:citrine_coin_in_desert_chests"
+  "item": "slabsnstairs:citrine_coin"
 }
