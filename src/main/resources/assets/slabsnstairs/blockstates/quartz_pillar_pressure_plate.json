@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "slabsnstairs:block/quartz_pillar_pressure_plate"
+    },
+    "powered=true": {
+      "model": "slabsnstairs:block/quartz_pillar_pressure_plate_down"
+    }
+  }
+}

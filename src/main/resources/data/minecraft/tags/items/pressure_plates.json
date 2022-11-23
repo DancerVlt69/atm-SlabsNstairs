@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#slabsnstairs:wooden_pressure_plates",
-    "#slabsnstairs:stone_pressure_plates",
-    "#slabsnstairs:gem_pressure_plates"
+    "#slabsnstairs:pressure_plates"
   ]
 }
