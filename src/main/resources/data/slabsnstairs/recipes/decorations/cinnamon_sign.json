@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_sign",
+  "key": {
+    "#": {
+      "item": "slabsnstairs:cinnamon_planks"
+    },
+    "X": {
+      "tag": "slabsnstairs:sticks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    " X "
+  ],
+  "result": {
+    "count": 3,
+    "item": "slabsnstairs:cinnamon_sign"
+  }
+}
