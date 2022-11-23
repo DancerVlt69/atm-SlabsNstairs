@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "slabsnstairs:block/dark_prismarine_pressure_plate"
+    },
+    "powered=true": {
+      "model": "slabsnstairs:block/dark_prismarine_pressure_plate_down"
+    }
+  }
+}

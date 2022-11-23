@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slabsnstairs:block/chiseled_quartz_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/chiseled_quartz_block"
+    },
+    "type=top": {
+      "model": "slabsnstairs:block/chiseled_quartz_slab_top"
+    }
+  }
+}
