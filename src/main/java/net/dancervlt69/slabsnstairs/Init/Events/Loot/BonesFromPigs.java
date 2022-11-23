@@ -26,7 +26,7 @@ public class BonesFromPigs extends LootModifier {
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.625F) {
+        if(context.getRandom().nextFloat() > 0.675F) {
             generatedLoot.add(new ItemStack(item, (new Random().nextInt(1))+1));
         }
         return generatedLoot;

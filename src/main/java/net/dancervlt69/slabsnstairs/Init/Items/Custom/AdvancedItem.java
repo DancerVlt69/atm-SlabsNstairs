@@ -1,9 +1,7 @@
 package net.dancervlt69.slabsnstairs.Init.Items.Custom;
 
 import net.dancervlt69.slabsnstairs.Init.ToolTips.ShowToolTips;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;

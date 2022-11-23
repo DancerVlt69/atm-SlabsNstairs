@@ -3,7 +3,6 @@ package net.dancervlt69.slabsnstairs;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.Entities.ModBlockEntities;
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
-import net.dancervlt69.slabsnstairs.Init.Blocks.RegisteringModBlocks;
 import net.dancervlt69.slabsnstairs.Init.Enchantments.ModEnchantments;
 import net.dancervlt69.slabsnstairs.Init.Events.ModClientSetupEvents;
 import net.dancervlt69.slabsnstairs.Init.Events.ModCommonSetupEvents;
@@ -13,7 +12,6 @@ import net.dancervlt69.slabsnstairs.Init.World.Features.ModConfiguredFeatures;
 import net.dancervlt69.slabsnstairs.Init.World.Features.ModPlacedFeatures;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;

@@ -22,6 +22,7 @@ public class CitrineCoinInDesertChests extends LootModifier {
         super(conditionsIn);
         this.item = item;
     }
+
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
@@ -30,6 +31,7 @@ public class CitrineCoinInDesertChests extends LootModifier {
         }
         return generatedLoot;
     }
+
     public static class Serializer extends GlobalLootModifierSerializer<CitrineCoinInDesertChests> {
         @Override
         public CitrineCoinInDesertChests read(ResourceLocation name, JsonObject object,

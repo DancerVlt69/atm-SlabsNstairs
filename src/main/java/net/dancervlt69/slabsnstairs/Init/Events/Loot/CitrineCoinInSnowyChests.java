@@ -17,10 +17,12 @@ import java.util.Random;
 
 public class CitrineCoinInSnowyChests extends LootModifier {
     private final Item item;
+
     protected CitrineCoinInSnowyChests(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }
+
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
@@ -29,13 +31,14 @@ public class CitrineCoinInSnowyChests extends LootModifier {
         }
         return generatedLoot;
     }
+
     public static class Serializer extends GlobalLootModifierSerializer<CitrineCoinInSnowyChests> {
         @Override
         public CitrineCoinInSnowyChests read(ResourceLocation name, JsonObject object,
 											 LootItemCondition[] conditionIn) {
-            Item addition = ForgeRegistries.ITEMS.getValue(
+            Item item = ForgeRegistries.ITEMS.getValue(
                     new ResourceLocation(GsonHelper.getAsString(object, "item")));
-            return new CitrineCoinInSnowyChests(conditionIn, addition);
+            return new CitrineCoinInSnowyChests(conditionIn, item);
         }
         @Override
         public JsonObject write(CitrineCoinInSnowyChests instance) {
