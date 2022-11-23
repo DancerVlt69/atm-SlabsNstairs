@@ -1,4 +1,38 @@
 # Slabs 'n Stairs version changelog:
+-------------------------
+ v0.1.4.139 @ 2022/11/23
+-------------------------
+* ***fixed:***
+  * a small Tag-Issue
+  * a small Issue in the Tool-Tip of the Citrine Coin
+  * an Tooltip-Issue by hold the Ctrl-Key 
+  * wrong Mod Version
+
+This Version of the Mod was successfully tested with [**Forge** ***40.1.85***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html)
+
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18.x/CHANGELOG.md)***
+
+-------------------------
+ v0.1.3.136 @ 2022/11/19
+-------------------------
+* ***fixed***
+  * a small issue of the Cinnamon Fence Gate Advancement/Recipe - it was in a wrong Category
+* ***added:***
+  * Loot from Plants & Animals
+  * Cinnamon-Wall and -Standing Sign
+  * a lot of Quartz Buttons & Pressure Plates
+  * some Prismarine Buttons, Pressure Plates & Walls
+  * some missed Deepslate Blocks
+* ***updated***
+  * Localization (EN/DE)
+  * some Blackstone Blocks updated
+  * some Tags updated and optimized
+  * decreased the Amount and increase the Rarity of Loot a bit
+* ***other*** 
+  * simplified & optimized ToolTip-Code
+  * optimized Block-Registering
+
+This Version of the Mod was successfully tested with [**Forge** ***40.1.85***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html)
 
 -------------------------
  v0.1.1.133 @ 2022/10/15
@@ -22,12 +56,10 @@ This Version of the Mod was successfully tested with [**Forge** ***40.1.84***](h
 With OptiFine_1.18.2_HD_U_H9_pre1 use Forge 40.1.73 for a better compatibility with other Mods like
 Applied Energistics 2, Apotheosis, Biomes O Plenty, etc.
 
-The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18.x/CHANGELOG.md)***
-
 -------------------------
  v0.1.0.130 @ 2022/10/08
 -------------------------
-**!!! Some of the Items & Blocks are marked as** **_@Depricated (forRemoval)_** **!!!**
+**!!! Some of the Items & Blocks are marked as** **_@Deprecated (forRemoval)_** **!!!**
 -
 * **Blocks**
   * the old **Cinnamon** (aka Acacia-) **Door** | Two new Variations are in the Mod right now
@@ -195,7 +227,7 @@ V 0.0.1.112 @ 2022/07/06
 ------------------------
 V 0.0.1.111 @ 2022/07/05
 ------------------------
-* readd polished button variants of Andesite, Diorite, and Granite
+* re-add polished button variants of Andesite, Diorite, and Granite
 
 ------------------------
 V 0.0.1.110 @ 2022/07/03
