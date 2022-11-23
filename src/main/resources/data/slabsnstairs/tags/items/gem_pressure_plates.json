@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "slabsnstairs:citrine_pressure_plate"
+    "slabsnstairs:citrine_pressure_plate",
+    "slabsnstairs:prismarine_pressure_plate",
+    "slabsnstairs:prismarine_brick_pressure_plate",
+    "slabsnstairs:dark_prismarine_pressure_plate",
+    "slabsnstairs:quartz_pressure_plate",
+    "slabsnstairs:smooth_quartz_pressure_plate",
+    "slabsnstairs:chiseled_quartz_pressure_plate",
+    "slabsnstairs:quartz_brick_pressure_plate",
+    "slabsnstairs:quartz_pillar_pressure_plate"
   ]
 }

@@ -1,8 +1,6 @@
 {
-  "replace": true,
+  "replace": false,
   "values": [
-    "minecraft:stone",
-    "minecraft:cobblestone",
-    "minecraft:blackstone"
+    "minecraft:stone"
   ]
 }

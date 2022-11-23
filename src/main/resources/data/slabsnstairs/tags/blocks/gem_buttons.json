@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "slabsnstairs:citrine_button"
+    "slabsnstairs:citrine_button",
+    "slabsnstairs:prismarine_button",
+    "slabsnstairs:prismarine_brick_button",
+    "slabsnstairs:dark_prismarine_button",
+    "slabsnstairs:quartz_button",
+    "slabsnstairs:smooth_quartz_button",
+    "slabsnstairs:chiseled_quartz_button",
+    "slabsnstairs:quartz_brick_button",
+    "slabsnstairs:quartz_pillar_button"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
-    "slabsnstairs:citrine_stairs"
+    "minecraft:quartz_stairs",
+    "minecraft:prismarine_stairs",
+    "minecraft:prismarine_brick_stairs",
+    "minecraft:dark_prismarine_stairs",
+    "slabsnstairs:citrine_stairs",
+    "slabsnstairs:chiseled_quartz_stairs",
+    "slabsnstairs:quartz_brick_stairs",
+    "slabsnstairs:quartz_pillar_stairs"
   ]
 }

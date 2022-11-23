@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "slabsnstairs:decorations/cinnamon_fence_gate"
+        "recipe": "slabsnstairs:redstone/cinnamon_fence_gate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
