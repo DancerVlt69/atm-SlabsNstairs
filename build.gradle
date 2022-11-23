@@ -155,6 +155,9 @@ dependencies {
     // Croptopia
     //runtimeOnly fg.deobf("curse.maven:cropt-${croptVersionCF}")
 
+    // Simple Voice Chat
+    // runtimeOnly fg.deobf("curse.maven:voicechat-${voiceCVersionCF}")
+
     // Xaero's World- and Mini Maps
     runtimeOnly fg.deobf("curse.maven:xWmap-${xWmapVersionCF}")
     runtimeOnly fg.deobf("curse.maven:xMmap-${xMmapVersionCF}")

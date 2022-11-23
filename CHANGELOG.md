@@ -1,26 +1,40 @@
 Slabs 'n Stairs changelog:
 -------------------------
- v0.1.3.137 @ 2022/11/01
+ v0.1.4.138 @ 2022/11/23
 -------------------------
 * ***fixed:***
-  * a small issue of the Cinnamon Fence Gate Advancement - it was in a wrong Category
+  * a small Tag-Issue
+* ***updated:***
+  * Forge bump to Version 43.1.55
+
+This Version of the Mod was successfully tested with [**Forge** ***43.1.55***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
+
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
+
+-------------------------
+ v0.1.3.135 @ 2022/11/19
+-------------------------
+* ***fixed:***
+  * a small issue of the Cinnamon Fence Gate Advancement/Recipe - it was in a wrong Category
   * ***[issue #6](https://github.com/DancerVlt69/SlabsNstairs/issues/6)*** - no Loot in Chests (GlobalLootModifier)
   * ***[issue #21](https://github.com/DancerVlt69/SlabsNstairs/issues/21)*** - no Transparency on an 2-Slabs-Ice-Block
 * ***added:*** 
   * re-add Loot from Village-Chests
+  * added Loot from Plants & Animals
+  * added Cinnamon-Wall and -Standing Sign
   * a lot of Quartz Buttons & Pressure Plates
   * some Prismarine Buttons, Pressure Plates & Walls
   * some Deepslate Blocks added
 * ***updated:***
-  * Forge bump to Version 43.0.52
+  * Forge bump to Version 43.1.52
   * some Blackstone Blocks updated
   * some Tags updated and optimized
   * decreased the Amount and increase the Rarity of Loot a bit
-  * simplified ToolTip-Code
+* ***other***
+  * simplified & optimized ToolTip-Code
+  * optimized Block-Registering
 
 This Version of the Mod was successfully tested with [**Forge** ***43.1.52***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
-
-The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
 
 -------------------------
  v0.1.2.134 @ 2022/10/15
