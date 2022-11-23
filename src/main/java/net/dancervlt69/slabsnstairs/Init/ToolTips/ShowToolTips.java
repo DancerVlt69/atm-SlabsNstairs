@@ -48,7 +48,7 @@ public class ShowToolTips {
             pTooltip.add(Component.translatable("tooltip.SlabsNstairs.hold_ctrl"));
         }
 
-        if (Screen.hasControlDown()) {
+        if (Screen.hasAltDown()) {
             pTooltip.add(Component.translatable(tooltipKeyAlt));
         } else {
             pTooltip.add(Component.translatable("tooltip.SlabsNstairs.hold_alt"));
