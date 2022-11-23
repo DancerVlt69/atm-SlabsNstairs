@@ -16,16 +16,16 @@ import java.util.List;
 import java.util.Random;
 
 public class CitrineCoinInSnowyChests extends LootModifier {
-    private final Item addition;
-    protected CitrineCoinInSnowyChests(LootItemCondition[] conditionsIn, Item addition) {
+    private final Item item;
+    protected CitrineCoinInSnowyChests(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
-        this.addition = addition;
+        this.item = item;
     }
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         if(context.getRandom().nextFloat() > 0.625F) {
-            generatedLoot.add(new ItemStack(addition, new Random().nextInt(2) + 1));
+            generatedLoot.add(new ItemStack(item, new Random().nextInt(2) + 1));
         }
         return generatedLoot;
     }
@@ -34,13 +34,13 @@ public class CitrineCoinInSnowyChests extends LootModifier {
         public CitrineCoinInSnowyChests read(ResourceLocation name, JsonObject object,
 											 LootItemCondition[] conditionIn) {
             Item addition = ForgeRegistries.ITEMS.getValue(
-                    new ResourceLocation(GsonHelper.getAsString(object, "addition")));
+                    new ResourceLocation(GsonHelper.getAsString(object, "item")));
             return new CitrineCoinInSnowyChests(conditionIn, addition);
         }
         @Override
         public JsonObject write(CitrineCoinInSnowyChests instance) {
             JsonObject json = makeConditions(instance.conditions);
-            json.addProperty("addition", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
+            json.addProperty("item", ForgeRegistries.ITEMS.getKey(instance.item).toString());
             return json;
         }
     }

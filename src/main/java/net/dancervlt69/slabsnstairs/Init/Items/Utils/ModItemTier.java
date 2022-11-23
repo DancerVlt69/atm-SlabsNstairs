@@ -1,5 +1,6 @@
-package net.dancervlt69.slabsnstairs.Init.Items;
+package net.dancervlt69.slabsnstairs.Init.Items.Utils;
 
+import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Tags.ModBlockTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;

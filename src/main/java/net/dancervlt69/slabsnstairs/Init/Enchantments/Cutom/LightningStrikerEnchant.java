@@ -1,14 +1,10 @@
-package net.dancervlt69.slabsnstairs.Init.Enchantments;
+package net.dancervlt69.slabsnstairs.Init.Enchantments.Cutom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.effect.AttackDamageMobEffect;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.*;
-import net.minecraft.world.item.enchantment.DamageEnchantment;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
-import net.minecraft.world.item.enchantment.Enchantments;
 
 public class LightningStrikerEnchant extends Enchantment {
 

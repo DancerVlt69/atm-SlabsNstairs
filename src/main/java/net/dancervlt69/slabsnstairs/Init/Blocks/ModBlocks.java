@@ -1,12 +1,10 @@
 package net.dancervlt69.slabsnstairs.Init.Blocks;
 
 import net.dancervlt69.slabsnstairs.Init.Blocks.Custom.*;
+import net.dancervlt69.slabsnstairs.Init.Blocks.Utils.ModWoodTypes;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Tabs.ModTabs;
-import net.dancervlt69.slabsnstairs.SlabsNstairs;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -16,29 +14,34 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.function.Supplier;
 
-public class ModBlocks {
-    public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, SlabsNstairs.MODID);
+import static net.dancervlt69.slabsnstairs.Init.Blocks.RegisteringModBlocks.*;
+import static net.dancervlt69.slabsnstairs.Init.ToolTips.ShowToolTips.*;
+import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
-    // Define your own Blocks
+public class ModBlocks {
+    public static final DeferredRegister<Block> MOD_BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
+
+    /** Define your own Blocks here */
 
     @Deprecated
     public static final RegistryObject<Block> GROWTH_STOP = registerBlock("growth_stop",
             () -> new ChainBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS)
                     .strength(0.5F).noCollission()), ModTabs.SNSMODTAB3,
-            "tooltip.slabsnstairs.growth_stop.tooltip");
+            "tooltip.slabsnstairs.growth_stop.shift",
+            "tooltip.slabsnstairs.growth_stop.ctrl",
+            "tooltip.slabsnstairs.growth_stop.alt");
+
 /*
     public static final RegistryObject<Block> ILLUM_GROWTH_STOP = registerBlock("illum_growth_stop",
             () -> new TorchBlock(()-> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS)
                     .strength(0.5F).noCollission()), ModTabs.MODTAB_TAB);  */
 
-    // Citrine
+    /** Citrine */
     public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE).sound(SoundType.STONE)
                     .strength(4.0f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
@@ -48,7 +51,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL)
                     .strength(5.5f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1,
-            "tooltip.slabsnstairs.citrine_block.tooltip");
+            "tooltip.slabsnstairs.citrine_block");
 
     public static final RegistryObject<Block> CITRINE_STAIRS = registerBlock("citrine_stairs",
             () -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
@@ -59,12 +62,91 @@ public class ModBlocks {
                     .strength(5.5f)), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> CITRINE_BUTTON = registerBlock("citrine_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL)
-                    .strength(5.5f).noCollission()), ModTabs.SNSMODTAB1);
+                    .strength(5.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CITRINE_PRESSURE_PLATE = registerBlock("citrine_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
-                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), ModTabs.SNSMODTAB1);
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
-    // Cinnamon
+    /** Prismarine */
+    public static final RegistryObject<Block> PRISMARINE_BUTTON = registerBlock("prismarine_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    .strength(0.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> PRISMARINE_BRICK_BUTTON = registerBlock("prismarine_brick_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    .strength(0.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> DARK_PRISMARINE_BUTTON = registerBlock("dark_prismarine_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    .strength(0.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
+
+    public static final RegistryObject<Block> PRISMARINE_PRESSURE_PLATE = registerBlock("prismarine_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> PRISMARINE_BRICK_PRESSURE_PLATE = registerBlock("prismarine_brick_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> DARK_PRISMARINE_PRESSURE_PLATE = registerBlock("dark_prismarine_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+
+    public static final RegistryObject<Block> PRISMARINE_BRICK_WALL = registerBlock ("prismarine_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    .strength(0.5f, 6.0f)), ModTabs.SNSMODTAB1);
+    public static final RegistryObject<Block> DARK_PRISMARINE_WALL = registerBlock ("dark_prismarine_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    .strength(0.5f, 6.0f)), ModTabs.SNSMODTAB1);
+
+    /** Quartz */
+    public static final RegistryObject<Block> CHISELED_QUARTZ_STAIRS = registerBlock("chiseled_quartz_stairs",
+            () -> new StairBlock(Blocks.CHISELED_QUARTZ_BLOCK::defaultBlockState,
+                    BlockBehaviour.Properties.copy(Blocks.CHISELED_QUARTZ_BLOCK)), ModTabs.SNSMODTAB1);
+    public static final RegistryObject<Block> QUARTZ_BRICK_STAIRS = registerBlock("quartz_brick_stairs",
+            () -> new StairBlock(Blocks.QUARTZ_BRICKS::defaultBlockState,
+                    BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS)), ModTabs.SNSMODTAB1);
+    public static final RegistryObject<Block> QUARTZ_PILLAR_STAIRS = registerBlock("quartz_pillar_stairs",
+            () -> new StairBlock(Blocks.QUARTZ_PILLAR::defaultBlockState,
+                    BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR)), ModTabs.SNSMODTAB1);
+
+    public static final RegistryObject<Block> CHISELED_QUARTZ_SLAB = registerBlock("chiseled_quartz_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CHISELED_QUARTZ_BLOCK)), ModTabs.SNSMODTAB1);
+    public static final RegistryObject<Block> QUARTZ_BRICK_SLAB = registerBlock("quartz_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS)), ModTabs.SNSMODTAB1);
+    public static final RegistryObject<Block> QUARTZ_PILLAR_SLAB = registerBlock("quartz_pillar_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR)), ModTabs.SNSMODTAB1);
+
+    public static final RegistryObject<Block> QUARTZ_BUTTON = registerBlock("quartz_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.STONE)
+                    .strength(0.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
+
+    public static final RegistryObject<Block> SMOOTH_QUARTZ_BUTTON = registerBlock("smooth_quartz_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    .strength(0.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> CHISELED_QUARTZ_BUTTON = registerBlock("chiseled_quartz_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    .strength(0.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> QUARTZ_BRICK_BUTTON = registerBlock("quartz_brick_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    .strength(0.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> QUARTZ_PILLAR_BUTTON = registerBlock("quartz_pillar_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
+                    .strength(0.5f).noCollission()), CreativeModeTab.TAB_REDSTONE);
+
+    public static final RegistryObject<Block> QUARTZ_PRESSURE_PLATE = registerBlock("quartz_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> SMOOTH_QUARTZ_PRESSURE_PLATE = registerBlock("smooth_quartz_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> CHISELED_QUARTZ_PRESSURE_PLATE = registerBlock("chiseled_quartz_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> QUARTZ_BRICK_PRESSURE_PLATE = registerBlock("quartz_brick_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> QUARTZ_PILLAR_PRESSURE_PLATE = registerBlock("quartz_pillar_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
+
+    /** Cinnamon */
     public static final RegistryObject<Block> CINNAMON_PLANKS = registerBlock("cinnamon_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> CINNAMON_STAIRS = registerBlock("cinnamon_stairs",
@@ -74,20 +156,26 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> CINNAMON_PRESSURE_PLATE = registerBlock("cinnamon_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
-                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModTabs.SNSMODTAB1);
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CINNAMON_BUTTON = registerBlock("cinnamon_button",
-            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission()), ModTabs.SNSMODTAB1);
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission()), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CINNAMON_FENCE = registerBlock("cinnamon_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).strength(2F)), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> CINNAMON_FENCE_GATE = registerBlock ("cinnamon_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)),ModTabs.SNSMODTAB1);
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CINNAMON_TRAPDOOR = registerBlock ("cinnamon_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)),ModTabs.SNSMODTAB1);
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)), CreativeModeTab.TAB_REDSTONE);
 
     public static final RegistryObject<Block> CINNAMON_DOOR_01 = registerBlock ("cinnamon_door_01",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)),ModTabs.SNSMODTAB1);
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CINNAMON_DOOR_02 = registerBlock ("cinnamon_door_02",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)),ModTabs.SNSMODTAB1);
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)), CreativeModeTab.TAB_REDSTONE);
+
+    public static final RegistryObject<Block> CINNAMON_SIGN = registerBlockNoItem("cinnamon_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CINNAMON));
+
+    public static final RegistryObject<Block> CINNAMON_WALL_SIGN = registerBlockNoItem("cinnamon_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.CINNAMON));
 
 /*    public static final RegistryObject<Block> CINNAMON_SIGN = registerBlock("cinnamon_sign",
             () -> new SignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodType.OAK), ModTabs.MODTAB_TAB);
@@ -101,8 +189,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> CINNAMON_PALISADE = registerBlock ("cinnamon_palisade",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)), ModTabs.SNSMODTAB1);
 
-    /** extra Dirt (& Sand) */
-    /** Dirt */
+    /** extra Dirt (& Sand) <p>
+        - Dirt </p> */
     public static final RegistryObject<Block> DIRT_BLOCK_STAIRS = registerBlock ("dirt_block_stairs",
             () -> new ModDirtStairBlock(() -> ModBlocks.DIRT_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL)
@@ -111,7 +199,7 @@ public class ModBlocks {
             () -> new ModDirtSlabBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL)
                     .strength(0.5F)), ModTabs.SNSMODTAB1);
 
-    /** Path */
+        /** Path */
 /*    public static final RegistryObject<Block> PATH_BLOCK_STAIRS = registerBlock("path_block_stairs",
             () -> new ModGrassStairBlock(() -> ModBlocks.DIRT_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS)
@@ -119,7 +207,7 @@ public class ModBlocks {
 /*    public static final RegistryObject<Block> PATH_BLOCK_SLAB = registerBlock("path_block_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.WET_GRASS)
                     .strength(1F)), ModTabs.SNSMODTAB1); */
-    /** Grass */
+        /** Grass */
 /*    public static final RegistryObject<Block> GRASS_BLOCK_STAIRS = registerBlock("grass_block_stairs",
             () -> new ModGrassStairBlock(() -> ModBlocks.DIRT_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS)
@@ -128,7 +216,7 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.WET_GRASS)
                     .strength(1F)), ModTabs.SNSMODTAB1); */
 
-    /** Dirt Cobbled */
+        /** - Dirt Cobbled */
     public static final RegistryObject<Block> DIRT_COBBLE = registerBlock("dirt_cobble",
             () -> new ModDirtBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL)
                     .strength(1.2f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
@@ -140,7 +228,7 @@ public class ModBlocks {
             () -> new ModDirtSlabBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL)
                     .strength(1.2f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
 
-    /** Quarter Dirt */
+        /** - Quarter Dirt */
     public static final RegistryObject<Block> QUARTER_DIRT = registerBlock("quarter_dirt",
             () -> new ModDirtBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL)
                     .strength(1.0f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
@@ -152,7 +240,7 @@ public class ModBlocks {
             () -> new ModDirtSlabBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundType.GRAVEL)
                     .strength(1.0f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
 
-    /** Quarter Dirt Cobbled */
+        /** - Quarter Dirt Cobbled */
     public static final RegistryObject<Block> QUARTER_DIRT_COBBLE = registerBlock("quarter_dirt_cobble",
             () -> new ModDirtBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.GRAVEL)
                     .strength(1.2f).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
@@ -175,7 +263,7 @@ public class ModBlocks {
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
-    // Sandstone
+        /** - Sandstone */
     public static final RegistryObject<Block> SANDSTONE_BUTTON = registerBlock("sandstone_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
@@ -214,12 +302,23 @@ public class ModBlocks {
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
+        /** - Blackstone */
+    public static final RegistryObject<Block> BLACKSTONE_BUTTON = registerBlock("blackstone_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
+                    .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_BUTTON =
             registerBlock("cracked_polished_blackstone_brick_button",
                     () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                             .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
+        /** - Deepslate */
     public static final RegistryObject<Block> DEEPSLATE_BUTTON = registerBlock("deepslate_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
+                    .strength(0.5F).sound(SoundType.DEEPSLATE)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> DEEPSLATE_BRICK_BUTTON = registerBlock("deepslate_brick_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
+                    .strength(0.5F).sound(SoundType.DEEPSLATE)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> DEEPSLATE_TILE_BUTTON = registerBlock("deepslate_tile_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F).sound(SoundType.DEEPSLATE)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_BRICK_BUTTON = registerBlock("cracked_deepslate_brick_button",
@@ -240,7 +339,7 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
-        /**  Sandstone */
+        /** - Sandstone */
     public static final RegistryObject<Block> SANDSTONE_PRESSURE_PLATE = registerBlock("sandstone_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
@@ -273,15 +372,28 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
+
+        /** - Blackstone */
+    public static final RegistryObject<Block> BLACKSTONE_PRESSURE_PLATE = registerBlock("blackstone_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_PRESSURE_PLATE =
             registerBlock("cracked_polished_blackstone_brick_pressure_plate",
                     () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                             BlockBehaviour.Properties.of(Material.STONE).strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
-
+        /** - Deepslate */
     public static final RegistryObject<Block> DEEPSLATE_PRESSURE_PLATE = registerBlock("deepslate_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.of(Material.STONE).strength(0.5F).
                             sound(SoundType.DEEPSLATE_BRICKS)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> DEEPSLATE_BRICK_PRESSURE_PLATE = registerBlock("deepslate_brick_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F).
+                            sound(SoundType.DEEPSLATE_BRICKS)), CreativeModeTab.TAB_REDSTONE);
+    public static final RegistryObject<Block> DEEPSLATE_TILE_PRESSURE_PLATE = registerBlock("deepslate_tile_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5F).
+                            sound(SoundType.DEEPSLATE_TILES)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CRACKED_DEEPSLATE_BRICK_PRESSURE_PLATE =
             registerBlock("cracked_deepslate_brick_pressure_plate",
                     () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
@@ -334,7 +446,6 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_TILES)
                     .strength(2.0f, 6).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-
     /** Iced Blocks - Ice */
     public static final RegistryObject<Block> ICE_STAIRS = registerBlock("ice_stairs",
             () -> new ModIceStairBlock(Blocks.ICE::defaultBlockState,
@@ -362,56 +473,107 @@ public class ModBlocks {
             () -> new ModFrostedIceSlabBlock(BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS).friction(1.0f)
                     .strength(2.8F).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    /** Iced - Blocks - DryIce */
+    /** Iced Blocks - DryIce */
     public static final RegistryObject<Block> DRY_ICE_BLOCK = registerBlock("dry_ice_block",
             () -> new ModDryIceBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).strength(1.8f)
                     .friction(1.0F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 6)),
-            ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_block.tooltip");
+            ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_block");
     public static final RegistryObject<Block> DRY_ICE_STAIRS = registerBlock("dry_ice_stairs",
             () -> new ModDryIceStairBlock(() -> ModBlocks.DRY_ICE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS).strength(1.8F)
                             .friction(1.0F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 6)),
-            ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_stairs.tooltip");
+            ModTabs.SNSMODTAB1,"tooltip.slabsnstairs.dry_ice_stairs");
     public static final RegistryObject<Block> DRY_ICE_SLAB = registerBlock("dry_ice_slab",
             () -> new ModDryIceSlabBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.GLASS)
                     .friction(1.0f).strength(1.8F).requiresCorrectToolForDrops().lightLevel((pLightLevel) -> 6)),
-            ModTabs.SNSMODTAB1, "tooltip.slabsnstairs.dry_ice_slab.tooltip");
+            ModTabs.SNSMODTAB1, "tooltip.slabsnstairs.dry_ice_slab");
 
-    /** Registering the Blocks */
-        /** with Tool Tips */
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab, String tooltipKey) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab, tooltipKey);
-        return toReturn;
-    }
+    /** Registering the Blocks is moved into a seperate Class called <p>
+     *
+     * RegisteringModBlocks <p>
+     *     <p>
+     * - without Item </p> */
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab, String tooltipKey) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
-            @Override
-            public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-                if (Screen.hasShiftDown()) {
-                    pTooltip.add(new TranslatableComponent(tooltipKey));
-                } else {
-                    pTooltip.add(new TranslatableComponent("tooltip.slabsnstairs.hold_shift.tooltip"));
-                }
-            }
-        });
-    }
+    /* private static <T extends Block> RegistryObject<T> registerBlockNoItem(String blockName, Supplier<T> block) {
+        return BLOCKS.register(blockName, block);
+    } */
 
-        /** without Tool Tips */
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
+    /** - with Item but <p>
+     *  - without Tool-Tips </p> */
+    /* private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
                                                                      CreativeModeTab tab) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab);
+        RegistryObject<T> toReturn = MOD_BLOCKS.register(blockName, block);
+        registerBlockItem(blockName, toReturn, tab);
         return toReturn;
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(
             String name, RegistryObject<T> block, CreativeModeTab tab) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+        return ModItems.MOD_ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+    } */
+
+    /** - with Item and <p>
+     *  - with Tool-Tips for Shift </p>*/
+    /* private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
+                                                                     CreativeModeTab tab, String tooltipKeyShift) {
+        RegistryObject<T> toReturn = MOD_BLOCKS.register(blockName, block);
+        registerBlockItem(blockName, toReturn, tab, tooltipKeyShift);
+        return toReturn;
     }
 
-    public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
+    private static <T extends Block> void registerBlockItem(String blockName, RegistryObject<T> block,
+                                                            CreativeModeTab tab, String tooltipKeyShift) {
+        ModItems.MOD_ITEMS.register(blockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
+
+            @Override
+            public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+
+                showTooltips(pTooltip, tooltipKeyShift);
+            }
+        });
+    } */
+
+    /** - with Item and <p>
+     *  - with Tool-Tips for Shift & Ctrl </p> */
+    /* private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
+                                                                     CreativeModeTab tab, String tooltipKeyShift, String tooltipKeyCtrl) {
+        RegistryObject<T> toReturn = MOD_BLOCKS.register(blockName, block);
+        registerBlockItem(blockName, toReturn, tab, tooltipKeyShift, tooltipKeyCtrl);
+        return toReturn;
     }
+
+    private static <T extends Block> void registerBlockItem(String bockName, RegistryObject<T> block,
+                                                            CreativeModeTab tab, String tooltipKeyShift, String tooltipKeyCtrl) {
+        ModItems.MOD_ITEMS.register(bockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
+
+            @Override
+            public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag tooltipFlag) {
+
+                showTooltips(pTooltip, tooltipKeyShift, tooltipKeyCtrl);
+            }
+        });
+    } */
+
+    /** - with Item and <p>
+     *  - with Tool-Tips for Shift & Ctrl & Alt </p> */
+    /* private static <T extends Block> RegistryObject<T> registerBlock(
+            String blockName, Supplier<T> block, CreativeModeTab tab, String tooltipKeyShift, String tooltipKeyCtrl, String tooltipKeyAlt) {
+        RegistryObject<T> toReturn = MOD_BLOCKS.register(blockName, block);
+        registerBlockItem(blockName, toReturn, tab, tooltipKeyShift, tooltipKeyCtrl, tooltipKeyAlt);
+        return toReturn;
+    }
+
+    private static <T extends Block> void registerBlockItem(
+            String bockName, RegistryObject<T> block, CreativeModeTab tab, String tooltipKeyShift, String tooltipKeyCtrl, String tooltipKeyAlt) {
+        ModItems.MOD_ITEMS.register(bockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
+
+            @Override
+            public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag tooltipFlag) {
+
+                showTooltips(pTooltip, tooltipKeyShift, tooltipKeyCtrl, tooltipKeyAlt);
+            }
+        });
+    } */
+
+    public static void register(IEventBus eventBus) { MOD_BLOCKS.register(eventBus); }
 }

@@ -1,13 +1,16 @@
 
 package net.dancervlt69.slabsnstairs;
 
+import net.dancervlt69.slabsnstairs.Init.Blocks.Entities.ModBlockEntities;
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
+import net.dancervlt69.slabsnstairs.Init.Blocks.RegisteringModBlocks;
 import net.dancervlt69.slabsnstairs.Init.Enchantments.ModEnchantments;
+import net.dancervlt69.slabsnstairs.Init.Events.ModClientSetupEvents;
+import net.dancervlt69.slabsnstairs.Init.Events.ModCommonSetupEvents;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
 import net.dancervlt69.slabsnstairs.Init.World.Features.ModConfiguredFeatures;
 import net.dancervlt69.slabsnstairs.Init.World.Features.ModPlacedFeatures;
-import net.dancervlt69.slabsnstairs.Init.World.setClientSetup;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -51,19 +54,18 @@ public class SlabsNstairs {
 
         ModConfiguredFeatures.register(eventBus);
         ModPlacedFeatures.register(eventBus);
+        ModBlockEntities.register(eventBus);
         ModEnchantments.register(eventBus);
         // ModRecipes.register(eventBus);
 
         // Register the setup methods for modLoading
-        eventBus.addListener(this::onSetup);
         eventBus.addListener(this::onClientSetup);
+        eventBus.addListener(this::onCommonSetup);
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModClientSettings.SPEC,
-                "slabsnstairs-client.toml");
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModClientSettings.SPEC,
-                "slabsnstairs-common.toml");
-        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, ModClientSettings.SPEC,
-                "slabsnstairs-server.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModClientSettings.SPEC, "slabsnstairs-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModClientSettings.SPEC, "slabsnstairs-common.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, ModClientSettings.SPEC, "slabsnstairs-server.toml");
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         // Minecraft.getInstance().player.chat(msg);
@@ -71,13 +73,21 @@ public class SlabsNstairs {
 
     @OnlyIn(Dist.CLIENT)
     public void onClientSetup(final FMLClientSetupEvent event) {
-        setClientSetup.setRenderLayer();
+        LOGGER.info("Client Setup started...");
+
+        ModClientSetupEvents.modWoodTypeRegister();
+        ModClientSetupEvents.modRenderTypes();
+
+        LOGGER.info("Client Setup finished.");
     }
 
-    private void onSetup(final FMLCommonSetupEvent event) {
-        // Preinit code
-        LOGGER.info("PreInit has started...");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    private void onCommonSetup(final FMLCommonSetupEvent event) {
+        // Common Setup Code
+        LOGGER.info("Common Setup started...");
+
+        ModCommonSetupEvents.addModWoodTypes(event);
+
+        LOGGER.info("Common Setup finished.");
     }
 
     public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
