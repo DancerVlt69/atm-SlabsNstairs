@@ -1,4 +1,4 @@
-package net.dancervlt69.slabsnstairs.Init.Enchantments;
+package net.dancervlt69.slabsnstairs.Init.Enchantments.Cutom;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
@@ -12,7 +12,7 @@ import net.minecraft.world.server.ServerWorld;
 
 public class LightningStrikerEnchant extends Enchantment {
 
-    public LightningStrikerEnchant(Enchantment.Rarity pRarity, EnchantmentType pCategory, EquipmentSlotType[] pApplicableSlots) {
+    public LightningStrikerEnchant(Rarity pRarity, EnchantmentType pCategory, EquipmentSlotType[] pApplicableSlots) {
         super(pRarity, pCategory, pApplicableSlots);
     }
     @Override
