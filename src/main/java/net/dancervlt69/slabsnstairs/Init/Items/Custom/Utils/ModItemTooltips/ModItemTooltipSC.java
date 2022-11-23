@@ -22,6 +22,6 @@ public class ModItemTooltipSC extends Item {
 
 	@Override
 	public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-		ShowToolTips.toolTipShiftCtrl(pTooltipComponents, tooltipKeyShift, tooltipKeyCtrl);
+		ShowToolTips.showTooltips(pTooltipComponents, tooltipKeyShift, tooltipKeyCtrl);
 	}
 }

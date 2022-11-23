@@ -9,6 +9,8 @@ public class ModCommonSettings {
 
     // public static final ForgeConfigSpec.ConfigValue<Integer> SAMPLE_CONFIG_VALUE;
     public static final ForgeConfigSpec.ConfigValue<Boolean> CITRINE_ORE_GENERATION_ACTIVATED;
+    public static final ForgeConfigSpec.ConfigValue<Boolean> ANIMAL_LOOT_ACTIVATED;
+    public static final ForgeConfigSpec.ConfigValue<Boolean> PLANTS_LOOT_ACTIVATED;
     public static final ForgeConfigSpec.ConfigValue<Integer> ILLUMINATED_GROWTH_STOP_LIGHT_RANGE;
 
     static {
@@ -18,6 +20,12 @@ public class ModCommonSettings {
 
        CITRINE_ORE_GENERATION_ACTIVATED = BUILDER.comment("Activate Citrine Ore Generation")
                .define("Activate Citrine Ore Generation", true);
+
+        ANIMAL_LOOT_ACTIVATED = BUILDER.comment("Activate Loot fron Animals")
+                .define("Activate Loot fron Animals", true);
+        PLANTS_LOOT_ACTIVATED = BUILDER.comment("Activate Loot fron Plants")
+                .define("Activate Loot fron Plants", true);
+
        ILLUMINATED_GROWTH_STOP_LIGHT_RANGE = BUILDER.comment("Light Level of the illuminated Growth-Stop")
                .defineInRange("Light Level of the illuminated Growth-Stop", 5, 1, 15);
 

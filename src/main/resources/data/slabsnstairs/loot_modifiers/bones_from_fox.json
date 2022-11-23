@@ -1,9 +1,9 @@
 {
-  "type": "slabsnstairs:bones_from_sheep_white",
+  "type": "slabsnstairs:bones_from_fox",
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:entities/sheep/white"
+      "loot_table_id": "minecraft:entities/fox"
     }
   ],
   "item": "minecraft:bone"

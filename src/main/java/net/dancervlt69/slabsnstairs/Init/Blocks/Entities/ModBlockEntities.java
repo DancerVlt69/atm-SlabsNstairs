@@ -18,7 +18,7 @@ package net.dancervlt69.slabsnstairs.Init.Blocks.Entities;
 
  public class ModBlockEntities {
 
-     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
+     public static final DeferredRegister<BlockEntityType<?>> MOD_BLOCK_ENTITIES =
              DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MODID);
 
 	/* public static final RegistryObject<BlockEntityType<GemCuttingStationEntity>> GEM_CUTTING_STATION_ENTITY =
@@ -27,10 +27,9 @@ package net.dancervlt69.slabsnstairs.Init.Blocks.Entities;
 							ModBlocks.GEM_CUTTING_STATION.get()).build(null)); */
 
      public static final RegistryObject<BlockEntityType<ModSignBlockEntity>> SIGN_BLOCK_ENTITIES =
-             BLOCK_ENTITIES.register("sign_block_entity", () ->
+             MOD_BLOCK_ENTITIES.register("sign_block_entity", () ->
                      BlockEntityType.Builder.of(ModSignBlockEntity::new, ModBlocks.CINNAMON_WALL_SIGN.get(),
                              ModBlocks.CINNAMON_SIGN.get()).build(null));
 
-     public static void register(IEventBus eventBus) { BLOCK_ENTITIES.register(eventBus);}
-
+     public static void register(IEventBus eventBus) { MOD_BLOCK_ENTITIES.register(eventBus);}
 }

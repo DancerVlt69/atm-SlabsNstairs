@@ -27,7 +27,7 @@ public class StrongMasterEnchantment extends Enchantment {
 
     @Override
     public float getDamageBonus(int pLevel, MobType pCreatureType) {
-        return pCreatureType == MobType.UNDEFINED ? (float) pLevel * 25.0F : 0.0F;
+        return pCreatureType == MobType.UNDEFINED ? (float) pLevel * 20.0F : 0.0F;
     }
     public int getMaxLevel() { return 5; }
 }

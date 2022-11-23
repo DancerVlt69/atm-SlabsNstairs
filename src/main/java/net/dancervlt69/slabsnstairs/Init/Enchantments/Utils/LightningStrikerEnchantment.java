@@ -8,25 +8,25 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory;
 
 public class LightningStrikerEnchantment extends Enchantment {
 
-    public LightningStrikerEnchantment(Rarity pRarity, EquipmentSlot... pApplicableSlots) {
-        super(pRarity, EnchantmentCategory.BOW, pApplicableSlots);
+    public LightningStrikerEnchantment(Rarity pRarity, EnchantmentCategory pCategory, EquipmentSlot... pApplicableSlots) {
+        super(pRarity, pCategory, pApplicableSlots);
     }
     @Override
-    public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pMaxLevel) {
+    public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
         if (!pAttacker.level.isClientSide()) {
             ServerLevel world = ((ServerLevel) pAttacker.level);
             BlockPos blockPos = pTarget.blockPosition();
-            if (pMaxLevel == 1) {
+            if (pLevel == 1) {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
                         MobSpawnType.TRIGGERED, true, true);
             }
-            if (pMaxLevel == 2) {
+            if (pLevel == 2) {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
                         MobSpawnType.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
                         MobSpawnType.TRIGGERED, true, true);
             }
-            if (pMaxLevel == 3) {
+            if (pLevel == 3) {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
                         MobSpawnType.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, blockPos,
@@ -35,7 +35,7 @@ public class LightningStrikerEnchantment extends Enchantment {
                         MobSpawnType.TRIGGERED, true, true);
             }
         }
-        super.doPostAttack(pAttacker, pTarget, pMaxLevel);
+        super.doPostAttack(pAttacker, pTarget, pLevel);
     }
     @Override
     public int getMaxLevel() { return 3; }

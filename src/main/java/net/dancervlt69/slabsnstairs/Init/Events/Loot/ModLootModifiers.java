@@ -18,22 +18,19 @@ public class ModLootModifiers {
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> CITRINE_COIN_IN_DESERT_CHESTS =
 			LOOT_MODIFIERS_SERIALIZERS.register("citrine_coin_in_desert_chests",
 					CitrineCoinInDesertChests.CODEC);
-
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> CITRINE_COIN_IN_PLAIN_CHESTS =
 			LOOT_MODIFIERS_SERIALIZERS.register("citrine_coin_in_plain_chests",
 					CitrineCoinInPlainChests.CODEC);
-
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> CITRINE_COIN_IN_SNOWY_CHESTS =
 			LOOT_MODIFIERS_SERIALIZERS.register("citrine_coin_in_snowy_chests",
 					CitrineCoinInSnowyChests.CODEC);
 
-	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BERRIES_FROM_TALL_GRASS =
-			LOOT_MODIFIERS_SERIALIZERS.register("berries_from_tall_grass",
-					BerriesFromTallGrass.CODEC);
-
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BERRIES_FROM_LARGE_FERN =
 			LOOT_MODIFIERS_SERIALIZERS.register("berries_from_large_fern",
 					BerriesFromLargeFern.CODEC);
+	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BERRIES_FROM_TALL_GRASS =
+			LOOT_MODIFIERS_SERIALIZERS.register("berries_from_tall_grass",
+					BerriesFromTallGrass.CODEC);
 
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BONES_FROM_CHICKEN =
 			LOOT_MODIFIERS_SERIALIZERS.register("bones_from_chicken",
@@ -41,6 +38,9 @@ public class ModLootModifiers {
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BONES_FROM_DONKEY =
 			LOOT_MODIFIERS_SERIALIZERS.register("bones_from_donkey",
 					BonesFromDonkey.CODEC);
+	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BONES_FROM_FOX =
+			LOOT_MODIFIERS_SERIALIZERS.register("bones_from_fox",
+					BonesFromFox.CODEC);
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BONES_FROM_GOAT =
 			LOOT_MODIFIERS_SERIALIZERS.register("bones_from_goat",
 					BonesFromGoat.CODEC);
@@ -59,6 +59,7 @@ public class ModLootModifiers {
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BONES_FROM_RABBIT =
 			LOOT_MODIFIERS_SERIALIZERS.register("bones_from_rabbit",
 					BonesFromRabbit.CODEC);
+
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BONES_FROM_SHEEP_WHITE =
 			LOOT_MODIFIERS_SERIALIZERS.register("bones_from_sheep_white",
 					BonesFromSheepWhite.CODEC);
@@ -71,7 +72,6 @@ public class ModLootModifiers {
 	public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BONES_FROM_SHEEP_GRAY =
 			LOOT_MODIFIERS_SERIALIZERS.register("bones_from_sheep_gray",
 					BonesFromSheepGray.CODEC);
-
 
 	public static void register(IEventBus eventBus) {
 		SlabsNstairs.LOGGER.debug("Registering Loot-Modifier for " + MODID);

@@ -3,11 +3,8 @@ package net.dancervlt69.slabsnstairs.Init.Blocks;
 import net.dancervlt69.slabsnstairs.Init.Blocks.Custom.*;
 import net.dancervlt69.slabsnstairs.Init.Blocks.Utils.Flammable.BlockFlammable;
 import net.dancervlt69.slabsnstairs.Init.Blocks.Utils.ModWoodTypes;
-import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Tabs.ModTabs;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.*;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -16,17 +13,14 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.List;
-import java.util.function.Supplier;
-
-import static net.dancervlt69.slabsnstairs.Init.ToolTips.ShowToolTips.*;
+import static net.dancervlt69.slabsnstairs.Init.Blocks.RegisteringModBlocks.*;
 import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ModBlocks {
-    public static final DeferredRegister<Block> BLOCKS =
+   public static final DeferredRegister<Block> MOD_BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
 
-    // Define your own Blocks
+    /** Define your own Blocks here */
 
     @Deprecated
     public static final RegistryObject<Block> GROWTH_STOP = registerBlock("growth_stop",
@@ -166,20 +160,20 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> CINNAMON_PRESSURE_PLATE = registerBlock("cinnamon_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
-                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModTabs.SNSMODTAB1);
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CINNAMON_BUTTON = registerBlock("cinnamon_button",
-            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission()), ModTabs.SNSMODTAB1);
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission()), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CINNAMON_FENCE = registerBlock("cinnamon_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).strength(2F)), ModTabs.SNSMODTAB1);
     public static final RegistryObject<Block> CINNAMON_FENCE_GATE = registerBlock ("cinnamon_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)),ModTabs.SNSMODTAB1);
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CINNAMON_TRAPDOOR = registerBlock ("cinnamon_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)),ModTabs.SNSMODTAB1);
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)), CreativeModeTab.TAB_REDSTONE);
 
     public static final RegistryObject<Block> CINNAMON_DOOR_01 = registerBlock ("cinnamon_door_01",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)),ModTabs.SNSMODTAB1);
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)), CreativeModeTab.TAB_REDSTONE);
     public static final RegistryObject<Block> CINNAMON_DOOR_02 = registerBlock ("cinnamon_door_02",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)),ModTabs.SNSMODTAB1);
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)), CreativeModeTab.TAB_REDSTONE);
 
     public static final RegistryObject<Block> CINNAMON_SIGN = registerBlockNoItem("cinnamon_sign",
             () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CINNAMON));
@@ -306,6 +300,7 @@ public class ModBlocks {
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
+        // Blackstone
     public static final RegistryObject<Block> BLACKSTONE_BUTTON = registerBlock("blackstone_button",
                     () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                             .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
@@ -314,10 +309,10 @@ public class ModBlocks {
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F)), CreativeModeTab.TAB_REDSTONE);
 
+        // Deepslate
     public static final RegistryObject<Block> DEEPSLATE_BUTTON = registerBlock("deepslate_button",
                     () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                             .strength(0.5F).sound(SoundType.DEEPSLATE)), CreativeModeTab.TAB_REDSTONE);
-
     public static final RegistryObject<Block> DEEPSLATE_BRICK_BUTTON = registerBlock("deepslate_brick_button",
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).noCollission()
                     .strength(0.5F).sound(SoundType.DEEPSLATE)), CreativeModeTab.TAB_REDSTONE);
@@ -413,8 +408,8 @@ public class ModBlocks {
     /** Stairs */
     public static final RegistryObject<Block> SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
             () -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
-                            .strength(2F,6).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2F,6)
+                            .sound(SoundType.STONE).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS =
             registerBlock("cracked_polished_blackstone_brick_stairs",
@@ -496,13 +491,15 @@ public class ModBlocks {
             ModTabs.SNSMODTAB1, "tooltip.slabsnstairs.dry_ice_slab");
 
 
-    /** registering the Blocks without Item */
-    private static <T extends Block> RegistryObject<T> registerBlockNoItem(String blockName, Supplier<T> block) {
+    /** Registering the Blocks is moved to a separate Class called <p>
+     * RegisteringModBlocks<p><p></p>
+     *  - without Item </p>*/
+    /* private static <T extends Block> RegistryObject<T> registerBlockNoItem(String blockName, Supplier<T> block) {
         return BLOCKS.register(blockName, block);
-    }
+    } */
 
-    /** registering the Blocks with Item but without Tool-Tips */
-    private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
+    /** Registering the Blocks with Item but without Tool-Tips */
+    /*private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
                                                                      CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(blockName, block);
         registerBlockItem(blockName, toReturn, tab);
@@ -511,11 +508,12 @@ public class ModBlocks {
 
     private static <T extends Block> void registerBlockItem(
             String blockName, RegistryObject<T> block, CreativeModeTab tab) {
-        ModItems.ITEMS.register(blockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
-    }
+        ModItems.MOD_ITEMS.register(blockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+    } */
 
-    /** registering the Blocks with Item & with Tool-Tips for Shift */
-    private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
+    /** - with Item & <p>
+     *  - with Tool-Tips for Shift </p> */
+    /* private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
                                                                      CreativeModeTab tab, String tooltipKeyShift) {
         RegistryObject<T> toReturn = BLOCKS.register(blockName, block);
         registerBlockItem(blockName, toReturn, tab, tooltipKeyShift);
@@ -524,18 +522,19 @@ public class ModBlocks {
 
     private static <T extends Block> void registerBlockItem(String blockName, RegistryObject<T> block,
                                                             CreativeModeTab tab, String tooltipKeyShift) {
-        ModItems.ITEMS.register(blockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
+        ModItems.MOD_ITEMS.register(blockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
 
             @Override
             public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
 
-               toolTipShift(pTooltip, tooltipKeyShift);
+               showTooltips(pTooltip, tooltipKeyShift);
             }
         });
-    }
+    } */
 
-    /** registering the Blocks with Item & with Tool-Tips for Shift & Ctrl */
-    private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
+    /** - with Item & <p>
+     * - with Tool-Tips for Shift & Ctrl </p*/
+    /* private static <T extends Block> RegistryObject<T> registerBlock(String blockName, Supplier<T> block,
                                                                      CreativeModeTab tab, String tooltipKeyShift, String tooltipKeyCtrl) {
         RegistryObject<T> toReturn = BLOCKS.register(blockName, block);
         registerBlockItem(blockName, toReturn, tab, tooltipKeyShift, tooltipKeyCtrl);
@@ -544,18 +543,19 @@ public class ModBlocks {
 
     private static <T extends Block> void registerBlockItem(String bockName, RegistryObject<T> block,
                                                             CreativeModeTab tab, String tooltipKeyShift, String tooltipKeyCtrl) {
-        ModItems.ITEMS.register(bockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
+        ModItems.MOD_ITEMS.register(bockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
 
             @Override
             public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag tooltipFlag) {
 
-                toolTipShiftCtrl(pTooltip, tooltipKeyShift, tooltipKeyCtrl);
+                showTooltips(pTooltip, tooltipKeyShift, tooltipKeyCtrl);
             }
         });
-    }
+    } */
 
-    /** registering the Blocks with Item & with Tool-Tips for Shift & Ctrl & Alt */
-    private static <T extends Block> RegistryObject<T> registerBlock(
+    /** - with Item & <p>
+     *  - with Tool-Tips for Shift & Ctrl & Alt </p> */
+    /* private static <T extends Block> RegistryObject<T> registerBlock(
             String blockName, Supplier<T> block, CreativeModeTab tab, String tooltipKeyShift, String tooltipKeyCtrl, String tooltipKeyAlt) {
         RegistryObject<T> toReturn = BLOCKS.register(blockName, block);
         registerBlockItem(blockName, toReturn, tab, tooltipKeyShift, tooltipKeyCtrl, tooltipKeyAlt);
@@ -564,17 +564,17 @@ public class ModBlocks {
 
     private static <T extends Block> void registerBlockItem(
             String bockName, RegistryObject<T> block, CreativeModeTab tab, String tooltipKeyShift, String tooltipKeyCtrl, String tooltipKeyAlt) {
-        ModItems.ITEMS.register(bockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
+        ModItems.MOD_ITEMS.register(bockName, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
 
             @Override
             public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag tooltipFlag) {
 
-                toolTipShiftCtrlAlt(pTooltip, tooltipKeyShift, tooltipKeyCtrl, tooltipKeyAlt);
+                showTooltips(pTooltip, tooltipKeyShift, tooltipKeyCtrl, tooltipKeyAlt);
             }
         });
-    }
+    } */
 
     public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
+        MOD_BLOCKS.register(eventBus);
     }
 }

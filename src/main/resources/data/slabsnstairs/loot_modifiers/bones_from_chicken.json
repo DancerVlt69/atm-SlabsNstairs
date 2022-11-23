@@ -1,5 +1,5 @@
 {
-  "type": "slabsnstairs:bones_from_sheep",
+  "type": "slabsnstairs:bones_from_chicken",
   "conditions": [
     {
       "condition": "forge:loot_table_id",

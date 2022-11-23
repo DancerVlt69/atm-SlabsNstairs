@@ -5,6 +5,7 @@ import net.dancervlt69.slabsnstairs.Init.Enchantments.Utils.LightningStrikerEnch
 import net.dancervlt69.slabsnstairs.Init.Enchantments.Utils.StrongMasterEnchantment;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,7 +19,8 @@ public class ModEnchantments {
             DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, MODID);
 
     public  static RegistryObject<Enchantment> LIGHTNING_STRIKER = ENCHANTMENTS.register("lightning_striker",
-            () -> new LightningStrikerEnchantment(Enchantment.Rarity.UNCOMMON, EquipmentSlot.MAINHAND));
+            () -> new LightningStrikerEnchantment(Enchantment.Rarity.UNCOMMON,
+                    EnchantmentCategory.BOW, EquipmentSlot.MAINHAND));
 
     public static RegistryObject<Enchantment> FREEZING_ARROWS = ENCHANTMENTS.register("freezing_arrows",
             () -> new FreezingArrowsEnchantment(Enchantment.Rarity.UNCOMMON, EquipmentSlot.MAINHAND));
