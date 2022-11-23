@@ -137,7 +137,7 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:jmsr-${jmsrVersionCF}")
 
     // Grass Slabs, Carpets & Stairs Mod
-    // runtimeOnly fg.deobf("curse.maven:gscs-${gscsVersionCF}")
+    runtimeOnly fg.deobf("curse.maven:gscs-${gscsVersionCF}")
 
     // Cooking 4 Blockheads
     // runtimeOnly fg.deobf("curse.maven:c4b-${c4blockhVersionCF}")
@@ -151,7 +151,7 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:xmm-${xMmapVersionCF}") // Mini-Map
 
     // WorldEdit
-    runtimeOnly fg.deobf("curse.maven:wEdit-${worldEditCF}")
+    // runtimeOnly fg.deobf("curse.maven:wEdit-${worldEditCF}")
 
     // Stop Mod Reports
     // embedNoCompile "org.stopmodreposts:stopmodreposts:${minecraftVersion}-${stopmodrepostsVersion}"
