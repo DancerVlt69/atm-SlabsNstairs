@@ -1,19 +1,21 @@
 {
   "replace": false,
   "values": [
-    "slabsnstairs:ice_slab",
-    "slabsnstairs:ice_stairs",
-    "slabsnstairs:packed_ice_slab",
-    "slabsnstairs:packed_ice_stairs",
-    "slabsnstairs:blue_ice_slab",
-    "slabsnstairs:blue_ice_stairs",
-    "slabsnstairs:dry_ice_block",
-    "slabsnstairs:dry_ice_slab",
-    "slabsnstairs:dry_ice_stairs",
+    "#slabsnstairs:ice",
+    "slabsnstairs:citrine_ore",
     "slabsnstairs:citrine_block",
     "slabsnstairs:citrine_slab",
     "slabsnstairs:citrine_stairs",
-    "slabsnstairs:citrine_ore",
-    "slabsnstairs:smooth_stone_stairs"
+    "slabsnstairs:smooth_stone_stairs",
+    "slabsnstairs:cracked_polished_blackstone_brick_slab",
+    "slabsnstairs:cracked_polished_blackstone_brick_stairs",
+    "slabsnstairs:chiseled_quartz_slab",
+    "slabsnstairs:quartz_brick_slab",
+    "slabsnstairs:quartz_pillar_slab",
+    "slabsnstairs:chiseled_quartz_stairs",
+    "slabsnstairs:quartz_brick_stairs",
+    "slabsnstairs:quartz_pillar_stairs"
+
+
   ]
 }

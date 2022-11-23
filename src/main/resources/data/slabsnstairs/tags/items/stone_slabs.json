@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "#minecraft:stone_slabs",
     "slabsnstairs:cracked_polished_blackstone_brick_slab"
+
   ]
 }

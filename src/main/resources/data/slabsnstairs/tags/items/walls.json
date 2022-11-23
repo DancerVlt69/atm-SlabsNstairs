@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
-
+    "#slabsnstairs:gem_walls",
+    "#slabsnstairs:stone_walls",
+    "#slabsnstairs:wooden_palisades"
   ]
 }
 

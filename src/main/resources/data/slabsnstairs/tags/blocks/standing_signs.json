@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#slabsnstairs:gem_signs",
-    "#slabsnstairs:stone_signs",
-    "#slabsnstairs:wooden_signs"
+    "#slabsnstairs:gem_standing_signs",
+    "#slabsnstairs:stone_standing_signs",
+    "#slabsnstairs:wooden_standing_signs"
   ]
 }

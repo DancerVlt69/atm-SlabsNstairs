@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
+    "#minecraft:stone_stairs",
     "slabsnstairs:smooth_stone_stairs",
     "slabsnstairs:cracked_polished_blackstone_brick_stairs"
+
   ]
 }

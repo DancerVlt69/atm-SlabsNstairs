@@ -1,19 +1,21 @@
 {
   "replace": false,
   "values": [
+    "#minecraft:stone_pressure_plates",
+    "slabsnstairs:smooth_stone_pressure_plate",
     "slabsnstairs:cobblestone_pressure_plate",
     "slabsnstairs:mossy_cobblestone_pressure_plate",
-    "slabsnstairs:andesite_pressure_plate",
-    "slabsnstairs:diorite_pressure_plate",
-    "slabsnstairs:granite_pressure_plate",
-    "slabsnstairs:smooth_stone_pressure_plate",
     "slabsnstairs:sandstone_pressure_plate",
     "slabsnstairs:cut_sandstone_pressure_plate",
     "slabsnstairs:smooth_sandstone_pressure_plate",
     "slabsnstairs:red_sandstone_pressure_plate",
     "slabsnstairs:cut_red_sandstone_pressure_plate",
     "slabsnstairs:smooth_red_sandstone_pressure_plate",
+    "slabsnstairs:andesite_pressure_plate",
+    "slabsnstairs:diorite_pressure_plate",
+    "slabsnstairs:granite_pressure_plate",
     "slabsnstairs:end_stone_brick_pressure_plate",
+    "slabsnstairs:blackstone_pressure_plate",
     "slabsnstairs:cracked_polished_blackstone_brick_pressure_plate"
   ]
 }
