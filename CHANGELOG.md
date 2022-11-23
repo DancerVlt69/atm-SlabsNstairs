@@ -1,4 +1,26 @@
 # Slabs 'n Stairs version changelog:
+
+-------------------------
+ v0.1.3.137 @ 2022/11/20
+-------------------------
+* ***fixed:***
+  * a small issue in the Pressure Plate Tags
+* ***added:***
+  * Loot from Plants & Animals
+  * a lot of Quartz Buttons & Pressure Plates
+  * some Prismarine Buttons, Pressure Plates & Walls
+  * Cinnamon Sign to craft it with Croptopia Cinnamon-Wood / Planks
+* ***updated:***
+  * Localization (EN/DE)
+  * again a lot of Tags
+* ***other:***
+  * simplified & optimized ToolTip-Code
+  * optimized Block-Registering
+
+This Version of the Mod was successfully testet with [**Forge** ***36.0.39***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html)
+
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.16.5/CHANGELOG.md)***
+
 -------------------------
  v0.1.0.132 @ 2022/10/15
 -------------------------
@@ -14,8 +36,6 @@
   * the old temporarily Model of the Cinnamon Door, now two new different Variants of the Door are available
 
 This Version of the Mod was successfully testet with [**Forge** ***36.0.39***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html)
-
-The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.16.5/CHANGELOG.md)***
 
 -------------------------
  v0.0.2.128 @ 2022/09/01
