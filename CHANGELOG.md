@@ -1,11 +1,11 @@
 # Slabs 'n Stairs version changelog:
 -------------------------
- v0.1.4.139 @ 2022/11/23
+ v0.1.4.138 @ 2022/11/24
 -------------------------
 * ***fixed:***
   * a small Tag-Issue
   * a small Issue in the Tool-Tip of the Citrine Coin
-  * an Tooltip-Issue by hold the Ctrl-Key 
+  * a Tooltip-Issue by holding the Ctrl-Key 
   * wrong Mod Version
 
 This Version of the Mod was successfully tested with [**Forge** ***40.1.85***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html)
