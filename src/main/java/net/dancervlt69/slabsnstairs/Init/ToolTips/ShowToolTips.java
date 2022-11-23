@@ -35,7 +35,8 @@ public class ShowToolTips {
         }
     }
 
-    public static void showTooltips(List<Component> pTooltip, String tooltipKeyShift, String tooltipKeyCtrl, String tooltipKeyAlt) {
+    public static void showTooltips(List<Component> pTooltip, String tooltipKeyShift,
+                                    String tooltipKeyCtrl, String tooltipKeyAlt) {
 
         if (Screen.hasShiftDown()) {
             pTooltip.add(new TranslatableComponent(tooltipKeyShift));
@@ -49,7 +50,7 @@ public class ShowToolTips {
             pTooltip.add(new TranslatableComponent("tooltip.slabsnstairs.hold_ctrl"));
         }
 
-        if (Screen.hasControlDown()) {
+        if (Screen.hasAltDown()) {
             pTooltip.add(new TranslatableComponent(tooltipKeyAlt));
         } else {
             pTooltip.add(new TranslatableComponent("tooltip.slabsnstairs.hold_alt"));
