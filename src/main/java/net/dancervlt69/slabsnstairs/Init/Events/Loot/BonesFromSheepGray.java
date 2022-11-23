@@ -31,7 +31,7 @@ public class BonesFromSheepGray extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.5F) {
+        if(context.getRandom().nextFloat() > 0.625F) {
             generatedLoot.add(new ItemStack(item, (new Random().nextInt(2))+1));
         }
         return generatedLoot;
