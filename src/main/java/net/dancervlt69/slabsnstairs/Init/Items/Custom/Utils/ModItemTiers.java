@@ -1,4 +1,4 @@
-package net.dancervlt69.slabsnstairs.Init.Items.Custom;
+package net.dancervlt69.slabsnstairs.Init.Items.Custom.Utils;
 
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.minecraft.item.IItemTier;
@@ -8,7 +8,7 @@ import net.minecraft.util.LazyValue;
 
 import java.util.function.Supplier;
 
-public enum ModItemTier implements IItemTier {
+public enum ModItemTiers implements IItemTier {
 
     CITRINE (4, 2200, 2.0f, 5.0f, 36,
             () -> Ingredient.of(ModItems.CITRINE.get())),
@@ -23,8 +23,8 @@ public enum ModItemTier implements IItemTier {
     private final int enchantmentValue;
     private final LazyValue<Ingredient> repairIngredient;
 
-    ModItemTier(int level, int maxUses, float speed, float attacDamageBonus,
-                int enchantmentValue, Supplier<Ingredient> repairIngredient) {
+    ModItemTiers(int level, int maxUses, float speed, float attacDamageBonus,
+                 int enchantmentValue, Supplier<Ingredient> repairIngredient) {
         this.level = level;
         this.maxUses = maxUses;
         this.speed = speed;

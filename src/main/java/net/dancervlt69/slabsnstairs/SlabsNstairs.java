@@ -1,12 +1,15 @@
 
 package net.dancervlt69.slabsnstairs;
 
+import net.dancervlt69.slabsnstairs.Init.Blocks.Entities.ModBlockEntities;
 import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
+import net.dancervlt69.slabsnstairs.Init.Effects.ModEffects;
 import net.dancervlt69.slabsnstairs.Init.Enchantments.ModEnchantments;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
+import net.dancervlt69.slabsnstairs.Init.Potions.ModPotions;
 import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
-import net.dancervlt69.slabsnstairs.Init.World.ModClientSetup;
-import net.minecraft.block.Blocks;
+import net.dancervlt69.slabsnstairs.Init.Events.ModClientSetupEvents;
+import net.dancervlt69.slabsnstairs.Init.Events.ModCommonSetupEvents;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,7 +22,6 @@ import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.network.simple.SimpleChannel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 
 @Mod(SlabsNstairs.MODID)
 public class SlabsNstairs {
@@ -37,6 +39,7 @@ public class SlabsNstairs {
         // Registering Blocks, Items, Sounds, etc.
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModBlockEntities.register(eventBus);
         // ModFluids.register(eventBus);
         // ModSounds.register(eventBus);
 
@@ -44,10 +47,12 @@ public class SlabsNstairs {
         // ModPlacedFeatures.register(eventBus);
         ModEnchantments.register(eventBus);
 
+        ModEffects.register(eventBus);
+        ModPotions.register(eventBus);
 
         // Register the mod-setting methods for modLoading
-        eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
+        eventBus.addListener(this::commonSetup);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModClientSettings.SPEC,
                 "slabsnstairs-client.toml");
@@ -62,13 +67,21 @@ public class SlabsNstairs {
     }
 
     private void clientSetup(final FMLCommonSetupEvent event) {
-        ModClientSetup.modRenderTypes();
+        LOGGER.info("Client Setup started...");
+
+        ModClientSetupEvents.modRenderTypes();
+        ModClientSetupEvents.addModAtlases();
+
+        LOGGER.info("Client Setup finished.");
     }
 
-    private void setup(final FMLCommonSetupEvent event) {
-        // Preinit code
-        LOGGER.info("PreInit has started...");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        // Common Setup Code
+        LOGGER.info("Common Setup started...");
+
+        ModCommonSetupEvents.addModWoodTypes();
+
+        LOGGER.info("Common Setup finished.");
     }
 /*    public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
                                              BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
