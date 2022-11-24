@@ -1,11 +1,12 @@
 Slabs 'n Stairs changelog:
 -------------------------
- v0.1.4.138 @ 2022/11/23
+ v0.1.4.139 @ 2022/11/24
 -------------------------
 * ***fixed:***
   * a small Tag-Issue
+  * a Tooltip-Issue by holding the Ctrl-Key
 * ***updated:***
-  * Forge bump to Version 43.1.55
+  * Forge bump to Version 43.1.57
 
 This Version of the Mod was successfully tested with [**Forge** ***43.1.55***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
 
