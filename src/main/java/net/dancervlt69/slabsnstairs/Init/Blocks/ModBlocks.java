@@ -210,9 +210,9 @@ public class ModBlocks {
             () -> new ModGrassStairBlock(() -> ModBlocks.DIRT_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS)
                             .strength(1F).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1); */
-/*    public static final RegistryObject<Block> GRASS_BLOCK_SLAB = registerBlock("grass_block_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.WET_GRASS)
-                    .strength(1F).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1); */
+    public static final RegistryObject<Block> GRASS_BLOCK_SLAB = registerBlock("grass_block_slab",
+        () -> new ModGrassSlabBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS)
+                .strength(1F).requiresCorrectToolForDrops()), ModTabs.SNSMODTAB1);
 
         /** Dirt Cobbled */
     public static final RegistryObject<Block> DIRT_COBBLE = registerBlock("dirt_cobble",
@@ -446,6 +446,12 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_TILES)
                     .strength(2.0f, 6).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+
+    /** Walls */
+
+    public static final RegistryObject<Block> STONE_WALL = registerBlock("stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).sound(SoundType.STONE)
+                    .strength(2.0f, 6.0f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     /** Frozen - Blocks - Ice */
     public static final RegistryObject<Block> ICE_STAIRS = registerBlock("ice_stairs",
