@@ -9,7 +9,7 @@ Slabs 'n Stairs contains right now:
     - Blackstone
     - a lot of DeepSlate
 
-* Buttons of
+* Buttons & Pressure Plates of
     - Cobblestone
     - polished / Andesite, Diorite, Granite
 
