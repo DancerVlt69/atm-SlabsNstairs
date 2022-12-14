@@ -13,8 +13,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static net.dancervlt69.slabsnstairs.Init.Blocks.RegisteringModBlocks.registerBlock;
-import static net.dancervlt69.slabsnstairs.Init.Blocks.RegisteringModBlocks.registerBlockNoItem;
+import static net.dancervlt69.slabsnstairs.Init.Blocks.ModBlockRegistering.registerBlock;
+import static net.dancervlt69.slabsnstairs.Init.Blocks.ModBlockRegistering.registerBlockNoItem;
 import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ModBlocks {
