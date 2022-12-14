@@ -16,9 +16,12 @@ Slabs 'n Stairs contains right now:
 * new Soil-Variants
     - Quarter Dirt, Dirt Cobble, Quarter Dirt Cobble (sorry for this stupid names ;) )
 
-* a new Mineral - Citrine ( big thanks to for the idea and the tutorials)
-    - Raw Gem / Block, Raw / Deepslate / Ore (in parts work in progress)
-    -Citrine-Coin for special Tradings (more an idea than an running part)
+* a new Mineral - Citrine ( big thanks to ***[Kaupenjoe](https://www.youtube.com/@ModdingByKaupenjoe)*** for the idea and the tutorials)
+    - Raw Gem / Block, Raw / Deepslate / Ore
+    - Citrine-Coins for special Tradings (more an idea than a running part)
+
+* Support for the Mod ***Croptopia***
+    - you can craft Planks, Slabs, Stairs, Button, Pressure Plate, Fence, Fence Gates, two Door Variations, etc.
 
 * some Loot from Village-Chests, Animals, and Plants
 
