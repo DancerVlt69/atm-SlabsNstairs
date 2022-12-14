@@ -9,9 +9,6 @@ import net.dancervlt69.slabsnstairs.Init.Events.ModClientSetupEvents;
 import net.dancervlt69.slabsnstairs.Init.Events.ModCommonSetupEvents;
 import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
 import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
-import net.dancervlt69.slabsnstairs.Init.Settings.ModCommonSettings;
-import net.dancervlt69.slabsnstairs.Init.World.Features.ModConfiguredFeatures;
-import net.dancervlt69.slabsnstairs.Init.World.Features.ModPlacedFeatures;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -50,8 +47,8 @@ public class SlabsNstairs {
         ModItems.register(eventBus);
 
         ModLootModifiers.register((eventBus));
-        ModConfiguredFeatures.register(eventBus);
-        ModPlacedFeatures.register(eventBus);
+//        ModConfiguredFeatures.register(eventBus);
+//        ModPlacedFeatures.register(eventBus);
         ModBlockEntities.register(eventBus);
         ModEnchantments.register(eventBus);
 
@@ -60,7 +57,7 @@ public class SlabsNstairs {
         eventBus.addListener(this::onCommonSetup);
         // eventBus.addListener(this::onServerStarting);
 
-        modSettings(ModConfig.Type.COMMON, ModCommonSettings.SPEC, "slabsnstairs-common.toml");
+        modSettings(ModConfig.Type.COMMON, ModClientSettings.SPEC, "slabsnstairs-common.toml");
         modSettings(ModConfig.Type.CLIENT, ModClientSettings.SPEC, "slabsnstairs-client.toml");
         modSettings(ModConfig.Type.SERVER, ModClientSettings.SPEC, "slabsnstairs-server.toml");
 
