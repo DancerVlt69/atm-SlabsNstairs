@@ -15,7 +15,7 @@ public class ShowToolTips {
         if (Screen.hasShiftDown()) {
             pTooltip.add(Component.translatable(tooltipKeyShift));
         } else {
-            pTooltip.add(Component.translatable("tooltip.SlabsNstairs.hold_shift"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_shift"));
         }
     }
 
@@ -24,13 +24,13 @@ public class ShowToolTips {
         if (Screen.hasShiftDown()) {
             pTooltip.add(Component.translatable(tooltipKeyShift));
         } else {
-            pTooltip.add(Component.translatable("tooltip.SlabsNstairs.hold_shift"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_shift"));
         }
 
         if (Screen.hasControlDown()) {
             pTooltip.add(Component.translatable(tooltipKeyCtrl));
         } else {
-            pTooltip.add(Component.translatable("tooltip.SlabsNstairs.hold_ctrl"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_ctrl"));
         }
     }
 
@@ -39,19 +39,19 @@ public class ShowToolTips {
         if (Screen.hasShiftDown()) {
             pTooltip.add(Component.translatable(tooltipKeyShift));
         } else {
-            pTooltip.add(Component.translatable("tooltip.SlabsNstairs.hold_shift"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_shift"));
         }
 
         if (Screen.hasControlDown()) {
             pTooltip.add(Component.translatable(tooltipKeyCtrl));
         } else {
-            pTooltip.add(Component.translatable("tooltip.SlabsNstairs.hold_ctrl"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_ctrl"));
         }
 
         if (Screen.hasAltDown()) {
             pTooltip.add(Component.translatable(tooltipKeyAlt));
         } else {
-            pTooltip.add(Component.translatable("tooltip.SlabsNstairs.hold_alt"));
+            pTooltip.add(Component.translatable("tooltip.slabsnstairs.hold_alt"));
         }
     }
 
