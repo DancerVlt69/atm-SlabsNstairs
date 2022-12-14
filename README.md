@@ -4,7 +4,7 @@ Take care and make a copy of your SaveGame before use this Mod!
 
 Slabs 'n Stairs contains right now:
 
-* Slabs and Stairs of
+* Slabs and Stairs for
     - polished / Andesite, Diorite, Granite
     - Blackstone
     - a lot of DeepSlate
@@ -12,8 +12,6 @@ Slabs 'n Stairs contains right now:
 * Buttons of
     - Cobblestone
     - polished / Andesite, Diorite, Granite
-
-* Slabs, Stairs, Buttons (and mor) for the most of the Minerals/Stones/etc. will follow as soon as possible
 
 * new Soil-Variants
     - Quarter Dirt, Dirt Cobble, Quarter Dirt Cobble (sorry for this stupid names ;) )
