@@ -1,5 +1,5 @@
 **_Attention: Slabs 'n Stairs is a BETA._**
-The Mod could contain several bugs and/or issues!\n
+The Mod could contain several bugs and/or issues!
 Take care and make a copy of your SaveGame before use this Mod!
 
 Slabs 'n Stairs contains right now:
