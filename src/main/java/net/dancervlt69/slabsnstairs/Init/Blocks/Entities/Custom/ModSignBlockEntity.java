@@ -11,6 +11,7 @@ public class ModSignBlockEntity extends SignBlockEntity {
 
     public ModSignBlockEntity(BlockPos pPos, BlockState pBlockState) { super(pPos, pBlockState); }
 
+    @NotNull
     @Override
-    public @NotNull BlockEntityType<?> getType() { return ModBlockEntities.SIGN_BLOCK_ENTITIES.get(); }
+    public  BlockEntityType<?> getType() { return ModBlockEntities.SIGN_BLOCK_ENTITIES.get(); }
 }
