@@ -19,7 +19,7 @@ Slabs 'n Stairs contains right now:
 
 * a new Mineral - Citrine ( big thanks to for the idea and the tutorials)
     - Raw Gem / Block, Raw / Deepslate / Ore (in parts work in progress)
-    -Citrine-Coin for special Tradings (more an idea than an running part)
+    -Citrine-Coin for special Tradings (more an idea than a running part)
 
 If you have questions or ideas, or find bugs or issues feel free to use the comment section below
 or the issue-tracker on gitHub.
