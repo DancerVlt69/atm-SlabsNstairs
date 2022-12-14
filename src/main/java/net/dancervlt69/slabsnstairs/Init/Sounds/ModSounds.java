@@ -13,7 +13,7 @@ public class ModSounds {
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MODID);
 
 
-    public static void  register(IEventBus eventBus) {
+    public static void register(IEventBus eventBus) {
         SOUND_EVENTS.register(eventBus);
     }
 }
