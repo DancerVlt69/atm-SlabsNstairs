@@ -16,7 +16,8 @@ Slabs 'n Stairs contains right now:
 * new Soil-Variants
     - Quarter Dirt, Dirt Cobble, Quarter Dirt Cobble (sorry for this stupid names ;) )
 
-* a new Mineral - Citrine ( big thanks to ***[Kaupenjoe](https://www.youtube.com/@ModdingByKaupenjoe)*** for the idea and the tutorials)
+* a new Mineral - Citrine (big thanks to ***[Kaupenjoe](https://www.youtube.com/@ModdingByKaupenjoe)*** for the 
+  idea and the tutorials)
     - Raw Gem / Block, Raw / Deepslate / Ore
     - Citrine-Coins for special Tradings (more an idea than a running part)
 
@@ -26,4 +27,4 @@ Slabs 'n Stairs contains right now:
 * some Loot from Village-Chests, Animals, and Plants
 
 If you have questions or ideas, or find bugs or issues feel free to use the comment section below
-or the issue-tracker on gitHub.
+or the **_[issue-tracker on GitHub](https://github.com/DancerVlt69/SlabsNstairs/issues)_**.
