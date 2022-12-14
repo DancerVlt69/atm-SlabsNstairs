@@ -1,5 +1,5 @@
 {
-  "parent": "slabsnstairs:block/slab",
+  "parent": "minecraft:block/slab",
   "render_type": "translucent",
   "textures": {
     "bottom": "minecraft:block/ice",
