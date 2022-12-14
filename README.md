@@ -3,8 +3,6 @@ The Mod could contain several bugs and/or issues!
 Take care and make a copy of your SaveGame before use this Mod!
 
 
-The latest Version of SnS is tested with Forge 40.1.59
-
 Slabs 'n Stairs contains right now:
 
 * Slabs (and Stairs - disabled due to an unknown bug) of
