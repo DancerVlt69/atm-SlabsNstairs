@@ -1,16 +1,13 @@
 Attention: Slabs 'n Stairs is a BETA.
-
 The Mod could contain several bugs and/or issues!
-
 Take care and make a copy of your SaveGame before use this Mod!
-
-
-The latest Version of this Mod of ***Slabs 'n Stairs'*** is tested with Forge 41.0.111
 
 Slabs 'n Stairs contains right now:
 
-* Slabs (and Stairs - disabled due to an unknown bug) of
+* Slabs and Stairs of
     - polished / Andesite, Diorite, Granite
+    - Blackstone
+    - a lot of DeepSlate
 
 * Buttons of
     - Cobblestone
