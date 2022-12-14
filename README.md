@@ -1,4 +1,4 @@
-Attention: Slabs 'n Stairs is in a very early ALPHA.
+Attention: Slabs 'n Stairs is in a BETA.
 The Mod could contain several bugs and/or issues!
 Take care and make a copy of your SaveGame before use this Mod!
 
