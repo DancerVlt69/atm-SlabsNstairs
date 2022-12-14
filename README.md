@@ -20,5 +20,7 @@ Slabs 'n Stairs contains right now:
     - Raw Gem / Block, Raw / Deepslate / Ore (in parts work in progress)
     -Citrine-Coin for special Tradings (more an idea than an running part)
 
+* some Loot from Village-Chests, Animals, and Plants
+
 If you have questions or ideas, or find bugs or issues feel free to use the comment section below
 or the issue-tracker on gitHub.
