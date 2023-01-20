@@ -16,6 +16,27 @@ This Version of the Mod was successfully tested with [**Forge** ***44.0.1***](ht
 
 The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
 
+** The  new Versioning
+-----------------------
+* Versions for Minecraft JE Versions
+  - ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.2***~~ | ***1.16.x*** | ***1.18.2*** | ***1.19-1.19.2*** | ***1.
+    19.3*** 
+
+* Short description of the Version Numbers:
+  - 1st digit = **Major-Version** of the Mod - e.g. ***v0.*** or ***v1.***
+  - 2nd digit = will be a 'Placeholder'
+    - **v0.** ***01.*** *xxx* ≙  MC Version 1.8.x (planed)
+    - **v0.** ***02.*** *xxx* ≙  MC Version 1.12.x (work in progress)
+    - **v0.** ***03.*** *xxx* ≙  MC Version 1.15.x
+    - **v0.** ***04.*** *xxx* ≙  MC Version 1.16.x
+    - **v0.** ***05.*** *xxx* ≙  MC Version 1.18x
+    - **v0.** ***06.*** *xxx* ≙  MC Version 1.19-1.19.2
+    - **v0.** ***07.*** *xxx* ≙  MC Version 1.19.3
+
+  - 3rd digit = **Minor-Version** of the Mod
+  - 4th digit = **BugFix-Version** of the Mod
+  - 5th digit = **Build Number** of the mod of their respective MC-Version
+
 -------------------------
  v0.1.4.139 @ 2022/11/24
 -------------------------
