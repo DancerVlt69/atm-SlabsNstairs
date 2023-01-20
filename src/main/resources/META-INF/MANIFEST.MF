@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Specification-Title: SnS - Slabs 'n Stairs
+Specification-Title: All the Missing - Slabs 'n Stairs
 Specification-Vendor: DancerVLT69
-Specification-Version: 0.1.4.139
-Implementation-Title: SnS - Slabs 'n Stairs
-Implementation-Version: 0.1.4.139
+Specification-Version: 0.6.2.0.b1
+Implementation-Title: All the Missing - Slabs 'n Stairs
+Implementation-Version: 0.6.2.0.b1
 Implementation-Vendor: DancerVLT69
 Implementation-Timestamp: 2022-06-26T03:42:00+0100
 Automatic-Module-Name: slabsnstairs
