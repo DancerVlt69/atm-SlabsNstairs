@@ -1,4 +1,5 @@
-# **_Attention: Slabs 'n Stairs is a BETA for Minecraft 1.19.2._**
+# ***Attention:***
+# **_This Version of ATM - Slabs 'n Stairs is a BETA_**
 
 ## **_A lot of stuff will NOT work or has a lot if issues!_**
 ___
