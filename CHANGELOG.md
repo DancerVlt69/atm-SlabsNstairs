@@ -1,17 +1,43 @@
-Slabs 'n Stairs changelog:
-
--------------------------
- v0.1.5.142 @ 2022/11/30
--------------------------
-* Ice-Slab has "used" the wrong model
+# ***All the Missing - Slabs 'n Stairs changelog:***
+__________________________
+ v0.6.0.0.b1 @ 2023/01/??
+--------------------------
+* ***fixed:***
+  * Ice-Slab has "used" the wrong model
 * ***added:***
+  * new Mod-Name & new Versioning (details below)
   * (Clean) Stone Wall
-  * 
+  *
 * ***updated:***
-  * Stone Wall added to Tags 
-  * Forge bump to Version 43.2.3 
+  * Stone Wall added to Tags
+  * Forge bump to Version 43.2.3
   * Parchment to Version 22.11.27
   * some (temp.) Dependencies
+
+This Version of the Mod was successfully tested with [**Forge** ***43.1.55***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
+
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
+________________________
+ **The  new Versioning**
+------------------------
+* Versions for Minecraft JE Versions
+  - ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.x***~~ | ***1.16.x*** | ***1.18.x*** | ***1.19-1.19.2*** | ***1.
+    19.3***
+
+* Short description of the Version Numbers:
+  - 1st digit = **Major-Version** of the Mod - e.g. ***v0.*** or ***v1.***
+  - 2nd digit = will be a 'Placeholder'
+    - **v0.** ***01.*** *xxx* ≙  MC Version 1.8.x (planed)
+    - **v0.** ***02.*** *xxx* ≙  MC Version 1.12.x (planed)
+    - **v0.** ***03.*** *xxx* ≙  MC Version 1.15.x (planed)
+    - **v0.** ***04.*** *xxx* ≙  MC Version 1.16.x
+    - **v0.** ***05.*** *xxx* ≙  MC Version 1.18x
+    - **v0.** ***06.*** *xxx* ≙  MC Version 1.19-1.19.2
+    - **v0.** ***07.*** *xxx* ≙  MC Version 1.19.3 (work in progress)
+
+  - 3rd digit = **Minor-Version** of the Mod
+  - 4th digit = **BugFix-Version** of the Mod
+  - 5th digit = **Build Number** of the mod of their respective MC-Version
 
 -------------------------
  v0.1.4.139 @ 2022/11/24
@@ -23,8 +49,6 @@ Slabs 'n Stairs changelog:
   * Forge bump to Version 43.1.57
 
 This Version of the Mod was successfully tested with [**Forge** ***43.1.55***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
-
-The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
 
 -------------------------
  v0.1.3.135 @ 2022/11/19
