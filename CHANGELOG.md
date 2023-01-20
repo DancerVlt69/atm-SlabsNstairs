@@ -26,12 +26,12 @@ The complete changelog history you can find: ***[on GitHub](https://github.com/D
   - 1st digit = **Major-Version** of the Mod - e.g. ***v0.*** or ***v1.***
   - 2nd digit = will be a 'Placeholder'
     - **v0.** ***01.*** *xxx* ≙  MC Version 1.8.x (planed)
-    - **v0.** ***02.*** *xxx* ≙  MC Version 1.12.x (work in progress)
-    - **v0.** ***03.*** *xxx* ≙  MC Version 1.15.x
+    - **v0.** ***02.*** *xxx* ≙  MC Version 1.12.x (planed)
+    - **v0.** ***03.*** *xxx* ≙  MC Version 1.15.x (planed)
     - **v0.** ***04.*** *xxx* ≙  MC Version 1.16.x
     - **v0.** ***05.*** *xxx* ≙  MC Version 1.18x
     - **v0.** ***06.*** *xxx* ≙  MC Version 1.19-1.19.2
-    - **v0.** ***07.*** *xxx* ≙  MC Version 1.19.3
+    - **v0.** ***07.*** *xxx* ≙  MC Version 1.19.3 (work in progress)
 
   - 3rd digit = **Minor-Version** of the Mod
   - 4th digit = **BugFix-Version** of the Mod
