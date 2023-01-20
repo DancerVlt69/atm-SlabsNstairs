@@ -14,7 +14,7 @@ __________________________
 This Version of the Mod was successfully tested with [**Forge** ***44.0.1***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.3.html)
 
 The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
-
+___
 ** The  new Versioning
 -----------------------
 * Versions for Minecraft JE Versions
