@@ -1,6 +1,8 @@
-**_Attention: Slabs 'n Stairs is a BETA._**
-The Mod could contain several bugs and/or issues!
+# **_Attention: Slabs 'n Stairs for MC 1.19.3 is a ALPHA._**
+
+## The Mod could contain several bugs and/or issues!
 Take care and make a copy of your SaveGame before use this Mod!
+___
 
 Slabs 'n Stairs contains right now:
 
@@ -25,6 +27,8 @@ Slabs 'n Stairs contains right now:
   - you can craft Planks, Slabs, Stairs, Button, Pressure Plate, Fence, Fence Gates, two Door Variations, etc.
 
 * some Loot from Village-Chests, Animals, and Plants
+
+* and much more
 
 If you have questions or ideas, or find bugs or issues feel free to use the comment section below
 or the **_[issue-tracker on GitHub](https://github.com/DancerVlt69/SlabsNstairs/issues)_**.
