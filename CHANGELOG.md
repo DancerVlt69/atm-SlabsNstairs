@@ -19,7 +19,7 @@ The complete changelog history you can find: ***[on GitHub](https://github.com/D
 ** The  new Versioning
 -----------------------
 * Versions for Minecraft JE Versions
-  - ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.2***~~ | ***1.16.x*** | ***1.18.2*** | ***1.19-1.19.2*** | ***1.
+  - ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.2***~~ | ***1.16.x*** | ***1.18.x*** | ***1.19-1.19.2*** | ***1.
     19.3*** 
 
 * Short description of the Version Numbers:
