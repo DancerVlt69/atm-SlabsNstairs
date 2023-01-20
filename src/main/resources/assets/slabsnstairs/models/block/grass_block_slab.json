@@ -1,0 +1,9 @@
+{
+  "parent": "slabsnstairs:block/slab",
+  "textures": {
+    "bottom": "minecraft:block/dirt",
+    "top": "minecraft:block/grass_block_top",
+    "side": "slabsnstairs:block/grass_block_slab_side",
+    "overlay": "slabsnstairs:block/grass_block_slab_side_overlay"
+  }
+}

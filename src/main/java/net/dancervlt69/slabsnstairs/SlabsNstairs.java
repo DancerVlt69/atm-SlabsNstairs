@@ -1,17 +1,18 @@
 
 package net.dancervlt69.slabsnstairs;
 
-import net.dancervlt69.slabsnstairs.Init.Blocks.Entities.ModBlockEntities;
-import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
-import net.dancervlt69.slabsnstairs.Init.Enchantments.ModEnchantments;
-import net.dancervlt69.slabsnstairs.Init.Events.Loot.ModLootModifiers;
-import net.dancervlt69.slabsnstairs.Init.Events.ModClientSetupEvents;
-import net.dancervlt69.slabsnstairs.Init.Events.ModCommonSetupEvents;
-import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
-import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
-import net.dancervlt69.slabsnstairs.Init.Settings.ModCommonSettings;
-import net.dancervlt69.slabsnstairs.Init.World.Features.ModConfiguredFeatures;
-import net.dancervlt69.slabsnstairs.Init.World.Features.ModPlacedFeatures;
+import net.dancervlt69.slabsnstairs.init.blocks.entities.ModBlockEntities;
+import net.dancervlt69.slabsnstairs.init.blocks.ModBlocks;
+import net.dancervlt69.slabsnstairs.init.utils.enchantments.ModEnchantments;
+import net.dancervlt69.slabsnstairs.events.loot.ModLootModifiers;
+import net.dancervlt69.slabsnstairs.events.ModClientSetupEvents;
+import net.dancervlt69.slabsnstairs.events.ModCommonSetupEvents;
+import net.dancervlt69.slabsnstairs.init.items.custom.utils.entities.ModEntityTypes;
+import net.dancervlt69.slabsnstairs.init.items.ModItems;
+import net.dancervlt69.slabsnstairs.init.utils.settings.ModClientConfig;
+import net.dancervlt69.slabsnstairs.init.utils.settings.ModCommonConfig;
+import net.dancervlt69.slabsnstairs.init.world.features.ModConfiguredFeatures;
+import net.dancervlt69.slabsnstairs.init.world.features.ModPlacedFeatures;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -52,6 +53,7 @@ public class SlabsNstairs {
         ModLootModifiers.register((eventBus));
         ModConfiguredFeatures.register(eventBus);
         ModPlacedFeatures.register(eventBus);
+        ModEntityTypes.register(eventBus);
         ModBlockEntities.register(eventBus);
         ModEnchantments.register(eventBus);
 
@@ -60,9 +62,8 @@ public class SlabsNstairs {
         eventBus.addListener(this::onCommonSetup);
         // eventBus.addListener(this::onServerStarting);
 
-        modSettings(ModConfig.Type.COMMON, ModCommonSettings.SPEC, "slabsnstairs-common.toml");
-        modSettings(ModConfig.Type.CLIENT, ModClientSettings.SPEC, "slabsnstairs-client.toml");
-        modSettings(ModConfig.Type.SERVER, ModClientSettings.SPEC, "slabsnstairs-server.toml");
+        modSettings(ModConfig.Type.CLIENT, ModClientConfig.SPEC, "slabsnstairs-client.toml");
+        modSettings(ModConfig.Type.COMMON, ModCommonConfig.SPEC, "slabsnstairs-common.toml");
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -100,8 +101,5 @@ public class SlabsNstairs {
     private static void modSettings(ModConfig.Type configType, ForgeConfigSpec spec, String fileName) {
         ModLoadingContext.get().registerConfig(configType, spec, fileName);
     }
-
-    /* @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class CommonModEvents { */
 
 }

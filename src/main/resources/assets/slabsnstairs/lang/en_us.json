@@ -158,9 +158,20 @@
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
 
-  "item.slabsnstairs.citrine_sword":  "Citrine-Sword",
+  "item.slabsnstairs.citrine_pickaxe":  "Citrine Pickaxe",
+  "item.slabsnstairs.citrine_sword":    "Citrine Sword",
+  "item.slabsnstairs.stone_arrow":      "Stone Arrow",
+  "item.slabsnstairs.iron_arrow":       "Iron Arrow",
 
-  "itemGroup.snsmodtab1":  "Slabs 'n Stairs",
+  "item.minecraft.tipped_arrow.effect.small_ice_age": "Arrow of the Small Ice Age",
+  "item.minecraft.tipped_arrow.effect.ice_age":       "Arrow of the Ice Age",
+  "item.minecraft.tipped_arrow.effect.big_ice_age":   "Arrow of the Big Ice Age",
+  "item.minecraft.tipped_arrow.effect.strong_master": "Arrow of the Strong Master",
+
+  "entity.demomod.stone_arrow":   "Stone Arrow",
+  "entity.demomod.iron_arrow":    "Iron Arrow",
+
+  "itemGroup.snsmodtab1": "Slabs 'n Stairs",
   "itemGroup.snsmodtab2": "SnS Weapons, Armor & Co.",
   "itemGroup.snsmodtab3": "SnS Miscs",
 
@@ -184,6 +195,12 @@
   "enchantment.slabsnstairs.strong_master":     "Strong Master",
 
   "advancements.adventure.bake_all_breads.title":       "Master of Bakery",
-  "advancements.adventure.bake_all_breads.description": "You should start your own Bakery-Business"
+  "advancements.adventure.bake_all_breads.description": "You should start your own Bakery-Business",
+
+  "slabsnstairs.config.common.citrine_ore": "De-/Activate the Citrine-Ore Generation",
+  "slabsnstairs.config.common.animal_loot": "De-/Activate Loot from Animals",
+  "slabsnstairs.config.common.plants_loot": "De-/Activate Loot from Plants",
+
+  "slabsnstairs.config.client.gs_light_level": "Light Level of the Growth Stop"
 
 }

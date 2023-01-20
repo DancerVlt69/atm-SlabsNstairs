@@ -1,4 +1,8 @@
-**_Attention: Slabs 'n Stairs is a BETA._**
+# **_Attention: Slabs 'n Stairs is a ALPHA for Minecraft 1.19.3._**
+
+## **_A lot of stuff will NOT work or has a lot if issues!_**
+___
+
 The Mod could contain several bugs and/or issues!
 Take care and make a copy of your SaveGame before use this Mod!
 

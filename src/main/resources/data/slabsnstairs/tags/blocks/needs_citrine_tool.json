@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:obsidian",
+    "slabsnstairs:citrine_block",
+    "slabsnstairs:citrine_stairs",
+    "slabsnstairs:citrine_slab"
+  ]
+}

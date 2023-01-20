@@ -1,4 +1,18 @@
 Slabs 'n Stairs changelog:
+
+-------------------------
+ v0.1.5.142 @ 2022/11/30
+-------------------------
+* Ice-Slab has "used" the wrong model
+* ***added:***
+  * (Clean) Stone Wall
+  * 
+* ***updated:***
+  * Stone Wall added to Tags 
+  * Forge bump to Version 43.2.3 
+  * Parchment to Version 22.11.27
+  * some (temp.) Dependencies
+
 -------------------------
  v0.1.4.139 @ 2022/11/24
 -------------------------

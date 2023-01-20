@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#slabsnstairs:dirt"
+    "#slabsnstairs:dirt",
+    "slabsnstairs:grass_block_slab"
   ]
 }

@@ -158,9 +158,20 @@
   "item.slabsnstairs.dowsing_rod.located":      "  bei ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "Nichts Wertvolles gefunden.",
 
+  "item.slabsnstairs.citrine_pickaxe":  "Zitrin-Spitzhacke",
   "item.slabsnstairs.citrine_sword":  "Zitrin-Schwert",
+  "item.slabsnstairs.stone_arrow":   "Steinpfeil",
+  "item.slabsnstairs.iron_arrow":    "Eisenpfeil",
 
-  "itemGroup.snsmodtab1":  "Slabs 'n Stairs",
+  "item.minecraft.tipped_arrow.effect.small_ice_age": "Pfeil der Kleinen Eiszeit",
+  "item.minecraft.tipped_arrow.effect.ice_age":       "Pfeil der Eiszeit",
+  "item.minecraft.tipped_arrow.effect.big_ice_age":   "Pfeil der Großen Eiszeit",
+  "item.minecraft.tipped_arrow.effect.strong_master": "Pfeil der Kraftprotzes",
+
+  "entity.demomod.stone_arrow":   "Steinpfeil",
+  "entity.demomod.iron_arrow":    "Eisenpfeil",
+
+  "itemGroup.snsmodtab1": "Slabs 'n Stairs",
   "itemGroup.snsmodtab2": "SnS Waffen, Rüstung & mehr",
   "itemGroup.snsmodtab3": "SnS Sonstiges",
 
@@ -184,6 +195,11 @@
   "enchantment.slabsnstairs.strong_master":     "Kraftprotz",
 
   "advancements.adventure.bake_all_breads.title":       "Meister-Bäcker",
-  "advancements.adventure.bake_all_breads.description": "Willst du nicht lieber eine Bäckerei eröffnen?"
+  "advancements.adventure.bake_all_breads.description": "Willst du nicht lieber eine Bäckerei eröffnen?",
 
+  "slabsnstairs.config.common.citrine_ore": "Zitrin-Erz-Generierung de-/aktivieren",
+  "slabsnstairs.config.common.animal_loot": "Extra Loot von Tieren de-/aktivieren",
+  "slabsnstairs.config.common.plants_loot": "Extra Loot von Pflanzen de-/aktivieren",
+
+  "slabsnstairs.config.client.gs_light_level": "Leuchtstärke d. Wachstumsstopper"
 }

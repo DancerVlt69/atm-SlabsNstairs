@@ -16,18 +16,17 @@ plugins {
 
 // apply plugin: 'eclipse'
 // apply plugin: 'maven-publish'
+apply from: '/.env/mcAccount.gradle'
+apply from: '/.env/updVerNum.gradle'
 
-def buildPropFile = file('.env/dev.env')
-Properties buildProps = new Properties()
-buildProps.load(buildPropFile.newDataInputStream())
-def buildNum = buildProps.getProperty("BUILDNUMBER") as String
-println ("Mod-Build-Number is ${buildNum}.")
-
-version = "${mcVersion}-${modVersion}.${buildNum}"
+modVersion = System.getProperty("modVer")
+version = "${mcVersion}-${modVersion}" // .${buildNum}"
 group = "net.${modOwner}.${modId}"
-archivesBaseName = "${modFileName}"
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java {
+    archivesBaseName = "${modFileName}"
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
 
 repositories {
     maven {
@@ -61,14 +60,17 @@ repositories {
 minecraft {
     // mappings channel: 'official', version: "${mcMappingVersion}" //'snapshot'
 
-    if (parchmentVersion == parchmentMCVersion) {
-        mappings channel: 'parchment', version: "${parchmentDate}-${parchmentMCVersion}"
+    if (parchmentVersion == mcMappingVersion) {
+        mappings channel: 'parchment', version: "${parchmentDate}-${parchmentVersion}"
     } else {
-        mappings channel: 'parchment', version: "${parchmentVersion}-${parchmentDate}-${parchmentMCVersion}"
+        mappings channel: 'parchment', version: "${mcMappingVersion}-${parchmentDate}-${parchmentVersion}"
     }
 
     runs {
         client {
+            args '--uuid', System.getProperty("uuID")
+            args '--username', System.getProperty("userName")
+
             workingDirectory project.file('run')
 
             property 'forge.logging.markers', 'REGISTRIES'
@@ -156,7 +158,7 @@ dependencies {
     //runtimeOnly fg.deobf("curse.maven:cropt-${croptVersionCF}")
 
     // Simple Voice Chat
-    // runtimeOnly fg.deobf("curse.maven:voicechat-${voiceCVersionCF}")
+    runtimeOnly fg.deobf("curse.maven:voicechat-${voiceChatVersionCF}")
 
     // Xaero's World- and Mini Maps
     runtimeOnly fg.deobf("curse.maven:xWmap-${xWmapVersionCF}")
