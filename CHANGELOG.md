@@ -1,4 +1,4 @@
-# ***All the Missing Slabs 'n Stairs Changelog:***
+# ***All the Missing - Slabs 'n Stairs Changelog:***
 __________________________
  v0.7.0.0.b1 @ 2023/01/??
 --------------------------
@@ -14,9 +14,9 @@ __________________________
 This Version of the Mod was successfully tested with [**Forge** ***44.0.1***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.3.html)
 
 The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.3/CHANGELOG.md)***
-________________________
- ** The  new Versioning
-------------------------
+_________________________
+ **The  new Versioning**
+-------------------------
 * Versions for Minecraft JE Versions
   - ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.x***~~ | ***1.16.x*** | ***1.18.x*** | ***1.19-1.19.2*** | ***1.
     19.3*** 
