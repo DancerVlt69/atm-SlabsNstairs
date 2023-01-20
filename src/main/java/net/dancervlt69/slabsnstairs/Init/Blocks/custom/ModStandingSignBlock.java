@@ -1,6 +1,6 @@
-package net.dancervlt69.slabsnstairs.Init.Blocks.Custom;
+package net.dancervlt69.slabsnstairs.init.blocks.custom;
 
-import net.dancervlt69.slabsnstairs.Init.Blocks.Entities.Custom.ModSignBlockEntity;
+import net.dancervlt69.slabsnstairs.init.blocks.entities.custom.ModSignBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.StandingSignBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;

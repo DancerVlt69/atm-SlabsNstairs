@@ -16,14 +16,11 @@ plugins {
 
 // apply plugin: 'eclipse'
 // apply plugin: 'maven-publish'
+// apply from: '/.env/.gradle'
+apply from: '/.env/updVerNum.gradle'
+modVersion = System.getProperty("modVer")
 
-def buildPropFile = file('.env/dev.env')
-Properties buildProps = new Properties()
-buildProps.load(buildPropFile.newDataInputStream())
-def buildNum = buildProps.getProperty("BUILDNUMBER") as String
-println ("Mod-Build-Number is ${buildNum}.")
-
-version = "${mcVersion}-${modVersion}.${buildNum}"
+version = "${mcVersion}-${modVersion}"
 group = "net.${modOwner}.${modId}"
 archivesBaseName = "${modFileName}"
 
@@ -69,6 +66,9 @@ minecraft {
 
     runs {
         client {
+            // args: '--uuid', System.getProperty("uuID")
+            // args: '--user', System.getProperty("userName")
+
             workingDirectory project.file('run')
 
             property 'forge.logging.markers', 'REGISTRIES'
@@ -131,7 +131,7 @@ dependencies {
     // JEI at runTime
     // runtimeOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}-forge:${jeiVersion}")
     // implementation fg.deobf("curse.maven:jei-238222:3838014")
-    runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
+    // runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
 
     // Catalogue
     runtimeOnly fg.deobf("curse.maven:catal-${catalVersionCF}")
@@ -142,21 +142,28 @@ dependencies {
     // Jade (Hwyla/Waila Fork)
     runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
 
+    // Inventory Hud
+    runtimeOnly fg.deobf("curse.maven:invhud-${invHudVersionCF}")
+
     // JMSR
     runtimeOnly fg.deobf("curse.maven:jmsr-${jmsrVersionCF}")
 
     // Grass Slabs, Carpets & Stairs
-    runtimeOnly fg.deobf("curse.maven:gscs-${gscsVersionCF}")
+    // runtimeOnly fg.deobf("curse.maven:gscs-${gscsVersionCF}")
 
-    // Cooking 4 Blockheads
+    // Cooking 4 Blockheads & Balm
     // runtimeOnly fg.deobf("curse.maven:c4b-${c4blockhVersionCF}")
     // runtimeOnly fg.deobf("curse.maven:balm-${balmVersionCF}")
+
+    // Tips & BookShelf
+    // runtimeOnly fg.deobf("curse.maven:tips-${tipsVersionCF}")
+    // runtimeOnly fg.deobf("curse.maven:bookshelf-${bshelfVersionCF}")
 
     // Croptopia
     //runtimeOnly fg.deobf("curse.maven:cropt-${croptVersionCF}")
 
     // Simple Voice Chat
-    // runtimeOnly fg.deobf("curse.maven:voicechat-${voiceCVersionCF}")
+    runtimeOnly fg.deobf("curse.maven:voicechat-${voiceCVersionCF}")
 
     // Xaero's World- and Mini Maps
     runtimeOnly fg.deobf("curse.maven:xWmap-${xWmapVersionCF}")
@@ -172,30 +179,12 @@ jar {
         attributes([
                 "Specification-Title"     : project.modName,
                 "Specification-Vendor"    : project.modOwner,
-                "Specification-Version"   : project.modVersion,
+                "Specification-Version"   : System.getProperty("modVer"),
                 "Implementation-Title"    : project.modName,
-                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Version"  : System.getProperty("modVer"),
                 "Implementation-Vendor"   : project.modOwner,
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
-    }
-}
-
-task incrementBuildNumber {
-    // def buildPropFile = file('.env/dev.env')
-    def gTask = System.getenv("TASK")
-    if (gTask == "createJAR") {
-        if (buildPropFile.canRead()) {
-            // Properties buildProps = new Properties()
-            buildProps.load(buildPropFile.newDataInputStream())
-            Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger + 3)
-            buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
-            buildProps.store(buildPropFile.newWriter(), null)
-            buildProps.load(buildPropFile.newDataInputStream())
-            println("newBuildNumber is set to ${newBuildNumber}.\n")
-        } else {
-            throw new FileNotFoundException("Can not read the property file!")
-        }
     }
 }
 

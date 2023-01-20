@@ -1,1 +1,11 @@
-{}
+{
+  "shake_the_bus": {
+    "sounds": [
+      {
+        "name": "slabsnstairs:shake_the_bus",
+        "stream": true
+      }
+    ]
+  }
+
+}

@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[41,)"
+loaderVersion="[44,)"
 license="GNU 3.0"
 issueTrackerURL="https://github.com/DancerVlt69/SlabsNstairs/issues"
 
@@ -18,14 +18,14 @@ SnS - Slabs 'n Stairs - will add a lot of missing Slabs, Stairs, and more to you
 [[dependencies.slabsnstairs]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,)"
+    versionRange="[1.19.3,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.slabsnstairs]]
     modId="forge"
     mandatory=true
-    versionRange="[41.,)"
+    versionRange="[44.,)"
     ordering="NONE"
     side="BOTH"
 

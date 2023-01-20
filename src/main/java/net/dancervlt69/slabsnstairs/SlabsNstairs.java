@@ -1,14 +1,17 @@
 
 package net.dancervlt69.slabsnstairs;
 
-import net.dancervlt69.slabsnstairs.Init.Blocks.Entities.ModBlockEntities;
-import net.dancervlt69.slabsnstairs.Init.Blocks.ModBlocks;
-import net.dancervlt69.slabsnstairs.Init.Enchantments.ModEnchantments;
-import net.dancervlt69.slabsnstairs.Init.Events.Loot.ModLootModifiers;
-import net.dancervlt69.slabsnstairs.Init.Events.ModClientSetupEvents;
-import net.dancervlt69.slabsnstairs.Init.Events.ModCommonSetupEvents;
-import net.dancervlt69.slabsnstairs.Init.Items.ModItems;
-import net.dancervlt69.slabsnstairs.Init.Settings.ModClientSettings;
+import net.dancervlt69.slabsnstairs.init.blocks.entities.ModBlockEntityTypes;
+import net.dancervlt69.slabsnstairs.init.blocks.ModBlocks;
+import net.dancervlt69.slabsnstairs.init.enchantments.ModEnchantments;
+import net.dancervlt69.slabsnstairs.init.events.loot.ModLootModifiers;
+import net.dancervlt69.slabsnstairs.init.events.ModClientSetupEvents;
+import net.dancervlt69.slabsnstairs.init.events.ModCommonSetupEvents;
+import net.dancervlt69.slabsnstairs.init.items.ModItems;
+import net.dancervlt69.slabsnstairs.init.particles.ModParticleTypes;
+import net.dancervlt69.slabsnstairs.init.settings.ModClientConfig;
+import net.dancervlt69.slabsnstairs.init.sounds.ModSounds;
+import net.dancervlt69.slabsnstairs.init.world.features.ModConfiguredFeatures;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -47,19 +50,20 @@ public class SlabsNstairs {
         ModItems.register(eventBus);
 
         ModLootModifiers.register((eventBus));
-//        ModConfiguredFeatures.register(eventBus);
-//        ModPlacedFeatures.register(eventBus);
-        ModBlockEntities.register(eventBus);
+        ModConfiguredFeatures.register(eventBus);
+        // ModPlacedFeatures.register(eventBus);
+        ModBlockEntityTypes.register(eventBus);
+        ModParticleTypes.register(eventBus);
         ModEnchantments.register(eventBus);
+        ModSounds.register(eventBus);
 
         // Register the setup method for modLoading
         eventBus.addListener(this::onClientSetup);
         eventBus.addListener(this::onCommonSetup);
         // eventBus.addListener(this::onServerStarting);
 
-        modSettings(ModConfig.Type.COMMON, ModClientSettings.SPEC, "slabsnstairs-common.toml");
-        modSettings(ModConfig.Type.CLIENT, ModClientSettings.SPEC, "slabsnstairs-client.toml");
-        modSettings(ModConfig.Type.SERVER, ModClientSettings.SPEC, "slabsnstairs-server.toml");
+        modSettings(ModConfig.Type.COMMON, ModClientConfig.SPEC, "slabsnstairs-common.toml");
+        modSettings(ModConfig.Type.CLIENT, ModClientConfig.SPEC, "slabsnstairs-client.toml");
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -82,6 +86,7 @@ public class SlabsNstairs {
         // Common Setup Code
         LOGGER.info("Common Setup started...");
 
+        // ModCommonSetupEvents.registerParticleTypes(event);
         ModCommonSetupEvents.addModWoodTypes(event);
 
         LOGGER.info("Common Setup finished.");

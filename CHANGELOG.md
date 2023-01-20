@@ -1,4 +1,21 @@
 Slabs 'n Stairs changelog:
+
+--------------------------
+ v0.7.0.0.b1 @ 2023/01/15
+--------------------------
+* ***added:***
+  * new Mod-Name & new Versioning (details below)
+  * (Clean) Stone Wall
+  * 
+* ***updated:***
+  * Forge bump to Version 44.1.5
+  * Creative-Tab moved to the new Code
+  * Stone Wall added to Tags 
+
+This Version of the Mod was successfully tested with [**Forge** ***44.0.1***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.3.html)
+
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
+
 -------------------------
  v0.1.4.139 @ 2022/11/24
 -------------------------
@@ -9,8 +26,6 @@ Slabs 'n Stairs changelog:
   * Forge bump to Version 43.1.57
 
 This Version of the Mod was successfully tested with [**Forge** ***43.1.55***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
-
-The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
 
 -------------------------
  v0.1.3.135 @ 2022/11/19

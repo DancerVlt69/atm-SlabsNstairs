@@ -140,6 +140,7 @@
   "block.slabsnstairs.cinnamon_door_02":        "Zimtholztür Var. 02",
   "block.slabsnstairs.cinnamon_trapdoor":       "Zimtholzfalltür",
   "block.slabsnstairs.cinnamon_sign":           "Zimtholzschild",
+  "block.slabsnstairs.cinnamon_hanging_sign":   "Zimtholzhängeschild",
   "block.slabsnstairs.cinnamon_palisade":       "Zimtholz-Palisade",
   "block.slabsnstairs.cinnamon_leaves":         "Zimtbaumlaub",
 
@@ -148,12 +149,13 @@
   "block.slabsnstairs.tripod":            "Stativ",
   "block.slabsnstairs.telescope":         "Teleskop",
 
-  "item.slabsnstairs.light_brown_dye":  "Hellbrauner Farbstoff",
-  "item.slabsnstairs.citrine":          "Zitrin-Kristall",
-  "item.slabsnstairs.raw_citrine":      "Unbehandelter Zitrin",
-  "item.slabsnstairs.citrine_coin":     "Zitrin-Münze",
-
-  "item.slabsnstairs.dowsing_rod":       "Wünschelrute",
+  "item.slabsnstairs.shake_the_bus":      "Schallplatte",
+  "item.slabsnstairs.shake_the_bus.desc": "Shake The Bus",
+  "item.slabsnstairs.light_brown_dye":    "Hellbrauner Farbstoff",
+  "item.slabsnstairs.citrine":            "Zitrin-Kristall",
+  "item.slabsnstairs.raw_citrine":        "Unbehandelter Zitrin",
+  "item.slabsnstairs.citrine_coin":       "Zitrin-Münze",
+  "item.slabsnstairs.dowsing_rod":        "Wünschelrute",
   "item.slabsnstairs.dowsing_rod.found":        "Hab was: ",
   "item.slabsnstairs.dowsing_rod.located":      "  bei ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "Nichts Wertvolles gefunden.",
@@ -177,7 +179,7 @@
   "tooltip.slabsnstairs.dry_ice_slab":      "Eine sehr, sehr tiefgefrorene Eisstufe!",
 
   "tooltip.slabsnstairs.dowsing_rod":   "Die Wünschelrute zeigt dir bei Rechtsklick\ndie Position diverser Erze an.",
-  "tooltip.slabsnstairs.citrine_coin":  "Mit dieser Münze kannst coole Dinge\nkaufen...; vielleicht; bald; in Zukunft.",
+  "tooltip.slabsnstairs.citrine_coin.shift":  "Mit dieser Münze kannst coole Dinge\nkaufen...; vielleicht; bald; in Zukunft.",
 
   "enchantment.slabsnstairs.lightning_striker": "Blitzschlag",
   "enchantment.slabsnstairs.freezing_arrows":   "Kleine Eiszeit",

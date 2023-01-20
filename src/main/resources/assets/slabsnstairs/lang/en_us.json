@@ -140,6 +140,7 @@
   "block.slabsnstairs.cinnamon_door_02":        "Cinnamon Door Var. 2",
   "block.slabsnstairs.cinnamon_trapdoor":       "Cinnamon Trapdoor",
   "block.slabsnstairs.cinnamon_sign":           "Cinnamon Sign",
+  "block.slabsnstairs.cinnamon_hanging_sign":   "Cinnamon Hanging Sign",
   "block.slabsnstairs.cinnamon_palisade":       "Cinnamon Palisade",
   "block.slabsnstairs.cinnamon_leaves":         "Cinnamon Leaves",
 
@@ -148,12 +149,13 @@
   "block.slabsnstairs.tripod":            "Tripod",
   "block.slabsnstairs.telescope":         "Telescope",
 
-  "item.slabsnstairs.light_brown_dye":  "Light Brown Dye",
-  "item.slabsnstairs.citrine":          "Citrine Crystal",
-  "item.slabsnstairs.raw_citrine":      "Raw Citrine",
-  "item.slabsnstairs.citrine_coin":     "Citrine Coin",
-
-  "item.slabsnstairs.dowsing_rod":      "Dowsing Rod",
+  "item.slabsnstairs.shake_the_bus":      "Music Disc",
+  "item.slabsnstairs.shake_the_bus.desc": "Shake The Bus",
+  "item.slabsnstairs.light_brown_dye":    "Light Brown Dye",
+  "item.slabsnstairs.citrine":            "Citrine Crystal",
+  "item.slabsnstairs.raw_citrine":        "Raw Citrine",
+  "item.slabsnstairs.citrine_coin":       "Citrine Coin",
+  "item.slabsnstairs.dowsing_rod":        "Dowsing Rod",
   "item.slabsnstairs.dowsing_rod.found":        "Found ",
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
@@ -168,6 +170,10 @@
   "tooltip.slabsnstairs.hold_ctrl":   "Hold §bCtrl§r for more Details.",
   "tooltip.slabsnstairs.hold_alt":    "Hold §cAlt§r for a really cool Tip.",
 
+  "tooltip.slabsnstairs.citrine_sword.shift": "Tooltip for the (left) Shift Key",
+  "tooltip.slabsnstairs.citrine_sword.ctrl":  "Tooltip for the (left) Ctrl Key",
+  "tooltip.slabsnstairs.citrine_sword.alt":   "Tooltip for the (left) Alt Key",
+
   "tooltip.slabsnstairs.citrine_block":     "You will get 9 Citrine Crystals from this Block.",
   "tooltip.slabsnstairs.growth_stop.shift": "Nearly invisible block\ne.g. to stop the growing of Vines.",
   "tooltip.slabsnstairs.growth_stop.ctrl":  "§bNo (more) Details available.§r",
@@ -177,7 +183,7 @@
   "tooltip.slabsnstairs.dry_ice_slab":      "A very very deep frozen Ice Slab",
 
   "tooltip.slabsnstairs.dowsing_rod":   "With an right click the Dowsing Rod can\nshow you the Position of some Ore.",
-  "tooltip.slabsnstairs.citrine_coin":  "With this Coins you can bye various\ncool Stuff... maybe... in the Future.",
+  "tooltip.slabsnstairs.citrine_coin.shift":  "With this Coins you can bye various\ncool Stuff... maybe... in the Future.",
 
   "enchantment.slabsnstairs.lightning_striker": "Lightning Striker",
   "enchantment.slabsnstairs.freezing_arrows":   "Little Ice Age",
