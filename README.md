@@ -1,14 +1,11 @@
 # ***Attention: This Version of ATM - Slabs 'n Stairs is a BETA***
 
-## **_A lot of stuff will NOT work or has a lot if issues!_**
+## ***The Mod could contain several bugs and/or issues!***
+### ***Take care and make a copy of your SaveGame before use this Mod!***
 ___
+#### Slabs 'n Stairs contains right now:
 
-The Mod could contain several bugs and/or issues!
-Take care and make a copy of your SaveGame before use this Mod!
-
-Slabs 'n Stairs contains right now:
-
-* Slabs and Stairs for
+ * Slabs and Stairs for
     - polished / Andesite, Diorite, Granite
     - Blackstone
     - a lot of DeepSlate
