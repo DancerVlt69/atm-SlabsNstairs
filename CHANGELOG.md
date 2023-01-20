@@ -1,7 +1,7 @@
-Slabs 'n Stairs changelog:
+# Slabs 'n Stairs changelog:
 
 --------------------------
- v0.7.0.0.b1 @ 2023/01/15
+ v0.7.0.0.b1 @ 2023/01/??
 --------------------------
 * ***added:***
   * new Mod-Name & new Versioning (details below)
