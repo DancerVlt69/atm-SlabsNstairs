@@ -1,7 +1,7 @@
 # ***Attention: This Version of ATM - Slabs 'n Stairs is a BETA***
 
 ## ***The Mod could contain several bugs and/or issues!***
-### ***Take care and make a copy of your SaveGame before use this Mod!***
+### ***Take care and make a copy/backup of your SaveGame before use this Mod!***
 ___
 #### Slabs 'n Stairs contains right now:
 
