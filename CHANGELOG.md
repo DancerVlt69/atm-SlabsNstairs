@@ -5,9 +5,9 @@ __________________________
 * ***fixed:***
   * Ice-Slab has "used" the wrong model
 * ***added:***
-  * new Mod-Name & new Versioning (details below)
   * (Clean) Stone Wall
-  *
+* ***changed:***
+  * Mod-Name & Versioning (details below)
 * ***updated:***
   * Stone Wall added to Tags
   * Forge bump to Version 43.2.3
@@ -18,7 +18,7 @@ This Version of the Mod was successfully tested with [**Forge** ***43.1.55***](h
 
 The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/atm-SlabsNstairs/blob/1.19.2/CHANGELOG.md)***
 ________________________
- **The  new Versioning**
+ **The new Versioning**
 ------------------------
 * Versions for Minecraft JE Versions
   - ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.x***~~ | ***1.16.x*** | ***1.18.x*** | ***1.19-1.19.2*** | ***1.
