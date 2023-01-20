@@ -16,7 +16,7 @@ __________________________
 
 This Version of the Mod was successfully tested with [**Forge** ***43.1.55***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)
 
-The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.x/CHANGELOG.md)***
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/atm-SlabsNstairs/blob/1.19.2/CHANGELOG.md)***
 ________________________
  **The  new Versioning**
 ------------------------
@@ -55,8 +55,8 @@ This Version of the Mod was successfully tested with [**Forge** ***43.1.55***](h
 -------------------------
 * ***fixed:***
   * a small issue of the Cinnamon Fence Gate Advancement/Recipe - it was in a wrong Category
-  * ***[issue #6](https://github.com/DancerVlt69/SlabsNstairs/issues/6)*** - no Loot in Chests (GlobalLootModifier)
-  * ***[issue #21](https://github.com/DancerVlt69/SlabsNstairs/issues/21)*** - no Transparency on an 2-Slabs-Ice-Block
+  * ***[issue #6](https://github.com/DancerVlt69/atm-SlabsNstairs/issues/6)*** - no Loot in Chests (GlobalLootModifier)
+  * ***[issue #21](https://github.com/DancerVlt69/atm-SlabsNstairs/issues/21)*** - no Transparency on an 2-Slabs-Ice-Block
 * ***added:*** 
   * re-add Loot from Village-Chests
   * added Loot from Plants & Animals
@@ -79,9 +79,9 @@ This Version of the Mod was successfully tested with [**Forge** ***43.1.52***](h
  v0.1.2.134 @ 2022/10/15
 -------------------------
 * ***fixed:***
-  * _**[issue #18](https://github.com/DancerVlt69/SlabsNstairs/issues/18)**_ - Recipe Conflict between the Cinnamon Trapdoor and the Palisade
-  * _**[issue #19](https://github.com/DancerVlt69/SlabsNstairs/issues/19)**_ - Ice Slabs & Stairs not melt to Water in the End an/ore lets Minecraft crash in the Nether
-  * _**[issue #20](https://github.com/DancerVlt69/SlabsNstairs/issues/20)**_ - (some times) Ice-Double-Slabs has no Texture Rendering if their Neighbor is an Ice-Slab
+  * _**[issue #18](https://github.com/DancerVlt69/atm-SlabsNstairs/issues/18)**_ - Recipe Conflict between the Cinnamon Trapdoor and the Palisade
+  * _**[issue #19](https://github.com/DancerVlt69/atm-SlabsNstairs/issues/19)**_ - Ice Slabs & Stairs not melt to Water in the End an/ore lets Minecraft crash in the Nether
+  * _**[issue #20](https://github.com/DancerVlt69/atm-SlabsNstairs/issues/20)**_ - (some times) Ice-Double-Slabs has no Texture Rendering if their Neighbor is an Ice-Slab
   * some spelling issues in the Wooden Tags
 * ***updated:***
   * German Localization
@@ -98,8 +98,8 @@ This Version of the Mod was successfully tested with [**Forge** ***43.1.43***](h
  v0.1.1.131 @ 2022/10/08
 -------------------------
 * **fixed:**
-  * _**[Issue #16](https://github.com/DancerVlt69/SlabsNstairs/issues/16)**_ - Conflict with the "Citrine from Citrine Block" Recipe
-  * _**[Issue #17](https://github.com/DancerVlt69/SlabsNstairs/issues/17)**_ - added missing Recipes for Cinnamon-Door Variation 1 & 2  
+  * _**[Issue #16](https://github.com/DancerVlt69/atm-SlabsNstairs/issues/16)**_ - Conflict with the "Citrine from Citrine Block" Recipe
+  * _**[Issue #17](https://github.com/DancerVlt69/atm-SlabsNstairs/issues/17)**_ - added missing Recipes for Cinnamon-Door Variation 1 & 2  
 * **updated/changed:**
   * Forge bump to 43.1.34 
   * Citrine Sword Recipes: now grouped and 3 more Citrine is needed for the "Citrine Sword from Iron Sword and Citrine" Recipe
@@ -138,12 +138,12 @@ But don't panic. The planned new Mod/s will be published a long time before the 
 
 This Version of the Mod was successfully tested with **_[Forge 43.1.33](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
 
--------------------------
-v0.0.05.126 @ 2022/08/31
--------------------------
+__________________________
+ v0.0.05.126 @ 2022/08/31
+--------------------------
 * fixed:
-    - **_[issues #3 and #13](https://github.com/DancerVlt69/SlabsNstairs/issues)_** - Tooltips will not show or is permanently visible
-    - **_[issue #15](https://github.com/DancerVlt69/SlabsNstairs/issues/15)_** - Can't craft Cinnamon Fences
+    - **_[issues #3 and #13](https://github.com/DancerVlt69/atm-SlabsNstairs/issues)_** - Tooltips will not show or is permanently visible
+    - **_[issue #15](https://github.com/DancerVlt69/atm-SlabsNstairs/issues/15)_** - Can't craft Cinnamon Fences
 * updated:
     - bump to Forge 43.1.3 
     - Parchment to version 2022.08.28 
@@ -152,8 +152,8 @@ v0.0.05.126 @ 2022/08/31
 
 This Version of the Mod was successfully tested with **_[Forge 43.1.3](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html)_**
 
-------------------------
-v0.0.4.124 @ 2022/08/09
+_________________________
+ v0.0.4.124 @ 2022/08/09
 ------------------------
 * updated to Minecraft 1.19.2 and Forge 43.0.1
 * fixed some **_[issues]_**(https://github.com/DancerVlt69/SlabsNstairs/issues?q=is%3Aissue+is%3Aclosed) in both version
@@ -163,8 +163,8 @@ v0.0.4.124 @ 2022/08/09
     - some missing Tag-Files
     - now it is possible to plant Flowers, Crops, and Saplings on the 3 own Dirt-Types
 
--------------------------
-v0.0.3.120 @ 2022/07/28
+_________________________
+ v0.0.3.120 @ 2022/07/28
 -------------------------
 * start porting to **MC-Version 1.19/1.19.1** | **Forge 41.1.0/42.0.0**
 * deactivating some code for a first solving of some issues (MC 1.19x version only)
@@ -174,8 +174,8 @@ v0.0.3.120 @ 2022/07/28
         * **_issue #4_** - wrong version number (MC 1.18x only)
 * small correction of the item texture from the **Growth Stop** item (MC 1.19x only) 
 
--------------------------
-v0.0.2.118 @ 2022/07/24
+_________________________
+ v0.0.2.118 @ 2022/07/24
 -------------------------
 * added:
     - Deepslate Button, -Pressure Plate, -Stairs & -Slab
@@ -183,9 +183,9 @@ v0.0.2.118 @ 2022/07/24
     - Cracked Deepslate Tile Button, -Pressure Plate, -Stairs & -Slab
 * updated: to Forge 40.1.68
 
--------------------------
-v0.0.1.117 @ 2022/07/18 (not published)
--------------------------
+________________________________________
+ v0.0.1.117 @ 2022/07/18 (not published)
+----------------------------------------
 * fixed some issues of the Slabs & Stairs of the 3 new Dirt-Types
 * added: Slabs, Stairs, Pressure Plate and/or Buttons, Recipes & Advancements, and/or Loot Tables of
     - vanilla Dirt
@@ -203,8 +203,8 @@ v0.0.1.117 @ 2022/07/18 (not published)
 * changelog renamed, now it is a *Markdown* - file
 * update Forge to Version *40.1.67*
 
--------------------------
-V 0.0.1.116 @ 2022/07/12
+_________________________
+ v0.0.1.116 @ 2022/07/12
 -------------------------
 * added/updated: Stairs for the 3 new Dirt Blocks
 * added/updated: Tool-Type, Loot-Table entries, and the recipes for
@@ -212,8 +212,8 @@ V 0.0.1.116 @ 2022/07/12
 * updated: Localization (EN / DE)
 * updated: Forge *40.1.60*
 
-------------------------
-V 0.0.1.115 @ 2022/07/11
+_________________________
+ v0.0.1.115 @ 2022/07/11
 ------------------------
 * updated Growth Stop Block: new texture - a bit animated, recipe, and category
 * added new tags: Stained / Glass Pane/s
@@ -236,43 +236,43 @@ V 0.0.1.115 @ 2022/07/11
 * updated: gradle / properties
 * updated: classes
 
-------------------------
-V 0.0.1.114 @ 2022/07/09
-------------------------
+_________________________
+ v0.0.1.114 @ 2022/07/09
+-------------------------
 * again texture correction of the polished buttons in hand
 * added 3 dirt variations
 * updated to the latest Forge-Version (40.1.59)
 
-------------------------
-V 0.0.1.113 @ 2022/07/07
-------------------------
+_________________________
+ v0.0.1.113 @ 2022/07/07
+-------------------------
 * added 1st preparation for ModSettings
 
-------------------------
-V 0.0.1.112 @ 2022/07/06
-------------------------
+_________________________
+ v0.0.1.112 @ 2022/07/06
+-------------------------
 * fixing an issue of the polished buttons in hand texture
 
-------------------------
-V 0.0.1.111 @ 2022/07/05
-------------------------
+_________________________
+ v0.0.1.111 @ 2022/07/05
+-------------------------
 * re-added polished button variants of Andesite, Diorite, and Granite
 
-------------------------
-V 0.0.1.110 @ 2022/07/03
-------------------------
+_________________________
+ v0.0.1.110 @ 2022/07/03
+-------------------------
 * update Buttons: remove Collision, like the Stone-Button
 * added Buttons: Andesite, Diorite, Granite and there polished variants
 * some texture changes
 * adding some Classes for (new) Blocks, Items, Fluid/s, Sound/s, etc.
 
-------------------------
-V 0.0.1.109 @ 2022/07/01
-------------------------
+_________________________
+ v0.0.1.109 @ 2022/07/01
+-------------------------
 * porting to Minecraft JE 1.18.2
 * updated to Forge *40.1.54*
 
-----------------------
-V 0.0.1.0 @ 2022/06/26
-----------------------
+_______________________
+ v0.0.1.0 @ 2022/06/26
+-----------------------
 * initial version

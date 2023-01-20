@@ -1,7 +1,7 @@
 modLoader="javafml"
 loaderVersion="[41,)"
 license="GNU 3.0"
-issueTrackerURL="https://github.com/DancerVlt69/SlabsNstairs/issues"
+issueTrackerURL="https://github.com/DancerVlt69/atm-SlabsNstairs/issues"
 
 [[mods]]
 modId="slabsnstairs"

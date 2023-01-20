@@ -30,4 +30,4 @@ ___
 * and much more...
 
 If you have questions or ideas, or find bugs or issues feel free to use the comment section below
-or the **_[issue-tracker on GitHub](https://github.com/DancerVlt69/SlabsNstairs/issues)_**.
+or the **_[issue-tracker on GitHub](https://github.com/DancerVlt69/atm-SlabsNstairs/issues)_**.
