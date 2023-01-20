@@ -1,4 +1,4 @@
-***All the Missing Slabs 'n Stairs changelog:***
+***All the Missing Slabs 'n Stairs Changelog:***
 ------------------------------------------------
 __________________________
  v0.7.0.0.b1 @ 2023/01/??
