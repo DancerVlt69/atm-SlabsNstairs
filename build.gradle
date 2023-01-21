@@ -16,7 +16,7 @@ plugins {
 
 // apply plugin: 'eclipse'
 // apply plugin: 'maven-publish'
-// apply from: '/.env/.gradle'
+apply from: '/.env/mcAccount.gradle'
 apply from: '/.env/updVerNum.gradle'
 modVersion = System.getProperty("modVer")
 
