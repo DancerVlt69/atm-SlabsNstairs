@@ -2,7 +2,7 @@ package net.dancervlt69.slabsnstairs.events;
 
 import net.dancervlt69.slabsnstairs.init.blocks.utils.ModWoodTypes;
 import net.dancervlt69.slabsnstairs.init.utils.particles.ModParticleTypes;
-import net.dancervlt69.slabsnstairs.init.utils.particles.custom.ModCitrineParticle;
+import net.dancervlt69.slabsnstairs.init.utils.particles.custom.ModCitrineParticles;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraftforge.client.event.RenderLevelStageEvent;
@@ -31,6 +31,6 @@ public class ModCommonSetupEvents {
     @SubscribeEvent
     public static void registerParticleTypes(final RenderLevelStageEvent.RegisterStageEvent event) {
         Minecraft.getInstance().particleEngine.register(ModParticleTypes.CITRINE_PARTICLES.get(),
-                ModCitrineParticle.Provider::new);
+                ModCitrineParticles.Provider::new);
     }
 }
