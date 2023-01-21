@@ -49,13 +49,13 @@ public class SlabsNstairs {
         ModBlocks.register(eventBus);
         ModItems.register(eventBus);
 
-        ModLootModifiers.register((eventBus));
-        ModConfiguredFeatures.register(eventBus);
-        // ModPlacedFeatures.register(eventBus);
-        ModBlockEntityTypes.register(eventBus);
-        ModParticleTypes.register(eventBus);
-        ModEnchantments.register(eventBus);
         ModSounds.register(eventBus);
+
+        ModEnchantments.register(eventBus);
+        ModLootModifiers.register(eventBus);
+
+        ModBlockEntityTypes.register(eventBus);
+        // ModParticleTypes.register(eventBus);
 
         // Register the setup method for modLoading
         eventBus.addListener(this::onClientSetup);
@@ -76,7 +76,7 @@ public class SlabsNstairs {
 
         ModClientSetupEvents.modWoodTypeRegister();
         ModClientSetupEvents.modRenderTypes();
-        ModClientSetupEvents.modAddingProperties();
+        // ModClientSetupEvents.modAddingProperties();
 
         LOGGER.info("Client Setup finished.");
     }
