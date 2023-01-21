@@ -7,13 +7,13 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.NotNull;
 
-public class ModCitrineParticle extends TextureSheetParticle {
+public class ModCitrineParticles extends TextureSheetParticle {
     private final double pXSpeed;
     private final double pYSpeed;
     private final double pZSpeed;
 
-    protected ModCitrineParticle(ClientLevel pLevel, double pX, double pY, double pZ, SpriteSet spriteSet,
-                                 double pXSpeed, double pYSpeed, double pZSpeed) {
+    protected ModCitrineParticles(ClientLevel pLevel, double pX, double pY, double pZ, SpriteSet spriteSet,
+                                  double pXSpeed, double pYSpeed, double pZSpeed) {
         super(pLevel, pX, pY, pZ, pXSpeed, pYSpeed, pZSpeed);
 
         this.friction = 0.8F;
@@ -39,7 +39,7 @@ public class ModCitrineParticle extends TextureSheetParticle {
 
         public Particle createParticle(SimpleParticleType particleType, ClientLevel pLevel, double x, double y,
                                        double z, double xSpeed, double ySpeed, double zSpeed) {
-            return new ModCitrineParticle(pLevel, x, y, z, this.spriteSet, xSpeed, ySpeed, zSpeed);
+            return new ModCitrineParticles(pLevel, x, y, z, this.spriteSet, xSpeed, ySpeed, zSpeed);
         }
     }
 
