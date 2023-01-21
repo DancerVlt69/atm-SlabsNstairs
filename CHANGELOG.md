@@ -9,6 +9,7 @@ __________________________
 * ***updated:***
   * Forge bump to Version 44.1.5
   * Creative-Tab moved to the new Code
+  * (new) Ore-Generation reactivated | it doesn't work right now 
   * Stone Wall added to Tags 
 
 This Version of the Mod was successfully tested with [**Forge** ***44.0.1***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.3.html)
