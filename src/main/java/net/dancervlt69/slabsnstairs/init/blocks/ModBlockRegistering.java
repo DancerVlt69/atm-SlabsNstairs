@@ -14,7 +14,7 @@ import java.util.function.Supplier;
 
 import static net.dancervlt69.slabsnstairs.init.blocks.ModBlocks.MOD_BLOCKS;
 import static net.dancervlt69.slabsnstairs.init.items.ModItems.MOD_ITEMS;
-import static net.dancervlt69.slabsnstairs.init.tooltips.ShowToolTips.showTooltips;
+import static net.dancervlt69.slabsnstairs.init.utils.tooltips.ShowToolTips.showTooltips;
 
 public class ModBlockRegistering {
 
