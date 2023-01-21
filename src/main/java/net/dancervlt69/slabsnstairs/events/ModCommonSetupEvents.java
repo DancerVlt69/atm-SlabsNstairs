@@ -28,9 +28,9 @@ public class ModCommonSetupEvents {
         });
     }
 
-    @SubscribeEvent
-    public static void registerParticleTypes(final RenderLevelStageEvent.RegisterStageEvent event) {
-        Minecraft.getInstance().particleEngine.register(ModParticleTypes.CITRINE_PARTICLES.get(),
-                ModCitrineParticles.Provider::new);
-    }
+//    @SubscribeEvent
+//    public static void registerParticleTypes(final RenderLevelStageEvent.RegisterStageEvent event) {
+//        Minecraft.getInstance().particleEngine.register(ModParticleTypes.CITRINE_PARTICLES.get(),
+//                ModCitrineParticles.Provider::new);
+//    }
 }

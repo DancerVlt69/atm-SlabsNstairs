@@ -31,7 +31,7 @@ public class ModClientSetupEvents {
     }
 
     public static void modAddingProperties() {
-        //ModItemProperties.addCustomItemProperties();
+        // ModItemProperties.addCustomItemProperties();
     }
 
     public static void modWoodTypeRegister() {
