@@ -1,12 +1,12 @@
-buildscript {
-    repositories {
-
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath 'org.parchmentmc:librarian:1.+'
-    }
-}
+//buildscript {
+//    repositories {
+//
+//    }
+//    dependencies {
+//        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+//        classpath 'org.parchmentmc:librarian:1.+'
+//    }
+//}
 
 plugins {
     // Other plugins like maven-publish, idea, eclipse, etc. go here
@@ -22,9 +22,11 @@ modVersion = System.getProperty("modVer")
 
 version = "${mcVersion}-${modVersion}"
 group = "net.${modOwner}.${modId}"
-archivesBaseName = "${modFileName}"
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java {
+    archivesBaseName = "${modFileName}"
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
 
 repositories {
     maven {
@@ -46,14 +48,14 @@ repositories {
         url = "https://minecraft.curseforge.com/api/maven/"
     }
 }
+//repositories {
+//   maven {
+//      name = "StopModReposts"
+//     url = "https://mvn.stopmodreposts.org/"
+//   }
+//}
 
 //configurations { embedNoCompile }
-//repositories {
- //   maven {
-  //      name = "StopModReposts"
-   //     url = "https://mvn.stopmodreposts.org/"
- //   }
-//}
 
 minecraft {
     // mappings channel: 'official', version: "${mcMappingVersion}" //'snapshot'
@@ -66,8 +68,8 @@ minecraft {
 
     runs {
         client {
-            // args: '--uuid', System.getProperty("uuID")
-            // args: '--user', System.getProperty("userName")
+            args '--uuid', System.getProperty("uuID")
+            args '--user', System.getProperty("userName")
 
             workingDirectory project.file('run')
 
@@ -86,6 +88,23 @@ minecraft {
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
+
+            mods {
+                slabsnstairs {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        // This run config launches GameTestServer and runs all registered gametests, then exits.
+        // By default, the server will crash when no gametests are provided.
+        // The gametest system is also enabled by default for other run configs under the /test command.
+        gameTestServer {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'slabsnstairs'
 
             mods {
                 slabsnstairs {
