@@ -16,8 +16,7 @@ import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ModItems {
 
-    public static final DeferredRegister<Item> MOD_ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+    public static final DeferredRegister<Item> MOD_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
     // Define your different Items here
     public static final RegistryObject<Item> CITRINE = MOD_ITEMS.register("citrine",
