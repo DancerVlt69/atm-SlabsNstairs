@@ -1,6 +1,6 @@
 package net.dancervlt69.slabsnstairs.init.items.custom;
 
-import net.dancervlt69.slabsnstairs.init.tooltips.ShowToolTips;
+import net.dancervlt69.slabsnstairs.init.utils.tooltips.ShowToolTips;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
@@ -28,7 +28,7 @@ public class ModSwordItem extends SwordItem {
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents,
                                 TooltipFlag pIsAdvanced) {
 
-        ShowToolTips.showTooltips(pTooltipComponents, tooltipKeyCtrl, tooltipKeyAlt, tooltipKeyAlt);
+        ShowToolTips.showTooltips(pTooltipComponents, tooltipKeyShift, tooltipKeyCtrl, tooltipKeyAlt);
 //        if(Screen.hasShiftDown()) {
 //           pTooltipComponents.add(Component.translatable(tooltipKeyShift));
 //        } else pTooltipComponents.add(Component.literal("Hold Shift for ToolTip"));
