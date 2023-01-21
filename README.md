@@ -3,6 +3,7 @@
 ## The Mod could contain several bugs and/or issues!
 Take care and make a copy of your SaveGame before use this Mod!
 ___
+[![](http://cf.way2muchnoise.eu/641567.svg)](https://www.curseforge.com/minecraft/mc-mods/atm-slabs-n-stairs) [![](http://cf.way2muchnoise.eu/versions/641567.svg)](https://www.curseforge.com/minecraft/mc-mods/atm-slabs-n-stairs)
 
 Slabs 'n Stairs contains right now:
 
