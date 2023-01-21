@@ -6,14 +6,14 @@ issueTrackerURL="https://github.com/DancerVlt69/SlabsNstairs/issues"
 [[mods]]
 modId="slabsnstairs"
 version="${file.jarVersion}"
-displayName="SnS - Slabs 'n Stairs"
+displayName="ATM - Slabs 'n Stairs"
 credits='''Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more
 https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net'''
 displayURL="https://www.curseforge.com/minecraft/mc-mods/slabs-n-stairs"
 logoFile="logo.png"
 authors="DancerVlt69"
 description='''
-SnS - Slabs 'n Stairs - will add a lot of missing Slabs, Stairs, and more to your Minecraft Java Edition'''
+All the Missing (ATM) - Slabs 'n Stairs - will add a lot of missing Slabs, Stairs, and more to your Minecraft Java Edition'''
 
 [[dependencies.slabsnstairs]]
     modId="minecraft"
