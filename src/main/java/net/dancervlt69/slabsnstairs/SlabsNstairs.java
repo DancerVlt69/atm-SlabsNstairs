@@ -1,17 +1,15 @@
 
 package net.dancervlt69.slabsnstairs;
 
-import net.dancervlt69.slabsnstairs.init.blocks.entities.ModBlockEntityTypes;
-import net.dancervlt69.slabsnstairs.init.blocks.ModBlocks;
-import net.dancervlt69.slabsnstairs.init.utils.enchantments.ModEnchantments;
-import net.dancervlt69.slabsnstairs.events.loot.ModLootModifiers;
 import net.dancervlt69.slabsnstairs.events.ModClientSetupEvents;
 import net.dancervlt69.slabsnstairs.events.ModCommonSetupEvents;
+import net.dancervlt69.slabsnstairs.events.loot.ModLootModifiers;
+import net.dancervlt69.slabsnstairs.init.blocks.ModBlocks;
+import net.dancervlt69.slabsnstairs.init.blocks.entities.ModBlockEntityTypes;
 import net.dancervlt69.slabsnstairs.init.items.ModItems;
-import net.dancervlt69.slabsnstairs.init.utils.particles.ModParticleTypes;
-import net.dancervlt69.slabsnstairs.init.utils.settings.ModClientConfig;
 import net.dancervlt69.slabsnstairs.init.sounds.ModSounds;
-import net.dancervlt69.slabsnstairs.init.world.features.ModConfiguredFeatures;
+import net.dancervlt69.slabsnstairs.init.utils.enchantments.ModEnchantments;
+import net.dancervlt69.slabsnstairs.init.utils.settings.ModClientConfig;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -105,5 +103,8 @@ public class SlabsNstairs {
 
     /* @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class CommonModEvents { */
+
+    // TODO
+    // * check Ore Generation - it doesn't work
 
 }
