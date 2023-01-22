@@ -11,6 +11,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.List;
+
 import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 // @ApiStatus.Internal
@@ -32,21 +34,21 @@ public class ModTabs {
         @SubscribeEvent
         public static void onRegisterModTabsEvent(final CreativeModeTabEvent.Register event) {
 
-            event.registerCreativeModeTab(TAB_ID1, builder ->
-                    builder.title(Component.translatable("itemGroup.snsmodtab1"))
+            event.registerCreativeModeTab(TAB_ID1, List.of(TAB_ID2), List.of(CreativeModeTabs.SPAWN_EGGS),
+                    builder -> builder.title(Component.translatable("itemGroup.snsmodtab1"))
                     .icon(() -> new ItemStack(ModBlocks.CITRINE_BLOCK.get()))
                     .displayItems((flagSet, entries, flag) ->
                             ModItems.MOD_ITEMS.getEntries().stream().map(RegistryObject::get)
                                     .forEachOrdered(entries::accept)));
 
-            event.registerCreativeModeTab(TAB_ID2, builder -> builder
-                    .title(Component.translatable("itemGroup.snsmodtab2"))
+            event.registerCreativeModeTab(TAB_ID2, List.of(TAB_ID3), List.of(TAB_ID1),
+                    builder -> builder.title(Component.translatable("itemGroup.snsmodtab2"))
                     .icon(() -> ModItems.CITRINE_SWORD.get().getDefaultInstance())
                     .displayItems((flagSet, entries, flag) ->
                             entries.accept(ModItems.CITRINE_SWORD.get())));
 
-        event.registerCreativeModeTab(TAB_ID3, builder ->
-                builder.title(Component.translatable("itemGroup.snsmodtab3"))
+        event.registerCreativeModeTab(TAB_ID3, List.of(), List.of(TAB_ID2),
+                builder -> builder.title(Component.translatable("itemGroup.snsmodtab3"))
                         .icon(() -> ModItems.CITRINE_COIN.get().getDefaultInstance())
                         .displayItems((flagSet, entries, flag) -> {
                             entries.accept(ModItems.CITRINE.get());
