@@ -1,18 +1,22 @@
 # ***All the Missing - Slabs 'n Stairs Changelog:***
 __________________________
- v0.7.0.0.b1 @ 2023/01/??
+ v0.7.0.1.b3 @ 2023/01/25
 --------------------------
 * ***added:***
   * new Mod-Name & new Versioning (details below)
   * (Clean) Stone Wall
+  * re-added Citrine Ore Generation successfully
+  * Croptopia Support:
+    * Cinnamon Hanging Sign added
   * 
 * ***updated:***
-  * Forge bump to Version 44.1.5
-  * Creative-Tab moved to the new Code
-  * (new) Ore-Generation reactivated | it doesn't work right now 
-  * Stone Wall added to Tags 
+  * Forge bump to Version 44.1.7
+  * Creative-Tab moved to the new Code 
+  * Stone Wall added to Tags
+* ***removed:***
+  * some unused code
 
-This Version of the Mod was successfully tested with [**Forge** ***44.0.1***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.3.html)
+This Version of the Mod was successfully tested with [**Forge** ***44.1.7***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.3.html)
 
 The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.19.3/CHANGELOG.md)***
 _________________________
