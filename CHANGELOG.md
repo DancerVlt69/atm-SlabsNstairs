@@ -10,7 +10,7 @@ __________________________
     * Cinnamon Hanging Sign added
   * 
 * ***updated:***
-  * Forge bump to Version 44.1.7
+  * Forge bump to Version 44.1.8
   * Creative-Tab moved to the new Code 
   * Stone Wall added to Tags
 * ***removed:***
