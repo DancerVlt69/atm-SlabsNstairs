@@ -1,9 +1,9 @@
 {
-  "feature": "slabsnstairs:citrine_ore",
+  "feature": "slabsnstairs:citrine_ore_placed",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 12
+      "count": 6
     },
     {
       "type": "minecraft:in_square"
@@ -11,12 +11,12 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:uniform",
+        "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "absolute": 60
+          "absolute": 58
         },
         "min_inclusive": {
-          "above_bottom": 0
+          "absolute": -64
         }
       }
     },
