@@ -26,13 +26,11 @@ public class ModConfiguredFeatures {
 
     // private static final ResourceKey<ConfiguredFeature<?, ?>> RED_BEECH_KEY = registerKey("red_beech");
 
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_CITRINE_ORES = Suppliers.memoize(
-            () -> List.of(
-                    OreConfiguration.target(new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES),
-                            ModBlocks.CITRINE_ORE.get().defaultBlockState()),
-
-                    OreConfiguration.target(new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES),
-                            ModBlocks.DEEPSLATE_CITRINE_ORE.get().defaultBlockState())));
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_CITRINE_ORES = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES),
+                    ModBlocks.CITRINE_ORE.get().defaultBlockState()),
+            OreConfiguration.target(new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES),
+                    ModBlocks.DEEPSLATE_CITRINE_ORE.get().defaultBlockState())));
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         HolderGetter<PlacedFeature> placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -47,7 +45,8 @@ public class ModConfiguredFeatures {
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register
             (BootstapContext<ConfiguredFeature<?, ?>> context, ResourceKey<ConfiguredFeature<?, ?>> key, F feature,
-             FC configuration) { context.register(key,new ConfiguredFeature<>(feature, configuration)); }
+             FC configuration) {
+        context.register(key,new ConfiguredFeature<>(feature, configuration)); }
 
 }
 

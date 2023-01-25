@@ -17,7 +17,7 @@ import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ModPlacedFeatures {
 
-    public static final ResourceKey<PlacedFeature> CITRINE_ORE_PLAYCED_KEY = createKey("citrine_ore");
+    public static final ResourceKey<PlacedFeature> CITRINE_ORE_PLAYCED_KEY = createKey("citrine_ore_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -35,6 +35,12 @@ public class ModPlacedFeatures {
         return orePlacement(CountPlacement.of(p_195344_), p_195345_);
     }
 
+    public static List<PlacementModifier> rareOrePlacement(int p_165350_, PlacementModifier p_195351_) {
+        return orePlacement(RarityFilter.onAverageOnceEvery(p_165350_),p_195351_);
+    }
+
+
+
     private static ResourceKey<PlacedFeature> createKey(String name) {
         return ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(MODID, name));
     }
@@ -50,8 +56,6 @@ public class ModPlacedFeatures {
     }
 
 }
-
-
 
 //    /* public static final RegistryObject<PlacedFeature> RED_BEECH_CHECKED = PLACED_FEATURES.register("red_beech_checked",
 //            () -> new PlacedFeature(ModConfiguredFeatures.RED_BEECH.getHolder().get(),
