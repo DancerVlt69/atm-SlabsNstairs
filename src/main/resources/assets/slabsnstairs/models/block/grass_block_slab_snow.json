@@ -3,7 +3,7 @@
   "textures": {
     "bottom": "minecraft:block/dirt",
     "particle": "minecraft:block/dirt",
-    "side": "slabsnstairs:block/grass_slab_block_snow",
+    "side": "slabsnstairs:block/grass_block_slab_snow",
     "top": "minecraft:block/dirt"
   }
 }

@@ -21,6 +21,7 @@ import java.util.List;
 
 public class ModGrassSlabBlock extends ModDirtSlabBlock {
     public static final BooleanProperty SNOWY = BlockStateProperties.SNOWY;
+
     public ModGrassSlabBlock(Properties pProperties) {
         super(pProperties);
         // this.registerDefaultState(this.stateDefinition.any().setValue(SNOWY, Boolean.FALSE));
