@@ -15,20 +15,20 @@ import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ModEnchantments {
 
-    public static final DeferredRegister<Enchantment> ENCHANTMENTS =
+    public static final DeferredRegister<Enchantment> MOD_ENCHANTMENTS =
             DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, MODID);
 
-    public  static RegistryObject<Enchantment> LIGHTNING_STRIKER = ENCHANTMENTS.register("lightning_striker",
+    public  static RegistryObject<Enchantment> LIGHTNING_STRIKER = MOD_ENCHANTMENTS.register("lightning_striker",
             () -> new LightningStrikerEnchantment(Enchantment.Rarity.UNCOMMON,
                     EnchantmentCategory.BOW, EquipmentSlot.MAINHAND));
 
-    public static RegistryObject<Enchantment> FREEZING_ARROWS = ENCHANTMENTS.register("freezing_arrows",
+    public static RegistryObject<Enchantment> FREEZING_ARROWS = MOD_ENCHANTMENTS.register("freezing_arrows",
             () -> new FreezingArrowsEnchantment(Enchantment.Rarity.UNCOMMON, EquipmentSlot.MAINHAND));
 
-    public static RegistryObject<Enchantment> STRONG_MASTER = ENCHANTMENTS.register("strong_master",
+    public static RegistryObject<Enchantment> STRONG_MASTER = MOD_ENCHANTMENTS.register("strong_master",
             () -> new StrongMasterEnchantment(Enchantment.Rarity.UNCOMMON, EquipmentSlot.MAINHAND));
 
     public static void register(IEventBus eventBus) {
-        ENCHANTMENTS.register(eventBus);
+        MOD_ENCHANTMENTS.register(eventBus);
     };
 }

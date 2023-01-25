@@ -47,7 +47,7 @@ public class ModTabs {
                     .displayItems((flagSet, entries, flag) ->
                             entries.accept(ModItems.CITRINE_SWORD.get())));
 
-        event.registerCreativeModeTab(TAB_ID3, List.of(), List.of(TAB_ID2),
+            event.registerCreativeModeTab(TAB_ID3, List.of(), List.of(TAB_ID2),
                 builder -> builder.title(Component.translatable("itemGroup.snsmodtab3"))
                         .icon(() -> ModItems.CITRINE_COIN.get().getDefaultInstance())
                         .displayItems((flagSet, entries, flag) -> {

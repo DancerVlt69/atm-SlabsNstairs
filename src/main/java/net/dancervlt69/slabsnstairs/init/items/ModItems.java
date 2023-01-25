@@ -35,13 +35,13 @@ public class ModItems {
             () -> new SignItem(new Item.Properties().stacksTo(16),
                     ModBlocks.CINNAMON_SIGN.get(), ModBlocks.CINNAMON_WALL_SIGN.get()));
 
-//    public static final RegistryObject<Item> CINNAMON_HANGING_SIGN = MOD_ITEMS.register("cinnamon_hanging_sign",
-//            () -> new HangingSignItem(ModBlocks.CINNAMON_HANGING_SIGN.get(), ModBlocks.CINNAMON_WALL_HANGING_SIGN.get(),
-//                    new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> CINNAMON_HANGING_SIGN = MOD_ITEMS.register("cinnamon_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.CINNAMON_HANGING_SIGN.get(), ModBlocks.CINNAMON_WALL_HANGING_SIGN.get(),
+                    new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> SHAKE_THE_BUS = MOD_ITEMS.register("shake_the_bus",
-            () -> new RecordItem(4, ModSounds.SHAKE_THE_BUS,
-                    (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE), 0));
+//    public static final RegistryObject<Item> SHAKE_THE_BUS = MOD_ITEMS.register("shake_the_bus",
+//            () -> new RecordItem(4, ModSounds.SHAKE_THE_BUS,
+//                    (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE), 0));
 
     // @Deprecated
 

@@ -47,12 +47,12 @@ public class SlabsNstairs {
         ModBlocks.register(eventBus);
         ModItems.register(eventBus);
 
-        ModSounds.register(eventBus);
+        ModBlockEntityTypes.register(eventBus);
 
         ModEnchantments.register(eventBus);
         ModLootModifiers.register(eventBus);
+        // ModSounds.register(eventBus);
 
-        ModBlockEntityTypes.register(eventBus);
         // ModParticleTypes.register(eventBus);
 
         // Register the setup method for modLoading

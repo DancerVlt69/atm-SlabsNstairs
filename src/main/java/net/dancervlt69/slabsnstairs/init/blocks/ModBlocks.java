@@ -1,8 +1,8 @@
 package net.dancervlt69.slabsnstairs.init.blocks;
 
 import net.dancervlt69.slabsnstairs.init.blocks.custom.*;
-import net.dancervlt69.slabsnstairs.init.blocks.utils.flammable.BlockFlammable;
 import net.dancervlt69.slabsnstairs.init.blocks.utils.ModWoodTypes;
+import net.dancervlt69.slabsnstairs.init.blocks.utils.flammable.BlockFlammable;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.*;
@@ -14,9 +14,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 import static net.dancervlt69.slabsnstairs.init.blocks.ModBlockRegistering.registerBlock;
 import static net.dancervlt69.slabsnstairs.init.blocks.ModBlockRegistering.registerBlockNoItem;
-import static net.dancervlt69.slabsnstairs.SlabsNstairs.MODID;
 
 public class ModBlocks {
    public static final DeferredRegister<Block> MOD_BLOCKS =
@@ -511,9 +511,7 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE_TILES)
                     .strength(2.0f, 6).requiresCorrectToolForDrops()));
 
-
     /** Walls */
-
     public static final RegistryObject<Block> STONE_WALL = registerBlock("stone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).sound(SoundType.STONE)
                     .strength(2.0f, 6.0f).requiresCorrectToolForDrops()));
