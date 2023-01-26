@@ -4,6 +4,7 @@ __________________________
 --------------------------
 * ***added:***
 * ***updated:***
+  * Forge bump to Version 44.1.8
 * ***fixed:***
 * ***removed:***
   * unused code
