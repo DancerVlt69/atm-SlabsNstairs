@@ -6,7 +6,7 @@ issueTrackerURL="https://github.com/DancerVlt69/SlabsNstairs/issues"
 [[mods]]
 modId="slabsnstairs"
 version="1.18.x-${file.jarVersion}"
-oldVersion="1.18x-0.1.4.138"
+oldVersion="1.18x-0.1.5.141"
 displayName="SnS - Slabs 'n Stairs"
 credits='''Forge-Team (mdk-file), JetBrains (IntelliJ-IDEA), Kaupenjoe (YT-tuts), & much more
 https://minecraftforge.net | https://jetbrains.com | https://tutorialsbykaupenjoe.net'''

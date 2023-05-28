@@ -146,11 +146,12 @@
   "block.slabsnstairs.tripod":            "Stativ",
   "block.slabsnstairs.telescope":         "Teleskop",
 
-  "item.slabsnstairs.light_brown_dye":  "Hellbrauner Farbstoff",
-  "item.slabsnstairs.citrine":          "Zitrin-Kristall",
-  "item.slabsnstairs.raw_citrine":      "Unbehandelter Zitrin",
-  "item.slabsnstairs.citrine_coin":     "Zitrin-Münze",
-
+  "item.slabsnstairs.shake_the_bus":      "Schallplatte",
+  "item.slabsnstairs.shake_the_bus.desc": "Shake The Bus",
+  "item.slabsnstairs.light_brown_dye":    "Hellbrauner Farbstoff",
+  "item.slabsnstairs.citrine":            "Zitrin-Kristall",
+  "item.slabsnstairs.raw_citrine":        "Unbehandelter Zitrin",
+  "item.slabsnstairs.citrine_coin":       "Zitrin-Münze",
   "item.slabsnstairs.dowsing_rod":        "Wünschelrute",
   "item.slabsnstairs.dowsing_rod.found":        "Hab was: ",
   "item.slabsnstairs.dowsing_rod.located":      "  bei ",

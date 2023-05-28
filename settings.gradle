@@ -1,8 +1,17 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+
         maven { url = 'https://maven.minecraftforge.net/' }
         maven { url = 'https://maven.parchmentmc.org' }
-        mavenCentral()
+        // maven { url = "https://mvn.stopmodreposts.org" }
+
     }
 }
+
+rootProject.name = 'SlabsNstairs-1.18x'
+
+// include('Common', 'Forge', 'Fabric')

@@ -1,5 +1,17 @@
 # Slabs 'n Stairs version changelog:
 -------------------------
+ v0.1.5.141 @ 2022/12/24
+-------------------------
+* ***updated:***
+  * Forge bump to Version 40.1.92
+* ***removed:***
+  * some unused code/comments
+
+This Version of the Mod was successfully tested with [**Forge** ***40.1.92***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html)
+
+The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18.x/CHANGELOG.md)***
+
+-------------------------
  v0.1.4.138 @ 2022/11/24
 -------------------------
 * ***fixed:***
@@ -9,8 +21,6 @@
   * wrong Mod Version
 
 This Version of the Mod was successfully tested with [**Forge** ***40.1.85***](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html)
-
-The complete changelog history you can find: ***[on GitHub](https://github.com/DancerVlt69/SlabsNstairs/blob/1.18.x/CHANGELOG.md)***
 
 -------------------------
  v0.1.3.136 @ 2022/11/19

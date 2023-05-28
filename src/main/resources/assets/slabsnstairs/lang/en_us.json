@@ -146,12 +146,13 @@
   "block.slabsnstairs.tripod":            "Tripod",
   "block.slabsnstairs.telescope":         "Telescope",
 
-  "item.slabsnstairs.light_brown_dye":  "Light Brown Dye",
-  "item.slabsnstairs.citrine":          "Citrine Crystal",
-  "item.slabsnstairs.raw_citrine":      "Raw Citrine",
-  "item.slabsnstairs.citrine_coin":     "Citrine Coin",
+  "item.slabsnstairs.shake_the_bus":      "Music Disc",
+  "item.slabsnstairs.shake_the_bus.desc": "Shake The Bus",
+  "item.slabsnstairs.light_brown_dye":    "Light Brown Dye",
+  "item.slabsnstairs.citrine":            "Citrine Crystal",
+  "item.slabsnstairs.raw_citrine":        "Raw Citrine",
+  "item.slabsnstairs.citrine_coin":       "Citrine Coin",
   "item.slabsnstairs.dowsing_rod":        "Dowsing Rod",
-
   "item.slabsnstairs.dowsing_rod.found":        "Found ",
   "item.slabsnstairs.dowsing_rod.located":      "  at ",
   "item.slabsnstairs.dowsing_rod.no_valuables": "No valuables found.",
